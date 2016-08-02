@@ -8,9 +8,9 @@ var config = require('config');
 var slambySdk = require('slamby-sdk');
 //Cache manager
 var NodeCache = require("node-cache");
-const isDeveloping = process.env.NODE_ENV !== 'production';
-const port = isDeveloping ? 3000 : 3000;
-const app = express();
+var isDeveloping = process.env.NODE_ENV !== 'production';
+var port = isDeveloping ? 3000 : 3000;
+var app = express();
 //gzip enabled
 app.use(connect.compress());
 //Cache enabled
@@ -19,7 +19,7 @@ app.set('view cache', true);
 app.use('/build', express.static(__dirname + '/build'));
 app.use('/app', express.static(__dirname + '/app'));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
-const myCache = new NodeCache({ stdTTL: 600, checkperiod: 600 });
+var myCache = new NodeCache({ stdTTL: 600, checkperiod: 600 });
 function getJobs() {
     http.get(config.get("cms.jobService"), function (res) {
         var body = '';
@@ -61,7 +61,7 @@ app.get('/api/jobservice/:id*', function (req, response) {
     myCache.get("jobs", function (err, value) {
         if (!err) {
             var object = JSON.parse(value);
-            object.forEach(element => {
+            object.forEach(function (element) {
                 if (element.id == id) {
                     result = true;
                     response.send(JSON.stringify(element));
@@ -91,14 +91,13 @@ function AddDocument(document) {
     });
 }
 ;
-app.get('/*', (req, res) => {
+app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
-app.listen(port, 'localhost', (err) => {
+app.listen(port, '0.0.0.0', function (err) {
     if (err) {
         console.log(err);
     }
     console.info('==> Listening on port %s. Open up http://localhost:%s/ in your browser.', port, port);
 });
 getJobs();
-//# sourceMappingURL=server.js.map
