@@ -4,7 +4,7 @@
   "author": "Peter Mezei",
   "description": "Understanding data made simple, Slamby.",
   "scripts": {
-    "start": "concurrently \"npm run build\" \"npm run express\"",
+    "start": "concurrently \"tsc\" \"npm run build\" \"npm run express\"",
     "express": "node server",
     "build": "webpack --watch --progress --profile --colors --display-error-details --display-cached --optimize-dedupe"
   },
@@ -36,6 +36,7 @@
     "slamby-sdk": "^0.14.0",
     "slamby-sdk-angular2": "^0.18.0",
     "systemjs": "0.19.27",
+    "typescript": "^1.8.10",
     "webpack": "^1.13.1",
     "zone.js": "^0.6.12"
   },
@@ -56,11 +57,12 @@
     "process": "^0.11.6",
     "run-sequence": "^1.2.2",
     "ts-loader": "^0.8.2",
-    "tslint": "^3.7.4",
+    "tsc": "^1.20150623.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "tslint": "^3.7.4"
   },
   "repository": {}
 }
