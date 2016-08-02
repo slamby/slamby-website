@@ -51,6 +51,7 @@
     "gulp-shell": "^0.5.2",
     "gulp-tsc": "^1.2.0",
     "lite-server": "^2.2.0",
+    "object-assign": "^4.1.0",
     "path": "^0.12.7",
     "process": "^0.11.6",
     "run-sequence": "^1.2.2",
