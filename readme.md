@@ -4,6 +4,8 @@ How to use:
 
 1) Open the root folder with terminal
 
-2) `npm install`
+2) `tsc server`: compile server.ts
+
+3) `npm install`
     
-3) `npm start`: ts compilation, and file change wathcer starts. Little server starts.
+4) `npm start`: ts compilation using webpack, and file change wathcer starts. Express server starts.
