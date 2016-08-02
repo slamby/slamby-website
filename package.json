@@ -38,12 +38,13 @@
     "systemjs": "0.19.27",
     "typescript": "^1.8.10",
     "webpack": "^1.13.1",
-    "zone.js": "^0.6.12"
+    "zone.js": "^0.6.12",
+    "concurrently": "^2.0.0",
+    "config": "^1.21.0",
+    "object-assign": "^4.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
-    "concurrently": "^2.0.0",
-    "config": "^1.21.0",
     "connect": "2.x",
     "connect-browser-sync": "^2.0.1",
     "del": "^2.2.1",
@@ -52,7 +53,6 @@
     "gulp-shell": "^0.5.2",
     "gulp-tsc": "^1.2.0",
     "lite-server": "^2.2.0",
-    "object-assign": "^4.1.0",
     "path": "^0.12.7",
     "process": "^0.11.6",
     "run-sequence": "^1.2.2",
