@@ -10,16 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require('@angular/core');
 const router_1 = require('@angular/router');
-let NavbarComponent = class NavbarComponent {
+let BasicFooterComponent = class BasicFooterComponent {
+    constructor() {
+        this.date = new Date();
+        this.thisYear = this.date.getFullYear();
+    }
 };
-NavbarComponent = __decorate([
+BasicFooterComponent = __decorate([
     core_1.Component({
-        selector: 'navbar',
-        templateUrl: 'app/shared/navbar/navbar.component.html',
-        styleUrls: ['app/shared/navbar/navbar.component.css'],
+        selector: 'footer',
+        templateUrl: 'app/shared/footer/basic-footer.component.html',
+        styleUrls: ['app/shared/footer/basic-footer.component.css'],
         directives: [router_1.ROUTER_DIRECTIVES]
     }), 
     __metadata('design:paramtypes', [])
-], NavbarComponent);
-exports.NavbarComponent = NavbarComponent;
-//# sourceMappingURL=navbar.component.js.map
+], BasicFooterComponent);
+exports.BasicFooterComponent = BasicFooterComponent;
+//# sourceMappingURL=basic-footer.component.js.map
