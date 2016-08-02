@@ -1,0 +1,62 @@
+﻿//Bootstrap Template
+@import 'Custom/_variables.scss';
+@import 'bootstrap_template/_bootstrap.scss';
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+
+body {
+    font-family: "Open Sans" !important;
+    color: #676a6c;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+p {
+    color: #aeaeae;
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+section {
+    padding-top: 40px;
+}
+
+.btn-simply {
+    background-color:transparent;
+    border-color: white;
+    color: white;
+    margin-left:3%;
+}
+
+.window {
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+//Main Styles
+@import 'Custom/_Main.scss';
+@import 'Custom/_Wrapper.scss';
+@import 'Custom/_Ul.scss';
+
+//Pages, Modules
+@import 'Custom/_Jobs.scss';
+@import 'Custom/_Footer.scss';
+@import 'Custom/_blockquote.scss';

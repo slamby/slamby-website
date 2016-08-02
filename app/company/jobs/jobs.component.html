@@ -1,0 +1,36 @@
+﻿<div class="container">
+    <div class="wrapper">
+        <div class="page-header">
+            <h1>Jobs</h1>
+            <p class="lead">
+                We are looking for great talents.<br />
+                If you are interested in the following positions,<br />please send your CV to <abbr title="Slamby Jobs Email address. Please send your CV to here.">jobs@slamby.com</abbr>
+            </p>
+            <span>Check our opened positions</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="wrapper">
+        <div class="col-xs-8 col-xs-offset-2">
+            <table class="table text-left">
+                <thead>
+                    <tr>
+                        <th>Position Name</th>
+                        <th>Location</th>
+                        <th>Date Posted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr *ngFor="let item of jobs">
+                            <td id="{{item.slug}}"><a [routerLink]="['/company/jobs/' + item.id]">{{item.title.rendered}}</a></td>
+                            <td>Debrecen, Hungary</td>
+                            <td>{{item.date}}</td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

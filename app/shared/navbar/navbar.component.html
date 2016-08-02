@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a [routerLink]="['/']">
+                <img src="/app/assets/images/slamby-logo.png" class="navbar-brand" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-7">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a [routerLink]="['/api']" (click)="hello()">Server</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/tau']">TAU</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/api/pricing']">Pricing</a>
+                </li>
+                <li>
+                    <a href="https://developers.slamby.com">For Developers</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/support']">Support</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/community']">Community</a>
+                </li>
+                <li>
+                    <div class="navbar-btn">
+                        <a [routerLink]="['/api/server-request']" class="btn btn-simply">Request a Server</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

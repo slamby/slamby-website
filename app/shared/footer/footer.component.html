@@ -1,0 +1,26 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="footer-list-header">About</li>
+                <li><a [routerLink]="['/company']">Company Information</a></li>
+                <li><a [routerLink]="['/company/jobs']">Jobs</a></li>
+                <li><a [routerLink]="['/company/partners']">Partners</a></li>
+            </ul>
+            <ul>
+                <li class="footer-list-header">Developers</li>
+                <li><a href="https://developers.slamby.com/docs/API">Slamby API</a></li>
+                <li><a href="https://developers.slamby.com/docs/SDK.NET">SDK</a></li>
+                <li><a href="https://developers.slamby.com/docs/TAU">Slamby TAU</a></li>
+            </ul>
+            <ul>
+                <li class="footer-list-header">Contact</li>
+                <!--<li><a href="/company/press">Press</a></li>-->
+                <li><a [routerLink]="['/company/contact']">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-closing">
+            Copyright Slamby @DateTime.Now.Year. All right reserved.
+        </div>
+    </div>
+</footer>

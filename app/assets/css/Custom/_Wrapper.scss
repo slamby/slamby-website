@@ -1,0 +1,26 @@
+﻿.wrapper {
+    @include make-row();
+    text-align:center;
+
+    .content-main {
+        @include make-md-column(8);
+    }
+
+    .content-secondary {
+        @include make-md-column(3);
+        @include make-md-column-offset(1);
+    }
+}
+
+.wrapper-display1 {
+    img {
+        @include make-row();
+        @include center-block();
+    }
+    h1,h2,h3,h4 {
+        @include make-row();
+    }
+    p {
+        @include make-row();
+    }
+}

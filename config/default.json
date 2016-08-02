@@ -1,0 +1,5 @@
+{
+     "cms":{
+         "jobService":"http://blog.slamby.com/wp-json/wp/v2/posts?categories=265"
+     }
+}

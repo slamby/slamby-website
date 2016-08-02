@@ -1,0 +1,11 @@
+﻿<div class="container">
+    <div class="wrapper">
+        <div class="col-xs-8 col-xs-offset-2" id="@Model.JobDetails.Slug">
+            <div class="page-header">
+                <h2 *ngIf="job.title.rendered">{{job.title.rendered}}</h2>
+                <span *ngIf="job.date">{{job.date}}</span>
+            </div>
+            <div [innerHTML]="job.content.rendered"></div>
+        </div>
+    </div>
+</div>
