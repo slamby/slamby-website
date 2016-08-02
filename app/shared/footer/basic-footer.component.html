@@ -19,8 +19,8 @@
                 <li><a [routerLink]="['/company/contact']">Contact</a></li>
             </ul>
         </div>
-        <div class="footer-closing">
-            Copyright Slamby 2016. All right reserved.
+        <div class="footer-closing" (click)="hello()">
+            Copyright Slamby {{thisYear}}. All right reserved.
         </div>
     </div>
 </footer>
