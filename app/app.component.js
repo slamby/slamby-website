@@ -19,7 +19,7 @@ var AppComponent = (function () {
     function AppComponent(router) {
         this.router = router;
         router.events.subscribe(function (event) {
-            if (event instanceof router_1.NavigationStart) {
+            if (event instanceof router_1.NavigationEnd) {
                 window.scrollTo(0, 0);
             }
             ;
