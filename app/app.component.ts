@@ -4,6 +4,7 @@ import { ROUTER_DIRECTIVES, Router, NavigationEnd } from '@angular/router';
 
 import { ProductService } from './products/product.service';
 import { JobsService } from './company/jobs/jobs.service';
+import { CommunityService } from './community/community.service';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BasicFooterComponent } from './shared/footer/basic-footer.component';
 
@@ -16,6 +17,7 @@ import { BasicFooterComponent } from './shared/footer/basic-footer.component';
      `,
     directives: [NavbarComponent, BasicFooterComponent, ROUTER_DIRECTIVES],
     providers: [JobsService,
+                CommunityService,
                 ProductService,
                 HTTP_PROVIDERS]
 })

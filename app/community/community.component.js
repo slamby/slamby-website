@@ -10,9 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var community_service_1 = require('./community.service');
 var CommunityComponent = (function () {
-    function CommunityComponent() {
-        this.pageTitle = 'Welcome';
+    function CommunityComponent(_communityService) {
+        this._communityService = _communityService;
+        this.subscriber = {
+            id: "",
+            name: "",
+            email: "",
+            company: ""
+        };
+        this.sendForm = function () {
+            this.subscriber.id = this.guid();
+            this._communityService.SubscriberAdd(this.subscriber);
+        };
+        this.guid = function guid() {
+            function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                    .toString(16)
+                    .substring(1);
+            }
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
+        };
     }
     CommunityComponent = __decorate([
         core_1.Component({
@@ -20,7 +40,7 @@ var CommunityComponent = (function () {
             styleUrls: ['app/community/community.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [community_service_1.CommunityService])
     ], CommunityComponent);
     return CommunityComponent;
 }());

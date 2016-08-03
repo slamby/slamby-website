@@ -27,6 +27,7 @@
     "express": "^4.14.0",
     "fontawesome": "^4.5.0",
     "glob": "^7.0.5",
+    "guid": "0.0.12",
     "gulp": "^3.9.1",
     "jquery": "^3.1.0",
     "node-cache": "^3.2.1",

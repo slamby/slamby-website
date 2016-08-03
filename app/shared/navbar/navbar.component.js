@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var NavbarComponent = (function () {
     function NavbarComponent() {
+        this.isHidden = true;
     }
     NavbarComponent = __decorate([
         core_1.Component({

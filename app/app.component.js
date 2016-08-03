@@ -13,6 +13,7 @@ var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
 var product_service_1 = require('./products/product.service');
 var jobs_service_1 = require('./company/jobs/jobs.service');
+var community_service_1 = require('./community/community.service');
 var navbar_component_1 = require('./shared/navbar/navbar.component');
 var basic_footer_component_1 = require('./shared/footer/basic-footer.component');
 var AppComponent = (function () {
@@ -32,6 +33,7 @@ var AppComponent = (function () {
             template: "\n        <navbar></navbar>\n        <router-outlet></router-outlet>\n        <footer></footer>\n     ",
             directives: [navbar_component_1.NavbarComponent, basic_footer_component_1.BasicFooterComponent, router_1.ROUTER_DIRECTIVES],
             providers: [jobs_service_1.JobsService,
+                community_service_1.CommunityService,
                 product_service_1.ProductService,
                 http_1.HTTP_PROVIDERS]
         }), 

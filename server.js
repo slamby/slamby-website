@@ -6,6 +6,8 @@ var connect = require('connect');
 var http = require('http');
 var config = require('config');
 var slambySdk = require('slamby-sdk');
+var Guid = require('guid');
+var bodyParser = require('body-parser');
 //Cache manager
 var NodeCache = require("node-cache");
 var isDeveloping = process.env.NODE_ENV !== 'production';
@@ -13,6 +15,9 @@ var port = isDeveloping ? 3000 : 3000;
 var app = express();
 //gzip enabled
 app.use(connect.compress());
+//Body Parsing.
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 //Cache enabled
 app.set('view cache', true);
 //Static folders
@@ -74,23 +79,27 @@ app.get('/api/jobservice/:id*', function (req, response) {
         response.status(404).send('{"error":"Job Not Found"}');
     }
 });
-function AddDocument(document) {
+function AddDocument(server, secret, dataset, document) {
     var client = new slambySdk.ApiClient();
-    client.basePath = "https://europe.slamby.com/quinjet/";
+    client.basePath = server;
     client.defaultHeaders = {
-        "Authorization": "Slamby s3cr3t"
+        "Authorization": "Slamby " + secret
     };
-    var apiInstance = new slambySdk.DocumentApi();
-    var opts = {
-        'document': new slambySdk.ModelObject() // ModelObject | 
-    };
-    apiInstance.createDocument(opts).then(function () {
-        console.log('API called successfully.');
-    }, function (error) {
-        console.error(error);
-    });
+    client.defaultHeaders["X-DataSet"] = dataset;
+    var apiInstance = new slambySdk.DocumentApi(client);
+    var opts = { "document": document };
+    return apiInstance.createDocument(opts);
 }
 ;
+app.post('/api/subscribe/community', function (req, res) {
+    AddDocument(config.get("accounts.community.server"), config.get("accounts.community.secret"), config.get("accounts.community.dataset"), req.body.document).then(function () {
+        console.log("added");
+        res.send("Succesfully Added");
+    }, function (error) {
+        console.log(error);
+        res.status(409).send(error);
+    });
+});
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -98,7 +107,7 @@ app.listen(port, '0.0.0.0', function (err) {
     if (err) {
         console.log(err);
     }
-    console.info('==> Listening on port %s. Open up http://localhost:%s/ in your browser.', port, port);
+    console.info('==> Server is running on http://localhost:%s/', port);
 });
 getJobs();
 //# sourceMappingURL=server.js.map

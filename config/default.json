@@ -1,5 +1,12 @@
 {
      "cms":{
          "jobService":"http://blog.slamby.com/wp-json/wp/v2/posts?categories=265"
+     },
+     "accounts":{
+         "community":{
+             "server":"https://europe.slamby.com/quinjet/",
+             "secret":"s3cr3t",
+             "dataset":"newsletter"
+         }
      }
 }
