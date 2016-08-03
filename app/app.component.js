@@ -16,9 +16,16 @@ var jobs_service_1 = require('./company/jobs/jobs.service');
 var navbar_component_1 = require('./shared/navbar/navbar.component');
 var basic_footer_component_1 = require('./shared/footer/basic-footer.component');
 var AppComponent = (function () {
-    function AppComponent() {
-        this.pageTitle = 'Acme Product Management';
+    function AppComponent(router) {
+        this.router = router;
+        router.events.subscribe(function (event) {
+            if (event instanceof router_1.NavigationStart) {
+                window.scrollTo(0, 0);
+            }
+            ;
+        });
     }
+    ;
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pm-app',
@@ -28,9 +35,10 @@ var AppComponent = (function () {
                 product_service_1.ProductService,
                 http_1.HTTP_PROVIDERS]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+;
 //# sourceMappingURL=app.component.js.map
