@@ -8,18 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-let ProductFilterPipe = class ProductFilterPipe {
-    transform(value, filter) {
-        filter = filter ? filter.toLocaleLowerCase() : null;
-        return filter ? value.filter((product) => product.productName.toLocaleLowerCase().indexOf(filter) !== -1) : value;
+var core_1 = require('@angular/core');
+var ProductFilterPipe = (function () {
+    function ProductFilterPipe() {
     }
-};
-ProductFilterPipe = __decorate([
-    core_1.Pipe({
-        name: 'productFilter'
-    }), 
-    __metadata('design:paramtypes', [])
-], ProductFilterPipe);
+    ProductFilterPipe.prototype.transform = function (value, filter) {
+        filter = filter ? filter.toLocaleLowerCase() : null;
+        return filter ? value.filter(function (product) {
+            return product.productName.toLocaleLowerCase().indexOf(filter) !== -1;
+        }) : value;
+    };
+    ProductFilterPipe = __decorate([
+        core_1.Pipe({
+            name: 'productFilter'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ProductFilterPipe);
+    return ProductFilterPipe;
+}());
 exports.ProductFilterPipe = ProductFilterPipe;
 //# sourceMappingURL=product-filter.pipe.js.map

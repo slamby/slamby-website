@@ -8,13 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-const product_filter_pipe_1 = require('./product-filter.pipe');
-const star_component_1 = require('../shared/star.component');
-const product_service_1 = require('./product.service');
-let ProductListComponent = class ProductListComponent {
-    constructor(router, _productService) {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var product_filter_pipe_1 = require('./product-filter.pipe');
+var star_component_1 = require('../shared/star.component');
+var product_service_1 = require('./product.service');
+var ProductListComponent = (function () {
+    function ProductListComponent(router, _productService) {
         this.router = router;
         this._productService = _productService;
         this.pageTitle = 'Product List';
@@ -23,25 +23,27 @@ let ProductListComponent = class ProductListComponent {
         this.showImage = false;
         this.listFilter = '';
     }
-    toggleImage() {
+    ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
-    }
-    ngOnInit() {
+    };
+    ProductListComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this._productService.getProducts()
-            .subscribe(products => this.products = products, error => this.errorMessage = error);
-    }
-    onRatingClicked(message) {
+            .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
+    };
+    ProductListComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = 'Product List: ' + message;
-    }
-};
-ProductListComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/products/product-list.component.html',
-        styleUrls: ['app/products/product-list.component.css'],
-        pipes: [product_filter_pipe_1.ProductFilterPipe],
-        directives: [star_component_1.StarComponent, router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [router_1.Router, product_service_1.ProductService])
-], ProductListComponent);
+    };
+    ProductListComponent = __decorate([
+        core_1.Component({
+            templateUrl: 'app/products/product-list.component.html',
+            styleUrls: ['app/products/product-list.component.css'],
+            pipes: [product_filter_pipe_1.ProductFilterPipe],
+            directives: [star_component_1.StarComponent, router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [router_1.Router, product_service_1.ProductService])
+    ], ProductListComponent);
+    return ProductListComponent;
+}());
 exports.ProductListComponent = ProductListComponent;
 //# sourceMappingURL=product-list.component.js.map

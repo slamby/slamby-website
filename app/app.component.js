@@ -8,32 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const http_1 = require('@angular/http');
-const router_1 = require('@angular/router');
-const product_service_1 = require('./products/product.service');
-const jobs_service_1 = require('./company/jobs/jobs.service');
-const navbar_component_1 = require('./shared/navbar/navbar.component');
-const basic_footer_component_1 = require('./shared/footer/basic-footer.component');
-let AppComponent = class AppComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var http_1 = require('@angular/http');
+var router_1 = require('@angular/router');
+var product_service_1 = require('./products/product.service');
+var jobs_service_1 = require('./company/jobs/jobs.service');
+var navbar_component_1 = require('./shared/navbar/navbar.component');
+var basic_footer_component_1 = require('./shared/footer/basic-footer.component');
+var AppComponent = (function () {
+    function AppComponent() {
         this.pageTitle = 'Acme Product Management';
     }
-};
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'pm-app',
-        template: `
-        <navbar></navbar>
-        <router-outlet></router-outlet>
-        <footer></footer>
-     `,
-        directives: [navbar_component_1.NavbarComponent, basic_footer_component_1.BasicFooterComponent, router_1.ROUTER_DIRECTIVES],
-        providers: [jobs_service_1.JobsService,
-            product_service_1.ProductService,
-            http_1.HTTP_PROVIDERS]
-    }), 
-    __metadata('design:paramtypes', [])
-], AppComponent);
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'pm-app',
+            template: "\n        <navbar></navbar>\n        <router-outlet></router-outlet>\n        <footer></footer>\n     ",
+            directives: [navbar_component_1.NavbarComponent, basic_footer_component_1.BasicFooterComponent, router_1.ROUTER_DIRECTIVES],
+            providers: [jobs_service_1.JobsService,
+                product_service_1.ProductService,
+                http_1.HTTP_PROVIDERS]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
+    return AppComponent;
+}());
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

@@ -8,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let WelcomeComponent = class WelcomeComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var WelcomeComponent = (function () {
+    function WelcomeComponent() {
         this.pageTitle = 'Welcome';
     }
-};
-WelcomeComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/home/index.component.html',
-        styleUrls: ['app/home/index.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [])
-], WelcomeComponent);
+    WelcomeComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/home/index.component.html',
+            styleUrls: ['app/home/index.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], WelcomeComponent);
+    return WelcomeComponent;
+}());
 exports.WelcomeComponent = WelcomeComponent;
 //# sourceMappingURL=index.component.js.map

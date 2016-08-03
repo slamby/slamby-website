@@ -8,22 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let BasicFooterComponent = class BasicFooterComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var BasicFooterComponent = (function () {
+    function BasicFooterComponent() {
         this.date = new Date();
         this.thisYear = this.date.getFullYear();
     }
-};
-BasicFooterComponent = __decorate([
-    core_1.Component({
-        selector: 'footer',
-        templateUrl: 'app/shared/footer/basic-footer.component.html',
-        styleUrls: ['app/shared/footer/basic-footer.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [])
-], BasicFooterComponent);
+    BasicFooterComponent = __decorate([
+        core_1.Component({
+            selector: 'footer',
+            templateUrl: 'app/shared/footer/basic-footer.component.html',
+            styleUrls: ['app/shared/footer/basic-footer.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], BasicFooterComponent);
+    return BasicFooterComponent;
+}());
 exports.BasicFooterComponent = BasicFooterComponent;
 //# sourceMappingURL=basic-footer.component.js.map

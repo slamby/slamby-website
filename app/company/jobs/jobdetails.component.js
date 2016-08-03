@@ -8,36 +8,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-const jobs_service_1 = require('./jobs.service');
-let JobDetailsComponent = class JobDetailsComponent {
-    constructor(route, router, _jobsService) {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var jobs_service_1 = require('./jobs.service');
+var JobDetailsComponent = (function () {
+    function JobDetailsComponent(route, router, _jobsService) {
         this.route = route;
         this.router = router;
         this._jobsService = _jobsService;
         this.job = { id: null, title: { rendered: "" }, content: { rendered: "" }, date: null };
     }
-    ngOnInit() {
-        this.sub = this.route.params.subscribe(params => {
-            let id = +params['id'];
-            this.getJob(id);
+    JobDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.route.params.subscribe(function (params) {
+            var id = +params['id'];
+            _this.getJob(id);
         });
-    }
-    ngOnDestroy() {
+    };
+    JobDetailsComponent.prototype.ngOnDestroy = function () {
         this.sub.unsubscribe();
-    }
-    getJob(id) {
+    };
+    JobDetailsComponent.prototype.getJob = function (id) {
+        var _this = this;
         this._jobsService.getJob(id)
-            .subscribe(job => this.job = job, error => { console.log(error); });
-    }
-};
-JobDetailsComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/company/jobs/jobdetails.component.html',
-        styleUrls: ['app/company/jobs/jobdetails.component.css'],
-    }), 
-    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, jobs_service_1.JobsService])
-], JobDetailsComponent);
+            .subscribe(function (job) { return _this.job = job; }, function (error) { console.log(error); });
+    };
+    JobDetailsComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/company/jobs/jobdetails.component.html',
+            styleUrls: ['app/company/jobs/jobdetails.component.css'],
+        }), 
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, jobs_service_1.JobsService])
+    ], JobDetailsComponent);
+    return JobDetailsComponent;
+}());
 exports.JobDetailsComponent = JobDetailsComponent;
 //# sourceMappingURL=jobdetails.component.js.map

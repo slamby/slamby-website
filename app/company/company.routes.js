@@ -1,9 +1,9 @@
 "use strict";
-const company_component_1 = require('./company.component');
-const contact_component_1 = require('./contact/contact.component');
-const partners_component_1 = require('./partners/partners.component');
-const jobs_component_1 = require('./jobs/jobs.component');
-const jobdetails_component_1 = require('./jobs/jobdetails.component');
+var company_component_1 = require('./company.component');
+var contact_component_1 = require('./contact/contact.component');
+var partners_component_1 = require('./partners/partners.component');
+var jobs_component_1 = require('./jobs/jobs.component');
+var jobdetails_component_1 = require('./jobs/jobdetails.component');
 exports.CompanyRoutes = [
     { path: 'company', component: company_component_1.CompanyComponent },
     { path: 'company/contact', component: contact_component_1.ContactComponent },

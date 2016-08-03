@@ -1,7 +1,7 @@
 "use strict";
-const api_component_1 = require('./api.component');
-const pricing_component_1 = require('./pricing.component');
-const serverrequest_component_1 = require('./serverrequest.component');
+var api_component_1 = require('./api.component');
+var pricing_component_1 = require('./pricing.component');
+var serverrequest_component_1 = require('./serverrequest.component');
 exports.ApiRoutes = [
     {
         path: 'api',

@@ -8,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let ServerRequestComponent = class ServerRequestComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var ServerRequestComponent = (function () {
+    function ServerRequestComponent() {
         this.pageTitle = 'Welcome';
     }
-};
-ServerRequestComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/api/serverrequest.component.html',
-        styleUrls: ['/app/api/serverrequest.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [])
-], ServerRequestComponent);
+    ServerRequestComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/api/serverrequest.component.html',
+            styleUrls: ['/app/api/serverrequest.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ServerRequestComponent);
+    return ServerRequestComponent;
+}());
 exports.ServerRequestComponent = ServerRequestComponent;
 //# sourceMappingURL=serverrequest.component.js.map

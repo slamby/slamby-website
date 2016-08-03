@@ -8,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let ApiComponent = class ApiComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var ApiComponent = (function () {
+    function ApiComponent() {
         this.pageTitle = 'Welcome';
     }
-};
-ApiComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/api/api.component.html',
-        styleUrls: ['/app/api/api.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [])
-], ApiComponent);
+    ApiComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/api/api.component.html',
+            styleUrls: ['/app/api/api.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ApiComponent);
+    return ApiComponent;
+}());
 exports.ApiComponent = ApiComponent;
 //# sourceMappingURL=api.component.js.map

@@ -8,23 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let NotFoundComponent = class NotFoundComponent {
-    constructor(router) {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var NotFoundComponent = (function () {
+    function NotFoundComponent(router) {
         this.router = router;
     }
-    ngOnInit() {
+    NotFoundComponent.prototype.ngOnInit = function () {
         //Nothing;
-    }
-};
-NotFoundComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/msg/404.component.html',
-        styleUrls: ['app/msg/404.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [router_1.Router])
-], NotFoundComponent);
+    };
+    NotFoundComponent = __decorate([
+        core_1.Component({
+            templateUrl: 'app/msg/404.component.html',
+            styleUrls: ['app/msg/404.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [router_1.Router])
+    ], NotFoundComponent);
+    return NotFoundComponent;
+}());
 exports.NotFoundComponent = NotFoundComponent;
 //# sourceMappingURL=404.component.js.map

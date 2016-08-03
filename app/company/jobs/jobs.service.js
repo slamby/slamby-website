@@ -8,39 +8,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const http_1 = require('@angular/http');
-const Observable_1 = require('rxjs/Observable');
+var core_1 = require('@angular/core');
+var http_1 = require('@angular/http');
+var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/operator/do');
 require('rxjs/add/operator/catch');
-let JobsService = class JobsService {
-    constructor(_http) {
+var JobsService = (function () {
+    function JobsService(_http) {
         this._http = _http;
         this._jobsUrl = '/api/jobservice';
         this._jobUrl = '/api/jobservice/';
     }
-    getJobs() {
+    JobsService.prototype.getJobs = function () {
         return this._http.get(this._jobsUrl)
-            .map((response) => response.json())
-            .do(() => { })
+            .map(function (response) { return response.json(); })
+            .do(function () { })
             .catch(this.handleError);
-    }
-    getJob(id) {
+    };
+    JobsService.prototype.getJob = function (id) {
         return this._http.get(this._jobUrl + id)
-            .map((response) => response.json())
-            .do(() => { })
+            .map(function (response) { return response.json(); })
+            .do(function () { })
             .catch(this.handleError);
-    }
-    handleError(error) {
+    };
+    JobsService.prototype.handleError = function (error) {
         // in a real world app, we may send the server to some remote logging infrastructure
         // instead of just logging it to the console
         //console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
-    }
-};
-JobsService = __decorate([
-    core_1.Injectable(), 
-    __metadata('design:paramtypes', [http_1.Http])
-], JobsService);
+    };
+    JobsService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], JobsService);
+    return JobsService;
+}());
 exports.JobsService = JobsService;
 //# sourceMappingURL=jobs.service.js.map

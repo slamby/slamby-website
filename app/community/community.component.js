@@ -8,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let CommunityComponent = class CommunityComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var CommunityComponent = (function () {
+    function CommunityComponent() {
         this.pageTitle = 'Welcome';
     }
-};
-CommunityComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/community/community.component.html',
-        styleUrls: ['app/community/community.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [])
-], CommunityComponent);
+    CommunityComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/community/community.component.html',
+            styleUrls: ['app/community/community.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CommunityComponent);
+    return CommunityComponent;
+}());
 exports.CommunityComponent = CommunityComponent;
 //# sourceMappingURL=community.component.js.map

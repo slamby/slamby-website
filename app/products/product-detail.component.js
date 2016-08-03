@@ -8,42 +8,45 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-const product_service_1 = require('./product.service');
-const star_component_1 = require('../shared/star.component');
-let ProductDetailComponent = class ProductDetailComponent {
-    constructor(route, router, _productService) {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var product_service_1 = require('./product.service');
+var star_component_1 = require('../shared/star.component');
+var ProductDetailComponent = (function () {
+    function ProductDetailComponent(route, router, _productService) {
         this.route = route;
         this.router = router;
         this._productService = _productService;
         this.pageTitle = 'Product Detail';
     }
-    ngOnInit() {
-        this.sub = this.route.params.subscribe(params => {
-            let id = +params['id'];
-            this.getProduct(id);
+    ProductDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.route.params.subscribe(function (params) {
+            var id = +params['id'];
+            _this.getProduct(id);
         });
-    }
-    ngOnDestroy() {
+    };
+    ProductDetailComponent.prototype.ngOnDestroy = function () {
         this.sub.unsubscribe();
-    }
-    getProduct(id) {
-        this._productService.getProduct(id).subscribe(product => this.product = product, error => this.errorMessage = error);
-    }
-    onBack() {
+    };
+    ProductDetailComponent.prototype.getProduct = function (id) {
+        var _this = this;
+        this._productService.getProduct(id).subscribe(function (product) { return _this.product = product; }, function (error) { return _this.errorMessage = error; });
+    };
+    ProductDetailComponent.prototype.onBack = function () {
         this.router.navigate(['/products']);
-    }
-    onRatingClicked(message) {
+    };
+    ProductDetailComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = 'Product Detail: ' + message;
-    }
-};
-ProductDetailComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/products/product-detail.component.html',
-        directives: [star_component_1.StarComponent]
-    }), 
-    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, product_service_1.ProductService])
-], ProductDetailComponent);
+    };
+    ProductDetailComponent = __decorate([
+        core_1.Component({
+            templateUrl: 'app/products/product-detail.component.html',
+            directives: [star_component_1.StarComponent]
+        }), 
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, product_service_1.ProductService])
+    ], ProductDetailComponent);
+    return ProductDetailComponent;
+}());
 exports.ProductDetailComponent = ProductDetailComponent;
 //# sourceMappingURL=product-detail.component.js.map

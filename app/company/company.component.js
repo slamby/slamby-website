@@ -8,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let CompanyComponent = class CompanyComponent {
-    constructor() {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var CompanyComponent = (function () {
+    function CompanyComponent() {
         this.pageTitle = 'Welcome';
     }
-};
-CompanyComponent = __decorate([
-    core_1.Component({
-        templateUrl: '/app/company/company.component.html',
-        styleUrls: ['app/company/company.component.css'],
-        directives: [router_1.ROUTER_DIRECTIVES]
-    }), 
-    __metadata('design:paramtypes', [])
-], CompanyComponent);
+    CompanyComponent = __decorate([
+        core_1.Component({
+            templateUrl: '/app/company/company.component.html',
+            styleUrls: ['app/company/company.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CompanyComponent);
+    return CompanyComponent;
+}());
 exports.CompanyComponent = CompanyComponent;
 //# sourceMappingURL=company.component.js.map
