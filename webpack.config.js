@@ -73,7 +73,7 @@ module.exports = {
 
   resolve: {
     root: __dirname,
-    extensions: ['','.js','.ts','.json', '.css', '.html']
+    extensions: ['','.js','.jsx','.ts','.json', '.css', '.html']
   },
 
   module: {

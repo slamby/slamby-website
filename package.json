@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run build\" \"npm run express\"",
     "express": "node server",
-    "build": "webpack --watch --progress --profile --colors --display-error-details --display-cached --optimize-dedupe"
+    "build": "webpack --progress --profile --colors --display-error-details --display-cached"
   },
   "license": "ISC",
   "dependencies": {
