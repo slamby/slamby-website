@@ -19,6 +19,7 @@
     "@angular/platform-browser": "2.0.0-rc.4",
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "@angular/router": "3.0.0-beta.2",
+    "body-parser": "^1.15.2",
     "bootstrap": "^3.3.6",
     "concurrently": "^2.0.0",
     "config": "^1.21.0",
@@ -41,13 +42,13 @@
     "slamby-sdk": "^0.14.0",
     "slamby-sdk-angular2": "^0.18.0",
     "systemjs": "0.19.27",
-    "typescript": "^1.8.10",
-    "webpack": "^1.13.1",
-    "zone.js": "^0.6.12",
     "ts-loader": "^0.8.2",
     "tsc": "^1.20150623.0",
+    "tslint": "^3.7.4",
+    "typescript": "^1.8.10",
     "typings": "^1.0.4",
-    "tslint": "^3.7.4"
+    "webpack": "^1.13.1",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
