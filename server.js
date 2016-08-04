@@ -110,4 +110,3 @@ app.listen(port, '0.0.0.0', function (err) {
     console.info('==> Server is running on http://localhost:%s/', port);
 });
 getJobs();
-//# sourceMappingURL=server.js.map

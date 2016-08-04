@@ -16,7 +16,7 @@ export class CommunityService {
             .subscribe(
                 data => console.log(data),
                 err => console.log(err),
-                () => console.log("ok")
+                () => console.log("ok.")
             );
     }
 

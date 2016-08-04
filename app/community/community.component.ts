@@ -12,14 +12,15 @@ import { CommunityService } from './community.service';
 export class CommunityComponent {
 
     constructor(private _communityService: CommunityService){
-
+        //Hello
     }
 
     subscriber = {
         id:"",
         name:"",
         email:"",
-        company:""
+        company:"",
+        exported:false
     }
 
     sendForm = function():void{
