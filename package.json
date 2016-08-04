@@ -4,7 +4,8 @@
   "author": "Peter Mezei",
   "description": "Understanding data made simple, Slamby.",
   "scripts": {
-    "start": "concurrently \"npm run build\" \"npm run express\"",
+    "start": "npm run express",
+    "start_dev": "concurrently \"npm run build\" \"npm run express\"",
     "express": "node server",
     "build": "webpack --progress --profile --colors --display-error-details --display-cached"
   },
