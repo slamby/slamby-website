@@ -4,8 +4,8 @@
      },
      "accounts":{
          "community":{
-             "server":"https://europe.slamby.com/quinjet/",
-             "secret":"s3cr3t",
+             "server":"",
+             "secret":"",
              "dataset":"newsletter"
          }
      }
