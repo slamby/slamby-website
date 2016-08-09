@@ -6,6 +6,10 @@ How to use:
 
 2) `tsc server`: compile server.ts
 
-3) `npm install`
-    
-4) `npm start`: ts compilation using webpack, and file change wathcer starts. Express server starts.
+3) `npm install`: install npm node packages.
+
+4) `npm run build`: run webpack, ts compile into build folder.
+
+5) `npm start`: run webserver.
+
+If you need help please contact me at peter.mezei@slamby.com.
