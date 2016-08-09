@@ -15979,40 +15979,41 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const http_1 = __webpack_require__(102);
-	const Observable_1 = __webpack_require__(1);
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(102);
+	var Observable_1 = __webpack_require__(1);
 	__webpack_require__(115);
 	__webpack_require__(114);
-	let JobsService = class JobsService {
-	    constructor(_http) {
+	var JobsService = (function () {
+	    function JobsService(_http) {
 	        this._http = _http;
 	        this._jobsUrl = '/api/jobservice';
 	        this._jobUrl = '/api/jobservice/';
 	    }
-	    getJobs() {
+	    JobsService.prototype.getJobs = function () {
 	        return this._http.get(this._jobsUrl)
-	            .map((response) => response.json())
-	            .do(() => { })
+	            .map(function (response) { return response.json(); })
+	            .do(function () { })
 	            .catch(this.handleError);
-	    }
-	    getJob(id) {
+	    };
+	    JobsService.prototype.getJob = function (id) {
 	        return this._http.get(this._jobUrl + id)
-	            .map((response) => response.json())
-	            .do(() => { })
+	            .map(function (response) { return response.json(); })
+	            .do(function () { })
 	            .catch(this.handleError);
-	    }
-	    handleError(error) {
+	    };
+	    JobsService.prototype.handleError = function (error) {
 	        // in a real world app, we may send the server to some remote logging infrastructure
 	        // instead of just logging it to the console
 	        //console.error(error);
 	        return Observable_1.Observable.throw(error.json().error || 'Server error');
-	    }
-	};
-	JobsService = __decorate([
-	    core_1.Injectable(), 
-	    __metadata('design:paramtypes', [http_1.Http])
-	], JobsService);
+	    };
+	    JobsService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [http_1.Http])
+	    ], JobsService);
+	    return JobsService;
+	}());
 	exports.JobsService = JobsService;
 
 
@@ -16030,37 +16031,38 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const http_1 = __webpack_require__(102);
-	const Observable_1 = __webpack_require__(1);
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(102);
+	var Observable_1 = __webpack_require__(1);
 	__webpack_require__(115);
 	__webpack_require__(114);
-	let ProductService = class ProductService {
-	    constructor(_http) {
+	var ProductService = (function () {
+	    function ProductService(_http) {
 	        this._http = _http;
 	        this._productUrl = 'api/products/products.json';
 	    }
-	    getProducts() {
+	    ProductService.prototype.getProducts = function () {
 	        return this._http.get(this._productUrl)
-	            .map((response) => response.json())
-	            .do(data => console.log('All: ' + JSON.stringify(data)))
+	            .map(function (response) { return response.json(); })
+	            .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
 	            .catch(this.handleError);
-	    }
-	    getProduct(id) {
+	    };
+	    ProductService.prototype.getProduct = function (id) {
 	        return this.getProducts()
-	            .map((products) => products.find(p => p.productId === id));
-	    }
-	    handleError(error) {
+	            .map(function (products) { return products.find(function (p) { return p.productId === id; }); });
+	    };
+	    ProductService.prototype.handleError = function (error) {
 	        // in a real world app, we may send the server to some remote logging infrastructure
 	        // instead of just logging it to the console
 	        console.error(error);
 	        return Observable_1.Observable.throw(error.json().error || 'Server error');
-	    }
-	};
-	ProductService = __decorate([
-	    core_1.Injectable(), 
-	    __metadata('design:paramtypes', [http_1.Http])
-	], ProductService);
+	    };
+	    ProductService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [http_1.Http])
+	    ], ProductService);
+	    return ProductService;
+	}());
 	exports.ProductService = ProductService;
 
 
@@ -23280,31 +23282,32 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const http_1 = __webpack_require__(102);
-	const Observable_1 = __webpack_require__(1);
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(102);
+	var Observable_1 = __webpack_require__(1);
 	__webpack_require__(115);
 	__webpack_require__(114);
-	let CommunityService = class CommunityService {
-	    constructor(_http) {
+	var CommunityService = (function () {
+	    function CommunityService(_http) {
 	        this._http = _http;
 	        this._url = '/api/subscribe/community';
 	    }
-	    SubscriberAdd(properties) {
+	    CommunityService.prototype.SubscriberAdd = function (properties) {
 	        this._http.post(this._url, { document: properties })
-	            .subscribe(data => console.log(data), err => console.log(err), () => console.log("ok."));
-	    }
-	    handleError(error) {
+	            .subscribe(function (data) { return console.log(data); }, function (err) { return console.log(err); }, function () { return console.log("ok."); });
+	    };
+	    CommunityService.prototype.handleError = function (error) {
 	        // in a real world app, we may send the server to some remote logging infrastructure
 	        // instead of just logging it to the console
 	        //console.error(error);
 	        return Observable_1.Observable.throw(error.json().error || 'Server error');
-	    }
-	};
-	CommunityService = __decorate([
-	    core_1.Injectable(), 
-	    __metadata('design:paramtypes', [http_1.Http])
-	], CommunityService);
+	    };
+	    CommunityService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [http_1.Http])
+	    ], CommunityService);
+	    return CommunityService;
+	}());
 	exports.CommunityService = CommunityService;
 
 
@@ -23322,36 +23325,37 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	let StarComponent = class StarComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var StarComponent = (function () {
+	    function StarComponent() {
 	        this.ratingClicked = new core_1.EventEmitter();
 	    }
-	    ngOnChanges() {
+	    StarComponent.prototype.ngOnChanges = function () {
 	        // Convert x out of 5 starts
 	        // to y out of 86px width
 	        this.starWidth = this.rating * 86 / 5;
-	    }
-	    onClick() {
-	        this.ratingClicked.emit(`The rating ${this.rating} was clicked!`);
-	    }
-	};
-	__decorate([
-	    core_1.Input(), 
-	    __metadata('design:type', Number)
-	], StarComponent.prototype, "rating", void 0);
-	__decorate([
-	    core_1.Output(), 
-	    __metadata('design:type', core_1.EventEmitter)
-	], StarComponent.prototype, "ratingClicked", void 0);
-	StarComponent = __decorate([
-	    core_1.Component({
-	        selector: 'ai-star',
-	        templateUrl: 'app/shared/star.component.html',
-	        styleUrls: ['app/shared/star.component.css']
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], StarComponent);
+	    };
+	    StarComponent.prototype.onClick = function () {
+	        this.ratingClicked.emit("The rating " + this.rating + " was clicked!");
+	    };
+	    __decorate([
+	        core_1.Input(), 
+	        __metadata('design:type', Number)
+	    ], StarComponent.prototype, "rating", void 0);
+	    __decorate([
+	        core_1.Output(), 
+	        __metadata('design:type', core_1.EventEmitter)
+	    ], StarComponent.prototype, "ratingClicked", void 0);
+	    StarComponent = __decorate([
+	        core_1.Component({
+	            selector: 'ai-star',
+	            templateUrl: 'app/shared/star.component.html',
+	            styleUrls: ['app/shared/star.component.css']
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], StarComponent);
+	    return StarComponent;
+	}());
 	exports.StarComponent = StarComponent;
 
 
@@ -33396,21 +33400,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let ApiComponent = class ApiComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var ApiComponent = (function () {
+	    function ApiComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	ApiComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/api/api.component.html',
-	        styleUrls: ['/app/api/api.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], ApiComponent);
+	    ApiComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/api/api.component.html',
+	            styleUrls: ['/app/api/api.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], ApiComponent);
+	    return ApiComponent;
+	}());
 	exports.ApiComponent = ApiComponent;
 
 
@@ -33419,9 +33424,9 @@ webpackJsonp([2,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const api_component_1 = __webpack_require__(629);
-	const pricing_component_1 = __webpack_require__(631);
-	const serverrequest_component_1 = __webpack_require__(632);
+	var api_component_1 = __webpack_require__(629);
+	var pricing_component_1 = __webpack_require__(631);
+	var serverrequest_component_1 = __webpack_require__(632);
 	exports.ApiRoutes = [
 	    {
 	        path: 'api',
@@ -33452,21 +33457,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let PricingComponent = class PricingComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var PricingComponent = (function () {
+	    function PricingComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	PricingComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/api/pricing.component.html',
-	        styleUrls: ['/app/api/pricing.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], PricingComponent);
+	    PricingComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/api/pricing.component.html',
+	            styleUrls: ['/app/api/pricing.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], PricingComponent);
+	    return PricingComponent;
+	}());
 	exports.PricingComponent = PricingComponent;
 
 
@@ -33484,21 +33490,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let ServerRequestComponent = class ServerRequestComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var ServerRequestComponent = (function () {
+	    function ServerRequestComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	ServerRequestComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/api/serverrequest.component.html',
-	        styleUrls: ['/app/api/serverrequest.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], ServerRequestComponent);
+	    ServerRequestComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/api/serverrequest.component.html',
+	            styleUrls: ['/app/api/serverrequest.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], ServerRequestComponent);
+	    return ServerRequestComponent;
+	}());
 	exports.ServerRequestComponent = ServerRequestComponent;
 
 
@@ -33516,18 +33523,18 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const http_1 = __webpack_require__(102);
-	const router_1 = __webpack_require__(18);
-	const product_service_1 = __webpack_require__(195);
-	const jobs_service_1 = __webpack_require__(194);
-	const community_service_1 = __webpack_require__(310);
-	const navbar_component_1 = __webpack_require__(650);
-	const basic_footer_component_1 = __webpack_require__(649);
-	let AppComponent = class AppComponent {
-	    constructor(router) {
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(102);
+	var router_1 = __webpack_require__(18);
+	var product_service_1 = __webpack_require__(195);
+	var jobs_service_1 = __webpack_require__(194);
+	var community_service_1 = __webpack_require__(310);
+	var navbar_component_1 = __webpack_require__(650);
+	var basic_footer_component_1 = __webpack_require__(649);
+	var AppComponent = (function () {
+	    function AppComponent(router) {
 	        this.router = router;
-	        router.events.subscribe((event) => {
+	        router.events.subscribe(function (event) {
 	            if (event instanceof router_1.NavigationEnd) {
 	                window.scrollTo(0, 0);
 	            }
@@ -33535,23 +33542,20 @@ webpackJsonp([2,0],[
 	        });
 	    }
 	    ;
-	};
-	AppComponent = __decorate([
-	    core_1.Component({
-	        selector: 'pm-app',
-	        template: `
-	        <navbar></navbar>
-	        <router-outlet></router-outlet>
-	        <footer></footer>
-	     `,
-	        directives: [navbar_component_1.NavbarComponent, basic_footer_component_1.BasicFooterComponent, router_1.ROUTER_DIRECTIVES],
-	        providers: [jobs_service_1.JobsService,
-	            community_service_1.CommunityService,
-	            product_service_1.ProductService,
-	            http_1.HTTP_PROVIDERS]
-	    }), 
-	    __metadata('design:paramtypes', [router_1.Router])
-	], AppComponent);
+	    AppComponent = __decorate([
+	        core_1.Component({
+	            selector: 'pm-app',
+	            template: "\n        <navbar></navbar>\n        <router-outlet></router-outlet>\n        <footer></footer>\n     ",
+	            directives: [navbar_component_1.NavbarComponent, basic_footer_component_1.BasicFooterComponent, router_1.ROUTER_DIRECTIVES],
+	            providers: [jobs_service_1.JobsService,
+	                community_service_1.CommunityService,
+	                product_service_1.ProductService,
+	                http_1.HTTP_PROVIDERS]
+	        }), 
+	        __metadata('design:paramtypes', [router_1.Router])
+	    ], AppComponent);
+	    return AppComponent;
+	}());
 	exports.AppComponent = AppComponent;
 	;
 
@@ -33561,26 +33565,24 @@ webpackJsonp([2,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const router_1 = __webpack_require__(18);
-	const index_component_1 = __webpack_require__(642);
-	const product_routes_1 = __webpack_require__(648);
-	const _404_component_1 = __webpack_require__(644);
-	const tau_component_1 = __webpack_require__(652);
-	const company_routes_1 = __webpack_require__(637);
-	const api_routes_1 = __webpack_require__(630);
-	const community_component_1 = __webpack_require__(635);
-	const support_component_1 = __webpack_require__(651);
+	var router_1 = __webpack_require__(18);
+	var index_component_1 = __webpack_require__(642);
+	var product_routes_1 = __webpack_require__(648);
+	var _404_component_1 = __webpack_require__(644);
+	var tau_component_1 = __webpack_require__(652);
+	var company_routes_1 = __webpack_require__(637);
+	var api_routes_1 = __webpack_require__(630);
+	var community_component_1 = __webpack_require__(635);
+	var support_component_1 = __webpack_require__(651);
 	exports.routes = [
 	    { path: '', component: index_component_1.WelcomeComponent },
 	    { path: '404', component: _404_component_1.NotFoundComponent },
-	    { path: 'tau', component: tau_component_1.TauComponent },
-	    ...product_routes_1.ProductRoutes,
-	    ...company_routes_1.CompanyRoutes,
-	    ...api_routes_1.ApiRoutes,
+	    { path: 'tau', component: tau_component_1.TauComponent }
+	].concat(product_routes_1.ProductRoutes, company_routes_1.CompanyRoutes, api_routes_1.ApiRoutes, [
 	    { path: 'community', component: community_component_1.CommunityComponent },
 	    { path: 'support', component: support_component_1.SupportComponent },
 	    { path: '**', redirectTo: '/404' }
-	];
+	]);
 	exports.APP_ROUTER_PROVIDERS = [
 	    router_1.provideRouter(exports.routes)
 	];
@@ -33600,11 +33602,11 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	const community_service_1 = __webpack_require__(310);
-	let CommunityComponent = class CommunityComponent {
-	    constructor(_communityService) {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var community_service_1 = __webpack_require__(310);
+	var CommunityComponent = (function () {
+	    function CommunityComponent(_communityService) {
 	        this._communityService = _communityService;
 	        this.subscriber = {
 	            id: "",
@@ -33628,15 +33630,16 @@ webpackJsonp([2,0],[
 	        };
 	        //Hello
 	    }
-	};
-	CommunityComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/community/community.component.html',
-	        styleUrls: ['app/community/community.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [community_service_1.CommunityService])
-	], CommunityComponent);
+	    CommunityComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/community/community.component.html',
+	            styleUrls: ['app/community/community.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [community_service_1.CommunityService])
+	    ], CommunityComponent);
+	    return CommunityComponent;
+	}());
 	exports.CommunityComponent = CommunityComponent;
 
 
@@ -33654,21 +33657,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let CompanyComponent = class CompanyComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var CompanyComponent = (function () {
+	    function CompanyComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	CompanyComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/company/company.component.html',
-	        styleUrls: ['app/company/company.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], CompanyComponent);
+	    CompanyComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/company/company.component.html',
+	            styleUrls: ['app/company/company.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], CompanyComponent);
+	    return CompanyComponent;
+	}());
 	exports.CompanyComponent = CompanyComponent;
 
 
@@ -33677,11 +33681,11 @@ webpackJsonp([2,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const company_component_1 = __webpack_require__(636);
-	const contact_component_1 = __webpack_require__(638);
-	const partners_component_1 = __webpack_require__(641);
-	const jobs_component_1 = __webpack_require__(640);
-	const jobdetails_component_1 = __webpack_require__(639);
+	var company_component_1 = __webpack_require__(636);
+	var contact_component_1 = __webpack_require__(638);
+	var partners_component_1 = __webpack_require__(641);
+	var jobs_component_1 = __webpack_require__(640);
+	var jobdetails_component_1 = __webpack_require__(639);
 	exports.CompanyRoutes = [
 	    { path: 'company', component: company_component_1.CompanyComponent },
 	    { path: 'company/contact', component: contact_component_1.ContactComponent },
@@ -33705,21 +33709,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let ContactComponent = class ContactComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var ContactComponent = (function () {
+	    function ContactComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	ContactComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/company/contact/contact.component.html',
-	        styleUrls: ['app/company/contact/contact.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], ContactComponent);
+	    ContactComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/company/contact/contact.component.html',
+	            styleUrls: ['app/company/contact/contact.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], ContactComponent);
+	    return ContactComponent;
+	}());
 	exports.ContactComponent = ContactComponent;
 
 
@@ -33737,37 +33742,40 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	const jobs_service_1 = __webpack_require__(194);
-	let JobDetailsComponent = class JobDetailsComponent {
-	    constructor(route, router, _jobsService) {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var jobs_service_1 = __webpack_require__(194);
+	var JobDetailsComponent = (function () {
+	    function JobDetailsComponent(route, router, _jobsService) {
 	        this.route = route;
 	        this.router = router;
 	        this._jobsService = _jobsService;
 	        this.job = { id: null, title: { rendered: "" }, content: { rendered: "" }, date: null };
 	    }
-	    ngOnInit() {
-	        this.sub = this.route.params.subscribe(params => {
-	            let id = +params['id'];
-	            this.getJob(id);
+	    JobDetailsComponent.prototype.ngOnInit = function () {
+	        var _this = this;
+	        this.sub = this.route.params.subscribe(function (params) {
+	            var id = +params['id'];
+	            _this.getJob(id);
 	        });
-	    }
-	    ngOnDestroy() {
+	    };
+	    JobDetailsComponent.prototype.ngOnDestroy = function () {
 	        this.sub.unsubscribe();
-	    }
-	    getJob(id) {
+	    };
+	    JobDetailsComponent.prototype.getJob = function (id) {
+	        var _this = this;
 	        this._jobsService.getJob(id)
-	            .subscribe(job => this.job = job, error => { console.log(error); });
-	    }
-	};
-	JobDetailsComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/company/jobs/jobdetails.component.html',
-	        styleUrls: ['app/company/jobs/jobdetails.component.css'],
-	    }), 
-	    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, jobs_service_1.JobsService])
-	], JobDetailsComponent);
+	            .subscribe(function (job) { return _this.job = job; }, function (error) { console.log(error); });
+	    };
+	    JobDetailsComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/company/jobs/jobdetails.component.html',
+	            styleUrls: ['app/company/jobs/jobdetails.component.css'],
+	        }), 
+	        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, jobs_service_1.JobsService])
+	    ], JobDetailsComponent);
+	    return JobDetailsComponent;
+	}());
 	exports.JobDetailsComponent = JobDetailsComponent;
 
 
@@ -33785,27 +33793,29 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	const jobs_service_1 = __webpack_require__(194);
-	let JobsComponent = class JobsComponent {
-	    constructor(router, _jobsService) {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var jobs_service_1 = __webpack_require__(194);
+	var JobsComponent = (function () {
+	    function JobsComponent(router, _jobsService) {
 	        this.router = router;
 	        this._jobsService = _jobsService;
 	    }
-	    ngOnInit() {
+	    JobsComponent.prototype.ngOnInit = function () {
+	        var _this = this;
 	        this._jobsService.getJobs()
-	            .subscribe(jobs => this.jobs = jobs, error => this.errorMessage = error);
-	    }
-	};
-	JobsComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/company/jobs/jobs.component.html',
-	        styleUrls: ['app/company/jobs/jobs.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [router_1.Router, jobs_service_1.JobsService])
-	], JobsComponent);
+	            .subscribe(function (jobs) { return _this.jobs = jobs; }, function (error) { return _this.errorMessage = error; });
+	    };
+	    JobsComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/company/jobs/jobs.component.html',
+	            styleUrls: ['app/company/jobs/jobs.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [router_1.Router, jobs_service_1.JobsService])
+	    ], JobsComponent);
+	    return JobsComponent;
+	}());
 	exports.JobsComponent = JobsComponent;
 
 
@@ -33823,21 +33833,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let PartnersComponent = class PartnersComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var PartnersComponent = (function () {
+	    function PartnersComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	PartnersComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/company/partners/partners.component.html',
-	        styleUrls: ['app/company/partners/partners.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], PartnersComponent);
+	    PartnersComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/company/partners/partners.component.html',
+	            styleUrls: ['app/company/partners/partners.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], PartnersComponent);
+	    return PartnersComponent;
+	}());
 	exports.PartnersComponent = PartnersComponent;
 
 
@@ -33855,21 +33866,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let WelcomeComponent = class WelcomeComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var WelcomeComponent = (function () {
+	    function WelcomeComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	WelcomeComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/home/index.component.html',
-	        styleUrls: ['app/home/index.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], WelcomeComponent);
+	    WelcomeComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/home/index.component.html',
+	            styleUrls: ['app/home/index.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], WelcomeComponent);
+	    return WelcomeComponent;
+	}());
 	exports.WelcomeComponent = WelcomeComponent;
 
 
@@ -33878,16 +33890,16 @@ webpackJsonp([2,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const platform_browser_dynamic_1 = __webpack_require__(380);
+	var platform_browser_dynamic_1 = __webpack_require__(380);
 	// Our main component
-	const app_component_1 = __webpack_require__(633);
+	var app_component_1 = __webpack_require__(633);
 	// Our main routes
-	const app_routes_1 = __webpack_require__(634);
-	const core_1 = __webpack_require__(2);
+	var app_routes_1 = __webpack_require__(634);
+	var core_1 = __webpack_require__(2);
 	core_1.enableProdMode();
 	platform_browser_dynamic_1.bootstrap(app_component_1.AppComponent, [
 	    app_routes_1.APP_ROUTER_PROVIDERS
-	]).catch((err) => console.error(err));
+	]).catch(function (err) { return console.error(err); });
 
 
 /***/ },
@@ -33904,24 +33916,25 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let NotFoundComponent = class NotFoundComponent {
-	    constructor(router) {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var NotFoundComponent = (function () {
+	    function NotFoundComponent(router) {
 	        this.router = router;
 	    }
-	    ngOnInit() {
+	    NotFoundComponent.prototype.ngOnInit = function () {
 	        //Nothing;
-	    }
-	};
-	NotFoundComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: 'app/msg/404.component.html',
-	        styleUrls: ['app/msg/404.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [router_1.Router])
-	], NotFoundComponent);
+	    };
+	    NotFoundComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: 'app/msg/404.component.html',
+	            styleUrls: ['app/msg/404.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [router_1.Router])
+	    ], NotFoundComponent);
+	    return NotFoundComponent;
+	}());
 	exports.NotFoundComponent = NotFoundComponent;
 
 
@@ -33939,43 +33952,46 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	const product_service_1 = __webpack_require__(195);
-	const star_component_1 = __webpack_require__(311);
-	let ProductDetailComponent = class ProductDetailComponent {
-	    constructor(route, router, _productService) {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var product_service_1 = __webpack_require__(195);
+	var star_component_1 = __webpack_require__(311);
+	var ProductDetailComponent = (function () {
+	    function ProductDetailComponent(route, router, _productService) {
 	        this.route = route;
 	        this.router = router;
 	        this._productService = _productService;
 	        this.pageTitle = 'Product Detail';
 	    }
-	    ngOnInit() {
-	        this.sub = this.route.params.subscribe(params => {
-	            let id = +params['id'];
-	            this.getProduct(id);
+	    ProductDetailComponent.prototype.ngOnInit = function () {
+	        var _this = this;
+	        this.sub = this.route.params.subscribe(function (params) {
+	            var id = +params['id'];
+	            _this.getProduct(id);
 	        });
-	    }
-	    ngOnDestroy() {
+	    };
+	    ProductDetailComponent.prototype.ngOnDestroy = function () {
 	        this.sub.unsubscribe();
-	    }
-	    getProduct(id) {
-	        this._productService.getProduct(id).subscribe(product => this.product = product, error => this.errorMessage = error);
-	    }
-	    onBack() {
+	    };
+	    ProductDetailComponent.prototype.getProduct = function (id) {
+	        var _this = this;
+	        this._productService.getProduct(id).subscribe(function (product) { return _this.product = product; }, function (error) { return _this.errorMessage = error; });
+	    };
+	    ProductDetailComponent.prototype.onBack = function () {
 	        this.router.navigate(['/products']);
-	    }
-	    onRatingClicked(message) {
+	    };
+	    ProductDetailComponent.prototype.onRatingClicked = function (message) {
 	        this.pageTitle = 'Product Detail: ' + message;
-	    }
-	};
-	ProductDetailComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: 'app/products/product-detail.component.html',
-	        directives: [star_component_1.StarComponent]
-	    }), 
-	    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, product_service_1.ProductService])
-	], ProductDetailComponent);
+	    };
+	    ProductDetailComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: 'app/products/product-detail.component.html',
+	            directives: [star_component_1.StarComponent]
+	        }), 
+	        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, product_service_1.ProductService])
+	    ], ProductDetailComponent);
+	    return ProductDetailComponent;
+	}());
 	exports.ProductDetailComponent = ProductDetailComponent;
 
 
@@ -33993,19 +34009,24 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	let ProductFilterPipe = class ProductFilterPipe {
-	    transform(value, filter) {
-	        filter = filter ? filter.toLocaleLowerCase() : null;
-	        return filter ? value.filter((product) => product.productName.toLocaleLowerCase().indexOf(filter) !== -1) : value;
+	var core_1 = __webpack_require__(2);
+	var ProductFilterPipe = (function () {
+	    function ProductFilterPipe() {
 	    }
-	};
-	ProductFilterPipe = __decorate([
-	    core_1.Pipe({
-	        name: 'productFilter'
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], ProductFilterPipe);
+	    ProductFilterPipe.prototype.transform = function (value, filter) {
+	        filter = filter ? filter.toLocaleLowerCase() : null;
+	        return filter ? value.filter(function (product) {
+	            return product.productName.toLocaleLowerCase().indexOf(filter) !== -1;
+	        }) : value;
+	    };
+	    ProductFilterPipe = __decorate([
+	        core_1.Pipe({
+	            name: 'productFilter'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], ProductFilterPipe);
+	    return ProductFilterPipe;
+	}());
 	exports.ProductFilterPipe = ProductFilterPipe;
 
 
@@ -34023,13 +34044,13 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	const product_filter_pipe_1 = __webpack_require__(646);
-	const star_component_1 = __webpack_require__(311);
-	const product_service_1 = __webpack_require__(195);
-	let ProductListComponent = class ProductListComponent {
-	    constructor(router, _productService) {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var product_filter_pipe_1 = __webpack_require__(646);
+	var star_component_1 = __webpack_require__(311);
+	var product_service_1 = __webpack_require__(195);
+	var ProductListComponent = (function () {
+	    function ProductListComponent(router, _productService) {
 	        this.router = router;
 	        this._productService = _productService;
 	        this.pageTitle = 'Product List';
@@ -34038,26 +34059,28 @@ webpackJsonp([2,0],[
 	        this.showImage = false;
 	        this.listFilter = '';
 	    }
-	    toggleImage() {
+	    ProductListComponent.prototype.toggleImage = function () {
 	        this.showImage = !this.showImage;
-	    }
-	    ngOnInit() {
+	    };
+	    ProductListComponent.prototype.ngOnInit = function () {
+	        var _this = this;
 	        this._productService.getProducts()
-	            .subscribe(products => this.products = products, error => this.errorMessage = error);
-	    }
-	    onRatingClicked(message) {
+	            .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
+	    };
+	    ProductListComponent.prototype.onRatingClicked = function (message) {
 	        this.pageTitle = 'Product List: ' + message;
-	    }
-	};
-	ProductListComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: 'app/products/product-list.component.html',
-	        styleUrls: ['app/products/product-list.component.css'],
-	        pipes: [product_filter_pipe_1.ProductFilterPipe],
-	        directives: [star_component_1.StarComponent, router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [router_1.Router, product_service_1.ProductService])
-	], ProductListComponent);
+	    };
+	    ProductListComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: 'app/products/product-list.component.html',
+	            styleUrls: ['app/products/product-list.component.css'],
+	            pipes: [product_filter_pipe_1.ProductFilterPipe],
+	            directives: [star_component_1.StarComponent, router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [router_1.Router, product_service_1.ProductService])
+	    ], ProductListComponent);
+	    return ProductListComponent;
+	}());
 	exports.ProductListComponent = ProductListComponent;
 
 
@@ -34066,8 +34089,8 @@ webpackJsonp([2,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const product_list_component_1 = __webpack_require__(647);
-	const product_detail_component_1 = __webpack_require__(645);
+	var product_list_component_1 = __webpack_require__(647);
+	var product_detail_component_1 = __webpack_require__(645);
 	exports.ProductRoutes = [
 	    { path: 'products', component: product_list_component_1.ProductListComponent },
 	    { path: 'product/:id', component: product_detail_component_1.ProductDetailComponent }
@@ -34088,23 +34111,24 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let BasicFooterComponent = class BasicFooterComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var BasicFooterComponent = (function () {
+	    function BasicFooterComponent() {
 	        this.date = new Date();
 	        this.thisYear = this.date.getFullYear();
 	    }
-	};
-	BasicFooterComponent = __decorate([
-	    core_1.Component({
-	        selector: 'footer',
-	        templateUrl: 'app/shared/footer/basic-footer.component.html',
-	        styleUrls: ['app/shared/footer/basic-footer.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], BasicFooterComponent);
+	    BasicFooterComponent = __decorate([
+	        core_1.Component({
+	            selector: 'footer',
+	            templateUrl: 'app/shared/footer/basic-footer.component.html',
+	            styleUrls: ['app/shared/footer/basic-footer.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], BasicFooterComponent);
+	    return BasicFooterComponent;
+	}());
 	exports.BasicFooterComponent = BasicFooterComponent;
 
 
@@ -34122,22 +34146,23 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let NavbarComponent = class NavbarComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var NavbarComponent = (function () {
+	    function NavbarComponent() {
 	        this.isHidden = true;
 	    }
-	};
-	NavbarComponent = __decorate([
-	    core_1.Component({
-	        selector: 'navbar',
-	        templateUrl: 'app/shared/navbar/navbar.component.html',
-	        styleUrls: ['app/shared/navbar/navbar.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], NavbarComponent);
+	    NavbarComponent = __decorate([
+	        core_1.Component({
+	            selector: 'navbar',
+	            templateUrl: 'app/shared/navbar/navbar.component.html',
+	            styleUrls: ['app/shared/navbar/navbar.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], NavbarComponent);
+	    return NavbarComponent;
+	}());
 	exports.NavbarComponent = NavbarComponent;
 
 
@@ -34155,21 +34180,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let SupportComponent = class SupportComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var SupportComponent = (function () {
+	    function SupportComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	SupportComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/support/support.component.html',
-	        styleUrls: ['app/support/support.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], SupportComponent);
+	    SupportComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/support/support.component.html',
+	            styleUrls: ['app/support/support.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], SupportComponent);
+	    return SupportComponent;
+	}());
 	exports.SupportComponent = SupportComponent;
 
 
@@ -34187,21 +34213,22 @@ webpackJsonp([2,0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	const core_1 = __webpack_require__(2);
-	const router_1 = __webpack_require__(18);
-	let TauComponent = class TauComponent {
-	    constructor() {
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(18);
+	var TauComponent = (function () {
+	    function TauComponent() {
 	        this.pageTitle = 'Welcome';
 	    }
-	};
-	TauComponent = __decorate([
-	    core_1.Component({
-	        templateUrl: '/app/tau/tau.component.html',
-	        styleUrls: ['app/tau/tau.component.css'],
-	        directives: [router_1.ROUTER_DIRECTIVES]
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], TauComponent);
+	    TauComponent = __decorate([
+	        core_1.Component({
+	            templateUrl: '/app/tau/tau.component.html',
+	            styleUrls: ['app/tau/tau.component.css'],
+	            directives: [router_1.ROUTER_DIRECTIVES]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], TauComponent);
+	    return TauComponent;
+	}());
 	exports.TauComponent = TauComponent;
 
 
