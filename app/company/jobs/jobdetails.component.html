@@ -5,7 +5,7 @@
                 <h2 *ngIf="job.title.rendered">{{job.title.rendered}}</h2>
                 <span *ngIf="job.date">{{job.date}}</span>
             </div>
-            <div [innerHTML]="job.content.rendered"></div>
+            <div [innerHTML]="job.content.rendered" class="content"></div>
         </div>
     </div>
 </div>
