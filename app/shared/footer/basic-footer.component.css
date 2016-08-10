@@ -1,3 +1,11 @@
 li a {
     font-size: 12px;
 }
+
+.socialbar a {
+    margin-right:1em;
+}
+
+.socialbar i {
+    font-size:14px;
+}

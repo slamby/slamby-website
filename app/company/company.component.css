@@ -1,0 +1,19 @@
+#team-header {
+    background: linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.5) ), url('./app/assets/images/company/team.jpg');
+    background-size:cover;
+    margin-top:-30px;
+    color:white;
+}
+
+#team-header p.lead{
+    color: white !important;
+    font-size: 35px; 
+}
+
+#team-header h1 {
+    font-size: 70px;
+}
+
+blockquote footer {
+    padding-top:1%;
+}
