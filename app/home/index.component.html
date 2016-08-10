@@ -17,7 +17,9 @@
         <div class="wrapper window">
             <div class="col-xs-4">
                 <a [routerLink]="['/api']">
-                    <img src="./app/assets/images/product_header.png" class="img-responsive" />
+                    <div class="thumbnail">
+                        <img src="./app/assets/images/product_header.png"/>
+                    </div>
                     <h3>Slamby API</h3>
                     <p>Check the latest Slamby Server functions, available data-management features.</p>
                 </a>
@@ -31,7 +33,9 @@
             </div>-->
             <div class="col-xs-4">
                 <a [routerLink]="['/support']">
-                    <img src="./app/assets/images/support_header.png" class="img-responsive" />
+                    <div class="thumbnail">
+                        <img src="./app/assets/images/support_header.png" />
+                    </div>
                     <h3>Support</h3>
                     <p>Get IT or professional support from Slamby. Report bugs, or get professional help.</p>
                 </a>
@@ -39,7 +43,9 @@
             <div class="col-xs-4">
                 <a href="https://developers.slamby.com">
                     <!--<img src="./app/assets/images/product_header.png" class="img-responsive" />-->
-                    <i class="fa fa-code devsite-icon" aria-hidden="true"></i>
+                    <div class="thumbnail">
+                        <i class="fa fa-code devsite-icon" aria-hidden="true"></i>
+                    </div>
                     <h3>Developers Site</h3>
                     <p>Detailed product documentation, training and tutorial videos, available product downloads.</p>
                 </a>

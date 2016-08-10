@@ -1,5 +1,5 @@
 .devsite-icon {
-    font-size:5vw;
-    margin-top:5vw;
-    padding-bottom:3vw;
+    display: block;
+    font-size: 5vw;
+    max-height: 300px;
 }
