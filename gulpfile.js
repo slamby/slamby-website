@@ -1,31 +1,17 @@
-var gulp = require('gulp'),
-	tsc = require('gulp-tsc'),
-	shell = require('gulp-shell');
+'use strict';
 
-var paths = {
-	ts: {
-	    src: [
-		'./server.ts'
-	    ],
-	    dest : './'
-	}
-}
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
 // Default
-gulp.task('default', ['watch']);
+gulp.task('default', ['sass:watch']);
 
-// Build
-gulp.task('build', function () {
-	return gulp
-	    .src(paths.ts.src)
-	    .pipe(tsc({
-		module: "CommonJS",
-		sourcemap: true,
-		emitError: false
-	    }))
-	    .pipe(gulp.dest(paths.ts.dest));
+gulp.task('sass', function () {
+  return gulp.src('app/**/*.scss')
+    .pipe(sass()) // Converts Sass to CSS with gulp-sass
+	.pipe(gulp.dest('app/.'))
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./server.ts', ['build']);
+gulp.task('sass:watch', function () {
+  gulp.watch('app/**/*.scss', ['sass']);
 });

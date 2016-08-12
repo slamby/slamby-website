@@ -57,6 +57,7 @@
     "del": "^2.2.1",
     "express": "^4.14.0",
     "glob": "^7.0.5",
+    "gulp-sass": "^2.3.2",
     "gulp-shell": "^0.5.2",
     "gulp-tsc": "^1.2.0",
     "path": "^0.12.7",
@@ -64,11 +65,11 @@
     "run-sequence": "^1.2.2",
     "ts-loader": "^0.8.2",
     "tsc": "^1.20150623.0",
+    "tslint": "^3.7.4",
     "typescript": "^1.8.10",
     "typings": "^1.0.4",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1",
-    "tslint": "^3.7.4"
+    "webpack-dev-server": "^1.14.1"
   },
   "repository": {}
 }
