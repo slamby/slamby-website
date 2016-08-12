@@ -7,10 +7,12 @@
   .footer ul {
     list-style: none; }
     .footer ul .footer-list-header {
-      font-size: 0.8em; }
+      font-size: 0.8em;
+      font-weight: 600; }
     .footer ul a {
       color: gray;
-      font-size: 0.75em; }
+      font-size: 0.75em;
+      font-weight: 500; }
   .footer ul.socialbar {
     margin: 0; }
     .footer ul.socialbar li {
