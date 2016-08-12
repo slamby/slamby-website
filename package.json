@@ -5,7 +5,7 @@
   "description": "Understanding data made simple, Slamby.",
   "scripts": {
     "start": "npm run express",
-    "start_dev": "concurrently \"npm run build\" \"npm run express\"",
+    "developer": "concurrently \"npm run build\" \"npm run express\" \"gulp\"",
     "express": "node server",
     "build": "webpack --watch --progress --profile --colors --display-error-details --display-cached"
   },
