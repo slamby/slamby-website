@@ -15,3 +15,12 @@ How to use:
 - `npm run developers`: compile + webserver + gulp tasks
 
 If you need help please contact me at peter.mezei@slamby.com.
+
+---
+
+## Todo
+
+[] Google Analytics Angular2 Integration (Pageview)
+
+[] Webpack -p warning (minify instead of uglify)
+

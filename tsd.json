@@ -7,6 +7,9 @@
   "installed": {
     "es6-shim/es6-shim.d.ts": {
       "commit": "1003a9ce5250b8fe374cca07c21a19ea474622b2"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "b980d52078e719cbfebe7dd60de6db7be76982e3"
     }
   }
 }

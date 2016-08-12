@@ -52,6 +52,8 @@ module.exports = {
       'zone.js',
       'reflect-metadata',
       '@angular/core',
+      'jquery',
+      'bootstrap',
       './app/main'
     ],
   },
@@ -118,7 +120,11 @@ module.exports = {
     new OccurenceOrderPlugin(),
     new DedupePlugin(),
     new CommonsChunkPlugin('bundle','bundle.js',Infinity),
-    new CommonsChunkPlugin('common','common.js')
+    new CommonsChunkPlugin('common','common.js'),
+    new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
   ],
 
   /*
