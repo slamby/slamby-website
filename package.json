@@ -7,7 +7,7 @@
     "start": "npm run express",
     "developer": "concurrently \"npm run build\" \"npm run express\" \"gulp\"",
     "express": "node server",
-    "build": "webpack --watch --progress --profile --colors --display-error-details --display-cached"
+    "build": "webpack -p --watch --progress --profile --colors --display-error-details --display-cached --optimize-dedupe"
   },
   "license": "ISC",
   "dependencies": {
@@ -57,9 +57,13 @@
     "del": "^2.2.1",
     "express": "^4.14.0",
     "glob": "^7.0.5",
+    "gulp-minify": "0.0.14",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-shell": "^0.5.2",
     "gulp-tsc": "^1.2.0",
+    "gulp-util": "^3.0.7",
     "path": "^0.12.7",
     "process": "^0.11.6",
     "run-sequence": "^1.2.2",

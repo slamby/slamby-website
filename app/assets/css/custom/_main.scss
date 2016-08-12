@@ -1,0 +1,13 @@
+﻿a h1,h2,h3 {
+    color: $text-color;
+}
+
+.navbar-submenu {
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #e6e6e6;
+    
+    li, a {
+        color:black !important;
+    }
+}

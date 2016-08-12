@@ -14,7 +14,7 @@ import { BasicFooterComponent } from './shared/footer/basic-footer.component';
         <navbar></navbar>
         <router-outlet></router-outlet>
         <footer></footer>
-     `,
+    `,
     directives: [NavbarComponent, BasicFooterComponent, ROUTER_DIRECTIVES],
     providers: [JobsService,
                 CommunityService,

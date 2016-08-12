@@ -26,7 +26,7 @@ var BannerPlugin   = webpack.BannerPlugin;
  */
 module.exports = {
   devtool: 'source-map',
-  debug: true,
+  debug: false,
   cache: true,
   context: __dirname,
   stats: {
@@ -46,19 +46,13 @@ module.exports = {
 
   //
   entry: {
-    'app': [
-      // App
-
-      './app/main'
-    ],
-    'angular2': [
-      // Angular 2 Deps
+    'bundle': [
+      'es6-shim',
       'rxjs',
       'zone.js',
       'reflect-metadata',
-
-      // to ensure these modules are grouped together in one file
-      '@angular/core'
+      '@angular/core',
+      './app/main'
     ],
   },
 
@@ -123,15 +117,8 @@ module.exports = {
     }),
     new OccurenceOrderPlugin(),
     new DedupePlugin(),
-    new CommonsChunkPlugin({
-      name: 'angular2',
-      minChunks: Infinity,
-      filename: 'angular2.js'
-    }),
-    new CommonsChunkPlugin({
-      name: 'common',
-      filename: 'common.js'
-    })
+    new CommonsChunkPlugin('bundle','bundle.js',Infinity),
+    new CommonsChunkPlugin('common','common.js')
   ],
 
   /*

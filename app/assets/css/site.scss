@@ -1,5 +1,5 @@
 ﻿//Bootstrap Template
-@import 'Custom/_variables.scss';
+@import 'custom/_variables.scss';
 @import 'bootstrap_template/_bootstrap.scss';
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
@@ -52,10 +52,10 @@ section {
 }
 
 //Main Styles
-@import 'Custom/_Main.scss';
-@import 'Custom/_Wrapper.scss';
-@import 'Custom/_Ul.scss';
+@import 'custom/_main.scss';
+@import 'custom/_wrapper.scss';
+@import 'custom/_ui.scss';
 
 //Pages, Modules
-@import 'Custom/_Jobs.scss';
-@import 'Custom/_blockquote.scss';
+@import 'custom/_jobs.scss';
+@import 'custom/_blockquote.scss';
