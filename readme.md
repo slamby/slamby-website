@@ -2,14 +2,16 @@ Slamby.com angular 2 website based on "https://app.pluralsight.com/library/cours
 
 How to use:
 
-1) Open the root folder with terminal
+- Open the root folder with terminal
 
-2) `tsc server`: compile server.ts
+- `tsc server`: compile server.ts
 
-3) `npm install`: install npm node packages.
+- `npm install`: install npm node packages.
 
-4) `npm run build`: run webpack, ts compile into build folder.
+- `npm run build`: run webpack, ts compile into build folder.
 
-5) `npm start`: run webserver.
+- `npm start`: run webserver.
+
+- `npm run developers`: compile + webserver + gulp tasks
 
 If you need help please contact me at peter.mezei@slamby.com.
