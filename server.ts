@@ -93,7 +93,7 @@ function AddDocument(server:string, secret: string, dataset: string, document:Ob
     var client = new slambySdk.ApiClient(); 
     client.basePath = server;
     client.defaultHeaders = {
-        "Authorization": "Slamby " + secret
+        "Authorization": "Slamby " + config.get("accounts.community.secret")
     };
     client.defaultHeaders["X-DataSet"] = dataset;
     var apiInstance = new slambySdk.DocumentApi(client);
