@@ -1,0 +1,10 @@
+button {
+    font-size:10px;
+    -webkit-transition: 0.75s; /* For Safari 3.1 to 6.0 */
+    transition: 0.75s;
+}
+
+button.clicked {
+    font-size:20px;
+    background-color:red;
+}

@@ -6,6 +6,7 @@
     background-color: #FDFDFD;
 
     ul {
+
         list-style:none;
         
         .footer-list-header {
@@ -18,6 +19,10 @@
             font-size:0.75em;
             font-weight: 500;
         }
+    }
+
+    .row ul:first-child {
+        padding:0;
     }
 
     ul.socialbar {
