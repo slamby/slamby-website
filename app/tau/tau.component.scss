@@ -1,0 +1,14 @@
+.container {
+    animation: fadein 0.75s;
+    -moz-animation: fadein 0.75s; /* Firefox */
+    -webkit-animation: fadein 0.75s; /* Safari and Chrome */
+    -o-animation: fadein 0.75s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
