@@ -24,3 +24,5 @@ If you need help please contact me at peter.mezei@slamby.com.
 - [ ] Webpack -p warning (minify instead of uglify)
 - [ ] Asset folder replacement
 - [ ] Auto image compression
+- [ ] Customized title management
+- [ ] List refactor using Angular2 modules.
