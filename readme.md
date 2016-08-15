@@ -12,7 +12,7 @@ How to use:
 
 - `npm start`: run webserver.
 
-- `npm run developers`: compile + webserver + gulp tasks
+- `npm run developer`: compile + webserver + gulp tasks
 
 If you need help please contact me at peter.mezei@slamby.com.
 
