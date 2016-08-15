@@ -20,32 +20,53 @@ export class CommunityComponent {
         message:""
     }
 
+    isValid:boolean = true;
+
     subscriber = {
         id:"",
         name:"",
         email:"",
         company:"",
-        date:"",
+        date:"2016-01-01",
         country:"",
         exported:"false"
     }
 
+    validator = function(){
+        this.isValid = true;
+        for(var key in this.subscriber){
+            if(this.subscriber.hasOwnProperty(key)){
+                if(!this.subscriber[key]){
+                    this.isValid = false;
+                    console.log(key + "is empty");
+                }
+            }
+        }
+    }
+
     sendForm = function():void{
         this.subscriber.id = this.guid();
-        this._communityService.SubscriberAdd(this.subscriber)
-            .subscribe(
-                data => {
-                    this.response.message = "Loading";
-                },
-                err => {
-                    this.response.isSuccess = false;
-                    this.response.message = "Error";
-                },
-                () => {
-                    this.response.isSuccess = true;
-                    this.response.message = "Completed";
-                }
-            );
+        this.validator();
+        if(this.isValid){
+            this._communityService.SubscriberAdd(this.subscriber)
+                .subscribe(
+                    data => {
+                        this.response.message = "Loading";
+                    },
+                    err => {
+                        this.response.isSuccess = false;
+                        this.response.message = "Error";
+                        console.log(err);
+                    },
+                    () => {
+                        this.response.isSuccess = true;
+                        this.response.message = "Completed";
+                    }
+                );
+        } else {
+            this.response.isSuccess = false;
+            this.response.message = "Please fill the form";
+        }
     };
 
     guid = function guid() {
