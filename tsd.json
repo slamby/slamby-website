@@ -13,6 +13,33 @@
     },
     "zone.js/zone.js.d.ts": {
       "commit": "5d16f273a32c1c204c66e2ad3d68534650aca30b"
+    },
+    "requirejs/require.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "node/node.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "node-cache/node-cache.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "glob/glob.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "minimatch/minimatch.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "express/express.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "mime/mime.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "7171d1588156a7c5702f11a37bd4490e86f08665"
     }
   }
 }

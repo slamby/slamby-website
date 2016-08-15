@@ -11,13 +11,8 @@ export class CommunityService {
 
     constructor(private _http: Http) { }
 
-    SubscriberAdd(properties: Object): void {
-        this._http.post(this._url,{document:properties})
-            .subscribe(
-                data => console.log(data),
-                err => console.log(err),
-                () => console.log("ok.")
-            );
+    SubscriberAdd(properties: Object) {
+        return this._http.post(this._url,{document:properties});
     }
 
     private handleError(error: Response) {

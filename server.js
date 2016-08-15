@@ -1,4 +1,4 @@
-/// <reference path="./typings/index.d.ts" />
+/// <reference path="./typings/tsd.d.ts" />
 "use strict";
 var path = require('path');
 var express = require('express');
@@ -93,11 +93,9 @@ function AddDocument(server, secret, dataset, document) {
 ;
 app.post('/api/subscribe/community', function (req, res) {
     AddDocument(config.get("accounts.community.server"), config.get("accounts.community.secret"), config.get("accounts.community.dataset"), req.body.document).then(function () {
-        console.log("added");
-        res.send("Succesfully Added");
+        res.status(200).send("Document Added");
     }, function (error) {
-        console.log(error);
-        res.status(409).send(error);
+        res.status(409).send({ "error": JSON.stringify(error) });
     });
 });
 app.get('/*', function (req, res) {
@@ -109,5 +107,4 @@ app.listen(port, '0.0.0.0', function (err) {
     }
     console.info('==> Server is running on http://localhost:%s/', port);
 });
-console.log(config.get("accounts.community.server"));
 getJobs();

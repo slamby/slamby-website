@@ -15,17 +15,37 @@ export class CommunityComponent {
         //Hello
     }
 
+    response = {
+        isSuccess:false,
+        message:""
+    }
+
     subscriber = {
         id:"",
         name:"",
         email:"",
         company:"",
-        exported:false
+        date:"",
+        country:"",
+        exported:"false"
     }
 
     sendForm = function():void{
         this.subscriber.id = this.guid();
-        this._communityService.SubscriberAdd(this.subscriber);
+        this._communityService.SubscriberAdd(this.subscriber)
+            .subscribe(
+                data => {
+                    this.response.message = "Loading";
+                },
+                err => {
+                    this.response.isSuccess = false;
+                    this.response.message = "Error";
+                },
+                () => {
+                    this.response.isSuccess = true;
+                    this.response.message = "Completed";
+                }
+            );
     };
 
     guid = function guid() {

@@ -1,4 +1,4 @@
-/// <reference path="./typings/index.d.ts" />
+/// <reference path="./typings/tsd.d.ts" />
 
 var path = require('path');
 import * as glob from 'glob';
@@ -110,11 +110,9 @@ app.post('/api/subscribe/community', (req, res) => {
         config.get("accounts.community.dataset"),
         req.body.document
     ).then(function() {
-        console.log("added");
-        res.send("Succesfully Added");
+        res.status(200).send("Document Added");
     }, function(error) {
-        console.log(error);
-        res.status(409).send(error);
+        res.status(409).send({"error":JSON.stringify(error)});
     });
 });
 

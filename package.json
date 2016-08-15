@@ -5,9 +5,11 @@
   "description": "Understanding data made simple, Slamby.",
   "scripts": {
     "start": "npm run express",
-    "developer": "concurrently \"npm run build\" \"npm run express\" \"gulp\"",
+    "developer": "concurrently \"npm run build:developer\" \"npm run express\" \"gulp\"",
+    "preview": "concurrently \"npm run build\" \"npm run express\" \"gulp\"",
     "express": "node server",
-    "build": "webpack -p --watch --progress --profile --colors --display-error-details --display-cached --optimize-dedupe"
+    "build": "webpack -p --watch --progress --profile --colors --display-error-details --display-cached --optimize-dedupe",
+    "build:developer": "webpack --watch --progress --profile --colors --display-error-details --display-cached"
   },
   "license": "ISC",
   "dependencies": {

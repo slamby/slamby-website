@@ -8,30 +8,36 @@
                 <div class="form-group">
                     <label for="inputCName" class="control-label col-sm-2">Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputCName" placeholder="Name" [(ngModel)]="subscriber.name" required />
+                        <input type="text" class="form-control" id="inputCName" placeholder="Name" [(ngModel)]="subscriber.name" required [disabled]="response.isSuccess" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputCEmail" class="control-label col-sm-2">Email</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputCEmail" placeholder="Email" [(ngModel)]="subscriber.email" required />
+                        <input type="text" class="form-control" id="inputCEmail" placeholder="Email" [(ngModel)]="subscriber.email" required [disabled]="response.isSuccess" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputCCompany" class="control-label col-sm-2">Company</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputCCompany" placeholder="Company" [(ngModel)]="subscriber.company" />
+                        <input type="text" class="form-control" id="inputCCompany" placeholder="Company" [(ngModel)]="subscriber.company" required [disabled]="response.isSuccess" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputCCountry" class="control-label col-sm-2">Country</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputCCountry" placeholder="Country" required />
+                        <input type="text" class="form-control" id="inputCCountry" placeholder="Country" [(ngModel)]="subscriber.country" required [disabled]="response.isSuccess" />
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button (click)="sendForm()" class="btn btn-default">Sign Up</button>
+                        <div *ngIf="!response.isSuccess">
+                            <button (click)="sendForm()" class="btn btn-default">Sign Up</button>
+                            {{response.message}}
+                        </div>
+                        <div *ngIf="response.isSuccess">
+                            <p>Thank You!</p>
+                        </div>
                     </div>
                 </div>
             </form>
