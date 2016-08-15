@@ -20,6 +20,7 @@ If you need help please contact me at peter.mezei@slamby.com.
 
 ## Todo
 
-- [ ] Google Analytics code prettify
+- [x] Google Analytics code prettify
 - [ ] Webpack -p warning (minify instead of uglify)
 - [ ] Asset folder replacement
+- [ ] Auto image compression
