@@ -63,12 +63,12 @@
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li *ngFor="let person of team; let i = index; let isFirst = first" data-target="#carousel-example-generic" [attr.data-slide-to]="i" [class.active]="isFirst"></li>
+                <li *ngFor="let person of team; let i = index" data-target="#carousel-example-generic" [attr.data-slide-to]="i" [class.active]="i==activeIndex"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div *ngFor="let person of team; let isFirst = first" class="item" [class.active]="isFirst">
+                <div *ngFor="let person of team; let i = index" class="item" [class.active]="i==activeIndex">
                     <img src="./app/assets/images/team/quotes/{{person.image}}.png" alt="..."/>
                 </div>
             </div>

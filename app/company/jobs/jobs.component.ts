@@ -75,10 +75,18 @@ export class JobsComponent implements OnInit {
         }
     ]
 
+    activeIndex = 0;
+
     ngOnInit(): void {
+        this.getActiveIndex();
+        console.log(this.activeIndex);
         this._jobsService.getJobs()
                 .subscribe(
                     jobs => this.jobs = jobs,
                     error => this.errorMessage = <any>error);
+    }
+
+    getActiveIndex = function():void{
+        this.activeIndex = Math.floor(Math.random()*this.team.length);
     }
 }
