@@ -27,3 +27,5 @@ If you need help please contact me at peter.mezei@slamby.com.
 - [ ] Auto image compression
 - [ ] Customized title management
 - [ ] List refactor using Angular2 modules.
+
+
