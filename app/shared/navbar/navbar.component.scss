@@ -39,8 +39,16 @@ nav {
         top:41px;
         width: 100%;
         height: 0px;
-        transition: height $nav-speed ease;
         -webkit-transition: height $nav-speed ease;
+        -moz-transform: height $nav-speed ease;
+        -ms-transform: height $nav-speed ease;
+        -o-transform: height $nav-speed ease;
+        transition: height $nav-speed ease;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
         background-color: $nav-background-color;
         z-index: 1000;
         li {
