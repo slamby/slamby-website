@@ -9,5 +9,12 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 
 export class NavbarComponent {
-    isHidden = true;
+    isOpen = false;
+
+    clickMenu = function(){
+        this.isOpen = true ? (this.isOpen==false) : false; 
+    }
+    closeMenu = function(){
+        this.isOpen = false;
+    }
 }

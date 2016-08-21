@@ -1,10 +1,74 @@
-button {
-    font-size:10px;
-    -webkit-transition: 0.75s; /* For Safari 3.1 to 6.0 */
-    transition: 0.75s;
+//Variables
+$mobile-device-size: 768px;
+$nav-background-color: #5bc0de;
+$nav-speed: 300ms;
+
+//General styles
+nav {
+    background-color: $nav-background-color;
+    color: white;
+    ul li a { color: white; }
+    ul li a:hover {
+        color:#337ab7;
+        background-color: transparent;
+    }
+    ul li a:focus {
+        background-color:transparent;
+    }
+    .button {
+        padding:5px;
+        cursor:pointer;
+        font-size:21px;
+        top:5px;
+    }
 }
 
-button.clicked {
-    font-size:20px;
-    background-color:red;
+//Mobile view
+@media (max-width: $mobile-device-size) {
+    nav {
+        //display: none;
+        position: relative;
+        width: 100%;
+        background-color: $nav-background-color;
+        .button {margin-top:7px;}
+    }
+    ul {
+        position: fixed;
+        display: block;
+        border-top:1px solid white;
+        top:41px;
+        width: 100%;
+        height: 0px;
+        transition: height $nav-speed ease;
+        background-color: $nav-background-color;
+        z-index: 1000;
+        li {
+            display: none;
+            border-bottom:1px lightblue solid;
+        }
+    }
+    nav.open {
+        position: fixed;
+        z-index: 1000;
+        ul {
+            top:40px;
+            z-index: 1000;
+            height: 100%;
+            li {display: block;}
+            li a {
+                padding:2em;
+                font-size:14px;
+            }
+            li a:hover {
+                background-color: lightblue;
+                color:black;
+            }
+        }
+    }
+}
+
+//Normal view
+@media (min-width: $mobile-device-size) {
+    ul li { display:inline-block; }
+    nav .button { display: none; }
 }
