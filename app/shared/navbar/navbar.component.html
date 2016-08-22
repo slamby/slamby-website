@@ -1,6 +1,6 @@
 <nav [class.open]="isOpen">
     <div class="container">
-        <a [routerLink]="['/']">
+        <a [routerLink]="['/']" (click)="closeMenu()">
             <img src="/app/assets/images/slamby-logo.png" class="navbar-brand" />
         </a>
         <i class="button fa fa-bars pull-right" (click)="clickMenu()"></i>
