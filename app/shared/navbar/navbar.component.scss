@@ -37,8 +37,9 @@ nav {
     }
     ul {
         position: fixed;
+        //border-top:1px solid lightblue;
         display: block;
-        margin-top:9px;
+        top:50px;
         margin-left:0px;
         left:0px;
         padding-left:0px;
@@ -52,15 +53,8 @@ nav {
         background-color: $nav-background-color;
         z-index: 1000;
         li {
-            clear:both;
             display: none;
             border-top:1px lightblue solid;
-            opacity: 0;
-            -webkit-transition: opacity $nav-speed linear;
-            -moz-transition: opacity $nav-speed linear;
-            -ms-transition: opacity $nav-speed linear;
-            -o-transition: opacity $nav-speed linear;
-            transition: opacity $nav-speed linear;
         }
     }
     nav.open {
@@ -74,13 +68,14 @@ nav {
                 display: block;
                 margin:0;
                 padding:0;
-                opacity: 1;
             }
             li a {
+                opacity: 1;
                 display: block;
                 padding:2em;
                 margin:0;
                 font-size:14px;
+                animation:fadein 1s;
             }
             li a:hover {
                 background-color: lightblue;
@@ -88,6 +83,11 @@ nav {
             }
         }
     }
+}
+
+@keyframes fadein {
+    from {opacity:0; padding:1.5em;}
+    to {opacity:1; padding:2em;}
 }
 
 //Normal view
