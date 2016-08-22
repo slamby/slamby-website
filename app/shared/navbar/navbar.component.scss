@@ -30,10 +30,11 @@ nav {
 @media (max-width: $mobile-device-size+1) {
     nav {
         //display: none;
-        position: relative;
+        position: fixed;
         width: 100%;
         background-color: $nav-background-color;
         .button {margin-top:7px;}
+        z-index:1000;
     }
     ul {
         position: fixed;
