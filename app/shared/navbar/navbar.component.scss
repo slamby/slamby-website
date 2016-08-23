@@ -1,5 +1,5 @@
 //Variables
-$mobile-device-size: 800px;
+$mobile-device-size: 768;
 $nav-background-color: #5bc0de;
 $nav-speed: 321ms;
 
@@ -28,7 +28,7 @@ nav {
 }
 
 //Mobile view
-@media (max-width: $mobile-device-size+1) {
+@media (max-width: $mobile-device-size) {
     nav {
         //display: none;
         position: relative;
