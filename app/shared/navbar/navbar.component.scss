@@ -7,9 +7,10 @@ $nav-speed: 321ms;
 nav {
     background-color: $nav-background-color;
     color: white;
-    img,i {z-index: 3000;}
+    position: relative;
+    height: 50px;
     ul li { padding: 1em 1em 1em 1em; }
-    ul li a { color: white; }
+    ul li a { color: white; padding:0; margin:0; }
     ul li a:hover {
         color:#337ab7;
         background-color: transparent;
@@ -67,6 +68,7 @@ nav {
             top:41px;
             margin-top:9px;
             height: 100%;
+            z-index:1000;
             li {
                 display: block;
                 margin:0;
@@ -78,7 +80,7 @@ nav {
                 padding:2em;
                 margin:0;
                 font-size:14px;
-                animation:fadein 1s;
+                animation:fadeinmove 1s;
             }
             li a:hover {
                 background-color: lightblue;
@@ -88,9 +90,13 @@ nav {
     }
 }
 
-@keyframes fadein {
-    from {opacity:0; padding:1.5em;}
-    to {opacity:1; padding:2em;}
+@keyframes fadeinmove {
+    0% {opacity:0; padding:1.5em;}
+    100% {opacity:1; padding:2em;}
+}
+@-webkit-keyframes fadeinmove {
+    0% {opacity:0; padding:1.5em;}
+    100% {opacity:1; padding:2em;}
 }
 
 //Normal view
