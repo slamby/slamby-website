@@ -81,6 +81,14 @@ nav {
                 margin:0;
                 font-size:14px;
                 animation:fadeinmove 1s;
+                @keyframes fadeinmove {
+                    0% {opacity:0; padding:1.5em;}
+                    100% {opacity:1; padding:2em;}
+                }
+                @-webkit-keyframes fadeinmove {
+                    0% {opacity:0; padding:1.5em;}
+                    100% {opacity:1; padding:2em;}
+                }
             }
             li a:hover {
                 background-color: lightblue;
@@ -88,15 +96,6 @@ nav {
             }
         }
     }
-}
-
-@keyframes fadeinmove {
-    0% {opacity:0; padding:1.5em;}
-    100% {opacity:1; padding:2em;}
-}
-@-webkit-keyframes fadeinmove {
-    0% {opacity:0; padding:1.5em;}
-    100% {opacity:1; padding:2em;}
 }
 
 //Normal view
