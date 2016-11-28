@@ -9,6 +9,7 @@ import { ApiRoutes } from './api/api.routes';
 import { CommunityComponent } from './community/community.component';
 import { SupportComponent } from './support/support.component';
 import { LegalRoutes } from './legal/legal.routes';
+import { GettingStartedComponent } from './getting-started/getting-started.component';
 
 export const routes: RouterConfig = [
   { path: '', component: WelcomeComponent },
@@ -20,6 +21,7 @@ export const routes: RouterConfig = [
   ...LegalRoutes,
   { path: 'community', component: CommunityComponent },
   { path: 'support', component: SupportComponent },
+  { path: 'getting-started', component: GettingStartedComponent },
   { path: '**', redirectTo: '/404' }
 ];
 
