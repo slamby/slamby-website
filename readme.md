@@ -1,1 +1,3 @@
-# Website seed project using angular2
+# Slamby website
+
+Angular2 + webpack + bootstrap.
