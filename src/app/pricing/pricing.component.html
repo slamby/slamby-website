@@ -5,8 +5,9 @@
         <div class="body">
             <div class="main-message">
                 <h1>45 € / core / month</h1>
-                <p class="lead">Transparent pricing from the on-premise till the private cloud. 45 € / core / month that covers basic support fee.</p>
-                <p class="lead">Try out for free <a href="#" class="btn btn-default">Check it</a></p>
+                <p class="lead">Start using Slamby for a price of a cup of coffee per core. Use it as a SaaS or install it on your machine.</p>
+                <p class="lead">No query limit, no memory limit</p>
+                <p><a [routerLink]="['/getting-started']" class="btn btn-default btn-lg">Getting started</a></p>
             </div>
         </div>
     </div>
@@ -24,7 +25,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Core pricing</h2>
+            <h2 class="page-header">Core pricing</h2>
+        </div>
+        <div class="col-md-6">
+            ...
+        </div>
+        <div class="col-md-6">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -48,7 +54,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Support</h2>
+            <h2 class="page-header">Support</h2>
+        </div>
+        <div class="col-md-6">
+            <p class="lead">For professional use select one of our available support options based on the available communication channels and SLA.</p>
+            <p class="lead">Currently, we have three type of support options. Each Slamby instance has a basic support option that includes community-based - forum support.</p>
+            <p>Community support: <a href="https://groups.google.com/forum/#!forum/slamby" target="_blank">https://groups.google.com/forum/#!forum/slamby</a>
+            </p>
+        </div>
+        <div class="col-md-6">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -59,18 +73,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>basic</td>
-                        <td>community only, no SLA</td>
+                        <td>Basic</td>
+                        <td><a href="https://groups.google.com/forum/#!forum/slamby" target="_blank">Community only</a>, no SLA</td>
                         <td>Free</td>
                     </tr>
                     <tr>
                         <td>Professional</td>
-                        <td>Next workday</td>
+                        <td>Next workday, email</td>
                         <td>2000 € yearly / instance</td>
                     </tr>
                     <tr>
                         <td>Production</td>
-                        <td>3 hours SLA</td>
+                        <td>Instant developer and technical access, 5 hours SLA, email, skype, phone.</td>
                         <td>6000 € yearly / instance</td>
                     </tr>
                 </tbody>
