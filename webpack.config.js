@@ -12,6 +12,7 @@ var path = require('path');
 // NPM
 var webpack = require('webpack');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 // Webpack Plugins
 var OccurenceOrderPlugin = webpack.optimize.OccurenceOrderPlugin;
@@ -40,8 +41,8 @@ module.exports = {
     inline: true,
     colors: true,
     historyApiFallback: true,
-    contentBase: '/app',
-    publicPath: '/build'
+    contentBase: '/src',
+    publicPath: '/src/build'
   },
 
   //
@@ -52,55 +53,65 @@ module.exports = {
       'zone.js',
       'reflect-metadata',
       '@angular/core',
-      'jquery',
-      'bootstrap',
-      './app/main'
+      './src/main'
     ],
   },
 
   // Config for our build files
   output: {
-    path: path.join(__dirname, '/build'),
+    path: path.join(__dirname, '/src/build/'),
     filename: '[name].js',
     sourceMapFilename: '[name].js.map',
     chunkFilename: '[id].chunk.js',
-    publicPath: '/build'
+    publicPath: '/build/'
   },
 
   resolve: {
     root: __dirname,
-    extensions: ['','.js','.jsx','.ts','.json', '.css', '.html']
+    extensions: ['','.js','.jsx','.ts','.json', '.scss', '.css', '.html']
   },
 
   module: {
     loaders: [
+      // Support for .ts files.
+      {
+          test: /\.ts$/,
+          loader: 'ts',
+          exclude: [/node_modules/]
+      },
+      
       // Support for *.json files.
       { test: /\.json$/,  loader: 'json' },
 
-      // Support for CSS as raw text
-      { test: /\.css$/,   loader: 'raw' },
+      // Support for image files + compression.
+      {
+        test: /\.scss$/,
+        loaders: ['exports-loader?module.exports.toString()', 'css', 'sass', "sass-resources"]
+      },
 
-      // support for .html as raw text
-      { test: /\.html$/,  loader: 'raw' },
+      // support for .css as raw text
+      { test: /\.css$/,  loader: 'raw' },
 
-      { test: /\.scss$/, loader: 'style!css!sass' },
-
-      // Support for .ts files.
-      { test: /\.ts$/,    loader: 'ts',
-        query: {
-          'ignoreDiagnostics': [
-            // 2300, // 2300 -> Duplicate identifier
-            // 2309 // 2309 -> An export assignment cannot be used in a module with other exported elements.
+      // Support for font files.
+      {
+        test: /\.(woff|woff2|otf|eot|svg|ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loaders: [
+          "file?name=fonts/[name].[hash].[ext]"
           ]
-        },
-        exclude: [
-          /\.min\.js$/,
-          /\.spec\.ts$/,
-          /\.e2e\.ts$/,
-          /web_modules/,
-          /test/,
-          /node_modules/
+      },
+
+      {
+        test: /\.(png|jpg|jpe?g|gif|ico)(\?[a-z0-9]+)?$/,
+        loaders: [
+          'file?name=images/[name].[hash].[ext]',
+          'img?minimize&optimizationLevel=7&progressive=true'
         ]
+      },
+
+      // support for .css as raw text
+      {
+        test: /\.html$/,
+        loader: 'raw'
       }
     ],
     noParse: [
@@ -108,8 +119,19 @@ module.exports = {
       /reflect-metadata/
     ]
   },
+
+  // Or array of paths
+  sassResources: [
+    './node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss',
+    './node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.scss'
+  ],
+
   ts: {
     silent: true
+  },
+
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, "./src/assets")]
   },
 
   plugins: [
@@ -121,10 +143,16 @@ module.exports = {
     new DedupePlugin(),
     new CommonsChunkPlugin('bundle','bundle.js',Infinity),
     new CommonsChunkPlugin('common','common.js'),
-    new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
-        })
+    new BrowserSyncPlugin({
+      // browse to http://localhost:3000/ during development, 
+      // ./public directory is being served 
+      host: 'localhost',
+      port: 3100,
+      proxy: 'http://localhost:3000'
+    },
+    {
+      reload: true
+    })
   ],
 
   /*

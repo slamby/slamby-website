@@ -1,0 +1,51 @@
+section.header {
+    background: #2e7bcf url(./images/header.jpg) 0 0 repeat;
+    margin-top:-50px;
+
+    .message {
+        @include make-row();
+        .head {
+            @include make-md-column(8);
+            @include make-xs-column(12);
+            margin-top:10em;
+            margin-bottom:5em;
+            h1 {
+                color: white;
+                font-size: 50px;
+            }
+
+            p.lead {
+                color: white;
+            }
+
+            a.btn-default {
+                background-color: transparent !important;
+                border-color: white;
+                color: white;
+            }
+
+            a.btn-default:hover {
+                border-color: rgba(255,255,255,.7);
+            }
+
+            .list {
+                margin-top:15px;
+                a {
+                    display: inline-block;
+                    color: white;
+                }
+                a:not(:last-of-type){
+                    margin-right: 15px;
+                }
+            }
+
+            .github {
+                margin-top:70px;
+                i {
+                    color: white;
+                    font-size:50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+section.main {
+    margin-top:-50px;
+    background: url(./images/pattern01.png);
+    background-repeat: repeat;
+
+    .body {
+        @include make-row();
+
+        .main-message {
+            @include make-xs-column(12);
+            @include make-sm-column(8);
+            @include make-md-column(6);
+
+            margin-top:13em;
+            margin-bottom:5em;
+        }
+    }
+}
+
+.pricing {
+    table td:first-of-type {
+        text-transform: capitalize;
+    }
+    table td:last-of-type {
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,150 @@
+<pm-header></pm-header>
+
+<section class="main">
+    <div class="container">
+        <div class="body">
+            <div class="main-message">
+                <h1>45 € / core / month</h1>
+                <p class="lead">Transparent pricing from the on-premise till the private cloud. 45 € / core / month that covers basic support fee.</p>
+                <p class="lead">Try out for free <a href="#" class="btn btn-default">Check it</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-header">Pricing</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Core pricing</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Desciption</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 core lincese</td>
+                        <td>unlimited memory, unlimited storage</td>
+                        <td>45 € / processor core / month</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Support</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Desciption</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>basic</td>
+                        <td>community only, no SLA</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Professional</td>
+                        <td>Next workday</td>
+                        <td>2000 € yearly / instance</td>
+                    </tr>
+                    <tr>
+                        <td>Production</td>
+                        <td>3 hours SLA</td>
+                        <td>6000 € yearly / instance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container pricing">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Cloud based pricing (SaaS)</h2>
+            <h3>European</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th class="hidden-xs hidden-sm">Tier</th>
+                        <th>Core</th>
+                        <th>Memory</th>
+                        <th class="hidden-xs">Storage</th>
+                        <th class="hidden-xs hidden-sm">Wholesale</th>
+                        <th class="hidden-xs hidden-sm">Technical Fee</th>
+                        <th class="hidden-xs hidden-sm">License Fee</th>
+                        <th>Reatil Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of pricingEurope">
+                        <td>{{item.name}}</td>
+                        <td class="hidden-xs hidden-sm">{{item.tier}}</td>
+                        <td>{{item.core}}</td>
+                        <td>{{item.memory}} GB</td>
+                        <td class="hidden-xs">{{item.storage}} GB</td>
+                        <td class="hidden-xs hidden-sm">{{item.wholesale}} €</td>
+                        <td class="hidden-xs hidden-sm">{{item.technicalFee}} €</td>
+                        <td class="hidden-xs hidden-sm">{{item.slambyLicenseFee}} €</td>
+                        <td>{{item.retailPrice}} €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Asian</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th class="hidden-xs hidden-sm">Tier</th>
+                        <th>Core</th>
+                        <th>Memory</th>
+                        <th class="hidden-xs">Storage</th>
+                        <th class="hidden-xs hidden-sm">Wholesale</th>
+                        <th class="hidden-xs hidden-sm">Technical Fee</th>
+                        <th class="hidden-xs hidden-sm">License Fee</th>
+                        <th>Reatil Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of pricingAsian">
+                        <td>{{item.name}}</td>
+                        <td class="hidden-xs hidden-sm">{{item.tier}}</td>
+                        <td>{{item.core}}</td>
+                        <td>{{item.memory}}</td>
+                        <td class="hidden-xs">{{item.storage}}</td>
+                        <td class="hidden-xs hidden-sm">{{item.wholesale}} €</td>
+                        <td class="hidden-xs hidden-sm">{{item.technicalFee}} €</td>
+                        <td class="hidden-xs hidden-sm">{{item.slambyLicenseFee}} €</td>
+                        <td>{{item.retailPrice}} €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
