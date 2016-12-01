@@ -1,0 +1,81 @@
+section.main {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(./images/stars.jpeg) 0 0;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-top:-50px;
+
+    .btn {
+        background-color: transparent !important;
+        color: white;
+    }
+
+    .box {
+        @include make-row();
+
+        margin-top: 250px;
+        margin-bottom: 250px;
+        text-align: left;
+        color: white;
+
+        .main-message {
+            @include make-xs-column(12);
+            @include make-md-column(6);
+            background-color: rgba(0,0,0,0.2);
+            padding: 15px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.submain {
+    .item {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(3);
+
+        min-height: 200px;
+        text-align: center;
+
+        color: white;
+        border: 1px white solid;
+        padding: 10px 30px 10px 30px;
+
+        h3 {
+            margin-top:1.5em;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+    .item.transparency {
+        background-image: linear-gradient( rgba(0,0,0, 0.4), rgba(0,0,0, 0.35), rgba(0,0,0, 0.2)), url(./images/fall01.jpg);
+        background-size: cover;
+        background-position-y: bottom;
+    }
+    .item.getting-started {
+        background-image: url(./images/board.jpg);
+        background-size: cover;
+        background-position-y: bottom;
+        color: black;
+        h3, p {
+            background-color: rgba(255,255,255,0.3);
+        }
+    }
+    .item.sdk {
+        background-image: linear-gradient( rgba(255,255,255, 0.35), rgba(255,255,255, 0)), url(./images/woodbg.jpeg);
+        background-size: cover;
+        background-position-y: bottom;
+        color: black;
+    }
+    .item.insight {
+        background: #2e7bcf url(./images/header.jpg) 0 0 repeat;
+    }
+}

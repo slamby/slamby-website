@@ -3,11 +3,11 @@ webpackJsonp([1,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(106);
-	__webpack_require__(155);
-	__webpack_require__(444);
-	__webpack_require__(152);
+	__webpack_require__(154);
+	__webpack_require__(443);
+	__webpack_require__(151);
 	__webpack_require__(3);
-	module.exports = __webpack_require__(443);
+	module.exports = __webpack_require__(442);
 
 
 /***/ },
@@ -16,7 +16,7 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var root_1 = __webpack_require__(12);
-	var toSubscriber_1 = __webpack_require__(418);
+	var toSubscriber_1 = __webpack_require__(417);
 	var observable_1 = __webpack_require__(32);
 	/**
 	 * A representation of any set of values over any amount of time. This the most basic building block
@@ -167,7 +167,7 @@ webpackJsonp([1,0],[
 	};
 	var isFunction_1 = __webpack_require__(50);
 	var Subscription_1 = __webpack_require__(8);
-	var Observer_1 = __webpack_require__(154);
+	var Observer_1 = __webpack_require__(153);
 	var rxSubscriber_1 = __webpack_require__(33);
 	/**
 	 * Implements the {@link Observer} interface and extends the
@@ -10251,7 +10251,7 @@ webpackJsonp([1,0],[
 	var isPromise_1 = __webpack_require__(88);
 	var Observable_1 = __webpack_require__(1);
 	var iterator_1 = __webpack_require__(27);
-	var InnerSubscriber_1 = __webpack_require__(153);
+	var InnerSubscriber_1 = __webpack_require__(152);
 	var observable_1 = __webpack_require__(32);
 	function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 	    var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -10334,7 +10334,7 @@ webpackJsonp([1,0],[
 	var Subscriber_1 = __webpack_require__(2);
 	var Subscription_1 = __webpack_require__(8);
 	var ObjectUnsubscribedError_1 = __webpack_require__(49);
-	var SubjectSubscription_1 = __webpack_require__(157);
+	var SubjectSubscription_1 = __webpack_require__(156);
 	var rxSubscriber_1 = __webpack_require__(33);
 	/**
 	 * @class SubjectSubscriber<T>
@@ -13131,7 +13131,7 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var isArray_1 = __webpack_require__(15);
-	var isObject_1 = __webpack_require__(416);
+	var isObject_1 = __webpack_require__(415);
 	var isFunction_1 = __webpack_require__(50);
 	var tryCatch_1 = __webpack_require__(10);
 	var errorObject_1 = __webpack_require__(9);
@@ -17042,7 +17042,7 @@ webpackJsonp([1,0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var root_1 = __webpack_require__(12);
-	var Action_1 = __webpack_require__(399);
+	var Action_1 = __webpack_require__(398);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -17188,7 +17188,7 @@ webpackJsonp([1,0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Scheduler_1 = __webpack_require__(156);
+	var Scheduler_1 = __webpack_require__(155);
 	var AsyncScheduler = (function (_super) {
 	    __extends(AsyncScheduler, _super);
 	    function AsyncScheduler() {
@@ -24135,7 +24135,7 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var fromEvent_1 = __webpack_require__(311);
+	var fromEvent_1 = __webpack_require__(310);
 	Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 	//# sourceMappingURL=fromEvent.js.map
 
@@ -24145,7 +24145,7 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var do_1 = __webpack_require__(342);
+	var do_1 = __webpack_require__(341);
 	Observable_1.Observable.prototype.do = do_1._do;
 	Observable_1.Observable.prototype._do = do_1._do;
 	//# sourceMappingURL=do.js.map
@@ -24166,7 +24166,7 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var let_1 = __webpack_require__(352);
+	var let_1 = __webpack_require__(351);
 	Observable_1.Observable.prototype.let = let_1.letProto;
 	Observable_1.Observable.prototype.letBind = let_1.letProto;
 	//# sourceMappingURL=let.js.map
@@ -24184,9 +24184,9 @@ webpackJsonp([1,0],[
 	var isArray_1 = __webpack_require__(15);
 	var isPromise_1 = __webpack_require__(88);
 	var PromiseObservable_1 = __webpack_require__(61);
-	var IteratorObservable_1 = __webpack_require__(294);
+	var IteratorObservable_1 = __webpack_require__(293);
 	var ArrayObservable_1 = __webpack_require__(16);
-	var ArrayLikeObservable_1 = __webpack_require__(283);
+	var ArrayLikeObservable_1 = __webpack_require__(282);
 	var iterator_1 = __webpack_require__(27);
 	var Observable_1 = __webpack_require__(1);
 	var observeOn_1 = __webpack_require__(47);
@@ -26432,8 +26432,8 @@ webpackJsonp([1,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var AsapAction_1 = __webpack_require__(402);
-	var AsapScheduler_1 = __webpack_require__(403);
+	var AsapAction_1 = __webpack_require__(401);
+	var AsapScheduler_1 = __webpack_require__(402);
 	exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 	//# sourceMappingURL=asap.js.map
 
@@ -26442,8 +26442,8 @@ webpackJsonp([1,0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var QueueAction_1 = __webpack_require__(404);
-	var QueueScheduler_1 = __webpack_require__(405);
+	var QueueAction_1 = __webpack_require__(403);
+	var QueueScheduler_1 = __webpack_require__(404);
 	exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 	//# sourceMappingURL=queue.js.map
 
@@ -59970,7 +59970,7 @@ webpackJsonp([1,0],[
 	
 	
 	// module
-	exports.push([module.id, "section.main {\n  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(" + __webpack_require__(130) + ") 0 0;\n  background-size: cover;\n  background-position-x: center;\n  background-position-y: bottom;\n  margin-top: -50px; }\n  section.main .btn {\n    background-color: transparent !important;\n    color: white; }\n  section.main .box {\n    margin-left: -15px;\n    margin-right: -15px;\n    margin-top: 250px;\n    margin-bottom: 250px;\n    text-align: left;\n    color: white; }\n    section.main .box:before, section.main .box:after {\n      content: \" \";\n      display: table; }\n    section.main .box:after {\n      clear: both; }\n    section.main .box .main-message {\n      position: relative;\n      float: left;\n      width: 100%;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      background-color: rgba(0, 0, 0, 0.2);\n      padding: 15px; }\n      @media (min-width: 992px) {\n        section.main .box .main-message {\n          float: left;\n          width: 50%; } }\n      section.main .box .main-message h1 {\n        font-size: 40px;\n        font-weight: 500; }\n\n.submain .item {\n  position: relative;\n  float: left;\n  width: 100%;\n  min-height: 1px;\n  padding-left: 15px;\n  padding-right: 15px;\n  position: relative;\n  min-height: 1px;\n  padding-left: 15px;\n  padding-right: 15px;\n  position: relative;\n  min-height: 1px;\n  padding-left: 15px;\n  padding-right: 15px;\n  min-height: 200px;\n  text-align: center;\n  color: white;\n  border: 1px white solid;\n  padding: 10px 30px 10px 30px; }\n  @media (min-width: 768px) {\n    .submain .item {\n      float: left;\n      width: 50%; } }\n  @media (min-width: 992px) {\n    .submain .item {\n      float: left;\n      width: 25%; } }\n  .submain .item h3 {\n    margin-top: 1.5em;\n    font-weight: 500; }\n  .submain .item p {\n    font-size: 17px;\n    font-weight: 300; }\n\n.submain .item.transparency {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)), url(" + __webpack_require__(128) + ");\n  background-size: cover;\n  background-position-y: bottom; }\n\n.submain .item.getting-started {\n  background-image: url(" + __webpack_require__(127) + ");\n  background-size: cover;\n  background-position-y: bottom;\n  color: black; }\n  .submain .item.getting-started h3, .submain .item.getting-started p {\n    background-color: rgba(255, 255, 255, 0.3); }\n\n.submain .item.sdk {\n  background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0)), url(" + __webpack_require__(131) + ");\n  background-size: cover;\n  background-position-y: bottom;\n  color: black; }\n\n.submain .item.insight {\n  background: #2e7bcf url(" + __webpack_require__(129) + ") 0 0 repeat; }\n", ""]);
+	exports.push([module.id, "section.header {\n  background: #2e7bcf url(" + __webpack_require__(127) + ") 0 0 repeat;\n  margin-top: -50px; }\n  section.header .message {\n    margin-left: -15px;\n    margin-right: -15px;\n    padding-bottom: 5em; }\n    section.header .message:before, section.header .message:after {\n      content: \" \";\n      display: table; }\n    section.header .message:after {\n      clear: both; }\n    section.header .message .head {\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      margin-top: 10em;\n      margin-bottom: 5em; }\n      @media (min-width: 992px) {\n        section.header .message .head {\n          float: left;\n          width: 50%; } }\n      section.header .message .head h1 {\n        color: white;\n        font-size: 50px; }\n      section.header .message .head p.lead {\n        color: white; }\n      section.header .message .head a.btn-default {\n        background-color: transparent !important;\n        border-color: white;\n        color: white; }\n      section.header .message .head a.btn-default:hover {\n        border-color: rgba(255, 255, 255, 0.7); }\n      section.header .message .head .list {\n        margin-top: 15px; }\n        section.header .message .head .list a {\n          display: inline-block;\n          color: white; }\n        section.header .message .head .list a:not(:last-of-type) {\n          margin-right: 15px; }\n      section.header .message .head .github {\n        margin-top: 70px; }\n        section.header .message .head .github i {\n          color: white;\n          font-size: 50px; }\n    section.header .message .signup-form {\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      margin-top: 10em;\n      color: white; }\n      @media (min-width: 992px) {\n        section.header .message .signup-form {\n          float: left;\n          width: 33.33333%; } }\n      @media (min-width: 992px) {\n        section.header .message .signup-form {\n          margin-left: 8.33333%; } }\n      section.header .message .signup-form .form-group {\n        margin-top: 5px; }\n\n.customers {\n  margin-top: 30px; }\n  .customers .holder {\n    margin-left: -15px;\n    margin-right: -15px; }\n    .customers .holder:before, .customers .holder:after {\n      content: \" \";\n      display: table; }\n    .customers .holder:after {\n      clear: both; }\n    .customers .holder .item {\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      float: left;\n      width: 100%;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      min-height: 150px; }\n      @media (min-width: 768px) {\n        .customers .holder .item {\n          float: left;\n          width: 33.33333%; } }\n    .customers .holder .jofogas {\n      background: url(" + __webpack_require__(128) + ") 0 0 no-repeat;\n      background-size: 60%;\n      background-position: center; }\n    .customers .holder .schibsted {\n      background: url(" + __webpack_require__(130) + ") 0 0 no-repeat;\n      background-size: 60%;\n      background-position: center; }\n    .customers .holder .lazada {\n      background: url(" + __webpack_require__(129) + ") 0 0 no-repeat;\n      background-size: 60%;\n      background-position: center; }\n", ""]);
 	
 	// exports
 	
@@ -59987,7 +59987,7 @@ webpackJsonp([1,0],[
 	
 	
 	// module
-	exports.push([module.id, "section.header {\n  background: #2e7bcf url(" + __webpack_require__(132) + ") 0 0 repeat;\n  margin-top: -50px; }\n  section.header .message {\n    margin-left: -15px;\n    margin-right: -15px; }\n    section.header .message:before, section.header .message:after {\n      content: \" \";\n      display: table; }\n    section.header .message:after {\n      clear: both; }\n    section.header .message .head {\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      float: left;\n      width: 100%;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      margin-top: 10em;\n      margin-bottom: 5em; }\n      @media (min-width: 992px) {\n        section.header .message .head {\n          float: left;\n          width: 66.66667%; } }\n      section.header .message .head h1 {\n        color: white;\n        font-size: 50px; }\n      section.header .message .head p.lead {\n        color: white; }\n      section.header .message .head a.btn-default {\n        background-color: transparent !important;\n        border-color: white;\n        color: white; }\n      section.header .message .head a.btn-default:hover {\n        border-color: rgba(255, 255, 255, 0.7); }\n      section.header .message .head .list {\n        margin-top: 15px; }\n        section.header .message .head .list a {\n          display: inline-block;\n          color: white; }\n        section.header .message .head .list a:not(:last-of-type) {\n          margin-right: 15px; }\n      section.header .message .head .github {\n        margin-top: 70px; }\n        section.header .message .head .github i {\n          color: white;\n          font-size: 50px; }\n", ""]);
+	exports.push([module.id, "section.header {\n  background: #2e7bcf url(" + __webpack_require__(131) + ") 0 0 repeat;\n  margin-top: -50px; }\n  section.header .message {\n    margin-left: -15px;\n    margin-right: -15px; }\n    section.header .message:before, section.header .message:after {\n      content: \" \";\n      display: table; }\n    section.header .message:after {\n      clear: both; }\n    section.header .message .head {\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      float: left;\n      width: 100%;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      margin-top: 10em;\n      margin-bottom: 5em; }\n      @media (min-width: 992px) {\n        section.header .message .head {\n          float: left;\n          width: 66.66667%; } }\n      section.header .message .head h1 {\n        color: white;\n        font-size: 50px; }\n      section.header .message .head p.lead {\n        color: white; }\n      section.header .message .head a.btn-default {\n        background-color: transparent !important;\n        border-color: white;\n        color: white; }\n      section.header .message .head a.btn-default:hover {\n        border-color: rgba(255, 255, 255, 0.7); }\n      section.header .message .head .list {\n        margin-top: 15px; }\n        section.header .message .head .list a {\n          display: inline-block;\n          color: white; }\n        section.header .message .head .list a:not(:last-of-type) {\n          margin-right: 15px; }\n      section.header .message .head .github {\n        margin-top: 70px; }\n        section.header .message .head .github i {\n          color: white;\n          font-size: 50px; }\n", ""]);
 	
 	// exports
 	
@@ -60021,7 +60021,7 @@ webpackJsonp([1,0],[
 	
 	
 	// module
-	exports.push([module.id, "section.main {\n  margin-top: -50px;\n  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(" + __webpack_require__(133) + ");\n  background-repeat: repeat; }\n  section.main .body {\n    margin-left: -15px;\n    margin-right: -15px; }\n    section.main .body:before, section.main .body:after {\n      content: \" \";\n      display: table; }\n    section.main .body:after {\n      clear: both; }\n    section.main .body .main-message {\n      position: relative;\n      float: left;\n      width: 100%;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      background-color: rgba(255, 255, 255, 0.97);\n      margin-top: 13em;\n      margin-bottom: 9em; }\n      @media (min-width: 768px) {\n        section.main .body .main-message {\n          float: left;\n          width: 66.66667%; } }\n      @media (min-width: 992px) {\n        section.main .body .main-message {\n          float: left;\n          width: 50%; } }\n\n.pricing table td:first-of-type {\n  text-transform: capitalize; }\n\n.pricing table td:last-of-type {\n  font-weight: 500; }\n", ""]);
+	exports.push([module.id, "section.main {\n  margin-top: -50px;\n  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(" + __webpack_require__(132) + ");\n  background-repeat: repeat; }\n  section.main .body {\n    margin-left: -15px;\n    margin-right: -15px; }\n    section.main .body:before, section.main .body:after {\n      content: \" \";\n      display: table; }\n    section.main .body:after {\n      clear: both; }\n    section.main .body .main-message {\n      position: relative;\n      float: left;\n      width: 100%;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      position: relative;\n      min-height: 1px;\n      padding-left: 15px;\n      padding-right: 15px;\n      background-color: rgba(255, 255, 255, 0.97);\n      margin-top: 13em;\n      margin-bottom: 9em; }\n      @media (min-width: 768px) {\n        section.main .body .main-message {\n          float: left;\n          width: 66.66667%; } }\n      @media (min-width: 992px) {\n        section.main .body .main-message {\n          float: left;\n          width: 50%; } }\n\n.pricing table td:first-of-type {\n  text-transform: capitalize; }\n\n.pricing table td:last-of-type {\n  font-weight: 500; }\n", ""]);
 	
 	// exports
 	
@@ -60096,150 +60096,144 @@ webpackJsonp([1,0],[
 /* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "images/board.002a771fb618b131a4c1e64bced7bb15.jpg";
+	module.exports = __webpack_require__.p + "images/header.793cb7f242ae6f2760ca4dc2787fba21.jpg";
 
 /***/ },
 /* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "images/fall01.c9ce23fcbf0ff668a80531b54635c29b.jpg";
+	module.exports = __webpack_require__.p + "images/jofogas.297c470ead239f7f5c93c00e72919d83.jpg";
 
 /***/ },
 /* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "images/header.793cb7f242ae6f2760ca4dc2787fba21.jpg";
+	module.exports = __webpack_require__.p + "images/lazada.3e21736360e6d20dd16fbe2145ca05e9.png";
 
 /***/ },
 /* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "images/stars.82b4ba82a8761a6b7ce58d4638d1ae4d.jpeg";
+	module.exports = __webpack_require__.p + "images/schibsted.48012cdaaa1a10542704e9d501f9104d.png";
 
 /***/ },
 /* 131 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "images/woodbg.0ff816b0ba0f0a7d7268df612c41d4d5.jpeg";
-
-/***/ },
+127,
 /* 132 */
-129,
-/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/bg2.05c375acf1797faf9f3402259657984a.jpg";
 
 /***/ },
-/* 134 */
+/* 133 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n<div class=\"container notFoundModule\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <div class=\"box\">\n                <div class=\"icon\">\n                    <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\n                </div>\n                <h1>Page Not Found</h1>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 135 */
+/* 134 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <div class=\"footer\">\n        <div class=\"message\">Slamby 2016</div>\n        <ul class=\"links\">\n            <li><a href=\"https://github.com/slamby\" target=\"_blank\">Github <i class=\"fa fa-external-link sla-external-link\" aria-hidden=\"true\"></i></a></li>\n            <li><a href=\"https://developers.slamby.com\" target=\"_blank\">Slamby Developers <i class=\"fa fa-external-link sla-external-link\" aria-hidden=\"true\"></i></a></li>\n            <li><a [routerLink]=\"['/partners']\">Partners</a></li>\n            <li><a [routerLink]=\"['/company']\">Company</a></li>\n            <li><a [routerLink]=\"['/legal/privacy-policy']\">Legal</a></li>\n        </ul>\n    </div>\n</div>"
 
 /***/ },
-/* 136 */
+/* 135 */
 /***/ function(module, exports) {
 
 	module.exports = "<section [class.sla-nav-menu-opened]=\"isOpen\">\n    <div class=\"container\">\n        <div class=\"sl-main\">\n            <ul class=\"sla-nav-header\">\n                <li class=\"logo\">\n                    <a [routerLink]=\"['/home']\"><span>Slamby</span></a>\n                </li>\n                <li (click)=\"menuOpen()\" class=\"menu-open-btn\"><a><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></a></li>\n            </ul>\n            <ul class=\"sla-nav-menu-items\">\n                <li *ngFor=\"let item of menuItems\" class=\"{{item.customClass}}\">\n                    <a *ngIf=\"!item.externalLink\" [routerLink]=\"[item.link]\">\n                        <span>{{item.name}}</span>\n                    </a>\n                    <a *ngIf=\"item.externalLink\" href=\"{{item.link}}\" target=\"_blank\">\n                        <span>{{item.name}} <i class=\"fa fa-external-link sla-external-link\" aria-hidden=\"true\"></i></span>\n                    </a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</section>\n<div [class.hidden-block]=\"isOpen\"></div>"
 
 /***/ },
-/* 137 */
+/* 136 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <a href=\"#\">Overview</a>\n            <a href=\"#\">Download</a>\n            <a href=\"#\">Technical</a>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 138 */
+/* 137 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header theme=\"theme-light\"></pm-header>\n\n<section class=\"main\">\n    <div class=\"container\">\n        <div class=\"message\">\n            <h1>Hi<br>we are Slamby</h1>\n            <p class=\"lead\">Hard work, great team, gorgeous vision. Building the best data management products from the heart.</p>\n        </div>\n    </div>\n</section>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h2>Our vision</h2>\n            <p class=\"lead\">We are passionate in creating the best data processing solutions. Following our vision, we are working to become the biggest data processing center over Europe.</p>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h2>From the begining</h2>\n            <p class=\"lead\">Slamby was started in 2011, and officially incorporated on 11th October 2013.</p>\n            <p class=\"lead\">Our first vision was to build a sophisticated, smart technology that by reading and understanding written text - can protect children from adult online content. Building the first machine-learning technology Slamby realized its capability to extend its market, providing improved data-processing solutions for industrial clients.</p>\n           <p class=\"lead\">In 2013 Slamby continued its RnD activity and built several products to international companies.</p>\n           <p class=\"lead\">In 2014 Slamby released its first machine learning solution for e-commerce market, it was called Slamby Classifier - the first truly language independent classification engine with high accuracy level.</p>\n           <p class=\"lead\">In 2015 Slamby became a significant global data processing solution provider, serving clients over 9 countries.</p>\n           <p class=\"lead\">In 2016 Slamby continued its expansion with increased RnD activity & product development. We changed our product development strategy, transforming our products into open-source, providing a wide range of free solutions that make us even better. Instead of providing a shared solution, we continue our developments creating the best personalized, dedicated data processing servers serving both cloud and on-premise needs as well.</p>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h2>Join us</h2>\n            <p class=\"lead\">We are looking for passionate talents. If you like to join us, please check our latest available positions, or schedule an appointment to meet the Team.</p>\n            <p>\n                <a href=\"mailto:jobs@slamby.com\" class=\"btn btn-default btn-lg\" angulartics2On=\"click\" angularticsCategory=\"company-page\" angularticsEvent=\"join-btn-pushed\">Join</a>\n            </p>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 139 */
+/* 138 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n<div class=\"container\">\n    <div class=\"menu\">\n        <div class=\"list-group\">\n            <a pageScroll href=\"#api-install\" class=\"list-group-item\">API install</a>\n            <a pageScroll href=\"#api-activation\" class=\"list-group-item\">API activation</a>\n            <a pageScroll href=\"#slamby-insight\" class=\"list-group-item\">Slamby Insight</a>\n            <a pageScroll href=\"#integration\" class=\"list-group-item\">Integration</a>\n            <a pageScroll href=\"#documentation\" class=\"list-group-item\">Documentation</a>\n            <a pageScroll href=\"#support\" class=\"list-group-item\">Support</a>\n        </div>\n    </div>\n    <div class=\"body\">\n        <h1>Getting started</h1>\n        <p class=\"lead\">Welcome to Slamby. Congratulation, you made the very first step to work with our awesome products. You are almost done, but before getting started working with your Slamby product, here are a few useful information.</p>\n\n        <h2 id=\"api-install\">API install</h2>\n        <p>You can use your Slamby API as a SaaS, or you can download, and host is by yourself. When you want to host it by yourself, the first thing you need to manage is the installation. To install Slamby API, please check the product readme and the installation guide.</p>\n        <p>Product documentation: <a href=\"https://github.com/slamby/slamby-api\" target=\"_blank\">https://github.com/slamby/slamby-api</a></p>\n        <p>Using Docker Compose, here are the installation steps:</p>\n        <ol>\n            <li>Install Docker on your machine: <a href=\"https://docs.docker.com/engine/installation\" target=\"\">Official Docker installation guide</a></li>\n            <li>Install Docker Compose on your machine (minimum 1.9.0 required): <a href=\"https://docs.docker.com/compose/install\" target=\"_blank\">Official Docker Compose installation guide</a></li>\n            <li>Download our Docker Compose file<br><code>$ curl -L \"https://github.com/slamby/slamby-api/releases/download/v1.2.0/docker-compose.yml\" > docker-compose.yml</code></li>\n            <li>Compose the containers (run next to the compose file)<br><pre>$ docker-compose up -d</pre></li>\n            <li>Your server is installed. Check that if it's working correctly</li>\n        </ol>\n        <h2 id=\"api-activation\">API activation</h2>\n        <p>Open your Slamby API server at http://api_url/setup.</p>\n        <p>Great, you have an installed Slamby API. Now your first step is the activation process.<br>\n        During the setup process you need to:</p>\n        <ul>\n            <li>Request a Slamby License,</li>\n            <li>Copy your Slamby API License,</li>\n            <li>and set the secret (password) for your Slamby API.</li>\n            <li>Continue with the API activation.</li>\n        </ul>\n        <p><i>License</i><br>\n        For open-source projects, you can use an `open-source license` for free, or for commercial purpose you can use a commercial license.</p>\n        <p>For open-source license, your can request one from the setup wizard directly by typing your e-mail address and click the `Request a License` button. Our license service will generate an open-sourced license for you and will send it via email to the given email address.</p>\n        <p>When your product or company is not open-sourced you cannot use Slamby API with open-source license; you need to purchase a `commercial license`. The pricing is based on the processor core number.</p>\n        <p>For pricing details, please check our pricing <a href=\"https://www.slamby.com/pricing\">https://www.slamby.com/pricing</a></p>\n        <p>For purchasing a commercial license contact our <a href=\"sales@slamby.com\">sales@slamby.com</a></p>\n        <p><i>API secret</i><br>\n            Image</p>\n        <h2 id=\"slamby-insight\">Using Slamby Insight to manage your API</h2>\n        <p>For you Slamby API we have an excellent desktop application that makes the management jobs smoother, faster and easier. You can download it from here:</p>\n        <p><a href=\"https://insight.slamby.com/download\" class=\"btn btn-default\" angulartics2On=\"click\" angularticsCategory=\"getting-started-page\" angularticsEvent=\"insight-download-btn\">Download</a>.</p>\n        <p>For more information about how to use Insight check the online tutorial here: <a href=\"https://developers.slamby.com/docs/Insight/\" target=\"_blank\">https://developers.slamby.com/docs/Insight/</a></p>\n        <h2 id=\"integration\">Integration (SDKs)</h2>\n        <p>Now you have a working Slamby API, but how can you integrate it into your business processes? Slamby API has a very detailed Rest API that you can easily manage. For the full API documentation, please check the API developers page here: <a href=\"https://developers.slamby.com/docs/API/\" target=\"_blank\">https://developers.slamby.com/docs/API/</a></p>\n        <p>\n            <i>A lovely gift from Slamby</i><br>\n            We would like to make your job easier; that's why we work on five different SDKs. Please check the available versions, sources, and the readmes.\n        </p>\n        <table class=\"table table-striped\">\n            <thead>\n                <tr>\n                    <td>SDK Name</td>\n                    <td>Download link and readme</td>\n                </tr>\n            </thead>\n            <tbody>\n                <tr>\n                    <td>.Net</td>\n                    <td><a href=\"https://github.com/slamby/slamby-sdk-net\" target=\"_blank\">https://github.com/slamby/slamby-sdk-net</a></td>\n                </tr>\n                <tr>\n                    <td>JavaScript</td>\n                    <td><a href=\"https://github.com/slamby/slamby-sdk-javascript\" target=\"_blank\">https://github.com/slamby/slamby-sdk-javascript</a></td>\n                </tr>\n                <tr>\n                    <td>Python</td>\n                    <td><a href=\"https://github.com/slamby/slamby-sdk-python\" target=\"_blank\">https://github.com/slamby/slamby-sdk-python</a></td>\n                </tr>\n                <tr>\n                    <td>PHP</td>\n                    <td><a href=\"https://github.com/slamby/slamby-sdk-php\" target=\"_blank\">https://github.com/slamby/slamby-sdk-php</a></td>\n                </tr>\n                <tr>\n                    <td>Angular 2</td>\n                    <td><a href=\"https://github.com/slamby/slamby-sdk-angular2\" target=\"_blank\">https://github.com/slamby/slamby-sdk-angular2</a></td>\n                </tr>\n            </tbody>\n        </table>\n        <h2 id=\"documentation\">Product documentation</h2>\n        <p>Here we go, all the Slamby products are now installed. But how can you use them? When you do an API integration, or you need to know specific settings, then please check the API documentation on our developer site: <a href=\"https://developers.slamby.com/docs/API\" target=\"_blank\">https://developers.slamby.com/docs/API</a>,<br>\n        or, check the other products documentation as well <a href=\"https://developers.slamby.com\" target=\"_blank\">https://developers.slamby.com</a></p>\n        <h2 id=\"support\">Support</h2>\n        <p>Slamby support mailing list for basic support: <a href=\"https://groups.google.com/forum/#!forum/slamby\" target=\"_blank\">https://groups.google.com/forum/#!forum/slamby</a></p>\n        <p>Each Slamby license includes a `basic support` with absolutely no SLA. This means you can access our support via our online support mailing list and you can ask for help from our community. In this case, the reaction time is not guaranteed, and there is no direct access to our technical experts.</p>\n        <p>When you need a `professional support`, please purchase one. Each professional support contains short-time SLAs and response time. Each professional support gives you direct access to our technical experts.</p>\n        <p>For more details, please check our available support options here: <a href=\"https://www.slamby.com/support\" target=\"_blank\">https://www.slamby.com/support</a></p>\n        <p>And contact our sales: <a href=\"sales@slamby.com\">sales@slamby.com</a></p>\n    </div>\n</div>"
 
 /***/ },
-/* 140 */
+/* 139 */
 /***/ function(module, exports) {
 
-	module.exports = "<pm-header theme=\"theme-light\"></pm-header>\n<section class=\"main\">\n    <div class=\"container\">\n        <div class=\"box\">\n            <div class=\"main-message\">\n                <h1>Smart Data Processing<br>for Classifieds</h1>\n                <p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem minima placeat vero quod sed!</p>\n                <a [routerLink]=\"['/insight']\" class=\"btn btn-default btn-lg\">Check it</a>\n            </div>\n        </div>\n    </div>\n</section>\n\n<div class=\"container-fluid submain\">\n    <div class=\"row\">\n        <a [routerLink]=\"['/getting-started']\">\n            <div class=\"item getting-started\">\n                <h3>Getting started</h3>\n                <p>Check product details, features, hosting options and our vision.</p>\n            </div>\n        </a>\n        <a [routerLink]=\"['/insight']\">\n            <div class=\"item insight\">\n                <h3>Insight</h3>\n                <p>Get productivity from your Slamby Server using Slamby Insight. Desktop application for smarter work.</p>\n            </div>\n        </a>\n        <a [routerLink]=\"['/sdk']\">\n            <div class=\"item sdk\">\n                <h3>Easy integration</h3>\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quos at vitae inventore, nobis quod.</p>\n            </div>\n        </a>\n        <a [routerLink]=\"['/transparency']\">\n            <div class=\"item transparency\">\n                <h3>We love transparency</h3>\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, commodi.</p>\n            </div>\n        </a>\n    </div>\n</div>"
+	module.exports = "<pm-header></pm-header>\n\n<section class=\"header\">\n    <div class=\"container\">\n        <div class=\"message\">\n            <div class=\"head\">\n                <h1>Smart machine learning for classifieds</h1>\n                <p class=\"lead\">Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking.</p>\n                <p class=\"lead\">Open-source, SaaS, on-premise install.</p>\n            </div>\n            <div class=\"signup-form\">\n                <h2>Get more information</h2>\n                <form action=\"//slamby.us8.list-manage.com/subscribe/post?u=2cc8f967bed26c6531c44c771&amp;id=f805acd7c9\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate form\" target=\"_blank\" novalidate>\n                    <div class=\"form-group\">\n                        <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"form-control\" id=\"mce-EMAIL\" placeholder=\"E-mail address\" angulartics2On=\"click\" angularticsCategory=\"home-page\" angularticsEvent=\"newsletter-emailField-clicked\">\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"text\" value=\"\" name=\"FNAME\" class=\"form-control\" id=\"mce-FNAME\" placeholder=\"First name\">\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"text\" value=\"\" name=\"LNAME\" class=\"form-control\" id=\"mce-LNAME\" placeholder=\"Last name\">\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"submit\" value=\"Get more information\" class=\"btn btn-default form-control\" angulartics2On=\"click\" angularticsEvent=\"NewsletterSignUp\" angularticsCategory=\"Marketing\">\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</section>\n\n<section class=\"customers\">\n    <div class=\"container\">\n        <div class=\"holder\">\n            <div class=\"item jofogas\"></div>\n            <div class=\"item schibsted\"></div>\n            <div class=\"item lazada\"></div>\n        </div>\n    </div>\n</section>"
 
 /***/ },
-/* 141 */
+/* 140 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<section class=\"header\">\n    <div class=\"container\">\n        <div class=\"message\">\n            <div class=\"head\">\n                <h1>A smart way to work</h1>\n                <p class=\"lead\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam accusamus quia, illo unde voluptate voluptates saepe. Commodi, molestias nihil laudantium officia hic. Hic dignissimos recusandae ullam, error fugit, dolores tempore!\n                </p>\n                <a href=\"https://insight.slamby.com\" class=\"btn btn-default\" angulartics2On=\"click\" angularticsEvent=\"Download General\" angularticsCategory=\"Insight\" angularticsProperties=\"{label: 'General'}\">Download</a>\n                <div class=\"list\">\n                    <a href=\"https://instight.slamby.com/mac\">Download for Mac</a>\n                    <a href=\"https://instight.slamby.com/windows\">Download for Windows</a>\n                    <a href=\"https://instight.slamby.com/linux\">Download for Linux</a>\n                </div>\n                <div class=\"github\">\n                    <a href=\"https://github.com/slamby/slamby-insight\" target=\"_blank\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n\n<section>\n    <div class=\"container\">\n        <form action=\"//slamby.us8.list-manage.com/subscribe/post?u=2cc8f967bed26c6531c44c771&amp;id=f805acd7c9\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate form\" target=\"_blank\" novalidate>\n            <div class=\"form-group\">\n                <label for=\"mce-EMAIL\">Email Address<span class=\"asterisk\">*</span></label>\n                <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"form-control\" id=\"mce-EMAIL\">\n            </div>\n            <div class=\"form-group\">\n                <label for=\"mce-FNAME\">First Name </label>\n                <input type=\"text\" value=\"\" name=\"FNAME\" class=\"form-control\" id=\"mce-FNAME\">\n            </div>\n            <div class=\"form-group\">\n                <input type=\"submit\" value=\"Submit\" class=\"btn btn-default\" angulartics2On=\"click\" angularticsEvent=\"NewsletterSignUp\" angularticsCategory=\"Marketing\">\n            </div>\n        </form>\n    </div>\n</section>"
 
 /***/ },
-/* 142 */
+/* 141 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<div class=\"container\">\n    <legalMenu></legalMenu>\n    <div class=\"body\">\n        <h1>Extension to the slamby api commercial license for royalty free distribution (oem)</h1>\n        <h2>1. Definitions</h2>\n        <p>When used in this Agreement, the following terms shall have the respective meanings indicated, such meanings to be applicable to both the singular and plural forms of the terms defined:</p>\n        <ul>\n            <li>“We” or “Us” or “Slamby” or “Our” or the “Company” refers to Slamby-Semantics Ltd.</li>\n            <li>“You” and “Your” and “User” refers to the entity and/or individual person, natural or legal, consenting to, and entering into, this Agreement.</li>\n            <li>\"Licensor\" means Slamby.</li>\n            <li>\"Software\" means (a) all of the contents of the files, disk(s), disk image(s), Docker containers or other media with which this Agreement is provided, including but not limited to ((i) digital images (ii) related explanatory written materials or files (\"Documentation\"); and (iii) fonts; and (b) upgrades, modified versions, updates, additions, and copies of the Software, if any, licensed to you by Slamby (collectively, \"Updates\").</li>\n            <li>\"Use\" or \"Using\" means to access, install, download, copy or otherwise benefit from using the functionality of the Software.</li>\n            <li>\"Licensee\" means You or Your Company, unless otherwise indicated.</li>\n            <li>\"System\" means Windows OS, GNU/Linux or Mac OS X, Docker or any virtual machine.</li>\n        </ul>\n        <h2>2. General Use</h2>\n        <p>As long as the Licensee complies with the terms of this extension of End User License Agreement (the \"Agreement\") and the Agreement itself, the Licensor grants the Licensee a non-exclusive right to install and Use the Software for the purposes described in the Documentation under the following conditions:</p>\n        <p>The Software may be installed and used by the Licensee for business, commercial and money-earning purposes.</p>\n        <p>This License can be deployed on any number of systems.</p>\n        <p>The Software under this License may be incorporated into software/hardware projects sold by the Licensee.</p>\n        <p>The Licensee may physically or electronically distribute the Software to his manufacturing and service partners but only as an intermediary product, requiring incorporation of the Software into the software or hardware developed by the Licensee in cases when the manufacturing process involves the Licensee's partner's job to complete the project before distributing it to end-users.</p>\n        <p>The Licensee or his manufacturing and service partners may reproduce and physically or electronically distribute the Software only as an integral part of or incorporated into their software or hardware product.</p>\n        <p>This License entitles the Licensee to the unlimited redistribution of the Licensor's technology as a part of the Licensee's product.</p>\n        <p>This License is royalty-free, i.e. the Licensee does not need to pay a fee per every order of his product with the incorporated Licensor's technology.</p>\n        <p>This License cannot be used by the Licensee to develop a software application that would compete with products marketed by the Licensor.</p>\n        <h2>3. Intellectual Property Rights</h2>\n        <p>3.1 This License does not transmit any intellectual rights on the Software. The Software and any copies that the Licensee is authorized by the Licensor to make are the intellectual property of and are owned by the Licensor.</p>\n        <p>3.2 The Software is protected by copyright, including without limitation by Copyright Law and international treaty provisions.</p>\n        <p>3.3 Any copies that the Licensee is permitted to make pursuant to this Agreement must contain the same copyright and other proprietary notices that appear on or in the Software.</p>\n        <p>3.4 Any information supplied by the Licensor or obtained by the Licensee, as permitted hereunder, may only be used by the Licensee for the purpose described herein and may not be disclosed to any third party or used to create any software which is substantially similar to the expression of the Software.</p>\n        <p>3.5 Trademarks shall be used in accordance with accepted trademark practice, including identification of trademarks owners' names. Trademarks can only be used to identify printed output produced by the Software and such use of any trademark does not give the Licensee any rights of ownership in that trademark.</p>\n        <h2>License Transfer</h2>\n        <p>4.1 This License is non-transferable. The Licensee may not transfer the rights to Use the Software to third parties (another person or legal entity).</p>\n        <p>4.2 The Licensee may not rent, lease, sub-license, lend or transfer any versions or copies of the Software to third parties (another person or legal entity).</p>\n        <p>4.3 The Licensee may make a back-up copy of the Software, provided a backup copy is not installed or used on any system not belonging to the Licensee. The Licensee may not transfer the rights to install or use a backup copy of the Software to third parties (another person or legal entity).</p>\n    </div>\n</div>"
 
 /***/ },
-/* 143 */
+/* 142 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<div class=\"container\">\n    <legalMenu></legalMenu>\n    <div class=\"body\">\n        <h1>End user license agreement</h1>\n        <p class=\"lead\">You should carefully read the following end user license agreement before installing this software. by installing, copying, or otherwise using the software, you agree to be bound by the terms of this agreement. if you do not agree to the terms of this agreement, please contact slamby at https://www.slamby.com to arrange a full refund.</p>\n        <p>This software, and any files that are delivered to you by Slamby-Semantics Ltd (referred to herein as “Slamby”). (via on-line transmission or otherwise) to \"patch,\" update, or otherwise modify the software program, as well as any printed materials and any on-line or electronic documentation (the \"Manual\"), and any and all copies and derivative works of such software program and materials (collectively the \"Software\") are the copyrighted work of Slamby, or its suppliers and licensors (collectively referred to herein as \"Licensor\"). All use of the Software is governed by the terms of this End User License Agreement (\"License Agreement\" or \"Agreement\"). The Software is distributed solely for use by authorized individuals or entities according to the terms of the License Agreement. Any use, reproduction or redistribution of the Software not expressly authorized by the terms of the License Agreement is expressly prohibited.</p>\n        <h2>Ownership</h2>\n        <p>All title, ownership rights and intellectual property rights in and to the Software and all copies thereof (including, but not limited to, any titles, computer code, artwork, any related documentation, executable code, shared libraries, proprietary computer protocols and \"applets\" incorporated into the Software) are owned or expressly licensed by Licensor. The Software is protected by the copyright laws of Hungary, international copyright treaties and conventions, and other laws. All rights are reserved. The Software may contain certain licensed materials, and the licensors of those materials may enforce their rights in the event of any violation of this License Agreement.</p>\n        <p>Each license purchased for this Software allows once instance of the Software to be used. You may not use multiple instances of the Software without obtaining, in advance, a new license or licenses for the new instance or instances and/or express written permission from Slamby. You may only permanently transfer ownership of the Software and all parts thereof, and all of your rights and obligations under the License Agreement, to another individual or entity, once you have notified Slamby. In this case, Slamby will issue a license for the new individual or entity once it has been established that old instance is no longer in use.</p>\n        <p>For the specific case of license(s) purchased for redistribution of this Software as part of licensee’s products, no notification to Slamby. shall be required and the license shall automatically transfer so long as the old instance is not in use by the licensee.</p>\n        <h2>Responsibilities of end user</h2>\n        <p>Subject to the Grant of License hereinabove, you may NOT, in whole or in part, copy, photocopy, reproduce, translate, reverse engineer, derive source code, modify, disassemble, decompile, or create derivative works based on the Software, or remove any proprietary notices or labels on the Software, with the exception of the non-compiled source files provided with the Software, including but not limited to template files and script files, which may be modified for use on the user specified in part “Ownership” only. Failure to comply with the restrictions and limitations contained in this Section 2 shall result in immediate, automatic termination of the license granted hereunder and may subject you to civil and/or criminal liability. Notwithstanding the foregoing, you may make one (1) copy of the Software and the Manuals for archival purposes only.</p>\n        <h2>Termination</h2>\n        <p>This License Agreement is effective until terminated. You may terminate the License Agreement at any time by (i) removing the Software from your hard drive, and (ii) notify Licensor of your intention to terminate this License Agreement. Licensor may, at its discretion, terminate this License agreement in the event that you fail to comply with the terms and conditions contained herein. In such event, you must either take immediate action to ensure that you are compliant with this License Agreement or cease all usage of the Software within 30 days from being notified of the termination of License agreement by the Licensor. Upon termination of this Agreement for any reason, all licenses granted herein shall immediately terminate.</p>\n        <h2>Limitation of liability</h2>\n        <p>NEITHER LICENSOR NOR ITS PARENT, SUBSIDIARIES OR AFFILIATES SHALL BE LIABLE IN ANY WAY FOR LOSS OR DAMAGE OF ANY KIND RESULTING FROM THE USE OF THE SOFTWARE, INCLUDING, BUT NOT LIMITED TO, LOSS OF DATA, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES. FURTHER, LICENSOR SHALL NOT BE LIABLE IN ANY WAY FOR THE LOSS OR DAMAGE TO PRODUCT DATA, LAYOUTS, TEMPLATES, ARTWORK, PRICING, PREDICTION, ANALYSIS AND OTHER INFORMATION STORED BY THE SOFTWARE. LICENSOR SHALL NOT BE RESPONSIBLE FOR ANY INTERRUPTIONS OF SERVICE, INCLUDING, BUT NOT LIMITED TO, ISP DISRUPTIONS, SOFTWARE OR HARDWARE FAILURES OR ANY OTHER EVENT WHICH MAY RESULT IN A LOSS OF DATA OR DISRUPTION OF SERVICE. IN NO EVENT WILL LICENSOR BE LIABLE TO YOU FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES. Some countries and regions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitations may not apply to you.</p>\n        <h2>Equitable remedies</h2>\n        <p>You hereby agree that Licensor would be irreparably damaged if the terms of this License Agreement were not specifically enforced, and therefore you agree that Licensor shall be entitled, without bond, other security, or proof of damages, to appropriate equitable remedies with respect to breaches of this License Agreement, in addition to such other remedies as Licensor may otherwise have available to it under applicable laws. In the event any litigation is brought by either party in connection with this License Agreement, the prevailing party in such litigation shall be entitled to recover from the other party all the costs, attorneys' fees and other expenses incurred by such prevailing party in the litigation.</p>\n        <h2>Changes to the Agreement</h2>\n        <p>Slamby reserves the right, at its sole discretion, to change, modify, add to, supplement or delete any of the terms and conditions of this License Agreement when Slamby upgrades the Software, effective upon prior notice as follows: Slamby will post notification of any such changes to this License Agreement on the Slamby.com website and will post the revised version of this License Agreement in this location, and may provide such other notice as Slamby may elect in its sole discretion, which may include by email, postal mail or pop-up screen.</p>\n        <p>If any future changes to this License Agreement are unacceptable to you or cause you to no longer be in compliance with this License Agreement, you may terminate this License Agreement in accordance with Section 3 herein. Your installation and use of any updated or modifications to the Software following notice of changes to this Agreement as described above will mean you accept any and all such changes. You may continue to use your pre-existing installation of the Software under the original License Agreement if you so notify Slamby. within 30 days of the change in the license. Slamby may change, modify, suspend, or discontinue any aspect of the Software at any time. Slamby may also impose limits on certain features or restrict your access to parts or all of the Software without notice or liability. You have no interest, monetary or otherwise, in any feature or content contained in the Software.</p>\n        <h2>Miscellaneous</h2>\n        <p>This License Agreement shall be deemed to have been made and executed in Hungary without regard to conflicts of law provisions, and any dispute arising hereunder shall be resolved in accordance with the law of Hungary. You agree that any claim asserted in any legal proceeding by one of the parties against the other shall be commenced and maintained in Hungary, having subject matter jurisdiction with respect to the dispute between the parties. In the event that any provision of this License Agreement shall be held by a court or other tribunal of competent jurisdiction to be unenforceable, such provision will be enforced to the maximum extent permissible, and the remaining portions of this License Agreement shall remain in full force and effect. This License Agreement constitutes and contains the entire agreement between the parties with respect to the subject matter hereof and supersedes any prior oral or written agreements.</p>\n        <p>I hereby acknowledge that I have read and understand the foregoing License Agreement and agree that the action of installing the Software is an acknowledgment of my agreement to be bound by the terms and conditions of the License Agreement contained herein.</p>\n        <p>2013-2016 Slamby-Semantics Ltd. All rights reserved.</p>\n    </div>\n</div>"
 
 /***/ },
-/* 144 */
+/* 143 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<div class=\"container\">\n    <legalMenu></legalMenu>\n    <div class=\"body\">\n        <h1>Gnu affero general public license</h1>\n        <p class=\"lead\">Version 3, 19 November 2007</p>\n\n        <p>Copyright &copy; 2007 Free Software Foundation,\n        Inc. &lt;<a href=\"http://fsf.org/\" target=\"_blank\">http://fsf.org/</a>&gt;\n        <br />\n        Everyone is permitted to copy and distribute verbatim copies\n        of this license document, but changing it is not allowed.</p>\n\n        <h2><a name=\"preamble\"></a>Preamble</h2>\n\n        <p>The GNU Affero General Public License is a free, copyleft license\n        for software and other kinds of works, specifically designed to ensure\n        cooperation with the community in the case of network server software.</p>\n\n        <p>The licenses for most software and other practical works are\n        designed to take away your freedom to share and change the works.  By\n        contrast, our General Public Licenses are intended to guarantee your\n        freedom to share and change all versions of a program--to make sure it\n        remains free software for all its users.</p>\n\n        <p>When we speak of free software, we are referring to freedom, not\n        price.  Our General Public Licenses are designed to make sure that you\n        have the freedom to distribute copies of free software (and charge for\n        them if you wish), that you receive source code or can get it if you\n        want it, that you can change the software or use pieces of it in new\n        free programs, and that you know you can do these things.</p>\n\n        <p>Developers that use our General Public Licenses protect your rights\n        with two steps: (1) assert copyright on the software, and (2) offer\n        you this License which gives you legal permission to copy, distribute\n        and/or modify the software.</p>\n\n        <p>A secondary benefit of defending all users' freedom is that\n        improvements made in alternate versions of the program, if they\n        receive widespread use, become available for other developers to\n        incorporate.  Many developers of free software are heartened and\n        encouraged by the resulting cooperation.  However, in the case of\n        software used on network servers, this result may fail to come about.\n        The GNU General Public License permits making a modified version and\n        letting the public access it on a server without ever releasing its\n        source code to the public.</p>\n\n        <p>The GNU Affero General Public License is designed specifically to\n        ensure that, in such cases, the modified source code becomes available\n        to the community.  It requires the operator of a network server to\n        provide the source code of the modified version running there to the\n        users of that server.  Therefore, public use of a modified version, on\n        a publicly accessible server, gives the public access to the source\n        code of the modified version.</p>\n\n        <p>An older license, called the Affero General Public License and\n        published by Affero, was designed to accomplish similar goals.  This is\n        a different license, not a version of the Affero GPL, but Affero has\n        released a new version of the Affero GPL which permits relicensing under\n        this license.</p>\n\n        <p>The precise terms and conditions for copying, distribution and\n        modification follow.</p>\n\n        <h2><a name=\"terms\"></a>TERMS AND CONDITIONS</h2>\n\n        <h3><a name=\"section0\"></a>0. Definitions.</h3>\n\n        <p>&quot;This License&quot; refers to version 3 of the GNU Affero General Public\n        License.</p>\n\n        <p>&quot;Copyright&quot; also means copyright-like laws that apply to other kinds\n        of works, such as semiconductor masks.</p>\n\n        <p>&quot;The Program&quot; refers to any copyrightable work licensed under this\n        License.  Each licensee is addressed as &quot;you&quot;.  &quot;Licensees&quot; and\n        &quot;recipients&quot; may be individuals or organizations.</p>\n\n        <p>To &quot;modify&quot; a work means to copy from or adapt all or part of the work\n        in a fashion requiring copyright permission, other than the making of an\n        exact copy.  The resulting work is called a &quot;modified version&quot; of the\n        earlier work or a work &quot;based on&quot; the earlier work.</p>\n\n        <p>A &quot;covered work&quot; means either the unmodified Program or a work based\n        on the Program.</p>\n\n        <p>To &quot;propagate&quot; a work means to do anything with it that, without\n        permission, would make you directly or secondarily liable for\n        infringement under applicable copyright law, except executing it on a\n        computer or modifying a private copy.  Propagation includes copying,\n        distribution (with or without modification), making available to the\n        public, and in some countries other activities as well.</p>\n\n        <p>To &quot;convey&quot; a work means any kind of propagation that enables other\n        parties to make or receive copies.  Mere interaction with a user through\n        a computer network, with no transfer of a copy, is not conveying.</p>\n\n        <p>An interactive user interface displays &quot;Appropriate Legal Notices&quot;\n        to the extent that it includes a convenient and prominently visible\n        feature that (1) displays an appropriate copyright notice, and (2)\n        tells the user that there is no warranty for the work (except to the\n        extent that warranties are provided), that licensees may convey the\n        work under this License, and how to view a copy of this License.  If\n        the interface presents a list of user commands or options, such as a\n        menu, a prominent item in the list meets this criterion.</p>\n\n        <h3><a name=\"section1\"></a>1. Source Code.</h3>\n\n        <p>The &quot;source code&quot; for a work means the preferred form of the work\n        for making modifications to it.  &quot;Object code&quot; means any non-source\n        form of a work.</p>\n\n        <p>A &quot;Standard Interface&quot; means an interface that either is an official\n        standard defined by a recognized standards body, or, in the case of\n        interfaces specified for a particular programming language, one that\n        is widely used among developers working in that language.</p>\n\n        <p>The &quot;System Libraries&quot; of an executable work include anything, other\n        than the work as a whole, that (a) is included in the normal form of\n        packaging a Major Component, but which is not part of that Major\n        Component, and (b) serves only to enable use of the work with that\n        Major Component, or to implement a Standard Interface for which an\n        implementation is available to the public in source code form.  A\n        &quot;Major Component&quot;, in this context, means a major essential component\n        (kernel, window system, and so on) of the specific operating system\n        (if any) on which the executable work runs, or a compiler used to\n        produce the work, or an object code interpreter used to run it.</p>\n\n        <p>The &quot;Corresponding Source&quot; for a work in object code form means all\n        the source code needed to generate, install, and (for an executable\n        work) run the object code and to modify the work, including scripts to\n        control those activities.  However, it does not include the work's\n        System Libraries, or general-purpose tools or generally available free\n        programs which are used unmodified in performing those activities but\n        which are not part of the work.  For example, Corresponding Source\n        includes interface definition files associated with source files for\n        the work, and the source code for shared libraries and dynamically\n        linked subprograms that the work is specifically designed to require,\n        such as by intimate data communication or control flow between those\n        subprograms and other parts of the work.</p>\n\n        <p>The Corresponding Source need not include anything that users\n        can regenerate automatically from other parts of the Corresponding\n        Source.</p>\n\n        <p>The Corresponding Source for a work in source code form is that\n        same work.</p>\n\n        <h3><a name=\"section2\"></a>2. Basic Permissions.</h3>\n\n        <p>All rights granted under this License are granted for the term of\n        copyright on the Program, and are irrevocable provided the stated\n        conditions are met.  This License explicitly affirms your unlimited\n        permission to run the unmodified Program.  The output from running a\n        covered work is covered by this License only if the output, given its\n        content, constitutes a covered work.  This License acknowledges your\n        rights of fair use or other equivalent, as provided by copyright law.</p>\n\n        <p>You may make, run and propagate covered works that you do not\n        convey, without conditions so long as your license otherwise remains\n        in force.  You may convey covered works to others for the sole purpose\n        of having them make modifications exclusively for you, or provide you\n        with facilities for running those works, provided that you comply with\n        the terms of this License in conveying all material for which you do\n        not control copyright.  Those thus making or running the covered works\n        for you must do so exclusively on your behalf, under your direction\n        and control, on terms that prohibit them from making any copies of\n        your copyrighted material outside their relationship with you.</p>\n\n        <p>Conveying under any other circumstances is permitted solely under\n        the conditions stated below.  Sublicensing is not allowed; section 10\n        makes it unnecessary.</p>\n\n        <h3><a name=\"section3\"></a>3. Protecting Users' Legal Rights From Anti-Circumvention Law.</h3>\n\n        <p>No covered work shall be deemed part of an effective technological\n        measure under any applicable law fulfilling obligations under article\n        11 of the WIPO copyright treaty adopted on 20 December 1996, or\n        similar laws prohibiting or restricting circumvention of such\n        measures.</p>\n\n        <p>When you convey a covered work, you waive any legal power to forbid\n        circumvention of technological measures to the extent such circumvention\n        is effected by exercising rights under this License with respect to\n        the covered work, and you disclaim any intention to limit operation or\n        modification of the work as a means of enforcing, against the work's\n        users, your or third parties' legal rights to forbid circumvention of\n        technological measures.</p>\n\n        <h3><a name=\"section4\"></a>4. Conveying Verbatim Copies.</h3>\n\n        <p>You may convey verbatim copies of the Program's source code as you\n        receive it, in any medium, provided that you conspicuously and\n        appropriately publish on each copy an appropriate copyright notice;\n        keep intact all notices stating that this License and any\n        non-permissive terms added in accord with section 7 apply to the code;\n        keep intact all notices of the absence of any warranty; and give all\n        recipients a copy of this License along with the Program.</p>\n\n        <p>You may charge any price or no price for each copy that you convey,\n        and you may offer support or warranty protection for a fee.</p>\n\n        <h3><a name=\"section5\"></a>5. Conveying Modified Source Versions.</h3>\n\n        <p>You may convey a work based on the Program, or the modifications to\n        produce it from the Program, in the form of source code under the\n        terms of section 4, provided that you also meet all of these conditions:</p>\n\n        <ul>\n\n        <li>a) The work must carry prominent notices stating that you modified\n            it, and giving a relevant date.</li>\n\n        <li>b) The work must carry prominent notices stating that it is\n            released under this License and any conditions added under section\n            7.  This requirement modifies the requirement in section 4 to\n            &quot;keep intact all notices&quot;.</li>\n\n        <li>c) You must license the entire work, as a whole, under this\n            License to anyone who comes into possession of a copy.  This\n            License will therefore apply, along with any applicable section 7\n            additional terms, to the whole of the work, and all its parts,\n            regardless of how they are packaged.  This License gives no\n            permission to license the work in any other way, but it does not\n            invalidate such permission if you have separately received it.</li>\n\n        <li>d) If the work has interactive user interfaces, each must display\n            Appropriate Legal Notices; however, if the Program has interactive\n            interfaces that do not display Appropriate Legal Notices, your\n            work need not make them do so.</li>\n\n        </ul>\n\n        <p>A compilation of a covered work with other separate and independent\n        works, which are not by their nature extensions of the covered work,\n        and which are not combined with it such as to form a larger program,\n        in or on a volume of a storage or distribution medium, is called an\n        &quot;aggregate&quot; if the compilation and its resulting copyright are not\n        used to limit the access or legal rights of the compilation's users\n        beyond what the individual works permit.  Inclusion of a covered work\n        in an aggregate does not cause this License to apply to the other\n        parts of the aggregate.</p>\n\n        <h3><a name=\"section6\"></a>6. Conveying Non-Source Forms.</h3>\n\n        <p>You may convey a covered work in object code form under the terms\n        of sections 4 and 5, provided that you also convey the\n        machine-readable Corresponding Source under the terms of this License,\n        in one of these ways:</p>\n\n        <ul>\n\n        <li>a) Convey the object code in, or embodied in, a physical product\n            (including a physical distribution medium), accompanied by the\n            Corresponding Source fixed on a durable physical medium\n            customarily used for software interchange.</li>\n\n        <li>b) Convey the object code in, or embodied in, a physical product\n            (including a physical distribution medium), accompanied by a\n            written offer, valid for at least three years and valid for as\n            long as you offer spare parts or customer support for that product\n            model, to give anyone who possesses the object code either (1) a\n            copy of the Corresponding Source for all the software in the\n            product that is covered by this License, on a durable physical\n            medium customarily used for software interchange, for a price no\n            more than your reasonable cost of physically performing this\n            conveying of source, or (2) access to copy the\n            Corresponding Source from a network server at no charge.</li>\n\n        <li>c) Convey individual copies of the object code with a copy of the\n            written offer to provide the Corresponding Source.  This\n            alternative is allowed only occasionally and noncommercially, and\n            only if you received the object code with such an offer, in accord\n            with subsection 6b.</li>\n\n        <li>d) Convey the object code by offering access from a designated\n            place (gratis or for a charge), and offer equivalent access to the\n            Corresponding Source in the same way through the same place at no\n            further charge.  You need not require recipients to copy the\n            Corresponding Source along with the object code.  If the place to\n            copy the object code is a network server, the Corresponding Source\n            may be on a different server (operated by you or a third party)\n            that supports equivalent copying facilities, provided you maintain\n            clear directions next to the object code saying where to find the\n            Corresponding Source.  Regardless of what server hosts the\n            Corresponding Source, you remain obligated to ensure that it is\n            available for as long as needed to satisfy these requirements.</li>\n\n        <li>e) Convey the object code using peer-to-peer transmission, provided\n            you inform other peers where the object code and Corresponding\n            Source of the work are being offered to the general public at no\n            charge under subsection 6d.</li>\n\n        </ul>\n\n        <p>A separable portion of the object code, whose source code is excluded\n        from the Corresponding Source as a System Library, need not be\n        included in conveying the object code work.</p>\n\n        <p>A &quot;User Product&quot; is either (1) a &quot;consumer product&quot;, which means any\n        tangible personal property which is normally used for personal, family,\n        or household purposes, or (2) anything designed or sold for incorporation\n        into a dwelling.  In determining whether a product is a consumer product,\n        doubtful cases shall be resolved in favor of coverage.  For a particular\n        product received by a particular user, &quot;normally used&quot; refers to a\n        typical or common use of that class of product, regardless of the status\n        of the particular user or of the way in which the particular user\n        actually uses, or expects or is expected to use, the product.  A product\n        is a consumer product regardless of whether the product has substantial\n        commercial, industrial or non-consumer uses, unless such uses represent\n        the only significant mode of use of the product.</p>\n\n        <p>&quot;Installation Information&quot; for a User Product means any methods,\n        procedures, authorization keys, or other information required to install\n        and execute modified versions of a covered work in that User Product from\n        a modified version of its Corresponding Source.  The information must\n        suffice to ensure that the continued functioning of the modified object\n        code is in no case prevented or interfered with solely because\n        modification has been made.</p>\n\n        <p>If you convey an object code work under this section in, or with, or\n        specifically for use in, a User Product, and the conveying occurs as\n        part of a transaction in which the right of possession and use of the\n        User Product is transferred to the recipient in perpetuity or for a\n        fixed term (regardless of how the transaction is characterized), the\n        Corresponding Source conveyed under this section must be accompanied\n        by the Installation Information.  But this requirement does not apply\n        if neither you nor any third party retains the ability to install\n        modified object code on the User Product (for example, the work has\n        been installed in ROM).</p>\n\n        <p>The requirement to provide Installation Information does not include a\n        requirement to continue to provide support service, warranty, or updates\n        for a work that has been modified or installed by the recipient, or for\n        the User Product in which it has been modified or installed.  Access to a\n        network may be denied when the modification itself materially and\n        adversely affects the operation of the network or violates the rules and\n        protocols for communication across the network.</p>\n\n        <p>Corresponding Source conveyed, and Installation Information provided,\n        in accord with this section must be in a format that is publicly\n        documented (and with an implementation available to the public in\n        source code form), and must require no special password or key for\n        unpacking, reading or copying.</p>\n\n        <h3><a name=\"section7\"></a>7. Additional Terms.</h3>\n\n        <p>&quot;Additional permissions&quot; are terms that supplement the terms of this\n        License by making exceptions from one or more of its conditions.\n        Additional permissions that are applicable to the entire Program shall\n        be treated as though they were included in this License, to the extent\n        that they are valid under applicable law.  If additional permissions\n        apply only to part of the Program, that part may be used separately\n        under those permissions, but the entire Program remains governed by\n        this License without regard to the additional permissions.</p>\n\n        <p>When you convey a copy of a covered work, you may at your option\n        remove any additional permissions from that copy, or from any part of\n        it.  (Additional permissions may be written to require their own\n        removal in certain cases when you modify the work.)  You may place\n        additional permissions on material, added by you to a covered work,\n        for which you have or can give appropriate copyright permission.</p>\n\n        <p>Notwithstanding any other provision of this License, for material you\n        add to a covered work, you may (if authorized by the copyright holders of\n        that material) supplement the terms of this License with terms:</p>\n\n        <ul>\n\n        <li>a) Disclaiming warranty or limiting liability differently from the\n            terms of sections 15 and 16 of this License; or</li>\n\n        <li>b) Requiring preservation of specified reasonable legal notices or\n            author attributions in that material or in the Appropriate Legal\n            Notices displayed by works containing it; or</li>\n\n        <li>c) Prohibiting misrepresentation of the origin of that material, or\n            requiring that modified versions of such material be marked in\n            reasonable ways as different from the original version; or</li>\n\n        <li>d) Limiting the use for publicity purposes of names of licensors or\n            authors of the material; or</li>\n\n        <li>e) Declining to grant rights under trademark law for use of some\n            trade names, trademarks, or service marks; or</li>\n\n        <li>f) Requiring indemnification of licensors and authors of that\n            material by anyone who conveys the material (or modified versions of\n            it) with contractual assumptions of liability to the recipient, for\n            any liability that these contractual assumptions directly impose on\n            those licensors and authors.</li>\n\n        </ul>\n\n        <p>All other non-permissive additional terms are considered &quot;further\n        restrictions&quot; within the meaning of section 10.  If the Program as you\n        received it, or any part of it, contains a notice stating that it is\n        governed by this License along with a term that is a further restriction,\n        you may remove that term.  If a license document contains a further\n        restriction but permits relicensing or conveying under this License, you\n        may add to a covered work material governed by the terms of that license\n        document, provided that the further restriction does not survive such\n        relicensing or conveying.</p>\n\n        <p>If you add terms to a covered work in accord with this section, you\n        must place, in the relevant source files, a statement of the\n        additional terms that apply to those files, or a notice indicating\n        where to find the applicable terms.</p>\n\n        <p>Additional terms, permissive or non-permissive, may be stated in the\n        form of a separately written license, or stated as exceptions;\n        the above requirements apply either way.</p>\n\n        <h3><a name=\"section8\"></a>8. Termination.</h3>\n\n        <p>You may not propagate or modify a covered work except as expressly\n        provided under this License.  Any attempt otherwise to propagate or\n        modify it is void, and will automatically terminate your rights under\n        this License (including any patent licenses granted under the third\n        paragraph of section 11).</p>\n\n        <p>However, if you cease all violation of this License, then your\n        license from a particular copyright holder is reinstated (a)\n        provisionally, unless and until the copyright holder explicitly and\n        finally terminates your license, and (b) permanently, if the copyright\n        holder fails to notify you of the violation by some reasonable means\n        prior to 60 days after the cessation.</p>\n\n        <p>Moreover, your license from a particular copyright holder is\n        reinstated permanently if the copyright holder notifies you of the\n        violation by some reasonable means, this is the first time you have\n        received notice of violation of this License (for any work) from that\n        copyright holder, and you cure the violation prior to 30 days after\n        your receipt of the notice.</p>\n\n        <p>Termination of your rights under this section does not terminate the\n        licenses of parties who have received copies or rights from you under\n        this License.  If your rights have been terminated and not permanently\n        reinstated, you do not qualify to receive new licenses for the same\n        material under section 10.</p>\n\n        <h3><a name=\"section9\"></a>9. Acceptance Not Required for Having Copies.</h3>\n\n        <p>You are not required to accept this License in order to receive or\n        run a copy of the Program.  Ancillary propagation of a covered work\n        occurring solely as a consequence of using peer-to-peer transmission\n        to receive a copy likewise does not require acceptance.  However,\n        nothing other than this License grants you permission to propagate or\n        modify any covered work.  These actions infringe copyright if you do\n        not accept this License.  Therefore, by modifying or propagating a\n        covered work, you indicate your acceptance of this License to do so.</p>\n\n        <h3><a name=\"section10\"></a>10. Automatic Licensing of Downstream Recipients.</h3>\n\n        <p>Each time you convey a covered work, the recipient automatically\n        receives a license from the original licensors, to run, modify and\n        propagate that work, subject to this License.  You are not responsible\n        for enforcing compliance by third parties with this License.</p>\n\n        <p>An &quot;entity transaction&quot; is a transaction transferring control of an\n        organization, or substantially all assets of one, or subdividing an\n        organization, or merging organizations.  If propagation of a covered\n        work results from an entity transaction, each party to that\n        transaction who receives a copy of the work also receives whatever\n        licenses to the work the party's predecessor in interest had or could\n        give under the previous paragraph, plus a right to possession of the\n        Corresponding Source of the work from the predecessor in interest, if\n        the predecessor has it or can get it with reasonable efforts.</p>\n\n        <p>You may not impose any further restrictions on the exercise of the\n        rights granted or affirmed under this License.  For example, you may\n        not impose a license fee, royalty, or other charge for exercise of\n        rights granted under this License, and you may not initiate litigation\n        (including a cross-claim or counterclaim in a lawsuit) alleging that\n        any patent claim is infringed by making, using, selling, offering for\n        sale, or importing the Program or any portion of it.</p>\n\n        <h3><a name=\"section11\"></a>11. Patents.</h3>\n\n        <p>A &quot;contributor&quot; is a copyright holder who authorizes use under this\n        License of the Program or a work on which the Program is based.  The\n        work thus licensed is called the contributor's &quot;contributor version&quot;.</p>\n\n        <p>A contributor's &quot;essential patent claims&quot; are all patent claims\n        owned or controlled by the contributor, whether already acquired or\n        hereafter acquired, that would be infringed by some manner, permitted\n        by this License, of making, using, or selling its contributor version,\n        but do not include claims that would be infringed only as a\n        consequence of further modification of the contributor version.  For\n        purposes of this definition, &quot;control&quot; includes the right to grant\n        patent sublicenses in a manner consistent with the requirements of\n        this License.</p>\n\n        <p>Each contributor grants you a non-exclusive, worldwide, royalty-free\n        patent license under the contributor's essential patent claims, to\n        make, use, sell, offer for sale, import and otherwise run, modify and\n        propagate the contents of its contributor version.</p>\n\n        <p>In the following three paragraphs, a &quot;patent license&quot; is any express\n        agreement or commitment, however denominated, not to enforce a patent\n        (such as an express permission to practice a patent or covenant not to\n        sue for patent infringement).  To &quot;grant&quot; such a patent license to a\n        party means to make such an agreement or commitment not to enforce a\n        patent against the party.</p>\n\n        <p>If you convey a covered work, knowingly relying on a patent license,\n        and the Corresponding Source of the work is not available for anyone\n        to copy, free of charge and under the terms of this License, through a\n        publicly available network server or other readily accessible means,\n        then you must either (1) cause the Corresponding Source to be so\n        available, or (2) arrange to deprive yourself of the benefit of the\n        patent license for this particular work, or (3) arrange, in a manner\n        consistent with the requirements of this License, to extend the patent\n        license to downstream recipients.  &quot;Knowingly relying&quot; means you have\n        actual knowledge that, but for the patent license, your conveying the\n        covered work in a country, or your recipient's use of the covered work\n        in a country, would infringe one or more identifiable patents in that\n        country that you have reason to believe are valid.</p>\n\n        <p>If, pursuant to or in connection with a single transaction or\n        arrangement, you convey, or propagate by procuring conveyance of, a\n        covered work, and grant a patent license to some of the parties\n        receiving the covered work authorizing them to use, propagate, modify\n        or convey a specific copy of the covered work, then the patent license\n        you grant is automatically extended to all recipients of the covered\n        work and works based on it.</p>\n\n        <p>A patent license is &quot;discriminatory&quot; if it does not include within\n        the scope of its coverage, prohibits the exercise of, or is\n        conditioned on the non-exercise of one or more of the rights that are\n        specifically granted under this License.  You may not convey a covered\n        work if you are a party to an arrangement with a third party that is\n        in the business of distributing software, under which you make payment\n        to the third party based on the extent of your activity of conveying\n        the work, and under which the third party grants, to any of the\n        parties who would receive the covered work from you, a discriminatory\n        patent license (a) in connection with copies of the covered work\n        conveyed by you (or copies made from those copies), or (b) primarily\n        for and in connection with specific products or compilations that\n        contain the covered work, unless you entered into that arrangement,\n        or that patent license was granted, prior to 28 March 2007.</p>\n\n        <p>Nothing in this License shall be construed as excluding or limiting\n        any implied license or other defenses to infringement that may\n        otherwise be available to you under applicable patent law.</p>\n\n        <h3><a name=\"section12\"></a>12. No Surrender of Others' Freedom.</h3>\n\n        <p>If conditions are imposed on you (whether by court order, agreement or\n        otherwise) that contradict the conditions of this License, they do not\n        excuse you from the conditions of this License.  If you cannot convey a\n        covered work so as to satisfy simultaneously your obligations under this\n        License and any other pertinent obligations, then as a consequence you may\n        not convey it at all.  For example, if you agree to terms that obligate you\n        to collect a royalty for further conveying from those to whom you convey\n        the Program, the only way you could satisfy both those terms and this\n        License would be to refrain entirely from conveying the Program.</p>\n\n        <h3><a name=\"section13\"></a>13. Remote Network Interaction; Use with the GNU General Public License.</h3>\n\n        <p>Notwithstanding any other provision of this License, if you modify the\n        Program, your modified version must prominently offer all users\n        interacting with it remotely through a computer network (if your version\n        supports such interaction) an opportunity to receive the Corresponding\n        Source of your version by providing access to the Corresponding Source\n        from a network server at no charge, through some standard or customary\n        means of facilitating copying of software.  This Corresponding Source\n        shall include the Corresponding Source for any work covered by version 3\n        of the GNU General Public License that is incorporated pursuant to the\n        following paragraph.</p>\n\n        <p>Notwithstanding any other provision of this License, you have permission\n        to link or combine any covered work with a work licensed under version 3\n        of the GNU General Public License into a single combined work, and to\n        convey the resulting work.  The terms of this License will continue to\n        apply to the part which is the covered work, but the work with which it is\n        combined will remain governed by version 3 of the GNU General Public\n        License.</p>\n\n        <h3><a name=\"section14\"></a>14. Revised Versions of this License.</h3>\n\n        <p>The Free Software Foundation may publish revised and/or new versions of\n        the GNU Affero General Public License from time to time.  Such new\n        versions will be similar in spirit to the present version, but may differ\n        in detail to address new problems or concerns.</p>\n\n        <p>Each version is given a distinguishing version number.  If the\n        Program specifies that a certain numbered version of the GNU Affero\n        General Public License &quot;or any later version&quot; applies to it, you have\n        the option of following the terms and conditions either of that\n        numbered version or of any later version published by the Free\n        Software Foundation.  If the Program does not specify a version number\n        of the GNU Affero General Public License, you may choose any version\n        ever published by the Free Software Foundation.</p>\n\n        <p>If the Program specifies that a proxy can decide which future\n        versions of the GNU Affero General Public License can be used, that\n        proxy's public statement of acceptance of a version permanently\n        authorizes you to choose that version for the Program.</p>\n\n        <p>Later license versions may give you additional or different\n        permissions.  However, no additional obligations are imposed on any\n        author or copyright holder as a result of your choosing to follow a\n        later version.</p>\n\n        <h3><a name=\"section15\"></a>15. Disclaimer of Warranty.</h3>\n\n        <p>THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\n        APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\n        HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM &quot;AS IS&quot; WITHOUT WARRANTY\n        OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n        THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n        PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\n        IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\n        ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p>\n\n        <h3><a name=\"section16\"></a>16. Limitation of Liability.</h3>\n\n        <p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\n        WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\n        THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\n        GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\n        USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\n        DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\n        PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\n        EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\n        SUCH DAMAGES.</p>\n\n        <h3><a name=\"section17\"></a>17. Interpretation of Sections 15 and 16.</h3>\n\n        <p>If the disclaimer of warranty and limitation of liability provided\n        above cannot be given local legal effect according to their terms,\n        reviewing courts shall apply local law that most closely approximates\n        an absolute waiver of all civil liability in connection with the\n        Program, unless a warranty or assumption of liability accompanies a\n        copy of the Program in return for a fee.</p>\n\n        <p>END OF TERMS AND CONDITIONS</p>\n\n        <h2><a name=\"howto\"></a>How to Apply These Terms to Your New Programs</h2>\n\n        <p>If you develop a new program, and you want it to be of the greatest\n        possible use to the public, the best way to achieve this is to make it\n        free software which everyone can redistribute and change under these terms.</p>\n\n        <p>To do so, attach the following notices to the program.  It is safest\n        to attach them to the start of each source file to most effectively\n        state the exclusion of warranty; and each file should have at least\n        the &quot;copyright&quot; line and a pointer to where the full notice is found.</p>\n\n        <pre>&lt;one line to give the program's name and a brief idea of what it does.&gt;\n    Copyright (C) &lt;year&gt;  &lt;name of author&gt;\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU Affero General Public License as\n    published by the Free Software Foundation, either version 3 of the\n    License, or (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU Affero General Public License for more details.\n\n    You should have received a copy of the GNU Affero General Public License\n    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.\n        </pre>\n\n        <p>Also add information on how to contact you by electronic and paper mail.</p>\n\n        <p>If your software can interact with users remotely through a computer\n        network, you should also make sure that it provides a way for users to\n        get its source.  For example, if your program is a web application, its\n        interface could display a &quot;Source&quot; link that leads users to an archive\n        of the code.  There are many ways you could offer source, and different\n        solutions will be better for different programs; see section 13 for the\n        specific requirements.</p>\n\n        <p>You should also get your employer (if you work as a programmer) or school,\n        if any, to sign a &quot;copyright disclaimer&quot; for the program, if necessary.\n        For more information on this, and how to apply and follow the GNU AGPL, see\n        &lt;<a href=\"http://www.gnu.org/licenses/\" target=\"_blank\">http://www.gnu.org/licenses/</a>&gt;.</p>\n    </div>\n</div>"
 
 /***/ },
-/* 145 */
+/* 144 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"menu\">\n    <div class=\"list-group\">\n        <a [routerLink]=\"['/legal/privacy-policy']\" class=\"list-group-item\">Privacy policy</a>\n        <a [routerLink]=\"['/legal/commercial-license']\" class=\"list-group-item\">Commercial license</a>\n        <a [routerLink]=\"['/legal/commercial-license-oem']\" class=\"list-group-item\">Commercial license (OEM)</a>\n        <a [routerLink]=\"['/legal/open-source-license']\" class=\"list-group-item\">Open-source license</a>\n        <a [routerLink]=\"['/legal/gnu-agpl-license']\" class=\"list-group-item\">GNU Affero General Public License</a>\n    </div>\n</div>"
 
 /***/ },
-/* 146 */
+/* 145 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<div class=\"container\">\n    <legalMenu></legalMenu>\n    <div class=\"body\">\n        <h1>Slamby API open-source software license</h1>\n        <p class=\"lead\">Slamby API is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License.</p>\n        <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.</p>\n        <p>You should have received a copy of the GNU Affero General Public License along with this program. If not, see http://www.gnu.org/licenses/agpl-3.0.html.</p>\n        <h2>Commercial license</h2>\n        <p class=\"lead\">In addition to this license, Slamby API is offered under a commercial license. You can learn more about this option by contacting us at sales@slamby.com.</p>\n    </div>\n</div>"
 
 /***/ },
-/* 147 */
+/* 146 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<div class=\"container\">\n    <legalMenu></legalMenu>\n    <div class=\"body\">\n        <h1>Slamby website privacy policy</h1>\n        <p class=\"lead\">Legal information & notices</p>\n        <h2>General</h2>\n        <p>Slamby operates https://www.slamby.com, https://developers.slamby.com (the \"Sites\"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Sites.</p>\n        <p>We use your Personal or Company Information only for providing and improving the Sites, our products, and our services. By using the Sites, you agree to the collection and use of information in accordance with this policy.</p>\n        <h2>Information collection and use</h2>\n        <p>While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally, identifiable information may include but is not limited to your name (\"Personal Information\").</p>\n        <p>We collect information from you when you register on our site, subscribe to our newsletter or fill out any online form.</p>\n        <p>When ordering or registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, company/business details or mailing address. You may, however, visit our site anonymously.</p>\n        <h2>What information do we collect?</h2>\n        <p>We collect information from you when you register on our site, subscribe to our newsletter or fill out any online form.</p>\n        <p>When ordering or registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, company/business details or mailing address. You may, however, visit our site anonymously.</p>\n        <h2>Log data</h2>\n        <p>Like many site operators, we collect information that your browser sends whenever you visit our Site (\"Log Data\"). This Log Data may include information such as your computer's Internet Protocol (\"IP\") address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time spent on those pages and other statistics.</p>\n        <p>In addition, we may use third-party services such as Google Analytics that collect, monitor and analyze this data.</p>\n        <h2>Communications</h2>\n        <p>We may use your Personal Information to contact you with newsletters, marketing or promotional materials.</p>\n        <h2>Do we use cookies?</h2>\n        <p>Yes, we do. Cookies are files with small amount of data, which may include an anonymous unique identifier.</p>\n        <p>Cookies are sent to your browser from a website and stored on your computer's hard drive.</p>\n        <p>Like many sites, we use \"cookies\" to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.</p>\n        <h2>How do we use the collected data?</h2>\n        <p>Any collected information from you may be used in one of the following ways:</p>\n        <ul>\n            <li>To personalize your experience</li>\n            <li>To improve our websites</li>\n            <li>To improve customer service</li>\n            <li>To automated emails for administrative purpose</li>\n            <li>To send surveys, or promotion emails</li>\n            <li>To send newsletters</li>\n        </ul>\n        <p>Your provided email address may be used to send you information, respond to inquiries.</p>\n        <h2>Security</h2>\n        <p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>\n        <h2>Changes</h2>\n        <p>This Privacy Policy is effective as of (add date) and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.</p>\n        <p>We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.</p>\n        <p>If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us or by placing a prominent notice on our website.</p>\n        <h2>Consent</h2>\n        <p>By using our Sites, you consent to our privacy policy.</p>\n        <h2>Contact us</h2>\n        <p>If you have any questions about this Privacy Policy, please contact us. <a href=\"mailto:hello@slamby.com\">hello@slamby.com</a></p>\n    </div>\n</div>"
 
 /***/ },
-/* 148 */
+/* 147 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h1>Partners</h1>\n            <p class=\"lead\">Creating a better product requires teamwork, partnerships and collaboration. We are grateful to work together with such amazing partners.</p>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"item\" *ngFor=\"let partner of partners\">\n            <img src=\"/assets/images/partners/{{partner.logo}}\" alt=\"{{partner.name}}\" class=\"img-responsive\">\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 149 */
+/* 148 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<section class=\"main\">\n    <div class=\"container\">\n        <div class=\"body\">\n            <div class=\"main-message\">\n                <h1>45 € / core / month</h1>\n                <p class=\"lead\">Start using Slamby for a price of a cup of coffee per core. Use it as a SaaS or install it on your machine.</p>\n                <p class=\"lead\">No query limit, no memory limit</p>\n                <p><a [routerLink]=\"['/getting-started']\" class=\"btn btn-default btn-lg\" angulartics2On=\"click\" angularticsEvent=\"getting-started-click\" angularticsCategory=\"pricing-page\">Getting started</a></p>\n            </div>\n        </div>\n    </div>\n</section>\n\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h1 class=\"page-header\">Pricing</h1>\n            <p class=\"lead\">Our product is available for both private hosting and SaaS. You can easily download and install it on your machine, or purchase it as a monthly service.</p>\n            <p class=\"lead\">For private hosting, you can download and install Slamby API and register it with an open-source license for free, and you can purchase a core-based license for commercial use.</p>\n            <p class=\"lead\">For SaaS, you can select a required instance size and buy it with a monthly payment. The prices cover the standard Slamby license per core + hosting fee.</p>\n        </div>\n    </div>\n</div>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h2 class=\"page-header\">Core pricing</h2>\n        </div>\n        <div class=\"col-md-6\">\n            <p class=\"lead\">Standard Slamby API pricing, based on the  processor core number. There is no query, usage, storage and memory limitation.</p>\n        </div>\n        <div class=\"col-md-6\">\n            <table class=\"table table-striped\">\n                <thead>\n                    <tr>\n                        <th>Name</th>\n                        <th>Desciption</th>\n                        <th>Price</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td>1 core lincese</td>\n                        <td>unlimited memory, unlimited storage</td>\n                        <td>45 € / processor core / month</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h2 class=\"page-header\">Support</h2>\n        </div>\n        <div class=\"col-md-6\">\n            <p class=\"lead\">For professional use select one of our available support options based on the available communication channels and SLA.</p>\n            <p class=\"lead\">Currently, we have three type of support options. Each Slamby instance has a basic support option that includes community-based - forum support.</p>\n            <p><a href=\"mailto:sales@slamby.com\" class=\"btn btn-default\" angulartics2On=\"click\" angularticsCategory=\"pricing-page\" angularticsEvent=\"support-get-more-info\">Get more information</a></p>\n            <p>Community support: <a href=\"https://groups.google.com/forum/#!forum/slamby\" target=\"_blank\">https://groups.google.com/forum/#!forum/slamby</a>\n            </p>\n        </div>\n        <div class=\"col-md-6\">\n            <table class=\"table table-striped\">\n                <thead>\n                    <tr>\n                        <th>Name</th>\n                        <th>Desciption</th>\n                        <th>Price</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td>Basic</td>\n                        <td><a href=\"https://groups.google.com/forum/#!forum/slamby\" target=\"_blank\">Community only</a>, no SLA</td>\n                        <td>Free</td>\n                    </tr>\n                    <tr>\n                        <td>Professional</td>\n                        <td>Next workday, email</td>\n                        <td>2000 € yearly / instance</td>\n                    </tr>\n                    <tr>\n                        <td>Production</td>\n                        <td>Direct developer and technical access, 5 hours SLA, email, skype, phone.</td>\n                        <td>6000 € yearly / instance</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>\n\n<div class=\"container pricing\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h2 class=\"page-header\">SaaS pricing</h2>\n            <p class=\"lead\">Purchase Slamby as software as a service. Select one of our hosting locations and one suitable size of the instance. Prices based on the resource size + core based Slamby license fee.</p>\n            <p><a href=\"mailto:sales@slamby.com\" class=\"btn btn-default\" angulartics2On=\"click\" angularticsCategory=\"pricing-page\" angularticsEvent=\"saas-contact-sales\">Contact sales</a></p>\n            <p>Prices are in € / month.</p>\n            <h3>European</h3>\n            <table class=\"table table-striped\">\n                <thead>\n                    <tr>\n                        <th>Name</th>\n                        <!--<th class=\"hidden-xs hidden-sm\">Tier</th>-->\n                        <th>Core</th>\n                        <th>Memory</th>\n                        <th class=\"hidden-xs\">Storage</th>\n                        <!--<th class=\"hidden-xs hidden-sm\">Wholesale</th>-->\n                        <th class=\"hidden-xs hidden-sm\">Technical Fee</th>\n                        <th class=\"hidden-xs hidden-sm\">License Fee</th>\n                        <th>Reatil Price</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr *ngFor=\"let item of pricingEurope\">\n                        <td>{{item.name}}</td>\n                        <!--<td class=\"hidden-xs hidden-sm\">{{item.tier}}</td>-->\n                        <td>{{item.core}}</td>\n                        <td>{{item.memory}} GB</td>\n                        <td class=\"hidden-xs\">{{item.storage}} GB</td>\n                        <!--<td class=\"hidden-xs hidden-sm\">{{item.wholesale}} €</td>-->\n                        <td class=\"hidden-xs hidden-sm\">{{item.technicalFee}} €</td>\n                        <td class=\"hidden-xs hidden-sm\">{{item.slambyLicenseFee}} €</td>\n                        <td>{{item.retailPrice}} €</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <h3>Asian</h3>\n            <table class=\"table table-striped\">\n                <thead>\n                    <tr>\n                        <th>Name</th>\n                        <!--<th class=\"hidden-xs hidden-sm\">Tier</th>-->\n                        <th>Core</th>\n                        <th>Memory</th>\n                        <th class=\"hidden-xs\">Storage</th>\n                        <!--<th class=\"hidden-xs hidden-sm\">Wholesale</th>-->\n                        <th class=\"hidden-xs hidden-sm\">Technical Fee</th>\n                        <th class=\"hidden-xs hidden-sm\">License Fee</th>\n                        <th>Reatil Price</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr *ngFor=\"let item of pricingAsian\">\n                        <td>{{item.name}}</td>\n                        <!--<td class=\"hidden-xs hidden-sm\">{{item.tier}}</td>-->\n                        <td>{{item.core}}</td>\n                        <td>{{item.memory}}</td>\n                        <td class=\"hidden-xs\">{{item.storage}}</td>\n                        <!--<td class=\"hidden-xs hidden-sm\">{{item.wholesale}} €</td>-->\n                        <td class=\"hidden-xs hidden-sm\">{{item.technicalFee}} €</td>\n                        <td class=\"hidden-xs hidden-sm\">{{item.slambyLicenseFee}} €</td>\n                        <td>{{item.retailPrice}} €</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 150 */
+/* 149 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <img src=\"/assets/images/support_header.png\" alt=\"\" class=\"img-responsive center-block\">\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 151 */
+/* 150 */
 /***/ function(module, exports) {
 
 	module.exports = "<pm-header></pm-header>\n<div class=\"container notFoundModule\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <div class=\"box\">\n                <div class=\"icon\">\n                    <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i>\n                </div>\n                <h1>Thank You</h1>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 152 */
+/* 151 */
 /***/ function(module, exports) {
 
 	/*! *****************************************************************************
@@ -61193,7 +61187,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=Reflect.js.map
 
 /***/ },
-/* 153 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61234,7 +61228,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 154 */
+/* 153 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -61247,7 +61241,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 155 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61262,35 +61256,36 @@ webpackJsonp([1,0],[
 	exports.Observable = Observable_1.Observable;
 	// statics
 	/* tslint:disable:no-use-before-declare */
+	__webpack_require__(157);
 	__webpack_require__(158);
 	__webpack_require__(159);
 	__webpack_require__(160);
 	__webpack_require__(161);
-	__webpack_require__(162);
+	__webpack_require__(164);
 	__webpack_require__(165);
 	__webpack_require__(166);
-	__webpack_require__(167);
 	__webpack_require__(55);
+	__webpack_require__(167);
 	__webpack_require__(168);
 	__webpack_require__(169);
 	__webpack_require__(170);
 	__webpack_require__(171);
 	__webpack_require__(172);
+	__webpack_require__(177);
 	__webpack_require__(173);
-	__webpack_require__(178);
 	__webpack_require__(174);
 	__webpack_require__(175);
 	__webpack_require__(176);
-	__webpack_require__(177);
-	__webpack_require__(179);
-	__webpack_require__(182);
-	__webpack_require__(180);
+	__webpack_require__(178);
 	__webpack_require__(181);
-	__webpack_require__(183);
+	__webpack_require__(179);
+	__webpack_require__(180);
+	__webpack_require__(182);
 	//dom
+	__webpack_require__(162);
 	__webpack_require__(163);
-	__webpack_require__(164);
 	//operators
+	__webpack_require__(185);
 	__webpack_require__(186);
 	__webpack_require__(187);
 	__webpack_require__(188);
@@ -61304,35 +61299,35 @@ webpackJsonp([1,0],[
 	__webpack_require__(196);
 	__webpack_require__(197);
 	__webpack_require__(198);
+	__webpack_require__(204);
 	__webpack_require__(199);
-	__webpack_require__(205);
 	__webpack_require__(200);
 	__webpack_require__(201);
 	__webpack_require__(202);
 	__webpack_require__(203);
-	__webpack_require__(204);
+	__webpack_require__(205);
 	__webpack_require__(206);
 	__webpack_require__(207);
 	__webpack_require__(208);
-	__webpack_require__(209);
 	__webpack_require__(56);
+	__webpack_require__(211);
 	__webpack_require__(212);
 	__webpack_require__(213);
-	__webpack_require__(214);
-	__webpack_require__(210);
+	__webpack_require__(209);
 	__webpack_require__(57);
+	__webpack_require__(214);
 	__webpack_require__(215);
 	__webpack_require__(216);
 	__webpack_require__(217);
 	__webpack_require__(218);
 	__webpack_require__(219);
 	__webpack_require__(220);
-	__webpack_require__(221);
+	__webpack_require__(183);
 	__webpack_require__(184);
-	__webpack_require__(185);
-	__webpack_require__(222);
+	__webpack_require__(221);
 	__webpack_require__(58);
-	__webpack_require__(211);
+	__webpack_require__(210);
+	__webpack_require__(222);
 	__webpack_require__(223);
 	__webpack_require__(224);
 	__webpack_require__(225);
@@ -61350,9 +61345,9 @@ webpackJsonp([1,0],[
 	__webpack_require__(237);
 	__webpack_require__(238);
 	__webpack_require__(239);
+	__webpack_require__(241);
 	__webpack_require__(240);
 	__webpack_require__(242);
-	__webpack_require__(241);
 	__webpack_require__(243);
 	__webpack_require__(244);
 	__webpack_require__(245);
@@ -61392,7 +61387,6 @@ webpackJsonp([1,0],[
 	__webpack_require__(279);
 	__webpack_require__(280);
 	__webpack_require__(281);
-	__webpack_require__(282);
 	/* tslint:disable:no-unused-variable */
 	var Subscription_1 = __webpack_require__(8);
 	exports.Subscription = Subscription_1.Subscription;
@@ -61422,7 +61416,7 @@ webpackJsonp([1,0],[
 	exports.TimeInterval = timeInterval_1.TimeInterval;
 	var timestamp_1 = __webpack_require__(79);
 	exports.Timestamp = timestamp_1.Timestamp;
-	var TestScheduler_1 = __webpack_require__(409);
+	var TestScheduler_1 = __webpack_require__(408);
 	exports.TestScheduler = TestScheduler_1.TestScheduler;
 	var VirtualTimeScheduler_1 = __webpack_require__(81);
 	exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
@@ -61433,7 +61427,7 @@ webpackJsonp([1,0],[
 	var asap_1 = __webpack_require__(82);
 	var async_1 = __webpack_require__(13);
 	var queue_1 = __webpack_require__(83);
-	var animationFrame_1 = __webpack_require__(406);
+	var animationFrame_1 = __webpack_require__(405);
 	var rxSubscriber_1 = __webpack_require__(33);
 	var iterator_1 = __webpack_require__(27);
 	var observable_1 = __webpack_require__(32);
@@ -61480,7 +61474,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=Rx.js.map
 
 /***/ },
-/* 156 */
+/* 155 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -61534,7 +61528,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=Scheduler.js.map
 
 /***/ },
-/* 157 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61579,14 +61573,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var bindCallback_1 = __webpack_require__(300);
+	Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
+	//# sourceMappingURL=bindCallback.js.map
+
+/***/ },
 /* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var bindCallback_1 = __webpack_require__(301);
-	Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
-	//# sourceMappingURL=bindCallback.js.map
+	var bindNodeCallback_1 = __webpack_require__(301);
+	Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
+	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
 /* 159 */
@@ -61594,9 +61598,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var bindNodeCallback_1 = __webpack_require__(302);
-	Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
-	//# sourceMappingURL=bindNodeCallback.js.map
+	var combineLatest_1 = __webpack_require__(302);
+	Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
+	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
 /* 160 */
@@ -61604,9 +61608,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var combineLatest_1 = __webpack_require__(303);
-	Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
-	//# sourceMappingURL=combineLatest.js.map
+	var concat_1 = __webpack_require__(303);
+	Observable_1.Observable.concat = concat_1.concat;
+	//# sourceMappingURL=concat.js.map
 
 /***/ },
 /* 161 */
@@ -61614,9 +61618,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var concat_1 = __webpack_require__(304);
-	Observable_1.Observable.concat = concat_1.concat;
-	//# sourceMappingURL=concat.js.map
+	var defer_1 = __webpack_require__(304);
+	Observable_1.Observable.defer = defer_1.defer;
+	//# sourceMappingURL=defer.js.map
 
 /***/ },
 /* 162 */
@@ -61624,9 +61628,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var defer_1 = __webpack_require__(305);
-	Observable_1.Observable.defer = defer_1.defer;
-	//# sourceMappingURL=defer.js.map
+	var ajax_1 = __webpack_require__(306);
+	Observable_1.Observable.ajax = ajax_1.ajax;
+	//# sourceMappingURL=ajax.js.map
 
 /***/ },
 /* 163 */
@@ -61634,9 +61638,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var ajax_1 = __webpack_require__(307);
-	Observable_1.Observable.ajax = ajax_1.ajax;
-	//# sourceMappingURL=ajax.js.map
+	var webSocket_1 = __webpack_require__(307);
+	Observable_1.Observable.webSocket = webSocket_1.webSocket;
+	//# sourceMappingURL=webSocket.js.map
 
 /***/ },
 /* 164 */
@@ -61644,9 +61648,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var webSocket_1 = __webpack_require__(308);
-	Observable_1.Observable.webSocket = webSocket_1.webSocket;
-	//# sourceMappingURL=webSocket.js.map
+	var empty_1 = __webpack_require__(308);
+	Observable_1.Observable.empty = empty_1.empty;
+	//# sourceMappingURL=empty.js.map
 
 /***/ },
 /* 165 */
@@ -61654,22 +61658,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var empty_1 = __webpack_require__(309);
-	Observable_1.Observable.empty = empty_1.empty;
-	//# sourceMappingURL=empty.js.map
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var forkJoin_1 = __webpack_require__(310);
+	var forkJoin_1 = __webpack_require__(309);
 	Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 167 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61679,17 +61673,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=from.js.map
 
 /***/ },
-/* 168 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var fromEventPattern_1 = __webpack_require__(312);
+	var fromEventPattern_1 = __webpack_require__(311);
 	Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
-/* 169 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61699,14 +61693,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var GenerateObservable_1 = __webpack_require__(290);
+	Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
+	//# sourceMappingURL=generate.js.map
+
+/***/ },
 /* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var GenerateObservable_1 = __webpack_require__(291);
-	Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
-	//# sourceMappingURL=generate.js.map
+	var if_1 = __webpack_require__(312);
+	Observable_1.Observable.if = if_1._if;
+	//# sourceMappingURL=if.js.map
 
 /***/ },
 /* 171 */
@@ -61714,9 +61718,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var if_1 = __webpack_require__(313);
-	Observable_1.Observable.if = if_1._if;
-	//# sourceMappingURL=if.js.map
+	var interval_1 = __webpack_require__(313);
+	Observable_1.Observable.interval = interval_1.interval;
+	//# sourceMappingURL=interval.js.map
 
 /***/ },
 /* 172 */
@@ -61724,9 +61728,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var interval_1 = __webpack_require__(314);
-	Observable_1.Observable.interval = interval_1.interval;
-	//# sourceMappingURL=interval.js.map
+	var merge_1 = __webpack_require__(314);
+	Observable_1.Observable.merge = merge_1.merge;
+	//# sourceMappingURL=merge.js.map
 
 /***/ },
 /* 173 */
@@ -61734,22 +61738,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var merge_1 = __webpack_require__(315);
-	Observable_1.Observable.merge = merge_1.merge;
-	//# sourceMappingURL=merge.js.map
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var never_1 = __webpack_require__(316);
+	var never_1 = __webpack_require__(315);
 	Observable_1.Observable.never = never_1.never;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
-/* 175 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61759,7 +61753,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=of.js.map
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61769,17 +61763,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var pairs_1 = __webpack_require__(317);
+	var pairs_1 = __webpack_require__(316);
 	Observable_1.Observable.pairs = pairs_1.pairs;
 	//# sourceMappingURL=pairs.js.map
 
 /***/ },
-/* 178 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61789,14 +61783,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var range_1 = __webpack_require__(317);
+	Observable_1.Observable.range = range_1.range;
+	//# sourceMappingURL=range.js.map
+
+/***/ },
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var range_1 = __webpack_require__(318);
-	Observable_1.Observable.range = range_1.range;
-	//# sourceMappingURL=range.js.map
+	var throw_1 = __webpack_require__(318);
+	Observable_1.Observable.throw = throw_1._throw;
+	//# sourceMappingURL=throw.js.map
 
 /***/ },
 /* 180 */
@@ -61804,9 +61808,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var throw_1 = __webpack_require__(319);
-	Observable_1.Observable.throw = throw_1._throw;
-	//# sourceMappingURL=throw.js.map
+	var timer_1 = __webpack_require__(319);
+	Observable_1.Observable.timer = timer_1.timer;
+	//# sourceMappingURL=timer.js.map
 
 /***/ },
 /* 181 */
@@ -61814,9 +61818,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var timer_1 = __webpack_require__(320);
-	Observable_1.Observable.timer = timer_1.timer;
-	//# sourceMappingURL=timer.js.map
+	var using_1 = __webpack_require__(320);
+	Observable_1.Observable.using = using_1.using;
+	//# sourceMappingURL=using.js.map
 
 /***/ },
 /* 182 */
@@ -61824,9 +61828,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var using_1 = __webpack_require__(321);
-	Observable_1.Observable.using = using_1.using;
-	//# sourceMappingURL=using.js.map
+	var zip_1 = __webpack_require__(321);
+	Observable_1.Observable.zip = zip_1.zip;
+	//# sourceMappingURL=zip.js.map
 
 /***/ },
 /* 183 */
@@ -61834,9 +61838,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var zip_1 = __webpack_require__(322);
-	Observable_1.Observable.zip = zip_1.zip;
-	//# sourceMappingURL=zip.js.map
+	var audit_1 = __webpack_require__(322);
+	Observable_1.Observable.prototype.audit = audit_1.audit;
+	//# sourceMappingURL=audit.js.map
 
 /***/ },
 /* 184 */
@@ -61844,9 +61848,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var audit_1 = __webpack_require__(323);
-	Observable_1.Observable.prototype.audit = audit_1.audit;
-	//# sourceMappingURL=audit.js.map
+	var auditTime_1 = __webpack_require__(323);
+	Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
+	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
 /* 185 */
@@ -61854,9 +61858,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var auditTime_1 = __webpack_require__(324);
-	Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
-	//# sourceMappingURL=auditTime.js.map
+	var buffer_1 = __webpack_require__(324);
+	Observable_1.Observable.prototype.buffer = buffer_1.buffer;
+	//# sourceMappingURL=buffer.js.map
 
 /***/ },
 /* 186 */
@@ -61864,9 +61868,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var buffer_1 = __webpack_require__(325);
-	Observable_1.Observable.prototype.buffer = buffer_1.buffer;
-	//# sourceMappingURL=buffer.js.map
+	var bufferCount_1 = __webpack_require__(325);
+	Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
+	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
 /* 187 */
@@ -61874,9 +61878,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var bufferCount_1 = __webpack_require__(326);
-	Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
-	//# sourceMappingURL=bufferCount.js.map
+	var bufferTime_1 = __webpack_require__(326);
+	Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
+	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
 /* 188 */
@@ -61884,9 +61888,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var bufferTime_1 = __webpack_require__(327);
-	Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
-	//# sourceMappingURL=bufferTime.js.map
+	var bufferToggle_1 = __webpack_require__(327);
+	Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
+	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
 /* 189 */
@@ -61894,9 +61898,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var bufferToggle_1 = __webpack_require__(328);
-	Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
-	//# sourceMappingURL=bufferToggle.js.map
+	var bufferWhen_1 = __webpack_require__(328);
+	Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
+	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
 /* 190 */
@@ -61904,22 +61908,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var bufferWhen_1 = __webpack_require__(329);
-	Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
-	//# sourceMappingURL=bufferWhen.js.map
-
-/***/ },
-/* 191 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var cache_1 = __webpack_require__(330);
+	var cache_1 = __webpack_require__(329);
 	Observable_1.Observable.prototype.cache = cache_1.cache;
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61930,17 +61924,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var combineAll_1 = __webpack_require__(331);
+	var combineAll_1 = __webpack_require__(330);
 	Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61950,7 +61944,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61960,7 +61954,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 196 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61970,7 +61964,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=concatAll.js.map
 
 /***/ },
-/* 197 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61980,14 +61974,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var concatMapTo_1 = __webpack_require__(331);
+	Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
+	//# sourceMappingURL=concatMapTo.js.map
+
+/***/ },
 /* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var concatMapTo_1 = __webpack_require__(332);
-	Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
-	//# sourceMappingURL=concatMapTo.js.map
+	var count_1 = __webpack_require__(332);
+	Observable_1.Observable.prototype.count = count_1.count;
+	//# sourceMappingURL=count.js.map
 
 /***/ },
 /* 199 */
@@ -61995,9 +61999,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var count_1 = __webpack_require__(333);
-	Observable_1.Observable.prototype.count = count_1.count;
-	//# sourceMappingURL=count.js.map
+	var debounce_1 = __webpack_require__(333);
+	Observable_1.Observable.prototype.debounce = debounce_1.debounce;
+	//# sourceMappingURL=debounce.js.map
 
 /***/ },
 /* 200 */
@@ -62005,9 +62009,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var debounce_1 = __webpack_require__(334);
-	Observable_1.Observable.prototype.debounce = debounce_1.debounce;
-	//# sourceMappingURL=debounce.js.map
+	var debounceTime_1 = __webpack_require__(334);
+	Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
 /* 201 */
@@ -62015,9 +62019,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var debounceTime_1 = __webpack_require__(335);
-	Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
-	//# sourceMappingURL=debounceTime.js.map
+	var defaultIfEmpty_1 = __webpack_require__(335);
+	Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
+	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
 /* 202 */
@@ -62025,9 +62029,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var defaultIfEmpty_1 = __webpack_require__(336);
-	Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
-	//# sourceMappingURL=defaultIfEmpty.js.map
+	var delay_1 = __webpack_require__(336);
+	Observable_1.Observable.prototype.delay = delay_1.delay;
+	//# sourceMappingURL=delay.js.map
 
 /***/ },
 /* 203 */
@@ -62035,9 +62039,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var delay_1 = __webpack_require__(337);
-	Observable_1.Observable.prototype.delay = delay_1.delay;
-	//# sourceMappingURL=delay.js.map
+	var delayWhen_1 = __webpack_require__(337);
+	Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
+	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
 /* 204 */
@@ -62045,22 +62049,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var delayWhen_1 = __webpack_require__(338);
-	Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
-	//# sourceMappingURL=delayWhen.js.map
-
-/***/ },
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var dematerialize_1 = __webpack_require__(339);
+	var dematerialize_1 = __webpack_require__(338);
 	Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
-/* 206 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62070,17 +62064,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=distinct.js.map
 
 /***/ },
-/* 207 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var distinctKey_1 = __webpack_require__(340);
+	var distinctKey_1 = __webpack_require__(339);
 	Observable_1.Observable.prototype.distinctKey = distinctKey_1.distinctKey;
 	//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
-/* 208 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62090,27 +62084,27 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
+/* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var distinctUntilKeyChanged_1 = __webpack_require__(340);
+	Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
+	//# sourceMappingURL=distinctUntilKeyChanged.js.map
+
+/***/ },
 /* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var distinctUntilKeyChanged_1 = __webpack_require__(341);
-	Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
-	//# sourceMappingURL=distinctUntilKeyChanged.js.map
-
-/***/ },
-/* 210 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var elementAt_1 = __webpack_require__(343);
+	var elementAt_1 = __webpack_require__(342);
 	Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 	//# sourceMappingURL=elementAt.js.map
 
 /***/ },
-/* 211 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62120,14 +62114,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=every.js.map
 
 /***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var exhaust_1 = __webpack_require__(343);
+	Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
+	//# sourceMappingURL=exhaust.js.map
+
+/***/ },
 /* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var exhaust_1 = __webpack_require__(344);
-	Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
-	//# sourceMappingURL=exhaust.js.map
+	var exhaustMap_1 = __webpack_require__(344);
+	Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
+	//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
 /* 213 */
@@ -62135,9 +62139,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var exhaustMap_1 = __webpack_require__(345);
-	Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
-	//# sourceMappingURL=exhaustMap.js.map
+	var expand_1 = __webpack_require__(345);
+	Observable_1.Observable.prototype.expand = expand_1.expand;
+	//# sourceMappingURL=expand.js.map
 
 /***/ },
 /* 214 */
@@ -62145,23 +62149,13 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var expand_1 = __webpack_require__(346);
-	Observable_1.Observable.prototype.expand = expand_1.expand;
-	//# sourceMappingURL=expand.js.map
-
-/***/ },
-/* 215 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var finally_1 = __webpack_require__(347);
+	var finally_1 = __webpack_require__(346);
 	Observable_1.Observable.prototype.finally = finally_1._finally;
 	Observable_1.Observable.prototype._finally = finally_1._finally;
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 216 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62171,17 +62165,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=find.js.map
 
 /***/ },
-/* 217 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var findIndex_1 = __webpack_require__(348);
+	var findIndex_1 = __webpack_require__(347);
 	Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 	//# sourceMappingURL=findIndex.js.map
 
 /***/ },
-/* 218 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62191,14 +62185,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=first.js.map
 
 /***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var groupBy_1 = __webpack_require__(348);
+	Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
+	//# sourceMappingURL=groupBy.js.map
+
+/***/ },
 /* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var groupBy_1 = __webpack_require__(349);
-	Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
-	//# sourceMappingURL=groupBy.js.map
+	var ignoreElements_1 = __webpack_require__(349);
+	Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
+	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
 /* 220 */
@@ -62206,22 +62210,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var ignoreElements_1 = __webpack_require__(350);
-	Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
-	//# sourceMappingURL=ignoreElements.js.map
-
-/***/ },
-/* 221 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var isEmpty_1 = __webpack_require__(351);
+	var isEmpty_1 = __webpack_require__(350);
 	Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 	//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
-/* 222 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62231,7 +62225,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=last.js.map
 
 /***/ },
-/* 223 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62241,14 +62235,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=map.js.map
 
 /***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var mapTo_1 = __webpack_require__(352);
+	Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
+	//# sourceMappingURL=mapTo.js.map
+
+/***/ },
 /* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var mapTo_1 = __webpack_require__(353);
-	Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
-	//# sourceMappingURL=mapTo.js.map
+	var materialize_1 = __webpack_require__(353);
+	Observable_1.Observable.prototype.materialize = materialize_1.materialize;
+	//# sourceMappingURL=materialize.js.map
 
 /***/ },
 /* 225 */
@@ -62256,22 +62260,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var materialize_1 = __webpack_require__(354);
-	Observable_1.Observable.prototype.materialize = materialize_1.materialize;
-	//# sourceMappingURL=materialize.js.map
-
-/***/ },
-/* 226 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var max_1 = __webpack_require__(355);
+	var max_1 = __webpack_require__(354);
 	Observable_1.Observable.prototype.max = max_1.max;
 	//# sourceMappingURL=max.js.map
 
 /***/ },
-/* 227 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62281,7 +62275,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 228 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62291,7 +62285,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
-/* 229 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62302,7 +62296,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 230 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62313,27 +62307,27 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var mergeScan_1 = __webpack_require__(355);
+	Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
+	//# sourceMappingURL=mergeScan.js.map
+
+/***/ },
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var mergeScan_1 = __webpack_require__(356);
-	Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
-	//# sourceMappingURL=mergeScan.js.map
-
-/***/ },
-/* 232 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var min_1 = __webpack_require__(357);
+	var min_1 = __webpack_require__(356);
 	Observable_1.Observable.prototype.min = min_1.min;
 	//# sourceMappingURL=min.js.map
 
 /***/ },
-/* 233 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62343,7 +62337,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=multicast.js.map
 
 /***/ },
-/* 234 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62353,7 +62347,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 235 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62363,14 +62357,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var pairwise_1 = __webpack_require__(357);
+	Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
+	//# sourceMappingURL=pairwise.js.map
+
+/***/ },
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var pairwise_1 = __webpack_require__(358);
-	Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
-	//# sourceMappingURL=pairwise.js.map
+	var partition_1 = __webpack_require__(358);
+	Observable_1.Observable.prototype.partition = partition_1.partition;
+	//# sourceMappingURL=partition.js.map
 
 /***/ },
 /* 237 */
@@ -62378,9 +62382,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var partition_1 = __webpack_require__(359);
-	Observable_1.Observable.prototype.partition = partition_1.partition;
-	//# sourceMappingURL=partition.js.map
+	var pluck_1 = __webpack_require__(359);
+	Observable_1.Observable.prototype.pluck = pluck_1.pluck;
+	//# sourceMappingURL=pluck.js.map
 
 /***/ },
 /* 238 */
@@ -62388,9 +62392,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var pluck_1 = __webpack_require__(360);
-	Observable_1.Observable.prototype.pluck = pluck_1.pluck;
-	//# sourceMappingURL=pluck.js.map
+	var publish_1 = __webpack_require__(360);
+	Observable_1.Observable.prototype.publish = publish_1.publish;
+	//# sourceMappingURL=publish.js.map
 
 /***/ },
 /* 239 */
@@ -62398,9 +62402,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var publish_1 = __webpack_require__(361);
-	Observable_1.Observable.prototype.publish = publish_1.publish;
-	//# sourceMappingURL=publish.js.map
+	var publishBehavior_1 = __webpack_require__(361);
+	Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
+	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
 /* 240 */
@@ -62408,9 +62412,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var publishBehavior_1 = __webpack_require__(362);
-	Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
-	//# sourceMappingURL=publishBehavior.js.map
+	var publishLast_1 = __webpack_require__(362);
+	Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
+	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
 /* 241 */
@@ -62418,22 +62422,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var publishLast_1 = __webpack_require__(363);
-	Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
-	//# sourceMappingURL=publishLast.js.map
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var publishReplay_1 = __webpack_require__(364);
+	var publishReplay_1 = __webpack_require__(363);
 	Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 243 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62443,7 +62437,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=race.js.map
 
 /***/ },
-/* 244 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62453,14 +62447,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var repeat_1 = __webpack_require__(364);
+	Observable_1.Observable.prototype.repeat = repeat_1.repeat;
+	//# sourceMappingURL=repeat.js.map
+
+/***/ },
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var repeat_1 = __webpack_require__(365);
-	Observable_1.Observable.prototype.repeat = repeat_1.repeat;
-	//# sourceMappingURL=repeat.js.map
+	var repeatWhen_1 = __webpack_require__(365);
+	Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
+	//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
 /* 246 */
@@ -62468,9 +62472,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var repeatWhen_1 = __webpack_require__(366);
-	Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
-	//# sourceMappingURL=repeatWhen.js.map
+	var retry_1 = __webpack_require__(366);
+	Observable_1.Observable.prototype.retry = retry_1.retry;
+	//# sourceMappingURL=retry.js.map
 
 /***/ },
 /* 247 */
@@ -62478,9 +62482,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var retry_1 = __webpack_require__(367);
-	Observable_1.Observable.prototype.retry = retry_1.retry;
-	//# sourceMappingURL=retry.js.map
+	var retryWhen_1 = __webpack_require__(367);
+	Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
+	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
 /* 248 */
@@ -62488,9 +62492,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var retryWhen_1 = __webpack_require__(368);
-	Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
-	//# sourceMappingURL=retryWhen.js.map
+	var sample_1 = __webpack_require__(368);
+	Observable_1.Observable.prototype.sample = sample_1.sample;
+	//# sourceMappingURL=sample.js.map
 
 /***/ },
 /* 249 */
@@ -62498,9 +62502,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var sample_1 = __webpack_require__(369);
-	Observable_1.Observable.prototype.sample = sample_1.sample;
-	//# sourceMappingURL=sample.js.map
+	var sampleTime_1 = __webpack_require__(369);
+	Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
+	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
 /* 250 */
@@ -62508,9 +62512,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var sampleTime_1 = __webpack_require__(370);
-	Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
-	//# sourceMappingURL=sampleTime.js.map
+	var scan_1 = __webpack_require__(370);
+	Observable_1.Observable.prototype.scan = scan_1.scan;
+	//# sourceMappingURL=scan.js.map
 
 /***/ },
 /* 251 */
@@ -62518,9 +62522,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var scan_1 = __webpack_require__(371);
-	Observable_1.Observable.prototype.scan = scan_1.scan;
-	//# sourceMappingURL=scan.js.map
+	var sequenceEqual_1 = __webpack_require__(371);
+	Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
+	//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
 /* 252 */
@@ -62528,9 +62532,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var sequenceEqual_1 = __webpack_require__(372);
-	Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
-	//# sourceMappingURL=sequenceEqual.js.map
+	var share_1 = __webpack_require__(372);
+	Observable_1.Observable.prototype.share = share_1.share;
+	//# sourceMappingURL=share.js.map
 
 /***/ },
 /* 253 */
@@ -62538,9 +62542,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var share_1 = __webpack_require__(373);
-	Observable_1.Observable.prototype.share = share_1.share;
-	//# sourceMappingURL=share.js.map
+	var single_1 = __webpack_require__(373);
+	Observable_1.Observable.prototype.single = single_1.single;
+	//# sourceMappingURL=single.js.map
 
 /***/ },
 /* 254 */
@@ -62548,9 +62552,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var single_1 = __webpack_require__(374);
-	Observable_1.Observable.prototype.single = single_1.single;
-	//# sourceMappingURL=single.js.map
+	var skip_1 = __webpack_require__(374);
+	Observable_1.Observable.prototype.skip = skip_1.skip;
+	//# sourceMappingURL=skip.js.map
 
 /***/ },
 /* 255 */
@@ -62558,9 +62562,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var skip_1 = __webpack_require__(375);
-	Observable_1.Observable.prototype.skip = skip_1.skip;
-	//# sourceMappingURL=skip.js.map
+	var skipUntil_1 = __webpack_require__(375);
+	Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
+	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
 /* 256 */
@@ -62568,9 +62572,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var skipUntil_1 = __webpack_require__(376);
-	Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
-	//# sourceMappingURL=skipUntil.js.map
+	var skipWhile_1 = __webpack_require__(376);
+	Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
+	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
 /* 257 */
@@ -62578,9 +62582,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var skipWhile_1 = __webpack_require__(377);
-	Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
-	//# sourceMappingURL=skipWhile.js.map
+	var startWith_1 = __webpack_require__(377);
+	Observable_1.Observable.prototype.startWith = startWith_1.startWith;
+	//# sourceMappingURL=startWith.js.map
 
 /***/ },
 /* 258 */
@@ -62588,9 +62592,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var startWith_1 = __webpack_require__(378);
-	Observable_1.Observable.prototype.startWith = startWith_1.startWith;
-	//# sourceMappingURL=startWith.js.map
+	var subscribeOn_1 = __webpack_require__(378);
+	Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
+	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
 /* 259 */
@@ -62598,9 +62602,10 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var subscribeOn_1 = __webpack_require__(379);
-	Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
-	//# sourceMappingURL=subscribeOn.js.map
+	var switch_1 = __webpack_require__(379);
+	Observable_1.Observable.prototype.switch = switch_1._switch;
+	Observable_1.Observable.prototype._switch = switch_1._switch;
+	//# sourceMappingURL=switch.js.map
 
 /***/ },
 /* 260 */
@@ -62608,10 +62613,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var switch_1 = __webpack_require__(380);
-	Observable_1.Observable.prototype.switch = switch_1._switch;
-	Observable_1.Observable.prototype._switch = switch_1._switch;
-	//# sourceMappingURL=switch.js.map
+	var switchMap_1 = __webpack_require__(380);
+	Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
+	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
 /* 261 */
@@ -62619,9 +62623,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var switchMap_1 = __webpack_require__(381);
-	Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
-	//# sourceMappingURL=switchMap.js.map
+	var switchMapTo_1 = __webpack_require__(381);
+	Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
+	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
 /* 262 */
@@ -62629,9 +62633,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var switchMapTo_1 = __webpack_require__(382);
-	Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
-	//# sourceMappingURL=switchMapTo.js.map
+	var take_1 = __webpack_require__(382);
+	Observable_1.Observable.prototype.take = take_1.take;
+	//# sourceMappingURL=take.js.map
 
 /***/ },
 /* 263 */
@@ -62639,9 +62643,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var take_1 = __webpack_require__(383);
-	Observable_1.Observable.prototype.take = take_1.take;
-	//# sourceMappingURL=take.js.map
+	var takeLast_1 = __webpack_require__(383);
+	Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
+	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
 /* 264 */
@@ -62649,9 +62653,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var takeLast_1 = __webpack_require__(384);
-	Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
-	//# sourceMappingURL=takeLast.js.map
+	var takeUntil_1 = __webpack_require__(384);
+	Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
+	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
 /* 265 */
@@ -62659,9 +62663,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var takeUntil_1 = __webpack_require__(385);
-	Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
-	//# sourceMappingURL=takeUntil.js.map
+	var takeWhile_1 = __webpack_require__(385);
+	Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
+	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
 /* 266 */
@@ -62669,9 +62673,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var takeWhile_1 = __webpack_require__(386);
-	Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
-	//# sourceMappingURL=takeWhile.js.map
+	var throttle_1 = __webpack_require__(386);
+	Observable_1.Observable.prototype.throttle = throttle_1.throttle;
+	//# sourceMappingURL=throttle.js.map
 
 /***/ },
 /* 267 */
@@ -62679,22 +62683,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var throttle_1 = __webpack_require__(387);
-	Observable_1.Observable.prototype.throttle = throttle_1.throttle;
-	//# sourceMappingURL=throttle.js.map
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var throttleTime_1 = __webpack_require__(388);
+	var throttleTime_1 = __webpack_require__(387);
 	Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 269 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62704,27 +62698,27 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=timeInterval.js.map
 
 /***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var timeout_1 = __webpack_require__(388);
+	Observable_1.Observable.prototype.timeout = timeout_1.timeout;
+	//# sourceMappingURL=timeout.js.map
+
+/***/ },
 /* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var timeout_1 = __webpack_require__(389);
-	Observable_1.Observable.prototype.timeout = timeout_1.timeout;
-	//# sourceMappingURL=timeout.js.map
-
-/***/ },
-/* 271 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var timeoutWith_1 = __webpack_require__(390);
+	var timeoutWith_1 = __webpack_require__(389);
 	Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 272 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62734,17 +62728,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=timestamp.js.map
 
 /***/ },
-/* 273 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var toArray_1 = __webpack_require__(391);
+	var toArray_1 = __webpack_require__(390);
 	Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
-/* 274 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62754,14 +62748,24 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
+/* 274 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var window_1 = __webpack_require__(391);
+	Observable_1.Observable.prototype.window = window_1.window;
+	//# sourceMappingURL=window.js.map
+
+/***/ },
 /* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var window_1 = __webpack_require__(392);
-	Observable_1.Observable.prototype.window = window_1.window;
-	//# sourceMappingURL=window.js.map
+	var windowCount_1 = __webpack_require__(392);
+	Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
+	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
 /* 276 */
@@ -62769,9 +62773,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var windowCount_1 = __webpack_require__(393);
-	Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
-	//# sourceMappingURL=windowCount.js.map
+	var windowTime_1 = __webpack_require__(393);
+	Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
+	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
 /* 277 */
@@ -62779,9 +62783,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var windowTime_1 = __webpack_require__(394);
-	Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
-	//# sourceMappingURL=windowTime.js.map
+	var windowToggle_1 = __webpack_require__(394);
+	Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
+	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
 /* 278 */
@@ -62789,9 +62793,9 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var windowToggle_1 = __webpack_require__(395);
-	Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
-	//# sourceMappingURL=windowToggle.js.map
+	var windowWhen_1 = __webpack_require__(395);
+	Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
+	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
 /* 279 */
@@ -62799,22 +62803,12 @@ webpackJsonp([1,0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var windowWhen_1 = __webpack_require__(396);
-	Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
-	//# sourceMappingURL=windowWhen.js.map
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(1);
-	var withLatestFrom_1 = __webpack_require__(397);
+	var withLatestFrom_1 = __webpack_require__(396);
 	Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 281 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62824,17 +62818,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 282 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var zipAll_1 = __webpack_require__(398);
+	var zipAll_1 = __webpack_require__(397);
 	Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 283 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62909,7 +62903,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 284 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63078,7 +63072,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ },
-/* 285 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63259,7 +63253,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ },
-/* 286 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63357,7 +63351,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=DeferObservable.js.map
 
 /***/ },
-/* 287 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63444,7 +63438,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=ErrorObservable.js.map
 
 /***/ },
-/* 288 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63561,7 +63555,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
-/* 289 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63698,7 +63692,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=FromEventObservable.js.map
 
 /***/ },
-/* 290 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63811,7 +63805,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ },
-/* 291 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -63951,7 +63945,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=GenerateObservable.js.map
 
 /***/ },
-/* 292 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64017,7 +64011,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=IfObservable.js.map
 
 /***/ },
-/* 293 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64110,7 +64104,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=IntervalObservable.js.map
 
 /***/ },
-/* 294 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64272,7 +64266,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 295 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64336,7 +64330,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=NeverObservable.js.map
 
 /***/ },
-/* 296 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64426,7 +64420,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=PairsObservable.js.map
 
 /***/ },
-/* 297 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64527,7 +64521,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=RangeObservable.js.map
 
 /***/ },
-/* 298 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64583,7 +64577,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ },
-/* 299 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64695,7 +64689,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=TimerObservable.js.map
 
 /***/ },
-/* 300 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64761,25 +64755,25 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=UsingObservable.js.map
 
 /***/ },
-/* 301 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var BoundCallbackObservable_1 = __webpack_require__(284);
+	var BoundCallbackObservable_1 = __webpack_require__(283);
 	exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
-/* 302 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var BoundNodeCallbackObservable_1 = __webpack_require__(285);
+	var BoundNodeCallbackObservable_1 = __webpack_require__(284);
 	exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
-/* 303 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64855,7 +64849,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 304 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64864,16 +64858,16 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 305 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var DeferObservable_1 = __webpack_require__(286);
+	var DeferObservable_1 = __webpack_require__(285);
 	exports.defer = DeferObservable_1.DeferObservable.create;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
-/* 306 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64890,7 +64884,7 @@ webpackJsonp([1,0],[
 	var ReplaySubject_1 = __webpack_require__(23);
 	var tryCatch_1 = __webpack_require__(10);
 	var errorObject_1 = __webpack_require__(9);
-	var assign_1 = __webpack_require__(415);
+	var assign_1 = __webpack_require__(414);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -65083,7 +65077,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ },
-/* 307 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65092,16 +65086,16 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=ajax.js.map
 
 /***/ },
-/* 308 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var WebSocketSubject_1 = __webpack_require__(306);
+	var WebSocketSubject_1 = __webpack_require__(305);
 	exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 	//# sourceMappingURL=webSocket.js.map
 
 /***/ },
-/* 309 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65110,52 +65104,52 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=empty.js.map
 
 /***/ },
+/* 309 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ForkJoinObservable_1 = __webpack_require__(287);
+	exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
+	//# sourceMappingURL=forkJoin.js.map
+
+/***/ },
 /* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ForkJoinObservable_1 = __webpack_require__(288);
-	exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
-	//# sourceMappingURL=forkJoin.js.map
+	var FromEventObservable_1 = __webpack_require__(288);
+	exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
+	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
 /* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var FromEventObservable_1 = __webpack_require__(289);
-	exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
-	//# sourceMappingURL=fromEvent.js.map
+	var FromEventPatternObservable_1 = __webpack_require__(289);
+	exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
+	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
 /* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var FromEventPatternObservable_1 = __webpack_require__(290);
-	exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
-	//# sourceMappingURL=fromEventPattern.js.map
+	var IfObservable_1 = __webpack_require__(291);
+	exports._if = IfObservable_1.IfObservable.create;
+	//# sourceMappingURL=if.js.map
 
 /***/ },
 /* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var IfObservable_1 = __webpack_require__(292);
-	exports._if = IfObservable_1.IfObservable.create;
-	//# sourceMappingURL=if.js.map
-
-/***/ },
-/* 314 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var IntervalObservable_1 = __webpack_require__(293);
+	var IntervalObservable_1 = __webpack_require__(292);
 	exports.interval = IntervalObservable_1.IntervalObservable.create;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
-/* 315 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65164,61 +65158,61 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var NeverObservable_1 = __webpack_require__(294);
+	exports.never = NeverObservable_1.NeverObservable.create;
+	//# sourceMappingURL=never.js.map
+
+/***/ },
 /* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var NeverObservable_1 = __webpack_require__(295);
-	exports.never = NeverObservable_1.NeverObservable.create;
-	//# sourceMappingURL=never.js.map
+	var PairsObservable_1 = __webpack_require__(295);
+	exports.pairs = PairsObservable_1.PairsObservable.create;
+	//# sourceMappingURL=pairs.js.map
 
 /***/ },
 /* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var PairsObservable_1 = __webpack_require__(296);
-	exports.pairs = PairsObservable_1.PairsObservable.create;
-	//# sourceMappingURL=pairs.js.map
+	var RangeObservable_1 = __webpack_require__(296);
+	exports.range = RangeObservable_1.RangeObservable.create;
+	//# sourceMappingURL=range.js.map
 
 /***/ },
 /* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var RangeObservable_1 = __webpack_require__(297);
-	exports.range = RangeObservable_1.RangeObservable.create;
-	//# sourceMappingURL=range.js.map
+	var ErrorObservable_1 = __webpack_require__(286);
+	exports._throw = ErrorObservable_1.ErrorObservable.create;
+	//# sourceMappingURL=throw.js.map
 
 /***/ },
 /* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ErrorObservable_1 = __webpack_require__(287);
-	exports._throw = ErrorObservable_1.ErrorObservable.create;
-	//# sourceMappingURL=throw.js.map
+	var TimerObservable_1 = __webpack_require__(298);
+	exports.timer = TimerObservable_1.TimerObservable.create;
+	//# sourceMappingURL=timer.js.map
 
 /***/ },
 /* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var TimerObservable_1 = __webpack_require__(299);
-	exports.timer = TimerObservable_1.TimerObservable.create;
-	//# sourceMappingURL=timer.js.map
-
-/***/ },
-/* 321 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var UsingObservable_1 = __webpack_require__(300);
+	var UsingObservable_1 = __webpack_require__(299);
 	exports.using = UsingObservable_1.UsingObservable.create;
 	//# sourceMappingURL=using.js.map
 
 /***/ },
-/* 322 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65227,7 +65221,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 323 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65342,7 +65336,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
-/* 324 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65451,7 +65445,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
-/* 325 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65532,7 +65526,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
-/* 326 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65651,7 +65645,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
-/* 327 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65854,7 +65848,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
-/* 328 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66011,7 +66005,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
-/* 329 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66138,7 +66132,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
-/* 330 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66192,7 +66186,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
-/* 331 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66244,7 +66238,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 332 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66306,7 +66300,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
-/* 333 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66419,7 +66413,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=count.js.map
 
 /***/ },
-/* 334 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66551,7 +66545,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
-/* 335 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66672,7 +66666,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
-/* 336 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66753,7 +66747,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
-/* 337 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -66893,7 +66887,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 338 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67088,7 +67082,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
-/* 339 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67163,7 +67157,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
-/* 340 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67194,7 +67188,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
-/* 341 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67222,7 +67216,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
-/* 342 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67339,7 +67333,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=do.js.map
 
 /***/ },
-/* 343 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67439,7 +67433,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=elementAt.js.map
 
 /***/ },
-/* 344 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67534,7 +67528,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=exhaust.js.map
 
 /***/ },
-/* 345 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67676,7 +67670,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
-/* 346 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67831,7 +67825,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
-/* 347 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67879,7 +67873,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 348 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67925,7 +67919,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=findIndex.js.map
 
 /***/ },
-/* 349 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67938,8 +67932,8 @@ webpackJsonp([1,0],[
 	var Subscription_1 = __webpack_require__(8);
 	var Observable_1 = __webpack_require__(1);
 	var Subject_1 = __webpack_require__(6);
-	var Map_1 = __webpack_require__(413);
-	var FastMap_1 = __webpack_require__(411);
+	var Map_1 = __webpack_require__(412);
+	var FastMap_1 = __webpack_require__(410);
 	/**
 	 * Groups the items emitted by an Observable according to a specified criterion,
 	 * and emits these grouped items as `GroupedObservables`, one
@@ -68162,7 +68156,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
-/* 350 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68214,7 +68208,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
-/* 351 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68271,7 +68265,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
-/* 352 */
+/* 351 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -68288,7 +68282,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=let.js.map
 
 /***/ },
-/* 353 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68356,7 +68350,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
-/* 354 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68444,7 +68438,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
-/* 355 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68471,7 +68465,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=max.js.map
 
 /***/ },
-/* 356 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68582,7 +68576,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=mergeScan.js.map
 
 /***/ },
-/* 357 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68608,7 +68602,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=min.js.map
 
 /***/ },
-/* 358 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68690,11 +68684,11 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=pairwise.js.map
 
 /***/ },
-/* 359 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var not_1 = __webpack_require__(417);
+	var not_1 = __webpack_require__(416);
 	var filter_1 = __webpack_require__(45);
 	/**
 	 * Splits the source Observable into two, one with values that satisfy a
@@ -68747,7 +68741,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=partition.js.map
 
 /***/ },
-/* 360 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68810,7 +68804,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
-/* 361 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68837,7 +68831,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
-/* 362 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68856,7 +68850,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
-/* 363 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68874,7 +68868,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
-/* 364 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68897,7 +68891,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 365 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68977,7 +68971,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
-/* 366 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69088,7 +69082,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
-/* 367 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69162,7 +69156,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
-/* 368 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69273,7 +69267,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 369 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69364,7 +69358,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
-/* 370 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69460,7 +69454,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
-/* 371 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69573,7 +69567,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
-/* 372 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69742,7 +69736,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
-/* 373 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69771,7 +69765,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=share.js.map
 
 /***/ },
-/* 374 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69871,7 +69865,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=single.js.map
 
 /***/ },
-/* 375 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69927,7 +69921,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
-/* 376 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70003,7 +69997,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
-/* 377 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70074,7 +70068,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
-/* 378 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70122,11 +70116,11 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
-/* 379 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var SubscribeOnObservable_1 = __webpack_require__(298);
+	var SubscribeOnObservable_1 = __webpack_require__(297);
 	/**
 	 * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
 	 *
@@ -70146,7 +70140,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
-/* 380 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70259,7 +70253,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
-/* 381 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70403,7 +70397,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
-/* 382 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70534,7 +70528,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
-/* 383 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70627,7 +70621,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=take.js.map
 
 /***/ },
-/* 384 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70739,7 +70733,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
-/* 385 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70819,7 +70813,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
-/* 386 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70916,7 +70910,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
-/* 387 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71029,7 +71023,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
-/* 388 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71129,7 +71123,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 389 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71236,7 +71230,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 390 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71351,7 +71345,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 391 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71401,7 +71395,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
-/* 392 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71516,7 +71510,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=window.js.map
 
 /***/ },
-/* 393 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71652,7 +71646,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
-/* 394 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71826,7 +71820,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
-/* 395 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72011,7 +72005,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
-/* 396 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72143,7 +72137,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
-/* 397 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72278,7 +72272,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 398 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72296,7 +72290,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 399 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72345,7 +72339,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=Action.js.map
 
 /***/ },
-/* 400 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72355,7 +72349,7 @@ webpackJsonp([1,0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var AsyncAction_1 = __webpack_require__(25);
-	var AnimationFrame_1 = __webpack_require__(410);
+	var AnimationFrame_1 = __webpack_require__(409);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -72403,7 +72397,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ },
-/* 401 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72445,7 +72439,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ },
-/* 402 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72454,7 +72448,7 @@ webpackJsonp([1,0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Immediate_1 = __webpack_require__(412);
+	var Immediate_1 = __webpack_require__(411);
 	var AsyncAction_1 = __webpack_require__(25);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -72503,7 +72497,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=AsapAction.js.map
 
 /***/ },
-/* 403 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72545,7 +72539,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=AsapScheduler.js.map
 
 /***/ },
-/* 404 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72597,7 +72591,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=QueueAction.js.map
 
 /***/ },
-/* 405 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72618,17 +72612,17 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=QueueScheduler.js.map
 
 /***/ },
-/* 406 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var AnimationFrameAction_1 = __webpack_require__(400);
-	var AnimationFrameScheduler_1 = __webpack_require__(401);
+	var AnimationFrameAction_1 = __webpack_require__(399);
+	var AnimationFrameScheduler_1 = __webpack_require__(400);
 	exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(AnimationFrameAction_1.AnimationFrameAction);
 	//# sourceMappingURL=animationFrame.js.map
 
 /***/ },
-/* 407 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72679,7 +72673,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=ColdObservable.js.map
 
 /***/ },
-/* 408 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72732,7 +72726,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=HotObservable.js.map
 
 /***/ },
-/* 409 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72743,8 +72737,8 @@ webpackJsonp([1,0],[
 	};
 	var Observable_1 = __webpack_require__(1);
 	var Notification_1 = __webpack_require__(22);
-	var ColdObservable_1 = __webpack_require__(407);
-	var HotObservable_1 = __webpack_require__(408);
+	var ColdObservable_1 = __webpack_require__(406);
+	var HotObservable_1 = __webpack_require__(407);
 	var SubscriptionLog_1 = __webpack_require__(84);
 	var VirtualTimeScheduler_1 = __webpack_require__(81);
 	var defaultMaxFrame = 750;
@@ -72960,7 +72954,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=TestScheduler.js.map
 
 /***/ },
-/* 410 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72999,7 +72993,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=AnimationFrame.js.map
 
 /***/ },
-/* 411 */
+/* 410 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -73035,7 +73029,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=FastMap.js.map
 
 /***/ },
-/* 412 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(clearImmediate, setImmediate) {/**
@@ -73250,17 +73244,17 @@ webpackJsonp([1,0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36).clearImmediate, __webpack_require__(36).setImmediate))
 
 /***/ },
-/* 413 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var root_1 = __webpack_require__(12);
-	var MapPolyfill_1 = __webpack_require__(414);
+	var MapPolyfill_1 = __webpack_require__(413);
 	exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 	//# sourceMappingURL=Map.js.map
 
 /***/ },
-/* 414 */
+/* 413 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -73312,7 +73306,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=MapPolyfill.js.map
 
 /***/ },
-/* 415 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73348,7 +73342,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=assign.js.map
 
 /***/ },
-/* 416 */
+/* 415 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -73359,7 +73353,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 417 */
+/* 416 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -73375,7 +73369,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=not.js.map
 
 /***/ },
-/* 418 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73399,7 +73393,7 @@ webpackJsonp([1,0],[
 	//# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 419 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -73425,7 +73419,7 @@ webpackJsonp([1,0],[
 	}
 
 /***/ },
-/* 420 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -73451,7 +73445,7 @@ webpackJsonp([1,0],[
 	}
 
 /***/ },
-/* 421 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73485,7 +73479,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 422 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73503,26 +73497,26 @@ webpackJsonp([1,0],[
 	var router_1 = __webpack_require__(37);
 	var angulartics2_1 = __webpack_require__(53);
 	var ng_bootstrap_1 = __webpack_require__(94);
-	var app_component_1 = __webpack_require__(421);
+	var app_component_1 = __webpack_require__(420);
 	var ng2_page_scroll_1 = __webpack_require__(54);
-	var header_component_1 = __webpack_require__(425);
-	var footer_component_1 = __webpack_require__(424);
-	var _404_component_1 = __webpack_require__(423);
-	var thankyou_component_1 = __webpack_require__(442);
-	var insight_component_1 = __webpack_require__(431);
-	var home_component_1 = __webpack_require__(430);
-	var submenu_component_1 = __webpack_require__(427);
-	var pricing_component_1 = __webpack_require__(439);
-	var getting_started_component_1 = __webpack_require__(429);
-	var partners_component_1 = __webpack_require__(438);
-	var company_component_1 = __webpack_require__(428);
-	var privacy_policy_component_1 = __webpack_require__(437);
-	var legal_menu_component_1 = __webpack_require__(435);
-	var commercial_license_component_1 = __webpack_require__(433);
-	var commercial_license_oem_component_1 = __webpack_require__(432);
-	var open_source_license_component_1 = __webpack_require__(436);
-	var gnu_agpl_license_component_1 = __webpack_require__(434);
-	var support_component_1 = __webpack_require__(441);
+	var header_component_1 = __webpack_require__(424);
+	var footer_component_1 = __webpack_require__(423);
+	var _404_component_1 = __webpack_require__(422);
+	var thankyou_component_1 = __webpack_require__(441);
+	var insight_component_1 = __webpack_require__(430);
+	var home_component_1 = __webpack_require__(429);
+	var submenu_component_1 = __webpack_require__(426);
+	var pricing_component_1 = __webpack_require__(438);
+	var getting_started_component_1 = __webpack_require__(428);
+	var partners_component_1 = __webpack_require__(437);
+	var company_component_1 = __webpack_require__(427);
+	var privacy_policy_component_1 = __webpack_require__(436);
+	var legal_menu_component_1 = __webpack_require__(434);
+	var commercial_license_component_1 = __webpack_require__(432);
+	var commercial_license_oem_component_1 = __webpack_require__(431);
+	var open_source_license_component_1 = __webpack_require__(435);
+	var gnu_agpl_license_component_1 = __webpack_require__(433);
+	var support_component_1 = __webpack_require__(440);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -73584,7 +73578,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 423 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73605,7 +73599,7 @@ webpackJsonp([1,0],[
 	    }
 	    NotFoundPageComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(134),
+	            template: __webpack_require__(133),
 	            styles: [__webpack_require__(107)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73616,7 +73610,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 424 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73636,7 +73630,7 @@ webpackJsonp([1,0],[
 	    FooterComponent = __decorate([
 	        core_1.Component({
 	            selector: 'pm-footer',
-	            template: __webpack_require__(135),
+	            template: __webpack_require__(134),
 	            styles: [__webpack_require__(108)]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -73647,7 +73641,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 425 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73661,13 +73655,12 @@ webpackJsonp([1,0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var menu_model_1 = __webpack_require__(426);
+	var menu_model_1 = __webpack_require__(425);
 	var HeaderComponent = (function () {
 	    function HeaderComponent() {
 	        this.theme = "theme-default";
 	        this.menuItems = [
 	            new menu_model_1.MenuItem("Slamby", "/home", "logo", false),
-	            new menu_model_1.MenuItem("Insight", "/insight", "", false),
 	            new menu_model_1.MenuItem("Pricing", "/pricing", "", false),
 	            new menu_model_1.MenuItem("For developers", "https://developers.slamby.com", "", true)
 	        ];
@@ -73688,7 +73681,7 @@ webpackJsonp([1,0],[
 	    HeaderComponent = __decorate([
 	        core_1.Component({
 	            selector: 'pm-header',
-	            template: __webpack_require__(136),
+	            template: __webpack_require__(135),
 	            styles: [__webpack_require__(109)]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -73699,7 +73692,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 426 */
+/* 425 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -73717,7 +73710,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 427 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73737,7 +73730,7 @@ webpackJsonp([1,0],[
 	    SubmenuComponent = __decorate([
 	        core_1.Component({
 	            selector: 'submenu',
-	            template: __webpack_require__(137),
+	            template: __webpack_require__(136),
 	            styles: [__webpack_require__(110)]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -73748,7 +73741,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 428 */
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73772,7 +73765,7 @@ webpackJsonp([1,0],[
 	    }
 	    CompanyComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(138),
+	            template: __webpack_require__(137),
 	            styles: [__webpack_require__(111)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73783,7 +73776,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 429 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73804,7 +73797,7 @@ webpackJsonp([1,0],[
 	    }
 	    GettingStartedComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(139),
+	            template: __webpack_require__(138),
 	            styles: [__webpack_require__(112)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73815,7 +73808,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 430 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73836,7 +73829,7 @@ webpackJsonp([1,0],[
 	    }
 	    HomeComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(140),
+	            template: __webpack_require__(139),
 	            styles: [__webpack_require__(113)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73847,7 +73840,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 431 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73868,7 +73861,7 @@ webpackJsonp([1,0],[
 	    }
 	    InsightComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(141),
+	            template: __webpack_require__(140),
 	            styles: [__webpack_require__(114)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73879,7 +73872,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 432 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73900,7 +73893,7 @@ webpackJsonp([1,0],[
 	    }
 	    CommercialLicenseOemComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(142),
+	            template: __webpack_require__(141),
 	            styles: [__webpack_require__(19)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73911,7 +73904,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 433 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73932,7 +73925,7 @@ webpackJsonp([1,0],[
 	    }
 	    CommercialLicenseComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(143),
+	            template: __webpack_require__(142),
 	            styles: [__webpack_require__(19)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73943,7 +73936,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 434 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73964,7 +73957,7 @@ webpackJsonp([1,0],[
 	    }
 	    GnuAgplLicenseComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(144),
+	            template: __webpack_require__(143),
 	            styles: [__webpack_require__(19)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -73975,7 +73968,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 435 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73995,7 +73988,7 @@ webpackJsonp([1,0],[
 	    LegalMenuComponent = __decorate([
 	        core_1.Component({
 	            selector: 'legalMenu',
-	            template: __webpack_require__(145),
+	            template: __webpack_require__(144),
 	            styles: [__webpack_require__(19)]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -74006,7 +73999,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 436 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74027,7 +74020,7 @@ webpackJsonp([1,0],[
 	    }
 	    OpenSourceLicenseComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(146),
+	            template: __webpack_require__(145),
 	            styles: [__webpack_require__(19)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -74038,7 +74031,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 437 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74059,7 +74052,7 @@ webpackJsonp([1,0],[
 	    }
 	    PrivacyPolicyComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(147),
+	            template: __webpack_require__(146),
 	            styles: [__webpack_require__(19)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -74070,7 +74063,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 438 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74101,7 +74094,7 @@ webpackJsonp([1,0],[
 	    }
 	    PartnersComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(148),
+	            template: __webpack_require__(147),
 	            styles: [__webpack_require__(115)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -74112,7 +74105,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 439 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74127,7 +74120,7 @@ webpackJsonp([1,0],[
 	};
 	var core_1 = __webpack_require__(3);
 	var platform_browser_1 = __webpack_require__(7);
-	var pricing_model_1 = __webpack_require__(440);
+	var pricing_model_1 = __webpack_require__(439);
 	var PricingComponent = (function () {
 	    function PricingComponent(title) {
 	        this.pricingEurope = [
@@ -74154,7 +74147,7 @@ webpackJsonp([1,0],[
 	    }
 	    PricingComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(149),
+	            template: __webpack_require__(148),
 	            styles: [__webpack_require__(116)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -74165,7 +74158,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 440 */
+/* 439 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -74187,7 +74180,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 441 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74208,7 +74201,7 @@ webpackJsonp([1,0],[
 	    }
 	    SupportComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(150),
+	            template: __webpack_require__(149),
 	            styles: [__webpack_require__(117)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -74219,7 +74212,7 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 442 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74240,7 +74233,7 @@ webpackJsonp([1,0],[
 	    }
 	    ThankYouComponent = __decorate([
 	        core_1.Component({
-	            template: __webpack_require__(151),
+	            template: __webpack_require__(150),
 	            styles: [__webpack_require__(118)]
 	        }), 
 	        __metadata('design:paramtypes', [platform_browser_1.Title])
@@ -74251,22 +74244,22 @@ webpackJsonp([1,0],[
 
 
 /***/ },
-/* 443 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var platform_browser_dynamic_1 = __webpack_require__(93);
 	var core_1 = __webpack_require__(3);
-	var app_module_1 = __webpack_require__(422);
-	__webpack_require__(420);
+	var app_module_1 = __webpack_require__(421);
 	__webpack_require__(419);
-	__webpack_require__(445);
+	__webpack_require__(418);
+	__webpack_require__(444);
 	core_1.enableProdMode();
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 
 
 /***/ },
-/* 444 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -75699,7 +75692,7 @@ webpackJsonp([1,0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(38)))
 
 /***/ },
-/* 445 */
+/* 444 */
 /***/ function(module, exports) {
 
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
