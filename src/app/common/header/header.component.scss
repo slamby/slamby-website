@@ -1,0 +1,95 @@
+$nav-background-color: rgba(0,0,0,0.85);
+
+section {
+    background-color:$nav-background-color;
+    position: relative;
+    height: 44px;
+    z-index: 9999;
+
+    .sl-main {
+        @include make-md-column(12);
+        margin:0;
+        padding:0;
+    }
+}
+
+.logo {
+    font-family: slamby-logo;
+}
+
+.list {
+    margin: 0;
+    padding:0;
+    list-style: none;            
+    display: flex;
+    justify-content: space-between;
+    li {
+        display: inline-block;
+        position: relative;
+        height: 44px;
+        a,a:hover,a:active {
+            padding: 0 15px 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            line-height: 2.75;
+            font-weight: 300;
+            .sla-external-link {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.sla-nav-header, .sla-nav-menu-items {
+    @extend .list;
+}
+
+.sla-nav-header .menu-open-btn {
+    cursor: pointer;
+}
+
+// Phone & tablet size
+@media (max-width: $screen-sm-max){
+    .sla-nav-menu-items {
+        display: none;
+    }
+    section.sla-nav-menu-opened {
+        position: fixed;
+        top:0px;
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+
+        .sla-nav-menu-items {
+            display: block;
+            .logo {
+                display: none !important;
+            }
+            li {
+                display: block !important;
+                width: 100%;
+                a {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            li:hover {
+                background-color: rgba(255,255,255,0.27)
+            }
+        }
+    }
+    .hidden-block {
+        position: relative;
+        display: block;
+        height: 44px;
+        width: 100%;
+    }
+}
+
+// Computer size
+@media (min-width: $screen-md-min){
+    .sla-nav-header {
+        display: none;
+    }
+}

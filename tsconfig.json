@@ -6,13 +6,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "removeComments": false
+    "removeComments": true,
+    "types": [
+      "es6-shim",
+      "node"
+    ]
   },
-  "exclude":[
-    "./node_modules",
-    "./typings/"
-  ],
   "files": [
-    "app/main.ts"
+    "src/main.ts"
   ]
 }
