@@ -6,7 +6,9 @@
     padding-bottom:50px;
     
     .message {
-        @include make-md-column(12);
+        @include make-md-column(6);
+        @include make-xs-column(12);
         color:white;
+        background-color: rgba(0,0,0,0.4);
     }
 }

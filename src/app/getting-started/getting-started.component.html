@@ -21,16 +21,19 @@
         <ol>
             <li>Install Docker on your machine: <a href="https://docs.docker.com/engine/installation" target="">Official Docker installation guide</a></li>
             <li>Install Docker Compose on your machine (minimum 1.9.0 required): <a href="https://docs.docker.com/compose/install" target="_blank">Official Docker Compose installation guide</a></li>
-            <li>Download our Docker Compose file</li>
-            <li>...</li>
+            <li>Download our Docker Compose file<br><code>$ curl -L "https://github.com/slamby/slamby-api/releases/download/v1.2.0/docker-compose.yml" > docker-compose.yml</code></li>
+            <li>Compose the containers (run next to the compose file)<br><pre>$ docker-compose up -d</pre></li>
+            <li>Your server is installed. Check that if it's working correctly</li>
         </ol>
         <h2 id="api-activation">API activation</h2>
+        <p>Open your Slamby API server at http://api_url/setup.</p>
         <p>Great, you have an installed Slamby API. Now your first step is the activation process.<br>
         During the setup process you need to:</p>
         <ul>
             <li>Request a Slamby License,</li>
             <li>Copy your Slamby API License,</li>
             <li>and set the secret (password) for your Slamby API.</li>
+            <li>Continue with the API activation.</li>
         </ul>
         <p><i>License</i><br>
         For open-source projects, you can use an `open-source license` for free, or for commercial purpose you can use a commercial license.</p>
@@ -42,7 +45,7 @@
             Image</p>
         <h2 id="slamby-insight">Using Slamby Insight to manage your API</h2>
         <p>For you Slamby API we have an excellent desktop application that makes the management jobs smoother, faster and easier. You can download it from here:</p>
-        <p><a href="https://insight.slamby.com/download" class="btn btn-default">Download</a>.</p>
+        <p><a href="https://insight.slamby.com/download" class="btn btn-default" angulartics2On="click" angularticsCategory="getting-started-page" angularticsEvent="insight-download-btn">Download</a>.</p>
         <p>For more information about how to use Insight check the online tutorial here: <a href="https://developers.slamby.com/docs/Insight/" target="_blank">https://developers.slamby.com/docs/Insight/</a></p>
         <h2 id="integration">Integration (SDKs)</h2>
         <p>Now you have a working Slamby API, but how can you integrate it into your business processes? Slamby API has a very detailed Rest API that you can easily manage. For the full API documentation, please check the API developers page here: <a href="https://developers.slamby.com/docs/API/" target="_blank">https://developers.slamby.com/docs/API/</a></p>
