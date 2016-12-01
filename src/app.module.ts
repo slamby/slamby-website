@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { Angulartics2GoogleAnalytics, Angulartics2Module } from 'angulartics2';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
 
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
@@ -49,7 +51,8 @@ import { SupportComponent } from './app/support/support.component';
       { path: '**', redirectTo: '/404' }
     ]),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
-    Ng2PageScrollModule.forRoot()
+    Ng2PageScrollModule.forRoot(),
+    NgbModule.forRoot()
   ],
   declarations: [
     AppComponent,
