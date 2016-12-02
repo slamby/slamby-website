@@ -8,6 +8,6 @@ import { Title } from '@angular/platform-browser';
 
 export class ThankYouComponent {
     constructor (title: Title){
-        title.setTitle("Page Not Found");
+        title.setTitle("Thank You");
     }
 }
