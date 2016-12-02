@@ -35,6 +35,8 @@ const metaConfig: MetaConfig = {
   defaults: {
     title: 'Understanding data made simple',
     titleSuffix: ' - Slamby',
+    'og:type': 'website',
+    'og:image': 'https://www.slamby.com/assets/slamby-logo.png',
     "description": "Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking. Open-source, SaaS, on-premise install."
   }
 };
