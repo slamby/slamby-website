@@ -12,7 +12,7 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import { HeaderComponent } from './app/common/header/header.component';
 import { FooterComponent } from './app/common/footer/footer.component';
 import { NotFoundPageComponent } from './app/404/404.component';
-import { ThankYouComponent } from './app/thankyou/thankyou.component';
+import { ThankYouComponent } from './app/thank-you/thank-you.component';
 import { InsightComponent } from './app/insight/insight.component';
 import { HomeComponent } from './app/home/home.component';
 import { SubmenuComponent } from './app/common/submenu/submenu.component';
@@ -38,7 +38,7 @@ import { SupportComponent } from './app/support/support.component';
       { path: 'insight', component: InsightComponent },
       { path: 'pricing', component: PricingComponent },
       { path: '404', component: NotFoundPageComponent },
-      { path: 'thankyou', component: ThankYouComponent },
+      { path: 'thank-you', component: ThankYouComponent },
       { path: 'getting-started', component: GettingStartedComponent },
       { path: 'partners', component: PartnersComponent },
       { path: 'company', component: CompanyComponent },
