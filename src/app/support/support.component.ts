@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./support.component.scss')]
 })
 
-export class SupportComponent {
-    constructor (title: Title){
-        title.setTitle("Support");
-    }
-}
+export class SupportComponent {}

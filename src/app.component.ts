@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Angulartics2GoogleAnalytics } from 'angulartics2';
 import { PageScrollConfig } from 'ng2-page-scroll';
+import { MetaService } from 'ng2-meta';
+
 
 @Component({
     selector: 'pm-app',
@@ -9,7 +11,10 @@ import { PageScrollConfig } from 'ng2-page-scroll';
 })
 
 export class AppComponent {
-    constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
+    constructor(
+        angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
+        private metaService: MetaService
+    ) {
         PageScrollConfig.defaultDuration = 300;
     }
 };

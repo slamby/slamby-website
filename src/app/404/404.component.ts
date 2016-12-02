@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./404.component.scss')]
 })
 
-export class NotFoundPageComponent {
-    constructor (title: Title){
-        title.setTitle("Page Not Found");
-    }
-}
+export class NotFoundPageComponent {}

@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./insight.component.scss')]
 })
 
-export class InsightComponent {
-    constructor (title: Title){
-        title.setTitle("Slamby Insight");
-    }
-}
+export class InsightComponent {}

@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./legal.component.scss')]
 })
 
-export class OpenSourceLicenseComponent {
-    constructor (title: Title){
-        title.setTitle("OSS End user license agreement");
-    }
-}
+export class OpenSourceLicenseComponent {}

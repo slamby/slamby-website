@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./legal.component.scss')]
 })
 
-export class PrivacyPolicyComponent {
-    constructor (title: Title){
-        title.setTitle("Privacy Policy");
-    }
-}
+export class PrivacyPolicyComponent {}

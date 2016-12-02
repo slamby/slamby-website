@@ -7,10 +7,6 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class PartnersComponent {
-    constructor (title: Title){
-        title.setTitle("Slamby - Understanding Data Made Simple");
-    }
-
     partners = [
         {"name":"Microsoft","logo":"microsoft.png"},
         {"name":"ICMA","logo":"icma.jpg"},

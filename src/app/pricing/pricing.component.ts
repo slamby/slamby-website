@@ -8,10 +8,6 @@ import { Price } from './pricing.model';
 })
 
 export class PricingComponent {
-    constructor (title: Title){
-        title.setTitle("Pricing");
-    }
-
     //image = require("src/assets/images/dog.png");
 
     pricingEurope = [

@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./getting-started.component.scss')]
 })
 
-export class GettingStartedComponent {
-    constructor (title: Title){
-        title.setTitle("Getting started - Slamby");
-    }
-}
+export class GettingStartedComponent {}

@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./legal.component.scss')]
 })
 
-export class GnuAgplLicenseComponent {
-    constructor (title: Title){
-        title.setTitle("GNU Affero General Public License");
-    }
-}
+export class GnuAgplLicenseComponent {}

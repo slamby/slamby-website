@@ -7,9 +7,6 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class CompanyComponent {
-    constructor (title: Title){
-        title.setTitle("Slamby - Understanding Data Made Simple");
-    }
     join = function(){
         alert("Ok");
     }

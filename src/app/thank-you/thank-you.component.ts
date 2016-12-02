@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./thank-you.component.scss')]
 })
 
-export class ThankYouComponent {
-    constructor (title: Title){
-        title.setTitle("Thank You");
-    }
-}
+export class ThankYouComponent {}

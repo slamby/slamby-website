@@ -6,8 +6,4 @@ import { Title } from '@angular/platform-browser';
     styles: [require('./legal.component.scss')]
 })
 
-export class CommercialLicenseOemComponent {
-    constructor (title: Title){
-        title.setTitle("End user license agreement (OEM)");
-    }
-}
+export class CommercialLicenseOemComponent {}
