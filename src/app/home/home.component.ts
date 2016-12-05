@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    templateUrl: './home.component.jade',
+    templateUrl: './home.component.pug',
     styleUrls: ['./home.component.scss']
 })
 

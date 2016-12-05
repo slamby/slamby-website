@@ -34,7 +34,7 @@ module.exports = {
       // Support for *.json files.
       { test: /\.json$/,  loader: 'json' },
 
-      { test: /\.jade$/,  loader: 'pug-html-loader' },
+      { test: /\.(jade|pug)$/,  loader: 'pug-html-loader' },
 
       // Support for image files + compression.
       {

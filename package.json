@@ -54,6 +54,8 @@
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
+    "@angular/compiler-cli": "^2.2.4",
+    "@ngtools/webpack": "^1.1.6",
     "@types/bootstrap": "^3.3.32",
     "@types/core-js": "^0.9.34",
     "@types/es6-promise": "0.0.32",

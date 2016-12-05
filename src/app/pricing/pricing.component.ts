@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Price } from './pricing.model';
 
 @Component({
-    templateUrl: './pricing.component.jade',
+    templateUrl: './pricing.component.pug',
     styleUrls: ['./pricing.component.scss']
 })
 
@@ -39,5 +39,7 @@ export class PricingComponent {
         new Price("d14 v2","standard",16,112,800,929.83,464.92,720,2159.93),
         //new Price("d15 v2","standard",20,140,1000,1162.60,581.30,900,2669.43)
     ];
+
+    test = [1,2,3,4,5];
 
 }
