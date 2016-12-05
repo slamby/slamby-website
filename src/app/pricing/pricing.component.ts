@@ -3,8 +3,8 @@ import { Title } from '@angular/platform-browser';
 import { Price } from './pricing.model';
 
 @Component({
-    template: require('./pricing.component.html'),
-    styles: [require('./pricing.component.scss')]
+    templateUrl: './pricing.component.jade',
+    styleUrls: ['./pricing.component.scss']
 })
 
 export class PricingComponent {

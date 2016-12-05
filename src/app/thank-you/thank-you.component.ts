@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    template: require('./thank-you.component.html'),
-    styles: [require('./thank-you.component.scss')]
+    templateUrl: './thank-you.component.html',
+    styleUrls: ['./thank-you.component.scss']
 })
 
 export class ThankYouComponent {}

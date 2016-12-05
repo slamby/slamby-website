@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    template: require('./commercial-license.component.html'),
-    styles: [require('./legal.component.scss')]
+    templateUrl: './commercial-license.component.html',
+    styleUrls: ['./legal.component.scss']
 })
 
 export class CommercialLicenseComponent {}

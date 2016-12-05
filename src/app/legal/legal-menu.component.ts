@@ -3,8 +3,8 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'legalMenu',
-    template: require('./legal-menu.component.html'),
-    styles: [require('./legal.component.scss')]
+    templateUrl: './legal-menu.component.html',
+    styleUrls: ['./legal.component.scss']
 })
 
 export class LegalMenuComponent {}

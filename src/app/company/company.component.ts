@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    template: require('./company.component.html'),
-    styles: [require('./company.component.scss')]
+    templateUrl: './company.component.html',
+    styleUrls: ['./company.component.scss']
 })
 
 export class CompanyComponent {

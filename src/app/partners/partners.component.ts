@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    template: require('./partners.component.html'),
-    styles: [require('./partners.component.scss')]
+    templateUrl: './partners.component.html',
+    styleUrls: ['./partners.component.scss']
 })
 
 export class PartnersComponent {

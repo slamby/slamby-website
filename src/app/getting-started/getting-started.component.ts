@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    template: require('./getting-started.component.html'),
-    styles: [require('./getting-started.component.scss')]
+    templateUrl: './getting-started.component.html',
+    styleUrls: ['./getting-started.component.scss']
 })
 
 export class GettingStartedComponent {}

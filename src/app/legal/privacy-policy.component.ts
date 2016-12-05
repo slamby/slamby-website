@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    template: require('./privacy-policy.component.html'),
-    styles: [require('./legal.component.scss')]
+    templateUrl: './privacy-policy.component.html',
+    styleUrls: ['./legal.component.scss']
 })
 
 export class PrivacyPolicyComponent {}
