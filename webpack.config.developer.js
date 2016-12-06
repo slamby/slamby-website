@@ -24,7 +24,6 @@ module.exports = {
   },
   module: {
     loaders: [
-      // Support for .ts files.
       {
           test: /\.ts$/,
           loaders: ['awesome-typescript-loader','angular2-template-loader'],

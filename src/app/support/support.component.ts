@@ -1,13 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Faq } from './faq.model';
 
 @Component({
     templateUrl: './support.component.pug',
-    styleUrls: ['./support.component.scss']
+    styleUrls: ['./support.component.scss'],
 })
-
 export class SupportComponent {
+    ngOnInit(){
+        this.search("");
+    }
+    search = function(text: string){
+        this.faqResult = [];
+        if(text){
+            for (let item of this.faq){
+                if(item.question.toUpperCase().includes(text.toUpperCase())){
+                    this.faqResult.push(item);
+                }
+            }
+        }else{
+            for (let item of this.faq){
+                this.faqResult.push(item);
+            }
+        }
+    }
+    faqResult = [];
     faq = [
         new Faq("What is document classification?","Document classification is one of the biggest deal among companies who own big data. The task is to assign a document to one or more classes or categories manually or automatically. The documents to be classified may be texts, images, music, etc. Slamby offers fully automated text classification in any language as the highest accuracy rate available in the market and as a most common use case, Slamby classifies product database of online stores related to their category database."),
         new Faq("What is Machine Learning?","Machine learning is a subfield of computer science that gives computers the ability to learn without being explicitly programmed. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data."),
@@ -33,5 +50,4 @@ export class SupportComponent {
         new Faq("Can Slamby assure my data security?","Data privacy is very important to us and we do our best to protect your data and information. Therefore, Slamby offers dedicated servers to maximize your data security. Each customer has a dedicated Slamby server with dedicated resources and enterprise-grade hosting security. If you need the maximum data privacy, then install Slamby API inside on your machine(s) and do not let your data out of your company."),
         new Faq("What are Slamby’s terms and conditions and privacy policy?","You can see our terms and conditions and privacy policy under our legal section.")
     ]
-    filterObject = {question:'lorem'};
 }
