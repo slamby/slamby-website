@@ -3,7 +3,7 @@ import { MenuItem } from './menu.model';
 
 @Component({
     selector: 'pm-header',
-    templateUrl: './header.component.html',
+    templateUrl: './header.component.pug',
     styleUrls: ['./header.component.scss']
 })
 
@@ -13,7 +13,7 @@ export class HeaderComponent {
         new MenuItem("Slamby","/home","logo",false),
         //new MenuItem("Insight","/insight","",false),
         new MenuItem("Pricing","/pricing","",false),
-        //new MenuItem("Support","/support","",false),
+        new MenuItem("Support","/support","",false),
         //new MenuItem("Community","/community","",false),
         new MenuItem("For developers","https://developers.slamby.com","",true)
     ]

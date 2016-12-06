@@ -1,0 +1,13 @@
+pm-header
+
+section.qa
+    .container
+        .row
+            .col-md-8
+                .form-group
+                    h2.page-header Frequently asked questions
+    .container
+        .row
+            .item(template="ngFor let item of faq")
+                h2 {{item.question}}
+                p.lead {{item.answer}}
