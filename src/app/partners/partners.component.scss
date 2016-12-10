@@ -1,3 +1,5 @@
+@import "common";
+
 .item {
     @include make-xs-column(12);
     @include make-sm-column(6);

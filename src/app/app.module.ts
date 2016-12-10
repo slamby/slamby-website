@@ -27,7 +27,6 @@ import { CommercialLicenseComponent } from './legal/commercial-license.component
 import { CommercialLicenseOemComponent } from './legal/commercial-license-oem.component';
 import { OpenSourceLicenseComponent } from './legal/open-source-license.component';
 import { GnuAgplLicenseComponent } from './legal/gnu-agpl-license.component';
-
 import { SupportComponent } from './support/support.component';
 
 const metaConfig: MetaConfig = {

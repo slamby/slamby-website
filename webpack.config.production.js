@@ -19,8 +19,7 @@ module.exports = {
     publicPath: '/build/'
   },
   resolve: {
-    root: __dirname,
-    extensions: ['','.js','.jsx','.ts','.json', '.scss', '.css', '.html']
+    extensions: ['.js','.jsx','.ts','.json', '.scss', '.css', '.html']
   },
   module: {
     loaders: [
@@ -32,47 +31,53 @@ module.exports = {
       },
       
       // Support for *.json files.
-      { test: /\.json$/,  loader: 'json' },
+      { test: /\.json$/,  loader: 'json-loader' },
 
       { test: /\.(jade|pug)$/,  loader: 'pug-html-loader' },
 
       // Support for image files + compression.
       {
         test: /\.scss$/,
-        loaders: ['exports-loader?module.exports.toString()', 'css', 'sass', "sass-resources"]
+        loaders: ['exports-loader?module.exports.toString()', 'css-loader', 'sass-loader']
       },
 
       // support for .css as raw text
-      { test: /\.css$/,  loader: 'raw' },
+      { test: /\.css$/,  loader: 'raw-loader' },
 
       // Support for font files.
       {
         test: /\.(woff|woff2|otf|eot|svg|ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loaders: [
-          "file?name=fonts/[name].[hash].[ext]"
+          "file-loader?name=fonts/[name].[hash].[ext]"
           ]
       },
 
       {
         test: /\.(png|jpg|jpe?g|gif|ico)(\?[a-z0-9]+)?$/,
         loaders: [
-          'file?name=images/[name].[hash].[ext]',
-          'img?minimize&optimizationLevel=7&progressive=true'
+          'file-loader?name=images/[name].[hash].[ext]',
+          'img-loader?minimize&optimizationLevel=7&progressive=true'
         ]
       },
 
       // support for .css as raw text
       {
         test: /\.html$/,
-        loader: 'raw'
+        loader: 'raw-loader'
       }
     ]
   },
-  sassResources: [
-    './node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss',
-    './node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.scss'
-  ],
   plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        sassResources: [
+          //'demo.scss'
+        ],
+        sassLoader: {
+          includePaths: [path.resolve(__dirname, "./src/assets")]
+        }
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin({
         beautify: false,
         mangle: {

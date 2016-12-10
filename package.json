@@ -7,7 +7,7 @@
     "start": "npm run express",
     "preview": "concurrently \"npm run build\" \"npm run express\"",
     "express": "node server",
-    "build": "webpack -p --watch --progress --profile --colors --display-error-details --display-cached --optimize-dedupe --config=webpack.config.production.js",
+    "build": "webpack -p --watch --progress --profile --colors --display-error-details --display-cached --config=webpack.config.production.js",
     "build:developer": "concurrently \"webpack --watch --progress --profile --colors --display-error-details --display-cached --config=webpack.config.developer.js\" \"npm run express\"",
     "build:production": "concurrently \"npm run build\" \"npm run express\"",
     "sass": "gulp sass:watch"
@@ -65,6 +65,7 @@
     "@types/node": "^6.0.46",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.9",
+    "bootstrap-loader": "^1.3.2",
     "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.13.0",
     "browser-sync-webpack-plugin": "^1.1.3",
@@ -106,8 +107,7 @@
     "typescript": "^2.0.6",
     "typings": "^1.0.4",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "2.1.0-beta.27"
   },
   "repository": {}
 }
