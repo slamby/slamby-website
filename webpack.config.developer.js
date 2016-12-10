@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -43,6 +45,24 @@ module.exports = {
       // support for .css as raw text
       { test: /\.css$/,  loader: 'raw-loader' },
 
+      {
+        test: /\.css$/,
+        exclude: path.resolve(process.cwd(), 'src', 'app'),
+        loader: ExtractTextPlugin.extract({
+            fallbackLoader: "style-loader",
+            loader: "css-loader"
+        })
+      },
+
+      {
+        test: /\.scss$/,
+        exclude: path.resolve(process.cwd(), 'src', 'app'),
+        loader: ExtractTextPlugin.extract({
+            fallbackLoader: "style-loader",
+            loader: ["css-loader", "sass-loader"]
+        })
+      },
+
       // Support for font files.
       {
         test: /\.(woff|woff2|otf|eot|svg|ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -76,6 +96,10 @@ module.exports = {
           includePaths: [path.resolve(__dirname, "./src/assets")]
         }
       }
+    }),
+    new ExtractTextPlugin("style.css"),
+    new HtmlWebpackPlugin({
+      template: 'src/index.pug'
     }),
     new BrowserSyncPlugin({host: 'localhost',port: 3100,proxy: 'http://localhost:3000'},{reload: true})
   ]

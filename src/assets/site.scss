@@ -1,0 +1,39 @@
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$light-grey: #F0B8C1;
+
+html,body {
+    @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500');
+    font-family: 'Libre Franklin', sans-serif;
+    height: 100%;
+    overflow: auto;
+}
+
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
+
+p {
+    font-weight: 200;
+}
+
+p.lead {
+    font-weight: 100;
+}
+
+.table {
+    thead {
+        th {
+            font-weight: 400;
+        }
+    }
+    td {
+        font-weight: 300;
+    }
+}
+
+@font-face {
+    font-family: slamby-logo;
+    src: url(./fonts/slamby-logo.woff);
+}
