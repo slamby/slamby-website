@@ -1,0 +1,1 @@
+{"version":3,"file":"404.component.js","sourceRoot":"","sources":["../../src/app/404/404.component.ts"],"names":[],"mappings":";;;;;;;;;AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;AAQ1C,IAAa,qBAAqB;IAAlC;IAAoC,CAAC;IAAD,4BAAC;AAAD,CAAC,AAArC,IAAqC;AAAxB,qBAAqB;IALjC,SAAS,CAAC;QACP,WAAW,EAAE,qBAAqB;QAClC,SAAS,EAAE,CAAC,sBAAsB,CAAC;KACtC,CAAC;;GAEW,qBAAqB,CAAG;SAAxB,qBAAqB"}

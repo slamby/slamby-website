@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { Angulartics2GoogleAnalytics, Angulartics2Module } from 'angulartics2';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 import { AppComponent } from './app.component';
 
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
@@ -63,7 +61,6 @@ const metaConfig: MetaConfig = {
     ]),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     Ng2PageScrollModule.forRoot(),
-    NgbModule.forRoot(),
     MetaModule.forRoot(metaConfig)
   ],
   declarations: [

@@ -29,7 +29,7 @@ module.exports = {
       // Support for .ts files.
       {
           test: /\.ts$/,
-          loaders: ['awesome-typescript-loader','angular2-template-loader'],
+          loaders: ['ts-loader','angular2-template-loader'],
           exclude: [/node_modules/]
       },
       
