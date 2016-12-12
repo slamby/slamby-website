@@ -24,7 +24,7 @@ export class SupportComponent {
             }
         }
     }
-    faqResult = [];
+    faqResult:Object = [];
     faq = [
         new Faq("What is document classification?","Document classification is one of the biggest deal among companies who own big data. The task is to assign a document to one or more classes or categories manually or automatically. The documents to be classified may be texts, images, music, etc. Slamby offers fully automated text classification in any language as the highest accuracy rate available in the market and as a most common use case, Slamby classifies product database of online stores related to their category database."),
         new Faq("What is Machine Learning?","Machine learning is a subfield of computer science that gives computers the ability to learn without being explicitly programmed. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data."),

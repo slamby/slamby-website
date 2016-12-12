@@ -16,12 +16,23 @@ app.use(connect.compress());
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-//Static folders
-app.use('/build', express.static(__dirname + '/src/build'));
-app.use('/assets', express.static(__dirname + '/src/assets'));
+app.use('/fonts', express.static(path.join(__dirname,'./build/fonts')));
+app.use('/images', express.static(path.join(__dirname,'./build/images')));
+
+app.get('/bundle.js', (req, res) => {
+    res.sendFile(path.join(__dirname, './build/bundle.js'));
+});
+
+app.get('/style.css', (req, res) => {
+    res.sendFile(path.join(__dirname, './build/style.css'));
+});
+
+app.get('/favicon.png', (req, res) => {
+    res.sendFile(path.join(__dirname, './build/favicon.png'));
+});
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/src/build/index.html'));
+    res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
 app.listen(port, '0.0.0.0', (err) => {

@@ -3,6 +3,7 @@ const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -17,8 +18,8 @@ module.exports = {
   devtool: 'source-map',
   output: {
     filename: '[name].js',
-    path: './src/build/',
-    publicPath: '/build/'
+    path: './build/',
+    publicPath: '/'
   },
   resolve: {
     extensions: ['.js','.jsx','.ts','.json', '.scss', '.css', '.html']
@@ -98,6 +99,9 @@ module.exports = {
       }
     }),
     new ExtractTextPlugin("style.css"),
+    new CopyWebpackPlugin([
+      { from: 'src/assets/favicon.png' }
+    ]),
     new HtmlWebpackPlugin({
       template: 'src/index.pug'
     }),
