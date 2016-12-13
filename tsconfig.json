@@ -1,18 +1,30 @@
 {
+  "compileOnSave": false,
+  "buildOnSave": false,
   "compilerOptions": {
-    "target": "ES5",
-    "module": "commonjs",
+    "target": "es5",
+    "module": "es2015",
     "moduleResolution": "node",
+    "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "removeComments": true,
+    "typeRoots": [ "./node_modules/@types" ],
     "types": [
-      "es6-shim",
       "node"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
     ]
   },
-  "files": [
-    "src/app/app.module.ts"
-  ]
+  "files": [],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  }
 }
