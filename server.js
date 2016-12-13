@@ -21,6 +21,9 @@ app.get('/bundle.js', function (req, res) {
 app.get('/polyfill.js', function (req, res) {
     res.sendFile(path.join(__dirname, './build/polyfill.js'), { maxAge: oneDay });
 });
+app.get('/google-analytics.js', function (req, res) {
+    res.sendFile(path.join(__dirname, './build/google-analytics.js'), { maxAge: oneDay });
+});
 app.get('/style.css', function (req, res) {
     res.sendFile(path.join(__dirname, './build/style.css'), { maxAge: oneDay });
 });

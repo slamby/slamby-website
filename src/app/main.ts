@@ -5,8 +5,6 @@ import { AppModule } from './app.module';
 import 'font-awesome/css/font-awesome.min.css';
 import '../assets/site.scss';
 
-require('./google-analytics.js');
-
 enableProdMode();
 
 platformBrowserDynamic().bootstrapModule(AppModule);

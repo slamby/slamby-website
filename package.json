@@ -32,9 +32,7 @@
     "path": "0.12.7",
     "rxjs": "5.0.0-beta.12",
     "tsc": "^1.20150623.0",
-    "zone.js": "0.6.26",
-    "body-parser": "^1.15.2",
-    "angulartics2": "^1.5.0"
+    "body-parser": "^1.15.2"
   },
   "devDependencies": {
     "@angular/common": "2.2.0",
@@ -47,7 +45,9 @@
     "@types/es6-shim": "^0.31.32",
     "@angular/compiler-cli": "2.2.0",
     "@angular/platform-server": "2.2.0",
+    "zone.js": "0.6.26",
     "@ngtools/webpack": "1.1.9",
+    "angulartics2": "^1.5.0",
     "ng2-bootstrap": "1.1.16",
     "ng2-meta": "^2.0.3",
     "ng2-page-scroll": "^4.0.0-beta.1",

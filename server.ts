@@ -29,6 +29,10 @@ app.get('/polyfill.js', (req, res) => {
     res.sendFile(path.join(__dirname, './build/polyfill.js'),{maxAge: oneDay});
 });
 
+app.get('/google-analytics.js', (req, res) => {
+    res.sendFile(path.join(__dirname, './build/google-analytics.js'),{maxAge: oneDay});
+});
+
 app.get('/style.css', (req, res) => {
     res.sendFile(path.join(__dirname, './build/style.css'),{maxAge: oneDay});
 });

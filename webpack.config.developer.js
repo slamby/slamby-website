@@ -100,7 +100,8 @@ module.exports = {
     }),
     new ExtractTextPlugin("style.css"),
     new CopyWebpackPlugin([
-      { from: 'src/assets/favicon.png' }
+      { from: 'src/assets/favicon.png' },
+      { from: 'src/google-analytics.js' }
     ]),
     new HtmlWebpackPlugin({
       template: 'src/index.pug'
