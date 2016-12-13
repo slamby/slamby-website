@@ -18,6 +18,9 @@ app.use('/images', express.static(path.join(__dirname, './build/images'), { maxA
 app.get('/bundle.js', function (req, res) {
     res.sendFile(path.join(__dirname, './build/bundle.js'), { maxAge: oneDay });
 });
+app.get('/polyfill.js', function (req, res) {
+    res.sendFile(path.join(__dirname, './build/polyfill.js'), { maxAge: oneDay });
+});
 app.get('/style.css', function (req, res) {
     res.sendFile(path.join(__dirname, './build/style.css'), { maxAge: oneDay });
 });

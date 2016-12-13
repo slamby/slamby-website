@@ -25,6 +25,10 @@ app.get('/bundle.js', (req, res) => {
     res.sendFile(path.join(__dirname, './build/bundle.js'),{maxAge: oneDay});
 });
 
+app.get('/polyfill.js', (req, res) => {
+    res.sendFile(path.join(__dirname, './build/polyfill.js'),{maxAge: oneDay});
+});
+
 app.get('/style.css', (req, res) => {
     res.sendFile(path.join(__dirname, './build/style.css'),{maxAge: oneDay});
 });

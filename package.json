@@ -11,7 +11,7 @@
     "build:developer": "concurrently \"webpack --progress --profile --colors --display-error-details --display-cached --config=webpack.config.developer.js\" \"npm run express\"",
     "build:production": "concurrently \"npm run build\" \"npm run express\""
   },
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "keywords": [
     "angular2",
     "aot",
@@ -30,13 +30,16 @@
     "@angular/platform-browser": "2.2.3",
     "@angular/platform-browser-dynamic": "2.2.3",
     "@angular/router": "3.0.0",
-    "core-js": "2.4.1",
-    "rxjs": "5.0.0-beta.12",
-    "zone.js": "0.6.26",
+    "@types/es6-shim": "^0.31.32",
     "connect": "2.x",
+    "core-js": "2.4.1",
+    "es6-shim": "^0.35.2",
     "express": "4.14.0",
     "glob": "7.0.5",
-    "path": "0.12.7"
+    "path": "0.12.7",
+    "rxjs": "5.0.0-beta.12",
+    "tsc": "^1.20150623.0",
+    "zone.js": "0.6.26"
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.2.3",

@@ -26,10 +26,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      // Support for .ts files.
       {
           test: /\.ts$/,
-          loaders: ['ts-loader','angular2-template-loader'],
+          loaders: ['awesome-typescript-loader','angular2-template-loader'],
           exclude: [/node_modules/]
       },
       
@@ -106,6 +105,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.pug'
     }),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
         beautify: false,
         mangle: {
