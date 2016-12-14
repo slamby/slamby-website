@@ -1,0 +1,15 @@
+pm-header
+
+section.qa
+    .container
+        .row
+            .col-md-12
+                h2.page-header Frequently asked questions
+            .col-md-6
+                <input type="search" #box (keyup)="search(box.value)" class="form-control" placeholder="Search for faq" />
+                    
+    .container
+        .row
+            .item(template="ngFor let item of faqResult")
+                h2 {{item.question}}
+                p.lead {{item.answer}}

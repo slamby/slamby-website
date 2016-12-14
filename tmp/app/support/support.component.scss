@@ -1,0 +1,7 @@
+@import "common";
+
+section.qa {
+    .item {
+        @include make-md-column(6);
+    }
+}

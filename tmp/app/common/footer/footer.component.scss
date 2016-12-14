@@ -1,0 +1,26 @@
+@import 'common';
+
+.footer {
+    @include make-row();
+    .message {
+        @include make-sm-column(12);
+        padding-top: 15px;
+        margin-top: 30px;
+        color: grey;
+        font-weight: 100;
+    }
+    .links {
+        @include make-sm-column(12);
+        margin-top: 5px;
+        li {
+            display: inline-block;
+            text-decoration: none;
+            margin: 0px 15px 0px 0px;
+            font-weight: 100;
+        }
+    }
+    .sla-external-link {
+        padding-left:3px;
+        font-size:10px;
+    }
+}

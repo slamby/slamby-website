@@ -1,0 +1,1 @@
+{"version":3,"file":"gnu-agpl-license.component.js","sourceRoot":"","sources":["gnu-agpl-license.component.ts"],"names":[],"mappings":"OAAO,EAAE,SAAS,EAAE,MAAM,eAAe;AAKzC;AASA,CAAC;AAT4C,kCAAU,GAA0B;IACjF,EAAE,IAAI,EAAE,SAAS,EAAE,IAAI,EAAE,CAAC;gBACtB,WAAW,EAAE,mCAAmC;gBAChD,SAAS,EAAE,CAAC,uBAAuB,CAAC;aACvC,EAAG,EAAE;CACL,CAAC;AAEK,sCAAc,GAA6D,EACjF,CACA"}

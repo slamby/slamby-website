@@ -1,0 +1,14 @@
+<pm-header></pm-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Partners</h1>
+            <p class="lead">Creating a better product requires teamwork, partnerships and collaboration. We are grateful to work together with such amazing partners.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item" *ngFor="let partner of partners">
+            <img src="/assets/images/partners/{{partner.logo}}" alt="{{partner.name}}" class="img-responsive">
+        </div>
+    </div>
+</div>

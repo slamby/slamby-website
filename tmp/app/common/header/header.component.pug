@@ -1,0 +1,19 @@
+section([class.sla-nav-menu-opened]="isOpen")
+    .container
+        .sl-main
+            ul.sla-nav-header
+                li.logo
+                    a([routerLink]="['/home']")
+                        span Slamby
+                li((click)="menuOpen()").menu-open-btn
+                    a
+                        i(aria-hidden="true").fa.fa-bars
+            ul.sla-nav-menu-items
+                li(*ngFor="let item of menuItems" class="{{item.customClass}}")
+                    a([routerLink]="[item.link]" template="ngIf !item.externalLink")
+                        span {{item.name}}
+                    a(*ngIf="item.externalLink" href="{{item.link}}" target="_blank")
+                        span {{item.name}} 
+                            i(aria-hidden="true").fa.fa-external-link.sla-external-link
+
+div([class.hidden-block]="isOpen")

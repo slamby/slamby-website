@@ -1,0 +1,112 @@
+include pricing-table-template
+
+pm-header
+
+section.main
+    .container
+        .body
+            .main-message
+                h1 45 € / core / month
+                p.lead Start using Slamby for a price of a cup of coffee per core. Use it as a SaaS or install it on your machine.
+                p.lead No query limit, no memory limit
+                p
+                    a([routerLink]="['/getting-started']" angulartics2On="click" angularticsEvent="getting-started-click" angularticsCategory="pricing-page").btn.btn-default.btn-lg Getting started
+
+.container
+    .row
+        .col-md-12
+            h1.page-header Pricing
+            p.lead Our product is available for both private hosting and SaaS. You can easily download and install it on your machine, or purchase it as a monthly service.
+            p.lead For private hosting, you can download and install Slamby API and register it with an open-source license for free, and you can purchase a core-based license for commercial use.
+            p.lead For SaaS, you can select a required instance size and buy it with a monthly payment. The prices cover the standard Slamby license per core + hosting fee.
+
+.container
+    .row
+        .col-md-12
+            h1.page-header Core pricing
+        .col-md-6
+            p.lead Standard Slamby API pricing, based on the  processor core number. There is no query, usage, storage and memory limitation.
+        .col-md-6
+            table.table.table-striped
+                thead
+                    tr
+                        th Name
+                        th Description
+                        th price
+                tbody
+                    tr
+                        td 1 core license
+                        td unlimited memory, unlimited storage
+                        td 45 € / processor core / month
+
+.container
+    .row
+        .col-md-12
+            h2.page-header Support
+        .col-md-6
+            p.lead For professional use select one of our available support options based on the available communication channels and SLA.
+            p.lead Currently, we have three type of support options. Each Slamby instance has a basic support option that includes community-based - forum support.
+            p
+                a(href="mailto:sales@slamby.com" angulartics2On="click" angularticsCategory="pricing-page" angularticsEvent="support-get-mode-information") Get more information
+            p Community support:
+                a(href="https://groups.google.com/forum/#!forum/slamby" target="_blank") https://groups.google.com/forum/#!forum/slamby
+        .col-md-6
+            table.table.table-striped
+                thead
+                    tr
+                        th Name
+                        th Description
+                        th price
+                tbody
+                    tr
+                        td Basic
+                        td
+                            a(href="https://groups.google.com/forum/#!forum/slamby" target="_blank") Community only
+                            | ,no SLA
+                        td Free
+                    tr
+                        td Professional
+                        td Next workday, email
+                        td 2000 € yearly / instance
+                    tr
+                        td Production
+                        td Direct developer and technical access, 5 hours SLA, email, skype, phone.
+                        td 6000 € yearly / instance
+
+        .container.pricing
+            .row
+                .col-md-12
+                    h2.page-header SaaS pricing
+                    p.lead Purchase Slamby as software as a service. Select one of our hosting locations and one suitable size of the instance. Prices based on the resource size + core based Slamby license fee.
+                    p
+                        a(href="mailto:sales@slamby.com" angulartics2On="click" angularticsCategory="pricing-page" angularticsEvent="sas-contact-sales").btn.btn-default Contact sales
+                    p Prices are in € per month
+                    h3 European
+                    table.table.table-striped
+                        thead
+                            +table-header
+                        tbody
+                            tr(*ngFor="let item of pricingEurope")
+                                td {{item.name}}
+                                td {{item.core}}
+                                td {{item.memory}}
+                                td.hidden-xs {{item.storage}}
+                                td.hidden-xs.hidden-sm {{item.technicalFee}} €
+                                td.hidden-xs.hidden-sm {{item.slambyLicenseFee}} €
+                                td {{item.retailPrice}} €
+                    
+            .row
+                .col-md-12
+                    h3 Asian
+                    table.table.table-striped
+                        thead
+                            +table-header
+                        tbody
+                            tr(*ngFor="let item of pricingAsian")
+                                td {{item.name}}
+                                td {{item.core}}
+                                td {{item.memory}}
+                                td.hidden-xs {{item.storage}}
+                                td.hidden-xs.hidden-sm {{item.technicalFee}} €
+                                td.hidden-xs.hidden-sm {{item.slambyLicenseFee}} €
+                                td {{item.retailPrice}} €

@@ -1,0 +1,1 @@
+{"version":3,"file":"open-source-license.component.js","sourceRoot":"","sources":["open-source-license.component.ts"],"names":[],"mappings":"OAAO,EAAE,SAAS,EAAE,MAAM,eAAe;AAKzC;AASA,CAAC;AAT+C,qCAAU,GAA0B;IACpF,EAAE,IAAI,EAAE,SAAS,EAAE,IAAI,EAAE,CAAC;gBACtB,WAAW,EAAE,sCAAsC;gBACnD,SAAS,EAAE,CAAC,uBAAuB,CAAC;aACvC,EAAG,EAAE;CACL,CAAC;AAEK,yCAAc,GAA6D,EACjF,CACA"}

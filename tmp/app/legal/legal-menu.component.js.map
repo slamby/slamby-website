@@ -1,0 +1,1 @@
+{"version":3,"file":"legal-menu.component.js","sourceRoot":"","sources":["legal-menu.component.ts"],"names":[],"mappings":"OAAO,EAAE,SAAS,EAAE,MAAM,eAAe;AAKzC;AAUA,CAAC;AAVuC,6BAAU,GAA0B;IAC5E,EAAE,IAAI,EAAE,SAAS,EAAE,IAAI,EAAE,CAAC;gBACtB,QAAQ,EAAE,WAAW;gBACrB,WAAW,EAAE,6BAA6B;gBAC1C,SAAS,EAAE,CAAC,uBAAuB,CAAC;aACvC,EAAG,EAAE;CACL,CAAC;AAEK,iCAAc,GAA6D,EACjF,CACA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"submenu.component.js","sourceRoot":"","sources":["submenu.component.ts"],"names":[],"mappings":"OAAO,EAAE,SAAS,EAAE,MAAM,eAAe;AAIzC;AAUA,CAAC;AAVqC,2BAAU,GAA0B;IAC1E,EAAE,IAAI,EAAE,SAAS,EAAE,IAAI,EAAE,CAAC;gBACtB,QAAQ,EAAE,SAAS;gBACnB,WAAW,EAAE,0BAA0B;gBACvC,SAAS,EAAE,CAAC,yBAAyB,CAAC;aACzC,EAAG,EAAE;CACL,CAAC;AAEK,+BAAc,GAA6D,EACjF,CACA"}
