@@ -37,3 +37,11 @@ p.lead {
     font-family: slamby-logo;
     src: url(./fonts/slamby-logo.woff);
 }
+
+section.init {
+    margin-top:10%;
+    .init-logo {
+        font-family: slamby-logo;
+        font-size: 30px !important;
+    }
+}
