@@ -7,18 +7,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    'bundle': [
-      'es6-shim',
-      'rxjs',
-      'zone.js',
-      'reflect-metadata',
-      './src/app/main.ts'
-    ]
+    'bundle': './src/app/main.ts'
   },
   devtool: 'source-map',
   output: {
-    filename: '[name].js',
-    path: './build/',
+    filename: 'bundle.js',
+    path: './dist/',
     publicPath: '/'
   },
   resolve: {
@@ -31,9 +25,6 @@ module.exports = {
           loaders: ['awesome-typescript-loader','angular2-template-loader'],
           exclude: [/node_modules/]
       },
-      
-      // Support for *.json files.
-      { test: /\.json$/,  loader: 'json-loader' },
 
       { test: /\.(jade|pug)$/,  loader: 'pug-html-loader' },
 
@@ -101,12 +92,13 @@ module.exports = {
     new ExtractTextPlugin("style.css"),
     new CopyWebpackPlugin([
       { from: 'src/assets/favicon.png' },
-      { from: 'src/google-analytics.js' }
+      { from: 'src/google-analytics.js' },
+      { from: 'node_modules/zone.js/dist/zone.js', to: 'zone.js'},
+      { from: 'node_modules/reflect-metadata/Reflect.js', to: 'reflect.js'}
     ]),
     new HtmlWebpackPlugin({
       template: 'src/index.pug'
     }),
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
         beautify: false,
         mangle: {
