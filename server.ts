@@ -1,6 +1,5 @@
 var path = require('path');
 var express = require('express');
-var connect = require('connect');
 var http = require('http');
 var bodyParser = require('body-parser');
 var compression = require('compression');
@@ -27,7 +26,7 @@ app.get('/bundle.js', (req, res) => {
 });
 
 app.get('/bundle.min.js', (req, res) => {
-    res.sendFile(path.join(__dirname, './build/bundle.js'));
+    res.sendFile(path.join(__dirname, './build/bundle.min.js'));
 });
 
 app.get('/zone.js', (req, res) => {

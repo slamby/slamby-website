@@ -1,6 +1,5 @@
 var path = require('path');
 var express = require('express');
-var connect = require('connect');
 var http = require('http');
 var bodyParser = require('body-parser');
 var compression = require('compression');
@@ -20,7 +19,7 @@ app.get('/bundle.js', function (req, res) {
     res.sendFile(path.join(__dirname, './build/bundle.js'));
 });
 app.get('/bundle.min.js', function (req, res) {
-    res.sendFile(path.join(__dirname, './build/bundle.js'));
+    res.sendFile(path.join(__dirname, './build/bundle.min.js'));
 });
 app.get('/zone.js', function (req, res) {
     res.sendFile(path.join(__dirname, './build/zone.js'), { maxAge: oneDay });
