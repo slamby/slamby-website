@@ -22219,7 +22219,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     }());
     ThankYouComponent = __decorate([
         Component({
-            template: "<div class=\"container notFoundModule\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <div class=\"box\">\n                <div class=\"icon\">\n                    <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i>\n                </div>\n                <h1>Thank You</h1>\n                <p class=\"lead\">Please check your email and confirm your request.</p>\n            </div>\n        </div>\n    </div>\n</div>",
+            template: "<pm-header></pm-header><div class=\"container notFoundModule\"><div class=\"row\"><div class=\"col-md-12\"><div class=\"box\"><div class=\"icon\"><i class=\"fa fa-smile-o\"></i></div><h1>Thank You</h1><p class=\"lead\">Please check your email and confirm your request.</p></div></div></div></div>",
             styles: [".notFoundModule{text-align:center}.notFoundModule .box{margin-top:50px}.notFoundModule .box .icon i{font-size:70px;font-weight:100}\n"]
         })
     ], ThankYouComponent);
@@ -23712,7 +23712,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     }());
     GettingStartedComponent = __decorate([
         Component({
-            template: "<pm-header></pm-header><div class=\"container\"><div class=\"menu\"><div class=\"list-group\"><a class=\"list-group-item\" pageScroll=\"pageScroll\" href=\"#api-install\">API install</a><a class=\"list-group-item\" pageScroll=\"pageScroll\" href=\"#api-activation\">API activation</a><a class=\"list-group-item\" pageScroll=\"pageScroll\" href=\"#slamby-insight\">Slamby Insight</a><a class=\"list-group-item\" pageScroll=\"pageScroll\" href=\"#integration\">Integration</a><a class=\"list-group-item\" pageScroll=\"pageScroll\" href=\"#documentation\">Documentation</a><a class=\"list-group-item\" pageScroll=\"pageScroll\" href=\"#support\">Support</a></div></div><div class=\"body\"><h1>Getting started</h1><p class=\"lead\">Welcome to Slamby. Congratulation, you made the very first step to work with our awesome products. You are almost done, but before getting started working with your Slamby product, here are a few useful information.</p><h2 id=\"api-install\">API install</h2><p>You can use your Slamby API as a SaaS, or you can download, and host is by yourself. When you want to host it by yourself, the first thing you need to manage is the installation. To install Slamby API, please check the product readme and the installation guide.</p><p>Product documentation:<a href=\"https://github.com/slamby/slamby-api\" target=\"_blank\"></a></p><p>Using Docker Compose, here are the installation steps:</p><ol><li>Install Docker on your machine:<a href=\"https://docs.docker.com/engine/installation\" target=\"_blank\">Official Docker installation guide</a></li></ol></div></div>",
+            template: "<pm-header></pm-header><div class=\"container\"><div class=\"menu\"><!--.list-groupa(pageScroll class=\"list-group-item\") API install\na(pageScroll class=\"list-group-item\") API activation\na(pageScroll class=\"list-group-item\") Slamby Insight\na(pageScroll class=\"list-group-item\") Integration\na(pageScroll class=\"list-group-item\") Documentation\na(pageScroll class=\"list-group-item\") Support--></div><div class=\"body\"><h1>Getting started</h1><p class=\"lead\">Welcome to Slamby. Congratulation, you made the very first step to work with our awesome products. You are almost done, but before getting started working with your Slamby product, here are a few useful information.</p><h2>API install</h2><p>You can use your Slamby API as a SaaS, or you can download, and host is by yourself. When you want to host it by yourself, the first thing you need to manage is the installation. To install Slamby API, please check the product readme and the installation guide.</p><p>Product documentation: <a href=\"https://github.com/slamby/slamby-api\" target=\"_blank\">https://github.com/slamby/slamby-api</a></p><p>Using Docker Compose, here are the installation steps:</p><ol><li>Install Docker on your machine: <a href=\"https://docs.docker.com/engine/installation\" target=\"\">Official Docker installation guide</a>  </li><li>Install Docker Compose on your machine (minimum 1.9.0 required): <a href=\"https://docs.docker.com/compose/install\" target=\"_blank\">Official Docker Compose installation guide</a></li><li>Download our Docker Compose file<br><code>$ curl -L \"https://github.com/slamby/slamby-api/releases/download/v1.2.0/docker-compose.yml\" > docker-compose.yml </code></li><li>Compose the containers (run next to the compose file)<br><pre>$ docker-compose up -d </pre></li><li>Your server is installed. Check that if it's working correctly </li></ol><h2>API activation</h2><p>Open your Slamby API server at http://api_url/setup.</p><p>Great, you have an installed Slamby API. Now your first step is the activation process.<br>During the setup process you need to:</p><ul><li>Request a Slamby License, </li><li>Copy your Slamby API License, </li><li>and set the secret (password) for your Slamby API. </li><li>Continue with the API activation.</li></ul><p>License</p><p>For open-source projects, you can use an open-source license for free, or for commercial purpose you can use a commercial license.</p><p>For open-source license, your can request one from the setup wizard directly by typing your e-mail address and click the Request a License button. Our license service will generate an open-sourced license for you and will send it via email to the given email address.</p><p>When your product or company is not open-sourced you cannot use Slamby API with open-source license; you need to purchase a commercial license. The pricing is based on the processor core number.</p><p>For pricing details, please check our pricing <a href=\"https://www.slamby.com/pricing\">https://www.slamby.com/pricing</a></p><p>For purchasing a commercial license contact our <a href=\"sales@slamby.com\">sales@slamby.com</a></p><h2>Using Slamby Insight to manage your API</h2><p>For you Slamby API we have an excellent desktop application that makes the management jobs smoother, faster and easier. You can download it from here:</p><p> <a class=\"btn btn-default\" href=\"https://insight.slamby.com/download\" angulartics2On=\"click\" angularticsCategory=\"getting-started-page\" angularticsEvent=\"insight-download-btn\">Download.</a></p><p>For more information about how to use Insight check the online tutorial here: <a href=\"https://developers.slamby.com/docs/Insight/\" target=\"_blank\">https://developers.slamby.com/docs/Insight/</a></p><h2>Integration (SDKs)</h2><p>Now you have a working Slamby API, but how can you integrate it into your business processes? Slamby API has a very detailed Rest API that you can easily manage. For the full API documentation, please check the API developers page here: <a href=\"https://developers.slamby.com/docs/API/\" target=\"_blank\">https://developers.slamby.com/docs/API/</a></p><p>A lovely gift from Slamby</p><p>We would like to make your job easier; that's why we work on five different SDKs. Please check the available versions, sources, and the readmes.</p><table class=\"table table-striped\"><thead><tr><td>SDK Name</td><td>Download link and readme</td></tr></thead><tbody><tr><td>.Net</td><td><a href=\"https://github.com/slamby/slamby-sdk-net\" target=\"_blank\">https://github.com/slamby/slamby-sdk-net</a></td></tr><tr><td>JavaScript</td><td><a href=\"https://github.com/slamby/slamby-sdk-javascript\" target=\"_blank\">https://github.com/slamby/slamby-sdk-javascript</a> </td></tr><tr><td>Python</td><td><a href=\"https://github.com/slamby/slamby-sdk-python\" target=\"_blank\">https://github.com/slamby/slamby-sdk-python</a></td></tr><tr><td>PHP</td><td><a href=\"https://github.com/slamby/slamby-sdk-php\" target=\"_blank\">https://github.com/slamby/slamby-sdk-php</a></td></tr><tr><td>Angular 2</td><td><a href=\"https://github.com/slamby/slamby-sdk-angular2\" target=\"_blank\">https://github.com/slamby/slamby-sdk-angular2</a> </td></tr></tbody></table><h2>Product documentation</h2><p>Here we go, all the Slamby products are now installed. But how can you use them? When you do an API integration, or you need to know specific settings, then please check the API documentation on our developer site: <a href=\"https://developers.slamby.com/docs/API\" target=\"_blank\">https://developers.slamby.com/docs/API</a> <br/> or, check the other products documentation as well <a href=\"https://developers.slamby.com\" target=\"_blank\">https://developers.slamby.com</a></p><h2>Support</h2><p>Slamby support mailing list for basic support: <a href=\"https://groups.google.com/forum/#!forum/slamby\" target=\"_blank\">https://groups.google.com/forum/#!forum/slamby</a></p><p>Each Slamby license includes a basic support with absolutely no SLA. This means you can access our support via our online support mailing list and you can ask for help from our community. In this case, the reaction time is not guaranteed, and there is no direct access to our technical experts.</p><p>When you need a professional support, please purchase one. Each professional support contains short-time SLAs and response time. Each professional support gives you direct access to our technical experts.</p><p>For more details, please check our available support options here: <a href=\"https://www.slamby.com/support\" target=\"_blank\">https://www.slamby.com/support</a></p><p>And contact our sales: <a href=\"sales@slamby.com\">sales@slamby.com</a></p></div></div>",
             styles: [".menu{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.menu{float:left;width:16.66667%}}.menu .list-group{margin-top:30px}.body{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.body{float:left;width:83.33333%}}.body h1:first-of-type{margin-top:30px}\n"]
         })
     ], GettingStartedComponent);
@@ -25674,53 +25674,47 @@ var __extends = (this && this.__extends) || function (d, b) {
         }
         View_ThankYouComponent0.prototype.createInternal = function (rootSelector) {
             var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
-            this._el_0 = createRenderElement(this.renderer, parentRenderNode, 'div', new InlineArray2(2, 'class', 'container notFoundModule'), null);
-            this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
-            this._el_2 = createRenderElement(this.renderer, this._el_0, 'div', new InlineArray2(2, 'class', 'row'), null);
-            this._text_3 = this.renderer.createText(this._el_2, '\n        ', null);
-            this._el_4 = createRenderElement(this.renderer, this._el_2, 'div', new InlineArray2(2, 'class', 'col-md-12'), null);
-            this._text_5 = this.renderer.createText(this._el_4, '\n            ', null);
-            this._el_6 = createRenderElement(this.renderer, this._el_4, 'div', new InlineArray2(2, 'class', 'box'), null);
-            this._text_7 = this.renderer.createText(this._el_6, '\n                ', null);
-            this._el_8 = createRenderElement(this.renderer, this._el_6, 'div', new InlineArray2(2, 'class', 'icon'), null);
-            this._text_9 = this.renderer.createText(this._el_8, '\n                    ', null);
-            this._el_10 = createRenderElement(this.renderer, this._el_8, 'i', new InlineArray4(4, 'aria-hidden', 'true', 'class', 'fa fa-smile-o'), null);
-            this._text_11 = this.renderer.createText(this._el_8, '\n                ', null);
-            this._text_12 = this.renderer.createText(this._el_6, '\n                ', null);
-            this._el_13 = createRenderElement(this.renderer, this._el_6, 'h1', EMPTY_INLINE_ARRAY, null);
-            this._text_14 = this.renderer.createText(this._el_13, 'Thank You', null);
-            this._text_15 = this.renderer.createText(this._el_6, '\n                ', null);
-            this._el_16 = createRenderElement(this.renderer, this._el_6, 'p', new InlineArray2(2, 'class', 'lead'), null);
-            this._text_17 = this.renderer.createText(this._el_16, 'Please check your email and confirm your request.', null);
-            this._text_18 = this.renderer.createText(this._el_6, '\n            ', null);
-            this._text_19 = this.renderer.createText(this._el_4, '\n        ', null);
-            this._text_20 = this.renderer.createText(this._el_2, '\n    ', null);
-            this._text_21 = this.renderer.createText(this._el_0, '\n', null);
+            this._el_0 = createRenderElement(this.renderer, parentRenderNode, 'pm-header', EMPTY_INLINE_ARRAY, null);
+            this.compView_0 = new View_HeaderComponent0(this.viewUtils, this, 0, this._el_0);
+            this._HeaderComponent_0_3 = new Wrapper_HeaderComponent();
+            this.compView_0.create(this._HeaderComponent_0_3.context);
+            this._el_1 = createRenderElement(this.renderer, parentRenderNode, 'div', new InlineArray2(2, 'class', 'container notFoundModule'), null);
+            this._el_2 = createRenderElement(this.renderer, this._el_1, 'div', new InlineArray2(2, 'class', 'row'), null);
+            this._el_3 = createRenderElement(this.renderer, this._el_2, 'div', new InlineArray2(2, 'class', 'col-md-12'), null);
+            this._el_4 = createRenderElement(this.renderer, this._el_3, 'div', new InlineArray2(2, 'class', 'box'), null);
+            this._el_5 = createRenderElement(this.renderer, this._el_4, 'div', new InlineArray2(2, 'class', 'icon'), null);
+            this._el_6 = createRenderElement(this.renderer, this._el_5, 'i', new InlineArray2(2, 'class', 'fa fa-smile-o'), null);
+            this._el_7 = createRenderElement(this.renderer, this._el_4, 'h1', EMPTY_INLINE_ARRAY, null);
+            this._text_8 = this.renderer.createText(this._el_7, 'Thank You', null);
+            this._el_9 = createRenderElement(this.renderer, this._el_4, 'p', new InlineArray2(2, 'class', 'lead'), null);
+            this._text_10 = this.renderer.createText(this._el_9, 'Please check your email and confirm your request.', null);
             this.init(null, (this.renderer.directRenderer ? null : [
                 this._el_0,
-                this._text_1,
+                this._el_1,
                 this._el_2,
-                this._text_3,
+                this._el_3,
                 this._el_4,
-                this._text_5,
+                this._el_5,
                 this._el_6,
-                this._text_7,
-                this._el_8,
-                this._text_9,
-                this._el_10,
-                this._text_11,
-                this._text_12,
-                this._el_13,
-                this._text_14,
-                this._text_15,
-                this._el_16,
-                this._text_17,
-                this._text_18,
-                this._text_19,
-                this._text_20,
-                this._text_21
+                this._el_7,
+                this._text_8,
+                this._el_9,
+                this._text_10
             ]), null);
             return null;
+        };
+        View_ThankYouComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+            if (((token === HeaderComponent) && (0 === requestNodeIndex))) {
+                return this._HeaderComponent_0_3.context;
+            }
+            return notFoundResult;
+        };
+        View_ThankYouComponent0.prototype.detectChangesInternal = function (throwOnChange) {
+            this._HeaderComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
+            this.compView_0.detectChanges(throwOnChange);
+        };
+        View_ThankYouComponent0.prototype.destroyInternal = function () {
+            this.compView_0.destroy();
         };
         return View_ThankYouComponent0;
     }(AppView));
@@ -25798,38 +25792,167 @@ var __extends = (this && this.__extends) || function (d, b) {
             this.compView_0.create(this._HeaderComponent_0_3.context);
             this._el_1 = createRenderElement(this.renderer, parentRenderNode, 'div', new InlineArray2(2, 'class', 'container'), null);
             this._el_2 = createRenderElement(this.renderer, this._el_1, 'div', new InlineArray2(2, 'class', 'menu'), null);
-            this._el_3 = createRenderElement(this.renderer, this._el_2, 'div', new InlineArray2(2, 'class', 'list-group'), null);
-            this._el_4 = createRenderElement(this.renderer, this._el_3, 'a', new InlineArray8(6, 'class', 'list-group-item', 'href', '#api-install', 'pageScroll', 'pageScroll'), null);
-            this._text_5 = this.renderer.createText(this._el_4, 'API install', null);
-            this._el_6 = createRenderElement(this.renderer, this._el_3, 'a', new InlineArray8(6, 'class', 'list-group-item', 'href', '#api-activation', 'pageScroll', 'pageScroll'), null);
-            this._text_7 = this.renderer.createText(this._el_6, 'API activation', null);
-            this._el_8 = createRenderElement(this.renderer, this._el_3, 'a', new InlineArray8(6, 'class', 'list-group-item', 'href', '#slamby-insight', 'pageScroll', 'pageScroll'), null);
-            this._text_9 = this.renderer.createText(this._el_8, 'Slamby Insight', null);
-            this._el_10 = createRenderElement(this.renderer, this._el_3, 'a', new InlineArray8(6, 'class', 'list-group-item', 'href', '#integration', 'pageScroll', 'pageScroll'), null);
-            this._text_11 = this.renderer.createText(this._el_10, 'Integration', null);
-            this._el_12 = createRenderElement(this.renderer, this._el_3, 'a', new InlineArray8(6, 'class', 'list-group-item', 'href', '#documentation', 'pageScroll', 'pageScroll'), null);
-            this._text_13 = this.renderer.createText(this._el_12, 'Documentation', null);
-            this._el_14 = createRenderElement(this.renderer, this._el_3, 'a', new InlineArray8(6, 'class', 'list-group-item', 'href', '#support', 'pageScroll', 'pageScroll'), null);
-            this._text_15 = this.renderer.createText(this._el_14, 'Support', null);
-            this._el_16 = createRenderElement(this.renderer, this._el_1, 'div', new InlineArray2(2, 'class', 'body'), null);
-            this._el_17 = createRenderElement(this.renderer, this._el_16, 'h1', EMPTY_INLINE_ARRAY, null);
-            this._text_18 = this.renderer.createText(this._el_17, 'Getting started', null);
-            this._el_19 = createRenderElement(this.renderer, this._el_16, 'p', new InlineArray2(2, 'class', 'lead'), null);
-            this._text_20 = this.renderer.createText(this._el_19, 'Welcome to Slamby. Congratulation, you made the very first step to work with our awesome products. You are almost done, but before getting started working with your Slamby product, here are a few useful information.', null);
-            this._el_21 = createRenderElement(this.renderer, this._el_16, 'h2', new InlineArray2(2, 'id', 'api-install'), null);
-            this._text_22 = this.renderer.createText(this._el_21, 'API install', null);
-            this._el_23 = createRenderElement(this.renderer, this._el_16, 'p', EMPTY_INLINE_ARRAY, null);
-            this._text_24 = this.renderer.createText(this._el_23, 'You can use your Slamby API as a SaaS, or you can download, and host is by yourself. When you want to host it by yourself, the first thing you need to manage is the installation. To install Slamby API, please check the product readme and the installation guide.', null);
-            this._el_25 = createRenderElement(this.renderer, this._el_16, 'p', EMPTY_INLINE_ARRAY, null);
-            this._text_26 = this.renderer.createText(this._el_25, 'Product documentation:', null);
-            this._el_27 = createRenderElement(this.renderer, this._el_25, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-api', 'target', '_blank'), null);
-            this._el_28 = createRenderElement(this.renderer, this._el_16, 'p', EMPTY_INLINE_ARRAY, null);
-            this._text_29 = this.renderer.createText(this._el_28, 'Using Docker Compose, here are the installation steps:', null);
-            this._el_30 = createRenderElement(this.renderer, this._el_16, 'ol', EMPTY_INLINE_ARRAY, null);
-            this._el_31 = createRenderElement(this.renderer, this._el_30, 'li', EMPTY_INLINE_ARRAY, null);
-            this._text_32 = this.renderer.createText(this._el_31, 'Install Docker on your machine:', null);
-            this._el_33 = createRenderElement(this.renderer, this._el_31, 'a', new InlineArray4(4, 'href', 'https://docs.docker.com/engine/installation', 'target', '_blank'), null);
-            this._text_34 = this.renderer.createText(this._el_33, 'Official Docker installation guide', null);
+            this._el_3 = createRenderElement(this.renderer, this._el_1, 'div', new InlineArray2(2, 'class', 'body'), null);
+            this._el_4 = createRenderElement(this.renderer, this._el_3, 'h1', EMPTY_INLINE_ARRAY, null);
+            this._text_5 = this.renderer.createText(this._el_4, 'Getting started', null);
+            this._el_6 = createRenderElement(this.renderer, this._el_3, 'p', new InlineArray2(2, 'class', 'lead'), null);
+            this._text_7 = this.renderer.createText(this._el_6, 'Welcome to Slamby. Congratulation, you made the very first step to work with our awesome products. You are almost done, but before getting started working with your Slamby product, here are a few useful information.', null);
+            this._el_8 = createRenderElement(this.renderer, this._el_3, 'h2', EMPTY_INLINE_ARRAY, null);
+            this._text_9 = this.renderer.createText(this._el_8, 'API install', null);
+            this._el_10 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_11 = this.renderer.createText(this._el_10, 'You can use your Slamby API as a SaaS, or you can download, and host is by yourself. When you want to host it by yourself, the first thing you need to manage is the installation. To install Slamby API, please check the product readme and the installation guide.', null);
+            this._el_12 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_13 = this.renderer.createText(this._el_12, 'Product documentation: ', null);
+            this._el_14 = createRenderElement(this.renderer, this._el_12, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-api', 'target', '_blank'), null);
+            this._text_15 = this.renderer.createText(this._el_14, 'https://github.com/slamby/slamby-api', null);
+            this._el_16 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_17 = this.renderer.createText(this._el_16, 'Using Docker Compose, here are the installation steps:', null);
+            this._el_18 = createRenderElement(this.renderer, this._el_3, 'ol', EMPTY_INLINE_ARRAY, null);
+            this._el_19 = createRenderElement(this.renderer, this._el_18, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_20 = this.renderer.createText(this._el_19, 'Install Docker on your machine: ', null);
+            this._el_21 = createRenderElement(this.renderer, this._el_19, 'a', new InlineArray4(4, 'href', 'https://docs.docker.com/engine/installation', 'target', ''), null);
+            this._text_22 = this.renderer.createText(this._el_21, 'Official Docker installation guide', null);
+            this._text_23 = this.renderer.createText(this._el_19, '  ', null);
+            this._el_24 = createRenderElement(this.renderer, this._el_18, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_25 = this.renderer.createText(this._el_24, 'Install Docker Compose on your machine (minimum 1.9.0 required): ', null);
+            this._el_26 = createRenderElement(this.renderer, this._el_24, 'a', new InlineArray4(4, 'href', 'https://docs.docker.com/compose/install', 'target', '_blank'), null);
+            this._text_27 = this.renderer.createText(this._el_26, 'Official Docker Compose installation guide', null);
+            this._el_28 = createRenderElement(this.renderer, this._el_18, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_29 = this.renderer.createText(this._el_28, 'Download our Docker Compose file', null);
+            this._el_30 = createRenderElement(this.renderer, this._el_28, 'br', EMPTY_INLINE_ARRAY, null);
+            this._el_31 = createRenderElement(this.renderer, this._el_28, 'code', EMPTY_INLINE_ARRAY, null);
+            this._text_32 = this.renderer.createText(this._el_31, '$ curl -L "https://github.com/slamby/slamby-api/releases/download/v1.2.0/docker-compose.yml" > docker-compose.yml ', null);
+            this._el_33 = createRenderElement(this.renderer, this._el_18, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_34 = this.renderer.createText(this._el_33, 'Compose the containers (run next to the compose file)', null);
+            this._el_35 = createRenderElement(this.renderer, this._el_33, 'br', EMPTY_INLINE_ARRAY, null);
+            this._el_36 = createRenderElement(this.renderer, this._el_33, 'pre', EMPTY_INLINE_ARRAY, null);
+            this._text_37 = this.renderer.createText(this._el_36, '$ docker-compose up -d ', null);
+            this._el_38 = createRenderElement(this.renderer, this._el_18, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_39 = this.renderer.createText(this._el_38, 'Your server is installed. Check that if it\'s working correctly ', null);
+            this._el_40 = createRenderElement(this.renderer, this._el_3, 'h2', EMPTY_INLINE_ARRAY, null);
+            this._text_41 = this.renderer.createText(this._el_40, 'API activation', null);
+            this._el_42 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_43 = this.renderer.createText(this._el_42, 'Open your Slamby API server at http://api_url/setup.', null);
+            this._el_44 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_45 = this.renderer.createText(this._el_44, 'Great, you have an installed Slamby API. Now your first step is the activation process.', null);
+            this._el_46 = createRenderElement(this.renderer, this._el_44, 'br', EMPTY_INLINE_ARRAY, null);
+            this._text_47 = this.renderer.createText(this._el_44, 'During the setup process you need to:', null);
+            this._el_48 = createRenderElement(this.renderer, this._el_3, 'ul', EMPTY_INLINE_ARRAY, null);
+            this._el_49 = createRenderElement(this.renderer, this._el_48, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_50 = this.renderer.createText(this._el_49, 'Request a Slamby License, ', null);
+            this._el_51 = createRenderElement(this.renderer, this._el_48, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_52 = this.renderer.createText(this._el_51, 'Copy your Slamby API License, ', null);
+            this._el_53 = createRenderElement(this.renderer, this._el_48, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_54 = this.renderer.createText(this._el_53, 'and set the secret (password) for your Slamby API. ', null);
+            this._el_55 = createRenderElement(this.renderer, this._el_48, 'li', EMPTY_INLINE_ARRAY, null);
+            this._text_56 = this.renderer.createText(this._el_55, 'Continue with the API activation.', null);
+            this._el_57 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_58 = this.renderer.createText(this._el_57, 'License', null);
+            this._el_59 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_60 = this.renderer.createText(this._el_59, 'For open-source projects, you can use an open-source license for free, or for commercial purpose you can use a commercial license.', null);
+            this._el_61 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_62 = this.renderer.createText(this._el_61, 'For open-source license, your can request one from the setup wizard directly by typing your e-mail address and click the Request a License button. Our license service will generate an open-sourced license for you and will send it via email to the given email address.', null);
+            this._el_63 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_64 = this.renderer.createText(this._el_63, 'When your product or company is not open-sourced you cannot use Slamby API with open-source license; you need to purchase a commercial license. The pricing is based on the processor core number.', null);
+            this._el_65 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_66 = this.renderer.createText(this._el_65, 'For pricing details, please check our pricing ', null);
+            this._el_67 = createRenderElement(this.renderer, this._el_65, 'a', new InlineArray2(2, 'href', 'https://www.slamby.com/pricing'), null);
+            this._text_68 = this.renderer.createText(this._el_67, 'https://www.slamby.com/pricing', null);
+            this._el_69 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_70 = this.renderer.createText(this._el_69, 'For purchasing a commercial license contact our ', null);
+            this._el_71 = createRenderElement(this.renderer, this._el_69, 'a', new InlineArray2(2, 'href', 'sales@slamby.com'), null);
+            this._text_72 = this.renderer.createText(this._el_71, 'sales@slamby.com', null);
+            this._el_73 = createRenderElement(this.renderer, this._el_3, 'h2', EMPTY_INLINE_ARRAY, null);
+            this._text_74 = this.renderer.createText(this._el_73, 'Using Slamby Insight to manage your API', null);
+            this._el_75 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_76 = this.renderer.createText(this._el_75, 'For you Slamby API we have an excellent desktop application that makes the management jobs smoother, faster and easier. You can download it from here:', null);
+            this._el_77 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_78 = this.renderer.createText(this._el_77, ' ', null);
+            this._el_79 = createRenderElement(this.renderer, this._el_77, 'a', new InlineArray16(10, 'angulartics2On', 'click', 'angularticsCategory', 'getting-started-page', 'angularticsEvent', 'insight-download-btn', 'class', 'btn btn-default', 'href', 'https://insight.slamby.com/download'), null);
+            this._text_80 = this.renderer.createText(this._el_79, 'Download.', null);
+            this._el_81 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_82 = this.renderer.createText(this._el_81, 'For more information about how to use Insight check the online tutorial here: ', null);
+            this._el_83 = createRenderElement(this.renderer, this._el_81, 'a', new InlineArray4(4, 'href', 'https://developers.slamby.com/docs/Insight/', 'target', '_blank'), null);
+            this._text_84 = this.renderer.createText(this._el_83, 'https://developers.slamby.com/docs/Insight/', null);
+            this._el_85 = createRenderElement(this.renderer, this._el_3, 'h2', EMPTY_INLINE_ARRAY, null);
+            this._text_86 = this.renderer.createText(this._el_85, 'Integration (SDKs)', null);
+            this._el_87 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_88 = this.renderer.createText(this._el_87, 'Now you have a working Slamby API, but how can you integrate it into your business processes? Slamby API has a very detailed Rest API that you can easily manage. For the full API documentation, please check the API developers page here: ', null);
+            this._el_89 = createRenderElement(this.renderer, this._el_87, 'a', new InlineArray4(4, 'href', 'https://developers.slamby.com/docs/API/', 'target', '_blank'), null);
+            this._text_90 = this.renderer.createText(this._el_89, 'https://developers.slamby.com/docs/API/', null);
+            this._el_91 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_92 = this.renderer.createText(this._el_91, 'A lovely gift from Slamby', null);
+            this._el_93 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_94 = this.renderer.createText(this._el_93, 'We would like to make your job easier; that\'s why we work on five different SDKs. Please check the available versions, sources, and the readmes.', null);
+            this._el_95 = createRenderElement(this.renderer, this._el_3, 'table', new InlineArray2(2, 'class', 'table table-striped'), null);
+            this._el_96 = createRenderElement(this.renderer, this._el_95, 'thead', EMPTY_INLINE_ARRAY, null);
+            this._el_97 = createRenderElement(this.renderer, this._el_96, 'tr', EMPTY_INLINE_ARRAY, null);
+            this._el_98 = createRenderElement(this.renderer, this._el_97, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_99 = this.renderer.createText(this._el_98, 'SDK Name', null);
+            this._el_100 = createRenderElement(this.renderer, this._el_97, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_101 = this.renderer.createText(this._el_100, 'Download link and readme', null);
+            this._el_102 = createRenderElement(this.renderer, this._el_95, 'tbody', EMPTY_INLINE_ARRAY, null);
+            this._el_103 = createRenderElement(this.renderer, this._el_102, 'tr', EMPTY_INLINE_ARRAY, null);
+            this._el_104 = createRenderElement(this.renderer, this._el_103, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_105 = this.renderer.createText(this._el_104, '.Net', null);
+            this._el_106 = createRenderElement(this.renderer, this._el_103, 'td', EMPTY_INLINE_ARRAY, null);
+            this._el_107 = createRenderElement(this.renderer, this._el_106, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-sdk-net', 'target', '_blank'), null);
+            this._text_108 = this.renderer.createText(this._el_107, 'https://github.com/slamby/slamby-sdk-net', null);
+            this._el_109 = createRenderElement(this.renderer, this._el_102, 'tr', EMPTY_INLINE_ARRAY, null);
+            this._el_110 = createRenderElement(this.renderer, this._el_109, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_111 = this.renderer.createText(this._el_110, 'JavaScript', null);
+            this._el_112 = createRenderElement(this.renderer, this._el_109, 'td', EMPTY_INLINE_ARRAY, null);
+            this._el_113 = createRenderElement(this.renderer, this._el_112, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-sdk-javascript', 'target', '_blank'), null);
+            this._text_114 = this.renderer.createText(this._el_113, 'https://github.com/slamby/slamby-sdk-javascript', null);
+            this._text_115 = this.renderer.createText(this._el_112, ' ', null);
+            this._el_116 = createRenderElement(this.renderer, this._el_102, 'tr', EMPTY_INLINE_ARRAY, null);
+            this._el_117 = createRenderElement(this.renderer, this._el_116, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_118 = this.renderer.createText(this._el_117, 'Python', null);
+            this._el_119 = createRenderElement(this.renderer, this._el_116, 'td', EMPTY_INLINE_ARRAY, null);
+            this._el_120 = createRenderElement(this.renderer, this._el_119, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-sdk-python', 'target', '_blank'), null);
+            this._text_121 = this.renderer.createText(this._el_120, 'https://github.com/slamby/slamby-sdk-python', null);
+            this._el_122 = createRenderElement(this.renderer, this._el_102, 'tr', EMPTY_INLINE_ARRAY, null);
+            this._el_123 = createRenderElement(this.renderer, this._el_122, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_124 = this.renderer.createText(this._el_123, 'PHP', null);
+            this._el_125 = createRenderElement(this.renderer, this._el_122, 'td', EMPTY_INLINE_ARRAY, null);
+            this._el_126 = createRenderElement(this.renderer, this._el_125, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-sdk-php', 'target', '_blank'), null);
+            this._text_127 = this.renderer.createText(this._el_126, 'https://github.com/slamby/slamby-sdk-php', null);
+            this._el_128 = createRenderElement(this.renderer, this._el_102, 'tr', EMPTY_INLINE_ARRAY, null);
+            this._el_129 = createRenderElement(this.renderer, this._el_128, 'td', EMPTY_INLINE_ARRAY, null);
+            this._text_130 = this.renderer.createText(this._el_129, 'Angular 2', null);
+            this._el_131 = createRenderElement(this.renderer, this._el_128, 'td', EMPTY_INLINE_ARRAY, null);
+            this._el_132 = createRenderElement(this.renderer, this._el_131, 'a', new InlineArray4(4, 'href', 'https://github.com/slamby/slamby-sdk-angular2', 'target', '_blank'), null);
+            this._text_133 = this.renderer.createText(this._el_132, 'https://github.com/slamby/slamby-sdk-angular2', null);
+            this._text_134 = this.renderer.createText(this._el_131, ' ', null);
+            this._el_135 = createRenderElement(this.renderer, this._el_3, 'h2', EMPTY_INLINE_ARRAY, null);
+            this._text_136 = this.renderer.createText(this._el_135, 'Product documentation', null);
+            this._el_137 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_138 = this.renderer.createText(this._el_137, 'Here we go, all the Slamby products are now installed. But how can you use them? When you do an API integration, or you need to know specific settings, then please check the API documentation on our developer site: ', null);
+            this._el_139 = createRenderElement(this.renderer, this._el_137, 'a', new InlineArray4(4, 'href', 'https://developers.slamby.com/docs/API', 'target', '_blank'), null);
+            this._text_140 = this.renderer.createText(this._el_139, 'https://developers.slamby.com/docs/API', null);
+            this._text_141 = this.renderer.createText(this._el_137, ' ', null);
+            this._el_142 = createRenderElement(this.renderer, this._el_137, 'br', EMPTY_INLINE_ARRAY, null);
+            this._text_143 = this.renderer.createText(this._el_137, ' or, check the other products documentation as well ', null);
+            this._el_144 = createRenderElement(this.renderer, this._el_137, 'a', new InlineArray4(4, 'href', 'https://developers.slamby.com', 'target', '_blank'), null);
+            this._text_145 = this.renderer.createText(this._el_144, 'https://developers.slamby.com', null);
+            this._el_146 = createRenderElement(this.renderer, this._el_3, 'h2', EMPTY_INLINE_ARRAY, null);
+            this._text_147 = this.renderer.createText(this._el_146, 'Support', null);
+            this._el_148 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_149 = this.renderer.createText(this._el_148, 'Slamby support mailing list for basic support: ', null);
+            this._el_150 = createRenderElement(this.renderer, this._el_148, 'a', new InlineArray4(4, 'href', 'https://groups.google.com/forum/#!forum/slamby', 'target', '_blank'), null);
+            this._text_151 = this.renderer.createText(this._el_150, 'https://groups.google.com/forum/#!forum/slamby', null);
+            this._el_152 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_153 = this.renderer.createText(this._el_152, 'Each Slamby license includes a basic support with absolutely no SLA. This means you can access our support via our online support mailing list and you can ask for help from our community. In this case, the reaction time is not guaranteed, and there is no direct access to our technical experts.', null);
+            this._el_154 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_155 = this.renderer.createText(this._el_154, 'When you need a professional support, please purchase one. Each professional support contains short-time SLAs and response time. Each professional support gives you direct access to our technical experts.', null);
+            this._el_156 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_157 = this.renderer.createText(this._el_156, 'For more details, please check our available support options here: ', null);
+            this._el_158 = createRenderElement(this.renderer, this._el_156, 'a', new InlineArray4(4, 'href', 'https://www.slamby.com/support', 'target', '_blank'), null);
+            this._text_159 = this.renderer.createText(this._el_158, 'https://www.slamby.com/support', null);
+            this._el_160 = createRenderElement(this.renderer, this._el_3, 'p', EMPTY_INLINE_ARRAY, null);
+            this._text_161 = this.renderer.createText(this._el_160, 'And contact our sales: ', null);
+            this._el_162 = createRenderElement(this.renderer, this._el_160, 'a', new InlineArray2(2, 'href', 'sales@slamby.com'), null);
+            this._text_163 = this.renderer.createText(this._el_162, 'sales@slamby.com', null);
             this.init(null, (this.renderer.directRenderer ? null : [
                 this._el_0,
                 this._el_1,
@@ -25848,24 +25971,153 @@ var __extends = (this && this.__extends) || function (d, b) {
                 this._el_14,
                 this._text_15,
                 this._el_16,
-                this._el_17,
-                this._text_18,
+                this._text_17,
+                this._el_18,
                 this._el_19,
                 this._text_20,
                 this._el_21,
                 this._text_22,
-                this._el_23,
-                this._text_24,
-                this._el_25,
-                this._text_26,
-                this._el_27,
+                this._text_23,
+                this._el_24,
+                this._text_25,
+                this._el_26,
+                this._text_27,
                 this._el_28,
                 this._text_29,
                 this._el_30,
                 this._el_31,
                 this._text_32,
                 this._el_33,
-                this._text_34
+                this._text_34,
+                this._el_35,
+                this._el_36,
+                this._text_37,
+                this._el_38,
+                this._text_39,
+                this._el_40,
+                this._text_41,
+                this._el_42,
+                this._text_43,
+                this._el_44,
+                this._text_45,
+                this._el_46,
+                this._text_47,
+                this._el_48,
+                this._el_49,
+                this._text_50,
+                this._el_51,
+                this._text_52,
+                this._el_53,
+                this._text_54,
+                this._el_55,
+                this._text_56,
+                this._el_57,
+                this._text_58,
+                this._el_59,
+                this._text_60,
+                this._el_61,
+                this._text_62,
+                this._el_63,
+                this._text_64,
+                this._el_65,
+                this._text_66,
+                this._el_67,
+                this._text_68,
+                this._el_69,
+                this._text_70,
+                this._el_71,
+                this._text_72,
+                this._el_73,
+                this._text_74,
+                this._el_75,
+                this._text_76,
+                this._el_77,
+                this._text_78,
+                this._el_79,
+                this._text_80,
+                this._el_81,
+                this._text_82,
+                this._el_83,
+                this._text_84,
+                this._el_85,
+                this._text_86,
+                this._el_87,
+                this._text_88,
+                this._el_89,
+                this._text_90,
+                this._el_91,
+                this._text_92,
+                this._el_93,
+                this._text_94,
+                this._el_95,
+                this._el_96,
+                this._el_97,
+                this._el_98,
+                this._text_99,
+                this._el_100,
+                this._text_101,
+                this._el_102,
+                this._el_103,
+                this._el_104,
+                this._text_105,
+                this._el_106,
+                this._el_107,
+                this._text_108,
+                this._el_109,
+                this._el_110,
+                this._text_111,
+                this._el_112,
+                this._el_113,
+                this._text_114,
+                this._text_115,
+                this._el_116,
+                this._el_117,
+                this._text_118,
+                this._el_119,
+                this._el_120,
+                this._text_121,
+                this._el_122,
+                this._el_123,
+                this._text_124,
+                this._el_125,
+                this._el_126,
+                this._text_127,
+                this._el_128,
+                this._el_129,
+                this._text_130,
+                this._el_131,
+                this._el_132,
+                this._text_133,
+                this._text_134,
+                this._el_135,
+                this._text_136,
+                this._el_137,
+                this._text_138,
+                this._el_139,
+                this._text_140,
+                this._text_141,
+                this._el_142,
+                this._text_143,
+                this._el_144,
+                this._text_145,
+                this._el_146,
+                this._text_147,
+                this._el_148,
+                this._text_149,
+                this._el_150,
+                this._text_151,
+                this._el_152,
+                this._text_153,
+                this._el_154,
+                this._text_155,
+                this._el_156,
+                this._text_157,
+                this._el_158,
+                this._text_159,
+                this._el_160,
+                this._text_161,
+                this._el_162,
+                this._text_163
             ]), null);
             return null;
         };

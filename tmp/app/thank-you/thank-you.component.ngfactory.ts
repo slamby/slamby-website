@@ -14,6 +14,8 @@ import * as import5 from '@angular/core/src/linker/view_type';
 import * as import6 from '@angular/core/src/change_detection/change_detection';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import8 from './thank-you.component.css.shim';
+import * as import9 from '../common/header/header.component';
+import * as import10 from '../common/header/header.component.ngfactory';
 export class Wrapper_ThankYouComponent {
   /*private*/ _eventHandler:Function;
   context:import0.ThankYouComponent;
@@ -77,79 +79,62 @@ const styles_ThankYouComponent:any[] = [import8.styles];
 var renderType_ThankYouComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.Emulated,styles_ThankYouComponent,{});
 export class View_ThankYouComponent0 extends import1.AppView<import0.ThankYouComponent> {
   _el_0:any;
-  _text_1:any;
+  compView_0:import1.AppView<import9.HeaderComponent>;
+  _HeaderComponent_0_3:import10.Wrapper_HeaderComponent;
+  _el_1:any;
   _el_2:any;
-  _text_3:any;
+  _el_3:any;
   _el_4:any;
-  _text_5:any;
+  _el_5:any;
   _el_6:any;
-  _text_7:any;
-  _el_8:any;
-  _text_9:any;
-  _el_10:any;
-  _text_11:any;
-  _text_12:any;
-  _el_13:any;
-  _text_14:any;
-  _text_15:any;
-  _el_16:any;
-  _text_17:any;
-  _text_18:any;
-  _text_19:any;
-  _text_20:any;
-  _text_21:any;
+  _el_7:any;
+  _text_8:any;
+  _el_9:any;
+  _text_10:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_ThankYouComponent0,renderType_ThankYouComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container notFoundModule'),(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','row'),(null as any));
-    this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
-    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-md-12'),(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'\n            ',(null as any));
-    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'div',new import3.InlineArray2(2,'class','box'),(null as any));
-    this._text_7 = this.renderer.createText(this._el_6,'\n                ',(null as any));
-    this._el_8 = import3.createRenderElement(this.renderer,this._el_6,'div',new import3.InlineArray2(2,'class','icon'),(null as any));
-    this._text_9 = this.renderer.createText(this._el_8,'\n                    ',(null as any));
-    this._el_10 = import3.createRenderElement(this.renderer,this._el_8,'i',new import3.InlineArray4(4,'aria-hidden','true','class','fa fa-smile-o'),(null as any));
-    this._text_11 = this.renderer.createText(this._el_8,'\n                ',(null as any));
-    this._text_12 = this.renderer.createText(this._el_6,'\n                ',(null as any));
-    this._el_13 = import3.createRenderElement(this.renderer,this._el_6,'h1',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_14 = this.renderer.createText(this._el_13,'Thank You',(null as any));
-    this._text_15 = this.renderer.createText(this._el_6,'\n                ',(null as any));
-    this._el_16 = import3.createRenderElement(this.renderer,this._el_6,'p',new import3.InlineArray2(2,'class','lead'),(null as any));
-    this._text_17 = this.renderer.createText(this._el_16,'Please check your email and confirm your request.',(null as any));
-    this._text_18 = this.renderer.createText(this._el_6,'\n            ',(null as any));
-    this._text_19 = this.renderer.createText(this._el_4,'\n        ',(null as any));
-    this._text_20 = this.renderer.createText(this._el_2,'\n    ',(null as any));
-    this._text_21 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'pm-header',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this.compView_0 = new import10.View_HeaderComponent0(this.viewUtils,this,0,this._el_0);
+    this._HeaderComponent_0_3 = new import10.Wrapper_HeaderComponent();
+    this.compView_0.create(this._HeaderComponent_0_3.context);
+    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container notFoundModule'),(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_1,'div',new import3.InlineArray2(2,'class','row'),(null as any));
+    this._el_3 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-md-12'),(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_3,'div',new import3.InlineArray2(2,'class','box'),(null as any));
+    this._el_5 = import3.createRenderElement(this.renderer,this._el_4,'div',new import3.InlineArray2(2,'class','icon'),(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_5,'i',new import3.InlineArray2(2,'class','fa fa-smile-o'),(null as any));
+    this._el_7 = import3.createRenderElement(this.renderer,this._el_4,'h1',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_8 = this.renderer.createText(this._el_7,'Thank You',(null as any));
+    this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'p',new import3.InlineArray2(2,'class','lead'),(null as any));
+    this._text_10 = this.renderer.createText(this._el_9,'Please check your email and confirm your request.',(null as any));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
-      this._text_1,
+      this._el_1,
       this._el_2,
-      this._text_3,
+      this._el_3,
       this._el_4,
-      this._text_5,
+      this._el_5,
       this._el_6,
-      this._text_7,
-      this._el_8,
-      this._text_9,
-      this._el_10,
-      this._text_11,
-      this._text_12,
-      this._el_13,
-      this._text_14,
-      this._text_15,
-      this._el_16,
-      this._text_17,
-      this._text_18,
-      this._text_19,
-      this._text_20,
-      this._text_21
+      this._el_7,
+      this._text_8,
+      this._el_9,
+      this._text_10
     ]
     ),(null as any));
     return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import9.HeaderComponent) && (0 === requestNodeIndex))) { return this._HeaderComponent_0_3.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    this._HeaderComponent_0_3.ngDoCheck(this,this._el_0,throwOnChange);
+    this.compView_0.detectChanges(throwOnChange);
+  }
+  destroyInternal():void {
+    this.compView_0.destroy();
   }
 }
