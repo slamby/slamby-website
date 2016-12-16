@@ -1,1 +1,0 @@
-{"version":3,"file":"getting-started.component.js","sourceRoot":"","sources":["getting-started.component.ts"],"names":[],"mappings":"OAAO,EAAE,SAAS,EAAE,MAAM,eAAe;AAKzC;AASA,CAAC;AAT4C,kCAAU,GAA0B;IACjF,EAAE,IAAI,EAAE,SAAS,EAAE,IAAI,EAAE,CAAC;gBACtB,WAAW,EAAE,kCAAkC;gBAC/C,SAAS,EAAE,CAAC,iCAAiC,CAAC;aACjD,EAAG,EAAE;CACL,CAAC;AAEK,sCAAc,GAA6D,EACjF,CACA"}
