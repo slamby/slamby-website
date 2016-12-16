@@ -1,6 +1,8 @@
 doctype html
 html
     head(lang="en")
+        script
+            include gtm.js
         title Slamby - Understanding data made simple
         base(href="/")
         meta(charset="utf-8")
@@ -15,6 +17,8 @@ html
         link(rel="stylesheet" type="text/css" href="/site.css")
         link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     body
+        noscript
+            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-MT2PSG2" height="0" width="0" style="display:none;visibility:hidden")
         pm-app
             section.init
                 .container

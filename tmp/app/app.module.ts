@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-
+//import { MetaModule, MetaService, MetaConfig } from 'ng2-meta';
 //import { Angulartics2GoogleAnalytics, Angulartics2Module } from 'angulartics2';
 
 import { AppComponent } from './app.component';
