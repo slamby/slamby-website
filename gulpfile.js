@@ -5,6 +5,8 @@ var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 
+// todo: assets folder image optimise during production build.
+
 // Copy vendor files.
 gulp.task('prepare-build', function () {
 
