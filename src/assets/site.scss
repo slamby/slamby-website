@@ -6,8 +6,7 @@ $light-grey: #F0B8C1;
 html,body {
     @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500');
     font-family: 'Libre Franklin', sans-serif;
-    height: 100%;
-    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1,h2,h3,h4 {

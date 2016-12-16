@@ -17,6 +17,7 @@ gulp.task('prepare-build', function () {
     var sourceFiles = [
         "node_modules/zone.js/dist/zone.js",
         "node_modules/reflect-metadata/Reflect.js",
+        "node_modules/es6-shim/es6-shim.js",
         "src/assets/favicon.png",
         "src/assets/fonts/slamby-logo.woff"
     ];

@@ -37,6 +37,10 @@ app.get('/Reflect.js', (req, res) => {
     res.sendFile(path.join(__dirname, './build/Reflect.js'),{maxAge: oneDay});
 });
 
+app.get('/es6-shim.js', (req, res) => {
+    res.sendFile(path.join(__dirname, './build/es6-shim.js'),{maxAge: oneDay});
+});
+
 app.get('/site.css', (req, res) => {
     res.sendFile(path.join(__dirname, './build/site.css'),{maxAge: oneDay});
 });

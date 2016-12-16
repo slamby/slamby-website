@@ -27,6 +27,9 @@ app.get('/zone.js', function (req, res) {
 app.get('/Reflect.js', function (req, res) {
     res.sendFile(path.join(__dirname, './build/Reflect.js'), { maxAge: oneDay });
 });
+app.get('/es6-shim.js', function (req, res) {
+    res.sendFile(path.join(__dirname, './build/es6-shim.js'), { maxAge: oneDay });
+});
 app.get('/site.css', function (req, res) {
     res.sendFile(path.join(__dirname, './build/site.css'), { maxAge: oneDay });
 });
