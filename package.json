@@ -14,7 +14,8 @@
     "es5-convert": "tsc --target es5 --allowJs build/bundle.es2015.js --out build/bundle.js",
     "minify": "uglifyjs build/bundle.js --screw-ie8 --compress --mangle --output build/bundle.min.js",
     "build:developer": "npm run prepare && concurrently \"npm run webpack:dev\" \"npm run express\" \"gulp developer:watch\"",
-    "build:aot": "npm run prepare && npm run ngc && npm run rollup:aot && npm run es5-convert && npm run minify"
+    "build:aot": "npm run prepare && npm run ngc && npm run rollup:aot && npm run es5-convert && npm run minify",
+    "build:production": "npm run build:aot && gulp imagemin && gulp clean-tmp"
   },
   "author": "Peter Mezei",
   "license": "Apache-2.0",
@@ -39,11 +40,13 @@
     "es6-shim": "^0.35.2",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
+    "gulp-imagemin": "^3.1.1",
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.0.0",
     "jstransformer-markdown": "^1.1.1",
     "ng2-meta": "^2.0.3",
     "node-sass": "^4.0.0",
+    "pngquant": "^1.1.1",
     "pug": "^2.0.0-beta6",
     "raw-loader": "^0.5.1",
     "reflect-metadata": "^0.1.8",

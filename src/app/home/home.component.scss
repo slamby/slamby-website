@@ -1,7 +1,7 @@
 @import 'common';
 
 section.header {
-    background: #2e7bcf url(/assets/images/home/header.jpg) 0 0 repeat;
+    @include background-image('home/header.jpg');
     margin-top:-50px;
 
     .message {

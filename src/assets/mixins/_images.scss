@@ -1,0 +1,6 @@
+$image-path: '/assets/images';
+
+@mixin background-image($image,$color:""){
+    background: #{$color} url(#{$image-path}/#{$image}) 0 0 repeat;
+    background-position: center;
+}

@@ -4,6 +4,8 @@ var gulp = require('gulp');
 var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('pngquant');
 
 // todo: assets folder image optimise during production build.
 
@@ -77,6 +79,17 @@ gulp.task('clean-build', function () {
     return gulp.src('build', {read: false})
         .pipe(clean());
 });
+
+gulp.task('imagemin', () =>
+    gulp.src('assets/images/**/*')
+        .pipe(imagemin(
+            {
+                optimizationLevel: 5,
+                progressive: true
+            }
+        ))
+        .pipe(gulp.dest('assets/images'))
+);
 
 // Watcher for development
 gulp.task('developer:watch', function () {
