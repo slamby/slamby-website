@@ -6,6 +6,8 @@ var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('pngquant');
+var imageminOptipng = require('imagemin-optipng');
+var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 // todo: assets folder image optimise during production build.
 
@@ -85,7 +87,11 @@ gulp.task('imagemin', () =>
         .pipe(imagemin(
             {
                 optimizationLevel: 5,
-                progressive: true
+                progressive: true,
+                use: [
+                    imageminOptipng(),
+                    imageminJpegRecompress()
+                ]
             }
         ))
         .pipe(gulp.dest('assets/images'))
