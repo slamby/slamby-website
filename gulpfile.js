@@ -10,14 +10,15 @@ var imageminOptipng = require('imagemin-optipng');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var packageJson = require('./package.json');
 var insert = require('gulp-insert');
+var pugInheritance = require('gulp-pug-inheritance');
+var pugModules = require('gulp-jade-modules');
 
 // todo: assets folder image optimise during production build.
 
 var getPublicPath = function(){
     var cdnPath = 'https://cdn.rawgit.com/slamby/slamby-website/';
     var version = packageJson.version;
-    console.log(process.env.NODE_ENV);
-    return process.env.NODE_ENV == 'production' ? cdnPath + version : 'http://localhost:3000';
+    return process.env.NODE_ENV == 'production' ? cdnPath + version : '';
 }
 
 gulp.task('default',
@@ -34,6 +35,7 @@ gulp.task('prepare-build', function () {
     // Copy and compile index.html.
     gulp.src('src/index.pug')
         .pipe(pug({
+            basedir: __dirname + '/src/',
             data: {
                 publicPath: getPublicPath()
             }
@@ -72,6 +74,7 @@ gulp.task('prepare-tmp', function(){
 gulp.task('pug-compile', function () {
     gulp.src('src/**/*.pug')
         .pipe(pug({
+            basedir: __dirname + '/src/',
             data: {
                 publicPath: getPublicPath()
             }

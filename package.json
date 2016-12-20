@@ -1,6 +1,6 @@
 {
   "name": "slamby-website",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Slamby website using angular2, aot, rollup, bootstrap and others.",
   "main": "src/app/main.ts",
   "scripts": {
@@ -43,7 +43,9 @@
     "gulp-clean": "^0.3.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-insert": "^0.5.0",
+    "gulp-jade-modules": "^1.0.1",
     "gulp-pug": "^3.2.0",
+    "gulp-pug-inheritance": "^0.2.1",
     "gulp-sass": "^3.0.0",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-optipng": "^5.2.1",
