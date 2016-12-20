@@ -1,7 +1,7 @@
 @import "common";
 
 section.header {
-    background: #2e7bcf url(./images/header.jpg) 0 0 repeat;
+    background: #2e7bcf cdnUrl('/assets/insight/images/header.jpg') 0 0 repeat;
     margin-top:-50px;
 
     .message {

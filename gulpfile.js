@@ -9,7 +9,7 @@ var pngquant = require('pngquant');
 var imageminOptipng = require('imagemin-optipng');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var packageJson = require('./package.json');
-var gutil = require('gulp-util');
+var insert = require('gulp-insert');
 
 // todo: assets folder image optimise during production build.
 
@@ -54,7 +54,11 @@ gulp.task('prepare-build', function () {
 
     // Copy and compile site.css.
     gulp.src('src/assets/site.scss')
-        .pipe(sass({includePaths: ['src/assets'], outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(insert.prepend('$publicPath: "'+getPublicPath()+'";'))
+        .pipe(sass({
+            includePaths: ['src/assets'],
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(gulp.dest('build'));
 });
 
@@ -67,14 +71,18 @@ gulp.task('prepare-tmp', function(){
 // Pug compile
 gulp.task('pug-compile', function () {
     gulp.src('src/**/*.pug')
-        .pipe(pug())
+        .pipe(pug({
+            data: {
+                publicPath: getPublicPath()
+            }
+        }))
         .pipe(gulp.dest('tmp/'));
 });
 
 // Html copy
 gulp.task('html-copy', function () {
     gulp.src('src/**/*.html')
-        .pipe(pug())
+        .pipe()
         .pipe(gulp.dest('tmp/'));
 });
 
@@ -87,7 +95,11 @@ gulp.task('ts-copy', function () {
 // Sass compile
 gulp.task('sass-compile', function () {
   return gulp.src('src/**/*.scss')
-    .pipe(sass({includePaths: ['src/assets'], outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(insert.prepend('$publicPath: "'+getPublicPath()+'";'))
+    .pipe(sass({
+        includePaths: ['src/assets'],
+        outputStyle: 'compressed'
+    }).on('error', sass.logError))
     .pipe(gulp.dest('tmp/'));
 });
 
