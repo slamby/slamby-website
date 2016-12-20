@@ -2,3 +2,9 @@
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 @import "src/assets/mixins/_images.scss";
+
+$publicPath: "https://cdn.rawgit.com/slamby/slamby-website/1.0.0";
+
+@function cdnUrl($path){
+    @return url($publicPath + $path);
+}

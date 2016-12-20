@@ -8,15 +8,36 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('pngquant');
 var imageminOptipng = require('imagemin-optipng');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
+var packageJson = require('./package.json');
+var gutil = require('gulp-util');
 
 // todo: assets folder image optimise during production build.
+
+var getPublicPath = function(){
+    var cdnPath = 'https://cdn.rawgit.com/slamby/slamby-website/';
+    var version = packageJson.version;
+    console.log(process.env.NODE_ENV);
+    return process.env.NODE_ENV == 'production' ? cdnPath + version : 'http://localhost:3000';
+}
+
+gulp.task('default',
+  [process.env.NODE_ENV === 'production' ? 'production' : 'development']
+);
+
+gulp.task('demo', function(){
+    console.log(getPublicPath());
+});
 
 // Copy vendor files.
 gulp.task('prepare-build', function () {
 
     // Copy and compile index.html.
     gulp.src('src/index.pug')
-        .pipe(pug())
+        .pipe(pug({
+            data: {
+                publicPath: getPublicPath()
+            }
+        }))
         .pipe(gulp.dest('build'));
 
     // Copy static files.

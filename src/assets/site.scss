@@ -34,7 +34,7 @@ p.lead {
 
 @font-face {
     font-family: slamby-logo;
-    src: url(/slamby-logo.woff);
+    src: cdnUrl('/build/slamby-logo.woff');
 }
 
 section.init {

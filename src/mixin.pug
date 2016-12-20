@@ -1,0 +1,25 @@
+//-var publicPath = 'https://cdn.rawgit.com/slamby/slamby-website/1.0.0';
+
+// Html meta mixin
+mixin meta(property,content)
+    if property == "og:image" || property == "og:image:secure_url"
+        if content.charAt(0) == "/"
+            meta(property= property content= publicPath + content)
+        else
+            meta(property= property content= content)
+    else
+        meta(property= property content= content)
+
+// Link mixin
+mixin link(rel,Type,href)
+    if href.charAt(0) == "/"
+        link(rel= rel type= Type href= publicPath + href)
+    else
+        link(rel= rel type= Type href= href)
+
+// Script mixin for javascript links
+mixin script(fileSrc)
+    if fileSrc.charAt(0) == "/"
+        script(src= publicPath + fileSrc)
+    else
+        script(src= fileSrc)

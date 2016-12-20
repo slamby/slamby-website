@@ -1,3 +1,5 @@
+include mixin.pug
+
 doctype html
 html
     head(lang="en")
@@ -6,16 +8,16 @@ html
         title Slamby - Understanding data made simple
         base(href="/")
         meta(charset="utf-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        meta(property="og:url" content="https://www.slamby.com")
-        meta(property="og:title" content="Slamby")
-        meta(property="description" content="Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking. Open-source, SaaS, on-premise install.")
-        meta(property="og:description" content="Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking. Open-source, SaaS, on-premise install.")
-        meta(property="og:image" content="https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/slamby-logo.png")
-        meta(property="og:image:secure_url" content="https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/slamby-logo.png")
-        link(rel="icon" type="image/png" href="https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/favicon.png")
-        link(rel="stylesheet" type="text/css" href="/site.css")
-        link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        +meta("viewport","width=device-width, initial-scale=1")
+        +meta("og:url","https://www.slamby.com")
+        +meta("og:title","Slamby")
+        +meta("description","Slamby is a great tool for classifieds to do  perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking. Open-source, SaaS, on-premise install.")
+        +meta("og:description","Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking. Open-source, SaaS, on-premise install.")
+        +meta("og:image","/build/slamby-logo.png")
+        +meta("og:image:secure_url","/build/slamby-logo.png")
+        +link("icon","image/png","/build/favicon.png")
+        +link("stylesheet","text/css","/build/site.css")
+        +link("stylesheet","text/css","https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     body
         noscript
             iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-MT2PSG2" height="0" width="0" style="display:none;visibility:hidden")
@@ -27,7 +29,8 @@ html
                             p
                                 span.init-logo Slamby
                             p Loading
-        script(src='https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/zone.js')
-        script(src='https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/Reflect.js')
-        script(src='https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/es6-shim.js')
-        script(src='https://cdn.rawgit.com/slamby/slamby-website/1.0.0/build/bundle.min.js')
+
+        +script('/build/zone.js')
+        +script('/build/Reflect.js')
+        +script('/build/es6-shim.js')
+        +script('/build/bundle.min.js')
