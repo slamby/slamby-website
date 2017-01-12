@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { LeadService } from 'lead.service';
+import { LeadService } from './lead.service';
 
 @Component({
     templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css']
+    styleUrls: ['./home.component.css'],
+    providers: [LeadService]
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent {
     constructor(private leadService: LeadService){}
+    ngOnInit(){
+        console.log(this.leadService.someMethod());
+    }
 }
