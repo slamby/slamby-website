@@ -27,8 +27,6 @@ import { OpenSourceLicenseComponent } from './legal/open-source-license.componen
 import { GnuAgplLicenseComponent } from './legal/gnu-agpl-license.component';
 import { SupportComponent } from './support/support.component';
 
-//import { LeadService } from './home/lead.service';
-
 @NgModule({
   imports: [
     BrowserModule,

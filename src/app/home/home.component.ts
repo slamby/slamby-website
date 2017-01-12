@@ -3,11 +3,10 @@ import { LeadService } from './lead.service';
 
 @Component({
     templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css'],
-    providers: [LeadService]
+    styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
     constructor(private leadService: LeadService){}
     ngOnInit(){
         console.log(this.leadService.someMethod());
