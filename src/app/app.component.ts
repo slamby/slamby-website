@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 //import { MetaService } from 'ng2-meta';
 //import { Angulartics2GoogleAnalytics } from 'angulartics2';
 
