@@ -78,6 +78,7 @@ import { SupportComponent } from './support/support.component';
       {
         path: 'legal',
         component: LegalComponent,
+        pathMatch: 'full',
         data: {meta:{title:"Legal"}}
       },
       {
