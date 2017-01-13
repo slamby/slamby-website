@@ -1,3 +1,5 @@
+// todo: use webpack for server file packaging.
+
 var path = require('path');
 var express = require('express');
 var http = require('http');
