@@ -5,9 +5,9 @@ import alias from 'rollup-plugin-alias';
 import nodeResolve from 'rollup-plugin-node-resolve'; 
 
 export default {
-  entry: 'tmp/app/main.aot.ts',
+  entry: './tmp/app/main.aot.ts',
   format: 'iife',
-  dest: 'build/bundle.es2015.js',
+  dest: './build/bundle.es2015.js',
   plugins: [
     angular(),
     typescript(),

@@ -1,6 +1,6 @@
 {
   "name": "slamby-website",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Slamby website using angular2, aot, rollup, bootstrap and others.",
   "main": "src/app/main.ts",
   "scripts": {

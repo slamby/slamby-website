@@ -20,9 +20,9 @@ var oneDay = 86400000;
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-app.use('/build', express.static(path.join(__dirname,'./build')));
+app.use('/build', express.static(path.join(__dirname,'../build')));
 
-app.use('/assets', express.static(path.join(__dirname,'./assets'),
+app.use('/assets', express.static(path.join(__dirname,'../assets'),
     {maxAge: oneDay}));
 
 // CRM Lead generation test integration.
@@ -47,7 +47,7 @@ app.get('/api/create-lead', function (req, res) {
 })
 
 app.get('/*', (req, res) => {res.sendFile(path.join(__dirname,      
-    './build/index.html'), {maxAge: oneDay});
+    '../build/index.html'), {maxAge: oneDay});
 });
 
 app.listen(port, '0.0.0.0', (err) => {
