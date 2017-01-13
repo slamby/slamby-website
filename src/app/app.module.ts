@@ -33,7 +33,8 @@ import { SupportComponent } from './support/support.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
+        pathMatch: 'full'
       },
       {
         path: 'home',
