@@ -137,8 +137,7 @@ import { SupportComponent } from './support/support.component';
     LegalMenuComponent,
     SupportComponent
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [ AppComponent ]
 })
 

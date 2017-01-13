@@ -8,7 +8,7 @@ module.exports = {
       './tmp/app/main.ts'
     ]
   },
-  devtool: 'eval',
+  devtool: 'sourcemap',
   output: {
     filename: 'bundle.min.js',
     path: './build/',
