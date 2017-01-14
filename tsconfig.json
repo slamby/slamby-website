@@ -5,6 +5,17 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true
+    },
+    "awesomeTypescriptLoaderOptions": {
+        "typeRoots": [ "./node_modules/@types" ],
+        "types": [
+            "node"
+        ],
+        "files": [
+            "main.ts"
+        ]
     }
 }
