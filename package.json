@@ -1,12 +1,13 @@
 {
   "name": "slamby-website",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Slamby website",
   "license": "MIT",
   "angular-cli": {},
   "author": "Peter Mezei, Slamby",
   "scripts": {
     "ng": "ng",
+    "demo": "gulp demo",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\" --project src/tsconfig.json --type-check && tslint \"e2e/**/*.ts\" --project e2e/tsconfig.json --type-check",
     "test": "ng test",
@@ -43,6 +44,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
     "protractor": "~4.0.13",
+    "simple-git": "^1.65.0",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
     "typescript": "~2.0.3"
