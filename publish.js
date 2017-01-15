@@ -7,8 +7,7 @@ var cdnUrl = 'https://cdn.rawgit.com/slamby/slamby-website/' + version + '/';
 exec('ng build --prod --aot --base-href ' + cdnUrl, {maxBuffer: 1024 * 500}, function(error, stdout, stderr) {
     require('simple-git')()
         .add('./*')
-        .addTag(version)
         .commit("Release commit version: " + version)
-        .push()
-        .pushTags()
+        .addTag(version)
+        .push('origin', 'master', '--tags')
 });
