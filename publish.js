@@ -8,5 +8,7 @@ var version = require('./package.json')['version'];
 
 require('simple-git')()
     .add('./*')
+    .addTag(version)
     .commit("Release commit version: " + version)
     .push()
+    .pushTags()
