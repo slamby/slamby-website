@@ -1,0 +1,4 @@
+@mixin background-image($path,$color:""){
+    background: #{$color} cdnUrl($path) 0 0 repeat;
+    background-position: center;
+}

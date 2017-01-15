@@ -1,19 +1,18 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-
-//import { MetaModule, MetaService, MetaConfig } from 'ng2-meta';
-//import { Angulartics2GoogleAnalytics, Angulartics2Module } from 'angulartics2';
 
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { HomeComponent } from './home/home.component';
+
 import { NotFoundPageComponent } from './404/404.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { InsightComponent } from './insight/insight.component';
-import { HomeComponent } from './home/home.component';
-import { SubmenuComponent } from './common/submenu/submenu.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { GettingStartedComponent } from './getting-started/getting-started.component';
 import { PartnersComponent } from './partners/partners.component';
@@ -28,8 +27,31 @@ import { GnuAgplLicenseComponent } from './legal/gnu-agpl-license.component';
 import { SupportComponent } from './support/support.component';
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NotFoundPageComponent,
+    ThankYouComponent,
+    GettingStartedComponent,
+    InsightComponent,
+    HomeComponent,
+    PricingComponent,
+    PartnersComponent,
+    CompanyComponent,
+    PrivacyPolicyComponent,
+    CommercialLicenseComponent,
+    CommercialLicenseOemComponent,
+    GnuAgplLicenseComponent,
+    OpenSourceLicenseComponent,
+    LegalComponent,
+    LegalMenuComponent,
+    SupportComponent
+  ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -131,30 +153,7 @@ import { SupportComponent } from './support/support.component';
       }
     ])
   ],
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NotFoundPageComponent,
-    ThankYouComponent,
-    GettingStartedComponent,
-    InsightComponent,
-    HomeComponent,
-    SubmenuComponent,
-    PricingComponent,
-    PartnersComponent,
-    CompanyComponent,
-    PrivacyPolicyComponent,
-    CommercialLicenseComponent,
-    CommercialLicenseOemComponent,
-    GnuAgplLicenseComponent,
-    OpenSourceLicenseComponent,
-    LegalComponent,
-    LegalMenuComponent,
-    SupportComponent
-  ],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
-
-export class AppModule {}
+export class AppModule { }

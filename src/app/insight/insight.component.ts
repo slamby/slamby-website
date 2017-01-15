@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-// import { LeadService } from './lead.service';
+import { Component } from '@angular/core';
+import { LeadService } from './lead.service';
 
 @Component({
     templateUrl: './insight.component.html',
-    styleUrls: ['./insight.component.css']
+    styleUrls: ['./insight.component.scss'],
+    providers: [LeadService]
 })
 
 export class InsightComponent {
-    //constructor(private leadService:LeadService){}
-    // ngOnInit(){
-    //     var leadService = new LeadService();
-    //     console.log(leadService.someMethod(
-    //         "Peti"
-    //     ));
-    // }
+    constructor(private leadService: LeadService){}
+    sayHello() {
+        console.log(
+            this.leadService.sayHello('Peti')
+        );
+    }
 }

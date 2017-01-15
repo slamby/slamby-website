@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { Price } from './pricing.model';
 
 @Component({
     templateUrl: './pricing.component.html',
-    styleUrls: ['./pricing.component.css']
+    styleUrls: ['./pricing.component.scss']
 })
 
 export class PricingComponent {

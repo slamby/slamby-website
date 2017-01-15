@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 
 @Component({
     templateUrl: './company.component.html',
-    styleUrls: ['./company.component.css']
+    styleUrls: ['./company.component.scss']
 })
 
-export class CompanyComponent {
-    join = function(){
-        alert("Ok");
-    }
-}
+export class CompanyComponent {}

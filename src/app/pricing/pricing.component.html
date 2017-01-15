@@ -1,0 +1,157 @@
+
+<pm-header></pm-header>
+<section class="main">
+  <div class="container">
+    <div class="body">
+      <div class="main-message">
+        <h1>45 € / core / month</h1>
+        <p class="lead">Start using Slamby for a price of a cup of coffee per core. Use it as a SaaS or install it on your machine.</p>
+        <p class="lead">No query limit, no memory limit</p>
+        <p><a class="btn btn-default btn-lg" [routerLink]="['/getting-started']" angulartics2On="click" angularticsEvent="getting-started-click" angularticsCategory="pricing-page">Getting started</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header">Pricing</h1>
+      <p class="lead">Our product is available for both private hosting and SaaS. You can easily download and install it on your machine, or purchase it as a monthly service.</p>
+      <p class="lead">For private hosting, you can download and install Slamby API and register it with an open-source license for free, and you can purchase a core-based license for commercial use.</p>
+      <p class="lead">For SaaS, you can select a required instance size and buy it with a monthly payment. The prices cover the standard Slamby license per core + hosting fee.</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header">Core pricing</h1>
+    </div>
+    <div class="col-md-6">
+      <p class="lead">Standard Slamby API pricing, based on the  processor core number. There is no query, usage, storage and memory limitation.</p>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 core license</td>
+            <td>unlimited memory, unlimited storage</td>
+            <td>45 € / processor core / month</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="page-header">Support</h2>
+    </div>
+    <div class="col-md-6">
+      <p class="lead">For professional use select one of our available support options based on the available communication channels and SLA.</p>
+      <p class="lead">Currently, we have three type of support options. Each Slamby instance has a basic support option that includes community-based - forum support.</p>
+      <p><a href="mailto:sales@slamby.com" angulartics2On="click" angularticsCategory="pricing-page" angularticsEvent="support-get-mode-information">Get more information</a></p>
+      <p>Community support:<a href="https://groups.google.com/forum/#!forum/slamby" target="_blank">https://groups.google.com/forum/#!forum/slamby</a></p>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td><a href="https://groups.google.com/forum/#!forum/slamby" target="_blank">Community only</a>,no SLA</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Professional</td>
+            <td>Next workday, email</td>
+            <td>2000 € yearly / instance</td>
+          </tr>
+          <tr>
+            <td>Production</td>
+            <td>Direct developer and technical access, 5 hours SLA, email, skype, phone.</td>
+            <td>6000 € yearly / instance</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container pricing">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="page-header">SaaS pricing</h2>
+          <p class="lead">Purchase Slamby as software as a service. Select one of our hosting locations and one suitable size of the instance. Prices based on the resource size + core based Slamby license fee.</p>
+          <p><a class="btn btn-default" href="mailto:sales@slamby.com" angulartics2On="click" angularticsCategory="pricing-page" angularticsEvent="sas-contact-sales">Contact sales</a></p>
+          <p>Prices are in € per month</p>
+          <h3>European</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Core</th>
+                <th>Memory</th>
+                <th class="hidden-xs">Storage</th>
+                <th class="hidden-xs hiddne-sm">Technical fee</th>
+                <th class="hidden-xs hidden-sm">License fee</th>
+                <th>Retail price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of pricingEurope">
+                <td>{{item.name}}</td>
+                <td>{{item.core}}</td>
+                <td>{{item.memory}}</td>
+                <td class="hidden-xs">{{item.storage}}</td>
+                <td class="hidden-xs hidden-sm">{{item.technicalFee}} €</td>
+                <td class="hidden-xs hidden-sm">{{item.slambyLicenseFee}} €</td>
+                <td>{{item.retailPrice}} €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Asian</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Core</th>
+                <th>Memory</th>
+                <th class="hidden-xs">Storage</th>
+                <th class="hidden-xs hiddne-sm">Technical fee</th>
+                <th class="hidden-xs hidden-sm">License fee</th>
+                <th>Retail price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of pricingAsian">
+                <td>{{item.name}}</td>
+                <td>{{item.core}}</td>
+                <td>{{item.memory}}</td>
+                <td class="hidden-xs">{{item.storage}}</td>
+                <td class="hidden-xs hidden-sm">{{item.technicalFee}} €</td>
+                <td class="hidden-xs hidden-sm">{{item.slambyLicenseFee}} €</td>
+                <td>{{item.retailPrice}} €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

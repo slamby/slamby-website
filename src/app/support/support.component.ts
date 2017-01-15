@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { Faq } from './faq.model';
 
 @Component({
     templateUrl: './support.component.html',
-    styleUrls: ['./support.component.css'],
+    styleUrls: ['./support.component.scss'],
 })
 export class SupportComponent {
     ngOnInit(){

@@ -1,4 +1,4 @@
-@import "common";
+@import "~common.scss";
 
 .item {
     @include make-xs-column(12);

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     templateUrl: './legal.component.html',
-    styleUrls: ['./legal.component.css']
+    styleUrls: ['./legal.component.scss']
 })
 
 export class LegalComponent {}

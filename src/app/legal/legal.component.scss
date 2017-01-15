@@ -1,4 +1,4 @@
-@import "common";
+@import "~common.scss";
 
 .menu {
     @include make-md-column(3);

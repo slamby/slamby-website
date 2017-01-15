@@ -1,0 +1,93 @@
+
+<pm-header></pm-header>
+<div class="container">
+  <div class="menu">
+    <!--.list-group
+    a(pageScroll class="list-group-item") API install
+    a(pageScroll class="list-group-item") API activation
+    a(pageScroll class="list-group-item") Slamby Insight
+    a(pageScroll class="list-group-item") Integration
+    a(pageScroll class="list-group-item") Documentation
+    a(pageScroll class="list-group-item") Support
+    -->
+  </div>
+  <div class="body">
+    <h1>Getting started</h1>
+    <p class="lead">Welcome to Slamby. Congratulation, you made the very first step to work with our awesome products. You are almost done, but before getting started working with your Slamby product, here are a few useful information.</p>
+    <h2>API install</h2>
+    <p>You can use your Slamby API as a SaaS, or you can download, and host is by yourself. When you want to host it by yourself, the first thing you need to manage is the installation. To install Slamby API, please check the product readme and the installation guide.</p>
+    <p>Product documentation: <a href="https://github.com/slamby/slamby-api" target="_blank">https://github.com/slamby/slamby-api</a></p>
+    <p>Using Docker Compose, here are the installation steps:</p>
+    <ol>
+      <li>Install Docker on your machine: <a href="https://docs.docker.com/engine/installation" target="">Official Docker installation guide</a>  </li>
+      <li>Install Docker Compose on your machine (minimum 1.9.0 required): <a href="https://docs.docker.com/compose/install" target="_blank">Official Docker Compose installation guide</a></li>
+      <li>Download our Docker Compose file<br><code>$ curl -L "https://github.com/slamby/slamby-api/releases/download/v1.2.0/docker-compose.yml" > docker-compose.yml </code></li>
+      <li>Compose the containers (run next to the compose file)<br>
+        <pre>$ docker-compose up -d </pre>
+      </li>
+      <li>Your server is installed. Check that if it's working correctly </li>
+    </ol>
+    <h2>API activation</h2>
+    <p>Open your Slamby API server at http://api_url/setup.</p>
+    <p>
+      Great, you have an installed Slamby API. Now your first step is the activation process.<br>During the setup process you need to:</p>
+    <ul>
+      <li>Request a Slamby License, </li>
+      <li>Copy your Slamby API License, </li>
+      <li>and set the secret (password) for your Slamby API. </li>
+      <li>Continue with the API activation.</li>
+    </ul>
+    <p>License</p>
+    <p>For open-source projects, you can use an open-source license for free, or for commercial purpose you can use a commercial license.</p>
+    <p>For open-source license, you can request one from the setup wizard directly by typing your e-mail address and click the Request a License button. Our license service will generate an open-sourced license for you and will send it via email to the given email address.</p>
+    <p>When your product or company is not open-sourced you cannot use Slamby API with open-source license; you need to purchase a commercial license. The pricing is based on the processor core number.</p>
+    <p>For pricing details, please check our pricing <a href="https://www.slamby.com/pricing">https://www.slamby.com/pricing</a></p>
+    <p>For purchasing a commercial license contact our <a href="sales@slamby.com">sales@slamby.com</a></p>
+    <h2>Using Slamby Insight to manage your API</h2>
+    <p>For you Slamby API we have an excellent desktop application that makes the management jobs smoother, faster and easier. You can download it from here:</p>
+    <p> <a class="btn btn-default" href="https://insight.slamby.com/download" angulartics2On="click" angularticsCategory="getting-started-page" angularticsEvent="insight-download-btn">Download.</a></p>
+    <p>For more information about how to use Insight check the online tutorial here: <a href="https://developers.slamby.com/docs/Insight/" target="_blank">https://developers.slamby.com/docs/Insight/</a></p>
+    <h2>Integration (SDKs)</h2>
+    <p>Now you have a working Slamby API, but how can you integrate it into your business processes? Slamby API has a very detailed Rest API that you can easily manage. For the full API documentation, please check the API developers page here: <a href="https://developers.slamby.com/docs/API/" target="_blank">https://developers.slamby.com/docs/API/</a></p>
+    <p>A lovely gift from Slamby</p>
+    <p>We would like to make your job easier; that's why we work on five different SDKs. Please check the available versions, sources, and the readmes.</p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>SDK Name</td>
+          <td>Download link and readme</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.Net</td>
+          <td><a href="https://github.com/slamby/slamby-sdk-net" target="_blank">https://github.com/slamby/slamby-sdk-net</a></td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td><a href="https://github.com/slamby/slamby-sdk-javascript" target="_blank">https://github.com/slamby/slamby-sdk-javascript</a> </td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td><a href="https://github.com/slamby/slamby-sdk-python" target="_blank">https://github.com/slamby/slamby-sdk-python</a></td>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td><a href="https://github.com/slamby/slamby-sdk-php" target="_blank">https://github.com/slamby/slamby-sdk-php</a></td>
+        </tr>
+        <tr>
+          <td>Angular 2</td>
+          <td><a href="https://github.com/slamby/slamby-sdk-angular2" target="_blank">https://github.com/slamby/slamby-sdk-angular2</a> </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Product documentation</h2>
+    <p>Here we go, all the Slamby products are now installed. But how can you use them? When you do an API integration, or you need to know specific settings, then please check the API documentation on our developer site: <a href="https://developers.slamby.com/docs/API" target="_blank">https://developers.slamby.com/docs/API</a> <br/> or, check the other products documentation as well <a href="https://developers.slamby.com" target="_blank">https://developers.slamby.com</a></p>
+    <h2>Support</h2>
+    <p>Slamby support mailing list for basic support: <a href="https://groups.google.com/forum/#!forum/slamby" target="_blank">https://groups.google.com/forum/#!forum/slamby</a></p>
+    <p>Each Slamby license includes a basic support with absolutely no SLA. This means you can access our support via our online support mailing list and you can ask for help from our community. In this case, the reaction time is not guaranteed, and there is no direct access to our technical experts.</p>
+    <p>When you need a professional support, please purchase one. Each professional support contains short-time SLAs and response time. Each professional support gives you direct access to our technical experts.</p>
+    <p>For more details, please check our available support options here: <a href="https://www.slamby.com/support" target="_blank">https://www.slamby.com/support</a></p>
+    <p>And contact our sales: <a href="sales@slamby.com">sales@slamby.com</a></p>
+  </div>
+</div>

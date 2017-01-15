@@ -1,4 +1,4 @@
-@import 'common';
+@import '~common.scss';
 
 section.header {
     @include background-image('/assets/images/home/header.jpg');

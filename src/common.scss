@@ -1,0 +1,11 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+@import "assets/mixins/_images.scss";
+
+//$publicPath: "https://cdn.rawgit.com/slamby/slamby-website/1.0.0";
+$publicPath: "";
+
+@function cdnUrl($path){
+    @return url($publicPath + $path);
+}

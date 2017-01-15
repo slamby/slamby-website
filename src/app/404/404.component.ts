@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
     templateUrl: './404.component.html',
-    styleUrls: ['./404.component.css']
+    styleUrls: ['./404.component.scss']
 })
 
 export class NotFoundPageComponent {}
