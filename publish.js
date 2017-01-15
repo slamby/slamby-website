@@ -5,12 +5,10 @@ var cdnUrl = 'https://cdn.rawgit.com/slamby/slamby-website/' + version + '/';
 
 // Compile aot prod version with CDN base url.
 exec('ng build --prod --aot --base-href ' + cdnUrl, {maxBuffer: 1024 * 500}, function(error, stdout, stderr) {
-    console.log(error);
+    require('simple-git')()
+        .add('./*')
+        .addTag(version)
+        .commit("Release commit version: " + version)
+        .push()
+        .pushTags()
 });
-
-require('simple-git')()
-    .add('./*')
-    .addTag(version)
-    .commit("Release commit version: " + version)
-    .push()
-    .pushTags()
