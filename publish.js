@@ -9,5 +9,6 @@ exec('ng build --prod --aot --base-href ' + cdnUrl, {maxBuffer: 1024 * 500}, fun
         .add('./*')
         .commit("Release commit version: " + version)
         .addTag(version)
-        .push('origin', 'master', '--tags')
+        .push()
+        .pushTags()
 });
