@@ -153,7 +153,7 @@ import { SupportComponent } from './support/support.component';
     ])
   ],
   providers: [
-    {provide: APP_BASE_HREF, useValue: '/'}
+    {provide: APP_BASE_HREF, useValue: 'http://localhost:8080/'}
   ],
   bootstrap: [AppComponent]
 })
