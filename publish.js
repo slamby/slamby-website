@@ -27,7 +27,8 @@ function setIndexCDN(){
     var fileName = __dirname + '/dist/index.html';
     fs.readFile(fileName, 'utf8', function(err, html) {
         var content = html;
-        content = content.replace(/(?:src|href)=([^'])(?!http|https)(?:(.*?))(js|css|ico|png).*?/g, '$0="'+cdnUrl+'/$2$3')
+        content = content.replace(/(?:src)=([^'])(?!http|https)(?:(.*?))(js|css|ico|png).*?/g, 'src="'+cdnUrl+'/$2$3');
+        content = content.replace(/(?:href)=([^'])(?!http|https)(?:(.*?))(js|css|ico|png).*?/g, 'href="'+cdnUrl+'/$2$3'); //todo make it nicer with regexp.
         fs.writeFile(fileName, content, function(err) {
             if(err) {
                 return console.log(err);
