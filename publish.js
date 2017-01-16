@@ -19,17 +19,36 @@ function setSassCDNUrl(cdn=true){
     });
 }
 
+//Change index.html scr + href to CDN compatible
+function setIndexCDN(){
+    var fileName = __dirname + '/dist/index.html';
+    fs.readFile(fileName, 'utf8', function(err, html) {
+        var content = html;
+        content = content.replace(/(?:src|href)=([^'])(?!http|https)(?:(.*?))(js|css|ico|png).*?/g, 'src="'+cdnUrl+'/$2$3')
+        fs.writeFile(fileName, content, function(err) {
+            if(err) {
+                return console.log(err);
+            }
+        });
+    });
+}
+
 // Set CDN Sass URL for compile
 setSassCDNUrl();
 
 // Compile aot prod version with CDN base url.
 exec('ng build --prod --aot', {maxBuffer: 1024 * 500}, function(error, stdout, stderr) {
+    // Modify index.html to be CDN compatible;
+    setIndexCDN();
+    
+    // GIT, commit, push, create tag, push tag.
     require('simple-git')()
         .add('./*')
         .commit("Release commit version: " + version)
         .addTag(version)
         .push()
         .pushTags()
-});
 
-setSassCDNUrl(false) // set back cdn for development mode.
+    // set back cdn for development mode.
+    setSassCDNUrl(false);
+});
