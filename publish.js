@@ -2,6 +2,7 @@ var exec = require('child_process').exec;
 var version = require('./package.json')['version'];
 var fs = require('fs');
 
+// Set CDN Url to use for compilaiton.
 var cdnUrl = 'https://cdn.rawgit.com/slamby/slamby-website/' + version + '/dist';
 
 // Set SASS CDN url
@@ -26,7 +27,7 @@ function setIndexCDN(){
     var fileName = __dirname + '/dist/index.html';
     fs.readFile(fileName, 'utf8', function(err, html) {
         var content = html;
-        content = content.replace(/(?:src|href)=([^'])(?!http|https)(?:(.*?))(js|css|ico|png).*?/g, 'src="'+cdnUrl+'/$2$3')
+        content = content.replace(/(?:src|href)=([^'])(?!http|https)(?:(.*?))(js|css|ico|png).*?/g, '$0="'+cdnUrl+'/$2$3')
         fs.writeFile(fileName, content, function(err) {
             if(err) {
                 return console.log(err);
