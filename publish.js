@@ -10,6 +10,8 @@ function setSassCDNUrl(cdn=true){
 
     if(cdn){
         content = content.concat('$publicPath: "'+cdnUrl+'";');
+    } else {
+        content = content.concat('$publicPath: "";');
     }
 
     fs.writeFile("src/assets/scss/baseUrl.scss", content, function(err) {
