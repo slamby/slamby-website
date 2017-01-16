@@ -13,6 +13,8 @@ var app = express();
 //gzip enabled
 app.use(compression());
 
+app.use('/assets', express.static(path.join(__dirname,'./dist/assets')));
+
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, './dist/index.html'));
 });
