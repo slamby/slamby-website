@@ -6,10 +6,10 @@ var fs = require('fs');
 var cdnUrl = 'https://cdn.rawgit.com/slamby/slamby-website/' + version + '/dist';
 
 // Set SASS CDN url
-function setSassCDNUrl(cdn=true){
+function setSassCDNUrl(useCDN=true){
     var content = "// Automatically generated text from publish.js. Do not modify it.\r\n";
 
-    if(cdn){
+    if(useCDN){
         content = content.concat('$publicPath: "'+cdnUrl+'";');
     } else {
         content = content.concat('$publicPath: "";');

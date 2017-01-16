@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LeadService } from './lead.service';
 import {Observable} from 'rxjs/Rx';
 
@@ -8,7 +8,7 @@ import {Observable} from 'rxjs/Rx';
     providers: [LeadService]
 })
 
-export class InsightComponent implements OnInit {
+export class InsightComponent {
     constructor(private leadService: LeadService) {}
 
     // ngOnInit() {
