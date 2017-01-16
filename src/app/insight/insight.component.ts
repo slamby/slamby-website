@@ -11,13 +11,13 @@ import {Observable} from 'rxjs/Rx';
 export class InsightComponent implements OnInit {
     constructor(private leadService: LeadService) {}
 
-    ngOnInit() {
-        this.leadService.createLead().subscribe(
-            res => {
-                console.log(res);
-            }, err => {
-                console.log(err);
-            }
-        );
-    }
+    // ngOnInit() {
+    //     this.leadService.createLead().subscribe(
+    //         res => {
+    //             console.log(res);
+    //         }, err => {
+    //             console.log(err);
+    //         }
+    //     );
+    // }
 }

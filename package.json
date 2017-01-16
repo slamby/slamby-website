@@ -8,7 +8,7 @@
   "scripts": {
     "ng": "ng",
     "publish": "node publish && http-server dist",
-    "start": "node server",
+    "start": "node server/server",
     "developer": "ng serve",
     "lint": "tslint \"src/**/*.ts\" --project src/tsconfig.json --type-check && tslint \"e2e/**/*.ts\" --project e2e/tsconfig.json --type-check",
     "test": "ng test",
@@ -17,11 +17,12 @@
   },
   "private": true,
   "dependencies": {
-    "express": "^4.14.0",
-    "compression": "^1.6.2",
     "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "http": "0.0.0",
     "path": "^0.12.7",
-    "http": "0.0.0"
+    "request-promise": "^4.1.1"
   },
   "devDependencies": {
     "@angular/common": "^2.3.1",
