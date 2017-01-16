@@ -57,8 +57,8 @@ exec('ng build --prod --aot', {maxBuffer: 1024 * 500}, function(error, stdout, s
             .addTag(version)
             .push()
             .pushTags()
-
-        // set back cdn for development mode.
-        setSassCDNUrl(false);
     }
+
+    // set back cdn for development mode.
+    setSassCDNUrl(false);
 });
