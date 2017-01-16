@@ -42,17 +42,23 @@ setSassCDNUrl();
 
 // Compile aot prod version with CDN base url.
 exec('ng build --prod --aot', {maxBuffer: 1024 * 500}, function(error, stdout, stderr) {
-    // Modify index.html to be CDN compatible;
-    setIndexCDN();
-    
-    // GIT, commit, push, create tag, push tag.
-    require('simple-git')()
-        .add('./*')
-        .commit("Release commit version: " + version)
-        .addTag(version)
-        .push()
-        .pushTags()
 
-    // set back cdn for development mode.
-    setSassCDNUrl(false);
+    if(error) {
+        console.log(err);
+    } else {
+        console.log('Version: ' + version + ' production build done.')
+        // Modify index.html to be CDN compatible;
+        setIndexCDN();
+        
+        // GIT, commit, push, create tag, push tag.
+        require('simple-git')()
+            .add('./*')
+            .commit("Release commit version: " + version)
+            .addTag(version)
+            .push()
+            .pushTags()
+
+        // set back cdn for development mode.
+        setSassCDNUrl(false);
+    }
 });
