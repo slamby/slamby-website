@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LeadService } from './lead.service';
+import {Observable} from 'rxjs/Rx';
 
 @Component({
     templateUrl: './insight.component.html',
@@ -7,11 +8,16 @@ import { LeadService } from './lead.service';
     providers: [LeadService]
 })
 
-export class InsightComponent {
-    constructor(private leadService: LeadService){}
-    sayHello() {
-        console.log(
-            this.leadService.sayHello('Peti')
+export class InsightComponent implements OnInit {
+    constructor(private leadService: LeadService) {}
+
+    ngOnInit() {
+        this.leadService.createLead().subscribe(
+            res => {
+                console.log(res);
+            }, err => {
+                console.log(err);
+            }
         );
     }
 }
