@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { LeadService } from './lead.service';
-import {Observable} from 'rxjs/Rx';
+// import { LeadService } from './lead.service';
+// import {Observable} from 'rxjs/Rx';
 
 @Component({
     templateUrl: './insight.component.html',
     styleUrls: ['./insight.component.scss'],
-    providers: [LeadService]
+    // providers: [LeadService]
 })
 
 export class InsightComponent {
-    constructor(private leadService: LeadService) {}
+    // constructor(private leadService: LeadService) {}
 
     // ngOnInit() {
     //     this.leadService.createLead().subscribe(
