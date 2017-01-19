@@ -1,6 +1,5 @@
 <div class="container">
     <div class="footer">
-        <div class="message">Slamby {{year}}</div>
         <ul class="links">
             <li><a href="https://github.com/slamby" target="_blank">Github <i class="fa fa-external-link sla-external-link" aria-hidden="true"></i></a></li>
             <li><a href="https://developers.slamby.com" target="_blank">Slamby Developers <i class="fa fa-external-link sla-external-link" aria-hidden="true"></i></a></li>
@@ -9,5 +8,17 @@
             <li><a [routerLink]="['/company']">Company</a></li>
             <li><a [routerLink]="['/legal']">Legal</a></li>
         </ul>
+        <!--Follow us section-->
+        <div class="follow-us">
+            <h5>Follow us</h5>
+            <ul class="social">
+                <li *ngFor="let item of socialLinks">
+                    <a href="{{item.link}}"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="legal">
+            <p>{{year}}. All right reserved - Slamby</p>
+        </div>
     </div>
 </div>

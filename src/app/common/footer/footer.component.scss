@@ -2,6 +2,7 @@
 
 .footer {
     @include make-row();
+    text-align: left;
     .message {
         @include make-sm-column(12);
         padding-top: 15px;
@@ -11,8 +12,11 @@
     }
     .links {
         @include make-sm-column(12);
-        margin-top: 5px;
+        margin: 30px;
         li {
+            a {
+                color: darkslategray;
+            }
             display: inline-block;
             text-decoration: none;
             margin: 0px 15px 0px 0px;
@@ -22,5 +26,56 @@
     .sla-external-link {
         padding-left:3px;
         font-size:10px;
+    }
+}
+
+.follow-us {
+
+    margin-top: 30px;
+    text-align: center;
+
+    .title {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 10px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0;
+            display: inline-block;
+            text-decoration: none;
+            margin: 0px 15px 0px 0px;
+            font-weight: 100;
+        }
+    }
+
+    i {
+        font-size: 15px;
+        color: gray;
+        padding: 5px;
+        display: inline-block;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+        -moz-box-shadow: 0px 0px 2px #888;
+        -webkit-box-shadow: 0px 0px 2px #888;
+        box-shadow: 0px 0px 2px #888;
+    }
+
+    i.fa-facebook-f {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+
+.legal {
+    text-align: center;
+    margin-top: 17px;
+    p {
+        font-size: 8px;
+        margin: 3px;
     }
 }
