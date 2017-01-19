@@ -11,7 +11,7 @@ export class HeaderComponent {
     @Input() theme: String = 'theme-default';
     menuItems = [
         new MenuItem('Slamby', '/home', 'logo', false),
-        // new MenuItem('Insight', '/insight', '', false),
+        new MenuItem('Insight', '/insight', '', false),
         new MenuItem('Pricing', '/pricing', '', false),
         new MenuItem('Support', '/support', '', false),
         // new MenuItem('Blog', 'http://blog.slamby.com', '', true),
