@@ -14,6 +14,7 @@ export class HeaderComponent {
         // new MenuItem('Insight', '/insight', '', false),
         new MenuItem('Pricing', '/pricing', '', false),
         new MenuItem('Support', '/support', '', false),
+        // new MenuItem('Blog', 'http://blog.slamby.com', '', true),
         new MenuItem('For developers', 'https://developers.slamby.com', '', true)
     ]
 
