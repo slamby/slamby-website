@@ -23,6 +23,8 @@ import { LegalComponent } from './legal/legal.component';
 import { CommercialLicenseComponent } from './legal/commercial-license.component';
 import { CommercialLicenseOemComponent } from './legal/commercial-license-oem.component';
 import { OpenSourceLicenseComponent } from './legal/open-source-license.component';
+import { CloudHostingAgreementComponent } from './legal/cloud-hosting-agreement.component';
+import { SupportAgreementComponent } from './legal/support-agreement.component';
 import { GnuAgplLicenseComponent } from './legal/gnu-agpl-license.component';
 import { SupportComponent } from './support/support.component';
 
@@ -44,6 +46,8 @@ import { SupportComponent } from './support/support.component';
     CommercialLicenseOemComponent,
     GnuAgplLicenseComponent,
     OpenSourceLicenseComponent,
+    CloudHostingAgreementComponent,
+    SupportAgreementComponent,
     LegalComponent,
     LegalMenuComponent,
     SupportComponent
@@ -136,6 +140,18 @@ import { SupportComponent } from './support/support.component';
       {
         path: 'legal/open-source-license',
         component: OpenSourceLicenseComponent,
+        pathMatch: 'full',
+        data: {meta:{title:"Open-source license"}}
+      },
+      {
+        path: 'legal/cloud-hosting-agreement',
+        component: CloudHostingAgreementComponent,
+        pathMatch: 'full',
+        data: {meta:{title:"Open-source license"}}
+      },
+      {
+        path: 'legal/support-agreement',
+        component: SupportAgreementComponent,
         pathMatch: 'full',
         data: {meta:{title:"Open-source license"}}
       },

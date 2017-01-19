@@ -1,7 +1,7 @@
 @import "~common.scss";
 
 section.header {
-    background: #2e7bcf cdnUrl('/assets/insight/images/header.jpg') 0 0 repeat;
+    background: #2e7bcf cdnUrl('/assets/images/home/header.jpg') 0 0 repeat;
     margin-top:-50px;
 
     .message {
@@ -11,9 +11,16 @@ section.header {
             @include make-xs-column(12);
             margin-top:10em;
             margin-bottom:5em;
-            h1 {
+
+            h1,h2,h3 {
                 color: white;
+            }
+
+            h1 {
                 font-size: 50px;
+                span {
+                    font-size: 30px;
+                }
             }
 
             p.lead {
@@ -30,17 +37,6 @@ section.header {
                 border-color: rgba(255,255,255,.7);
             }
 
-            .list {
-                margin-top:15px;
-                a {
-                    display: inline-block;
-                    color: white;
-                }
-                a:not(:last-of-type){
-                    margin-right: 15px;
-                }
-            }
-
             .github {
                 margin-top:70px;
                 i {
@@ -48,6 +44,42 @@ section.header {
                     font-size:50px;
                 }
             }
+        }
+    }
+}
+
+.roll {
+
+    padding-top:10em;
+    padding-bottom: 5em;
+
+    .box {
+        @include make-md-column(6);
+        @include make-xs-column(12);
+    }
+
+    .git, .multi-platform, .work {
+        text-align: center;
+        i.fa {
+            position: relative;
+            font-size: 75px;
+            margin-top: 50px;
+        }
+    }
+
+    .multi-platform {
+        i.fa:not(:last-of-type) {
+            padding-right: 55px;
+        }
+    }
+
+    .list {
+        margin-top:15px;
+        a {
+            display: inline-block;
+        }
+        a:not(:last-of-type){
+            margin-right: 10px;
         }
     }
 }
