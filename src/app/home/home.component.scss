@@ -88,3 +88,22 @@ section.header {
         }
     }
 }
+
+section.who-we-are {
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #444;
+
+    .message {
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+
+        margin: 70px;
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 26px;
+        }
+    }
+}
