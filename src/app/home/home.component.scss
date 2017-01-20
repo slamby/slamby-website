@@ -54,8 +54,23 @@ section.header {
             @include make-md-column-offset(1);
             margin-top:10em;
             color:white;
-            .form-group {
-                margin-top:5px;
+            
+            .email {
+                @include make-xs-column(12);
+            }
+
+            .firstname, .lastname {
+                @include make-xs-column(6);
+                margin-top: 10px;
+            }
+
+            .org, .btnform {
+                @include make-xs-column(12);
+                margin-top: 10px;
+            }
+
+            p.thanks {
+                padding-left: 20px;
             }
         }
     }

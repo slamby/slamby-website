@@ -13,21 +13,27 @@
         <p class="lead">Open-source, SaaS, on-premise install.</p>
       </div>
       <div class="signup-form">
-        <h2>Get more information</h2>
-        <form ngNoForm class="validate form" action="//slamby.us8.list-manage.com/subscribe/post?u=2cc8f967bed26c6531c44c771&amp;amp;id=74a478b46d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-          <div class="form-group">
-            <input class="form-control" type="email" required="required" value="" name="EMAIL" placeholder="E-mail address" id="mce-EMAIL"/>
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="text" required="required" value="" name="FNAME" placeholder="First name" id="mce-FNAME"/>
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="text" required="required" value="" placeholder="Last name" id="mce-LNAME"/>
-          </div>
-          <div class="form-group">
-            <input class="btn btn-default form-control" type="submit" required="required" value="Get more information" />
-          </div>
-        </form>
+        <h2>Contact sales</h2>
+        <div class="row">
+          <form *ngIf="!leadCreatedIsSuccess">
+            <div class="email item">
+              <input class="form-control" type="email" [(ngModel)]="leadDetails.EMAIL_ADDRESS" required name="EMAIL_ADDRESS" placeholder="E-mail address" />
+            </div>
+            <div class="firstname item">
+              <input class="form-control" type="text" [(ngModel)]="leadDetails.FIRST_NAME" required name="FIRST_NAME" placeholder="First name" />
+            </div>
+            <div class="lastname item">
+              <input class="form-control" type="text" [(ngModel)]="leadDetails.LAST_NAME" required name="LAST_NAME" placeholder="Last name" />
+            </div>
+            <div class="org">
+              <input class="form-control" type="text" [(ngModel)]="leadDetails.ORGANIZATION_NAME" required name="ORGANIZATION_NAME" placeholder="Company" />
+            </div>
+            <div class="btnform">
+              <button (click)="createLead()" class="btn btn-default form-control" type="submit">Contact Sales</button>
+            </div>
+          </form>
+          <p class="lead thanks" *ngIf="leadCreatedIsSuccess">Thank You!</p>
+        </div>
       </div>
     </div>
   </div>
