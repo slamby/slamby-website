@@ -1,6 +1,6 @@
 {
   "name": "slamby-website",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "Slamby website",
   "license": "MIT",
   "angular-cli": {},
@@ -48,6 +48,7 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
+    "ng2-meta": "^2.0.3",
     "protractor": "~4.0.13",
     "rxjs": "^5.0.1",
     "simple-git": "^1.65.0",

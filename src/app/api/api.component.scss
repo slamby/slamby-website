@@ -1,0 +1,144 @@
+@import '~common.scss';
+
+section.sdk {
+    margin-top: 30px;
+
+    .browser {
+        @include make-row();
+
+        padding: 20px 0 0;
+        border-radius: 3px;
+        border-bottom: 2px solid #ccc;
+        display: inline-block;
+        position: relative;
+        line-height: 0;
+
+        .frame {
+            @include make-xs-column(12);
+
+            background: #ddd;
+            display: block;
+            height: 15px;
+            position: absolute;
+            top: 5px;
+            left: 1px;
+
+            span {
+                height: 8px;
+                width: 8px;
+                border-radius: 8px;
+                background-color: #eee;
+                border: 1px solid #dadada;
+                float: left;
+                margin: 0 0 0 4px;
+            }
+        }
+
+        .menu {
+            @include make-xs-column(4);
+        }
+
+        .body {
+            @include make-xs-column(8);
+        }
+    }
+}
+
+// Test browser design
+
+section.test {
+    .browser {
+        
+        $height: 600px;
+
+        @include make-row();
+
+        .left-menu {
+            @include make-sm-column(2);
+            @include make-xs-column(12);
+            padding: 30px;
+            font-size: 12px;
+            color: darkslategray;
+
+            ul {
+                padding: 30px 0 0 15px;
+                li {
+                    list-style: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-size: 17px;
+                }
+                li.active {
+                    background-color: #00bfb3;
+                    color: white;
+                }
+            }
+        }
+
+        .header {
+            @include make-sm-column(10);
+            @include make-xs-column(11);
+            
+            margin-top: 30px;
+            padding: 10px;
+            line-height: 0;
+
+            background: #ddd;
+            height: 30px;
+
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+            span {
+                $size: 11px;
+                height: $size;
+                width: $size;
+                border-radius: $size;
+                background-color: #eee;
+                border: 1px solid #dadada;
+                float: left;
+                margin: 0 0 0 4px;
+            }
+        }
+
+        .menu {
+            @include make-xs-column(1);
+            background-color: #f5f5f5;
+            height: $height;
+            padding: 30px;
+            font-size: 12px;
+            color: darkslategray;
+
+            ul {
+                padding: 0 0 0 15px;
+                li {
+                    list-style: none;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .body {
+            @include make-sm-column(9);
+            @include make-xs-column(10);
+            background-color: darkslategray;
+            height: $height;
+            // border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-color: 1px solid #dadada;
+
+            pre {
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                color: white;
+                font-size: 12px;
+                font-weight: 300;
+                padding: 30px;
+            }
+            pre:first-of-type {
+                line-height: 20px;
+            }
+        }
+    }
+}

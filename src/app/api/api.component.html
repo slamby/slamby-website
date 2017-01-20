@@ -1,0 +1,36 @@
+<pm-header></pm-header>
+
+<section class="test">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <h2>Interact with Slamby in the programming language you choose.</h2>
+        <p class="lead">
+          Slamby uses standard RESTful API and JSON. We also build and maintain clients in many languages such as Python, .NET, and PHP, JavaScript and TypeScript. They’re easy to work with, feel natural to use, and, just like Slamby, don't limit what you might want to do with them.
+        </p>
+      </div>
+    </div>
+    <div class="browser">
+
+      <div class="left-menu">
+        <ul>
+          <li (click)="setCodeToDisplay(i)" *ngFor="let menuItem of keys(); let i = index;" [class.active]="i == selectedKey">{{menuItem}}</li>
+        </ul>
+      </div>
+
+      <div class="header">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu">
+        <ul>
+          <li *ngFor="let item of codeLineNumber; let i = index;">{{i}}.</li>
+        </ul>
+      </div>
+      <div class="body">
+        <pre>{{codeToDisplay}}</pre>
+      </div>
+    </div>
+  </div>
+</section>
