@@ -10,7 +10,16 @@ html,body {
     -webkit-overflow-scrolling: touch;
 }
 
+// Line heights;
+h1 {line-height: 47px;}
+h2 {line-height: 35px;}
+
 h1,h2,h3,h4 {
+    margin-bottom: 30px;
+}
+
+h1 {font-weight: 200;}
+h2,h3,h4 {
     font-weight: 300;
 }
 

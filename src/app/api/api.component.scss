@@ -1,52 +1,102 @@
 @import '~common.scss';
 
-section.sdk {
-    margin-top: 30px;
+section {
+    padding: 30px 0 30px 0;
+}
 
-    .browser {
-        @include make-row();
+// Main section
+section.main {
+    padding-top: 30px;
+    .message {
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+        @include make-xs-column(12);
 
-        padding: 20px 0 0;
-        border-radius: 3px;
-        border-bottom: 2px solid #ccc;
-        display: inline-block;
-        position: relative;
-        line-height: 0;
+        text-align: center;
+    }
+}
 
-        .frame {
+// All in one section
+section.all-in-one {
+    .message, .image {
+        @include make-sm-column(6);
+        @include make-xs-column(12);
+    }
+
+    .api-illustration {
+        padding: 20px 50px 20px 50px;
+
+        $roundness: 5px;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+
+        .api {
             @include make-xs-column(12);
+            background-color: darkred;
+            border-top-left-radius: $roundness;
+            border-top-right-radius: $roundness;
+        }
 
-            background: #ddd;
+        .ai-services {
+            @include make-xs-column(3);
+            background-color: darkslateblue;
+        }
+
+        .machine-learning {
+            @include make-xs-column(3);
+            background-color: darkslateblue;
+        }
+
+        .monitoring {
+            @include make-xs-column(3);
+            background-color: darkslateblue;
+        }
+
+        .document {
+            @include make-xs-column(3);
+            background-color: darkslateblue;
+        }
+
+        .redis {
+            @include make-xs-column(6);
+            background-color: darkgoldenrod;
+        }
+
+        .elastic-search {
+            @include make-xs-column(6);
+            background-color: dodgerblue;
+        }
+
+        .docker {
+            @include make-xs-column(6);
+            background-color: sandybrown;
+        }
+
+        .auto-update {
+            @include make-xs-column(6);
+            background-color: darkslategray;
+        }
+
+        .linux {
+            @include make-xs-column(12);
+            background-color: lightseagreen;
+            border-bottom-left-radius: $roundness;
+            border-bottom-right-radius: $roundness;
+        }
+
+        .item {
             display: block;
-            height: 15px;
-            position: absolute;
-            top: 5px;
-            left: 1px;
-
-            span {
-                height: 8px;
-                width: 8px;
-                border-radius: 8px;
-                background-color: #eee;
-                border: 1px solid #dadada;
-                float: left;
-                margin: 0 0 0 4px;
-            }
-        }
-
-        .menu {
-            @include make-xs-column(4);
-        }
-
-        .body {
-            @include make-xs-column(8);
+            padding: 25px 5px 0 5px;
+            min-height: 80px;
+            border: 1px solid white;
         }
     }
 }
 
-// Test browser design
-
-section.test {
+// SDK Section
+section.sdk {
     .browser {
         
         $height: 600px;
@@ -139,6 +189,30 @@ section.test {
             pre:first-of-type {
                 line-height: 20px;
             }
+        }
+    }
+}
+
+section.out-of-the-box {
+    .message {
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+        @include make-xs-column(12);
+        text-align: center;
+
+        a.btn.btn-default {
+            $color: darkorange;
+            background-color: $color;
+            border-color: $color;
+            padding: 10px 15px 10px 15px;
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        span {
+            display: block;
+            margin-top:5px;
         }
     }
 }
