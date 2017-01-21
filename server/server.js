@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var compression = require('compression');
 // Lead Service import
 var create_lead_1 = require("./create-lead");
+var mailchimp_service_1 = require("./mailchimp.service");
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -32,8 +33,19 @@ app.post('/api/create-lead', function (req, res) {
         res.status(200);
         res.send('{"msg":"Lead created"}');
     })["catch"](function (err) {
-        res.status(400);
+        res.status(err.statusCode);
         res.send('{"msg":"Something went wrong"}');
+    });
+});
+// API route for Mailchimp service;
+app.post('/api/newsletter/subscribe', function (req, res) {
+    var mailchimpService = new mailchimp_service_1.MailchimpService(req.body.email, req.body.firstName, req.body.lastName);
+    mailchimpService.AddToList().then(function () {
+        res.status(200);
+        res.send('{"msg":"Success"}');
+    })["catch"](function (err) {
+        res.status(err.statusCode);
+        res.send('{"msg":"Lead already on the list"}');
     });
 });
 app.get('/*', function (req, res) {

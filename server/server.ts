@@ -8,6 +8,7 @@ const compression = require('compression');
 
 // Lead Service import
 import { CreateLead } from './create-lead';
+import { MailchimpService } from './mailchimp.service';
 
 const app = express();
 
@@ -49,9 +50,25 @@ app.post('/api/create-lead', function (req, res) {
         res.send('{"msg":"Lead created"}');
     })
     .catch(function (err) {
-        res.status(400);
+        res.status(err.statusCode);
         res.send('{"msg":"Something went wrong"}');
     });
+})
+
+// API route for Mailchimp service;
+app.post('/api/newsletter/subscribe', function (req, res) {
+    const mailchimpService = new MailchimpService(
+        req.body.email,
+        req.body.firstName,
+        req.body.lastName
+    );
+    mailchimpService.AddToList().then(function(){
+        res.status(200);
+        res.send('{"msg":"Success"}');
+    }).catch(function (err) {
+        res.status(err.statusCode);
+        res.send('{"msg":"Lead already on the list"}');
+    })
 })
 
 app.get('/*', function (req, res) {
