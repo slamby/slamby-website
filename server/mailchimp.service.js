@@ -14,14 +14,15 @@ var MailchimpService = (function () {
                 'Authorization': 'Basic U2xhbWJ5OmZkOGQ0ODliZmEyMGZhYmRmNjc2MzI0OTg3Nzc2NDM0LXVzOA==',
                 'Content-Type': 'application/json'
             },
-            form: {
-                'email_address': this.email,
-                'status': 'subscribed',
-                'merge_fields': {
-                    'FNAME': this.firstName,
-                    'LNAME': this.lastName
+            body: {
+                email_address: this.email,
+                status: 'subscribed',
+                merge_fields: {
+                    FNAME: this.firstName,
+                    LNAME: this.lastName
                 }
-            }
+            },
+            json: true
         };
         return rp(options);
     };

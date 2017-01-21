@@ -33,8 +33,14 @@ app.post('/api/create-lead', function (req, res) {
         res.status(200);
         res.send('{"msg":"Lead created"}');
     })["catch"](function (err) {
-        res.status(err.statusCode);
-        res.send('{"msg":"Something went wrong"}');
+        if (err.statusCode) {
+            res.status(err.statusCode);
+            res.send('{"msg":"' + err.message + '"}');
+        }
+        else {
+            res.status(500);
+            res.send('{"msg":"Connection Error"}');
+        }
     });
 });
 // API route for Mailchimp service;
@@ -44,8 +50,14 @@ app.post('/api/newsletter/subscribe', function (req, res) {
         res.status(200);
         res.send('{"msg":"Success"}');
     })["catch"](function (err) {
-        res.status(err.statusCode);
-        res.send('{"msg":"Lead already on the list"}');
+        if (err.statusCode) {
+            res.status(err.statusCode);
+            res.send('{"msg":"' + err.message + '"}');
+        }
+        else {
+            res.status(500);
+            res.send('{"msg":"' + err.message + '"}');
+        }
     });
 });
 app.get('/*', function (req, res) {
