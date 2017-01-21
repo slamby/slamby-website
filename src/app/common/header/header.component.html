@@ -6,7 +6,7 @@
         <li class="menu-open-btn" (click)="menuOpen()"><a><i class="fa fa-bars" aria-hidden="true"></i></a></li>
       </ul>
       <ul class="sla-nav-menu-items">
-        <li class="{{item.customClass}}" *ngFor="let item of menuItems"><a [routerLink]="[item.link]" template="ngIf !item.externalLink"><span>{{item.name}}</span></a><a *ngIf="item.externalLink" href="{{item.link}}" target="_blank"><span>{{item.name}} <i class="fa fa-external-link sla-external-link" aria-hidden="true"></i></span></a></li>
+        <li class="{{item.customClass}}" *ngFor="let item of menuItems" [class.active]="item.link == currentRouterUrl"><a [routerLink]="[item.link]" template="ngIf !item.externalLink"><span>{{item.name}}</span></a><a *ngIf="item.externalLink" href="{{item.link}}" target="_blank"><span>{{item.name}} <i class="fa fa-external-link sla-external-link" aria-hidden="true"></i></span></a></li>
       </ul>
     </div>
   </div>

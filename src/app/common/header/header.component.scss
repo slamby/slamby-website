@@ -33,12 +33,19 @@ section {
             padding: 0 15px 0 15px;
             text-decoration: none;
             color: white;
-            font-size: 16px;
-            line-height: 2.75;
+            font-size: 15px;
+            line-height: 2.85;
             font-weight: 300;
             .sla-external-link {
                 font-size: 12px;
             }
+        }
+    }
+    li.active {
+        a,a:hover,a:active {
+            color: darkgray;
+            line-height: 3;
+            font-size: 14px;
         }
     }
 }

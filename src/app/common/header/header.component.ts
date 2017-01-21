@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MenuItem } from './menu.model';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'pm-header',
@@ -8,6 +9,13 @@ import { MenuItem } from './menu.model';
 })
 
 export class HeaderComponent {
+
+    currentRouterUrl: string;
+
+    constructor(private router: Router) {
+        this.currentRouterUrl = this.router.url;
+    }
+
     @Input() theme: String = 'theme-default';
     menuItems = [
         new MenuItem('Slamby', '/home', 'logo', false),
