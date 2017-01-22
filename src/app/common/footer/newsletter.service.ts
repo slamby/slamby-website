@@ -26,7 +26,11 @@ export class NewsletterService {
         const options = new RequestOptions({ headers: headers });
 
         return this.http.post('/api/newsletter/subscribe', bodyString, options)
-                         .map((res: Response) => res.json())
-                         .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+            .map((res: Response) => res);
+    }
+
+    checkSubscriptionStatus(email = ''): Observable<any> {
+        return this.http.get('/api/newsletter/checkSubscriptionStatus?email=' + email)
+            .map((res: Response) => res);
     }
 }

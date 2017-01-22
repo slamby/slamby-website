@@ -23,12 +23,23 @@ export class FooterComponent {
     isSentSuccess: number = 0;
 
     addSubscriber() {
+        // If there is email address set.
         if (this.newsLetterDetails.email.length > 0) {
-            this.newsletterService.createLead(this.newsLetterDetails).subscribe(
+            this.newsletterService.checkSubscriptionStatus(this.newsLetterDetails.email).subscribe(
                 res => {
-                    this.isSentSuccess = 1;
-                }, err => {
+                    // 200 ok means already existing email id. Set status code to 2.
                     this.isSentSuccess = 2;
+                }, err => {
+                    // 404 not found means, email id is new. Let's add it.
+                    this.newsletterService.createLead(this.newsLetterDetails).subscribe(
+                        res => {
+                            // Succesfully added!
+                            this.isSentSuccess = 1;
+                        }, err => {
+                            // Error occured.
+                            this.isSentSuccess = 3;
+                        }
+                    );
                 }
             );
         }

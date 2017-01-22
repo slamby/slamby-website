@@ -1,4 +1,5 @@
 const rp = require('request-promise');
+const md5 = require('md5');
 
 export class MailchimpService {
     constructor(
@@ -25,6 +26,17 @@ export class MailchimpService {
             },
             json: true
         };
+        return rp(options);
+    }
+
+    checkSubscriberByEmail() {
+        const options = {
+            url: 'https://us8.api.mailchimp.com/3.0/lists/74a478b46d/members/' + md5(this.email),
+            method: 'GET',
+            headers: {
+                'Authorization': 'Basic U2xhbWJ5OmZkOGQ0ODliZmEyMGZhYmRmNjc2MzI0OTg3Nzc2NDM0LXVzOA=='
+            }
+        }
         return rp(options);
     }
 }

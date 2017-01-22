@@ -52,12 +52,22 @@ app.post('/api/newsletter/subscribe', function (req, res) {
     })["catch"](function (err) {
         if (err.statusCode) {
             res.status(err.statusCode);
-            res.send('{"msg":"' + err.message + '"}');
+            res.send(err.message);
         }
         else {
             res.status(500);
-            res.send('{"msg":"' + err.message + '"}');
+            res.send(err.message);
         }
+    });
+});
+// API route for Mailchimp service;
+app.get('/api/newsletter/checkSubscriptionStatus', function (req, res) {
+    var mailchimpService = new mailchimp_service_1.MailchimpService(req.query['email'], '', '');
+    mailchimpService.checkSubscriberByEmail().then(function (success) {
+        res.send(success);
+    })["catch"](function (err) {
+        res.status(err.statusCode);
+        res.send(err.message);
     });
 });
 app.get('/*', function (req, res) {
