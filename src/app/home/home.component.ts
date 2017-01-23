@@ -31,16 +31,19 @@ export class HomeComponent {
     };
 
     // tslint:disable-next-line:member-ordering
-    leadCreatedIsSuccess: boolean = false;
+    isSuccess: boolean = false;
+    isError: boolean = false;
+    errorMessage: string;
 
     createLead() {
         this.validateForm();
         if (this.isValid) {
             this.leadService.createLead(this.leadDetails).subscribe(
                 res => {
-                    this.leadCreatedIsSuccess = true;
+                    this.isSuccess = true;
                 }, err => {
-                    console.log(err);
+                    this.isError = true;
+                    this.errorMessage = 'An error occured. Please try again.';
                 }
             );
         }

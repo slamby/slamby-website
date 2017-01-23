@@ -83,12 +83,12 @@
 section.newsletter-signup-form {
     text-align: center;
     background-color: #005571;
-    color: white;
     margin-top: 30px;
     padding: 30px;
     .message {
         @include make-sm-column(8);
         font-size: 24px;
+        color: white;
     }
     .form {
         @include make-sm-column(4);

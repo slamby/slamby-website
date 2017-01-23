@@ -15,7 +15,7 @@
       <div class="signup-form">
         <h2>Contact sales</h2>
         <div class="row">
-          <form *ngIf="!leadCreatedIsSuccess">
+          <form *ngIf="!isSuccess" (ngSubmit)="createLead()" class="form">
             <div class="email item">
               <input class="form-control" type="email" [(ngModel)]="leadDetails.EMAIL_ADDRESS" required name="EMAIL_ADDRESS" placeholder="E-mail address" />
             </div>
@@ -29,10 +29,11 @@
               <input class="form-control" type="text" [(ngModel)]="leadDetails.ORGANIZATION_NAME" required name="ORGANIZATION_NAME" placeholder="Company" />
             </div>
             <div class="btnform">
-              <button (click)="createLead()" class="btn btn-default form-control" type="submit">Contact Sales</button>
+              <button class="btn btn-default form-control" type="submit">Contact Sales</button>
             </div>
           </form>
-          <p class="lead thanks" *ngIf="leadCreatedIsSuccess">Thank You!</p>
+          <p class="lead message" *ngIf="isSuccess">Thank You!</p>
+          <p class="lead message" *ngIf="!isSuccess && isError">{{errorMessage}}</p>
         </div>
       </div>
     </div>

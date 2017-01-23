@@ -3,17 +3,16 @@
     <div class="container">
         <div class="row">
             <div class="message">
-                <div *ngIf="isSentSuccess == 0">Be in the know with the latest and greatest from Slamby.</div>
-                <div *ngIf="isSentSuccess == 1">Thank You!</div>
-                <div *ngIf="isSentSuccess == 2">You have already signed up!</div>
-                <div *ngIf="isSentSuccess == 3">An error occured</div>
+                {{message}}
             </div>
-            <div class="input-group form" *ngIf="isSentSuccess == 0">
-                <input class="form-control" type="email" required [(ngModel)]="newsLetterDetails.email" name="email" placeholder="E-mail address"/>
-                <span class = "input-group-btn">
-                    <button class = "btn btn-default" type = "submit" (click)="addSubscriber()">Submit</button>
-                </span>
-            </div>
+            <form (ngSubmit)="subscibe()" class="form">
+                <div class="input-group">
+                    <input class="form-control" type="email" required [(ngModel)]="newsLetterDetails.email" name="email" placeholder="E-mail address" [disabled]="isSuccess"/>
+                    <span class = "input-group-btn">
+                        <button class = "btn btn-default" type = "submit" [disabled]="isSuccess">Submit</button>
+                    </span>
+                </div>
+            </form>
         </div>
     </div>
 </section>

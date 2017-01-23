@@ -64,13 +64,16 @@ section.header {
                 margin-top: 10px;
             }
 
+            .firstname { padding-right: 5px; }
+            .lastname { padding-left: 5px; }
+
             .org, .btnform {
                 @include make-xs-column(12);
                 margin-top: 10px;
             }
 
-            p.thanks {
-                padding-left: 20px;
+            p.message {
+                text-align: center;
             }
         }
     }

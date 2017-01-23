@@ -20,29 +20,31 @@ export class FooterComponent {
         lastName: ''
     };
 
-    isSentSuccess: number = 0;
+    submitted: boolean = false;
+    isSuccess: boolean = false;
+    message: string = 'Be in the know with the latest and greatest from Slamby.';
 
-    addSubscriber() {
-        // If there is email address set.
-        if (this.newsLetterDetails.email.length > 0) {
-            this.newsletterService.checkSubscriptionStatus(this.newsLetterDetails.email).subscribe(
-                res => {
-                    // 200 ok means already existing email id. Set status code to 2.
-                    this.isSentSuccess = 2;
-                }, err => {
-                    // 404 not found means, email id is new. Let's add it.
-                    this.newsletterService.createLead(this.newsLetterDetails).subscribe(
-                        res => {
-                            // Succesfully added!
-                            this.isSentSuccess = 1;
-                        }, err => {
-                            // Error occured.
-                            this.isSentSuccess = 3;
-                        }
-                    );
-                }
-            );
-        }
+    subscibe() {
+        this.newsletterService.checkSubscriptionStatus(this.newsLetterDetails.email).subscribe(
+            res => {
+                // 200 ok means already existing email id. Set status code to 2.
+                this.message = 'You have already signed up!';
+                this.isSuccess = false;
+            }, err => {
+                // 404 not found means, email id is new. Let's add it.
+                this.newsletterService.createLead(this.newsLetterDetails).subscribe(
+                    res => {
+                        // Succesfully added!
+                        this.message = 'Thank You';
+                        this.isSuccess = true;
+                    }, err => {
+                        // Error occured.
+                        this.message = 'An error occured. Please try again.';
+                        this.isSuccess = false;
+                    }
+                );
+            }
+        );
     }
 
     // tslint:disable-next-line:member-ordering
