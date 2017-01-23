@@ -1,4 +1,3 @@
-
 <!-- Html meta mixin-->
 <!-- Link mixin-->
 <!-- Script mixin for javascript links-->
@@ -9,7 +8,8 @@
     <div class="message">
       <div class="head">
         <h1>Smart machine learning for classifieds</h1>
-        <p class="lead">Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction, duplicate search, matchmaking.</p>
+        <p class="lead">Slamby is a great tool for classifieds to do perfect machine learning. Category recommendation, keyword-extraction,
+          duplicate search, matchmaking.</p>
         <p class="lead">Open-source, SaaS, PaaS, on-premise install.</p>
       </div>
       <div class="signup-form">
@@ -17,16 +17,20 @@
         <div class="row">
           <form *ngIf="!isSuccess" (ngSubmit)="createLead()" class="form">
             <div class="email item">
-              <input class="form-control" type="email" [(ngModel)]="leadDetails.EMAIL_ADDRESS" required name="EMAIL_ADDRESS" placeholder="E-mail address" />
+              <input class="form-control" type="email" [(ngModel)]="leadDetails.EMAIL_ADDRESS" required name="EMAIL_ADDRESS" placeholder="E-mail address"
+              />
             </div>
             <div class="firstname item">
-              <input class="form-control" type="text" [(ngModel)]="leadDetails.FIRST_NAME" required name="FIRST_NAME" placeholder="First name" />
+              <input class="form-control" type="text" [(ngModel)]="leadDetails.FIRST_NAME" required name="FIRST_NAME" placeholder="First name"
+              />
             </div>
             <div class="lastname item">
-              <input class="form-control" type="text" [(ngModel)]="leadDetails.LAST_NAME" required name="LAST_NAME" placeholder="Last name" />
+              <input class="form-control" type="text" [(ngModel)]="leadDetails.LAST_NAME" required name="LAST_NAME" placeholder="Last name"
+              />
             </div>
             <div class="org">
-              <input class="form-control" type="text" [(ngModel)]="leadDetails.ORGANIZATION_NAME" required name="ORGANIZATION_NAME" placeholder="Company" />
+              <input class="form-control" type="text" [(ngModel)]="leadDetails.ORGANIZATION_NAME" required name="ORGANIZATION_NAME" placeholder="Company"
+              />
             </div>
             <div class="btnform">
               <button class="btn btn-default form-control" type="submit">Contact Sales</button>
@@ -40,22 +44,12 @@
   </div>
 </section>
 
-<!--<section class="demo2">
-  <div class="container-fluid">
-    <div class="holder">
-      <div class="item jofogas"><div class="image"></div></div>
-      <div class="item schibsted"><div class="image"></div></div>
-      <div class="item lazada"><div class="image"></div></div>
-    </div>
-  </div>
-</section>-->
-
 <section class="customers">
-  <div class="container-fluid">
+  <div class="container">
     <div class="holder">
-      <div class="item jofogas"></div>
-      <div class="item schibsted"></div>
-      <div class="item lazada"></div>
+      <div class="item"><div class="img jofogas"></div></div>
+      <div class="item"><div class="img schibsted"></div></div>
+      <div class="item"><div class="img lazada"></div></div>
     </div>
   </div>
 </section>
@@ -65,7 +59,9 @@
     <div class="row">
       <div class="message">
         <h3>Who we are</h3>
-        <p>Hard work, great team, gorgeous vision. Building the best data management products from the heart. We are passionate in creating the best data processing solutions. Following our vision, we are working to become the biggest data processing center over Europe.</p>
+        <p>Hard work, great team, gorgeous vision. Building the best data management products from the heart. We are passionate
+          in creating the best data processing solutions. Following our vision, we are working to become the biggest data
+          processing center over Europe.</p>
         <p>
           <a [routerLink]="['/company']">Learn more</a>
         </p>
