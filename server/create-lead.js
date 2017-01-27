@@ -14,7 +14,7 @@ var CreateLead = (function () {
             url: 'https://api.insight.ly/v2.1/Leads',
             method: 'POST',
             headers: {
-                'Authorization': 'Basic NDhjMjY0YTgtZGFlZi00MTUwLTk0ZWEtMTQ2NmU4ZTkxY2QzOg==',
+                'Authorization': 'Basic ' + process.env.CRM_API_KEY,
                 'Content-Type': 'application/json'
             },
             form: {
