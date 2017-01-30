@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent {
 
+    @Input() opacity: number;
+
     currentRouterUrl: string;
 
     constructor(private router: Router) {

@@ -2,8 +2,13 @@
 
 $nav-background-color: rgba(0,0,0,0.85);
 
+@mixin setBackground($opacity){
+    background-color: rgba(0,0,0,$opacity);
+}
+
 section {
-    background-color:$nav-background-color;
+    // Default opacity 0.85;
+    @include setBackground(0.85);
     position: relative;
     height: 44px;
     z-index: 9999;
@@ -14,6 +19,13 @@ section {
         padding:0;
     }
 }
+
+section.opacity-0 { @include setBackground(0); }
+section.opacity-25 { @include setBackground(0.25); }
+section.opacity-50 { @include setBackground(0.50); }
+section.opacity-75 { @include setBackground(0.75); }
+section.opacity-85 { @include setBackground(0.85); }
+section.opacity-100 { @include setBackground(1); }
 
 .logo {
     font-family: slamby-logo;
