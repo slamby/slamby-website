@@ -83,3 +83,71 @@ section.header {
         }
     }
 }
+
+// Flock
+
+section.flock {
+    height: 1300px;
+    background-image: url("/assets/images/insight/header-flock.min.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -25px;
+
+    .main-message {
+        @include make-xs-column(12);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+        margin-top: 100px;
+        text-align: center;
+        color: white;
+
+        p.lead {
+            font-size: 24px;
+        }
+
+        .btn {
+            background: transparent;
+            color: white;
+            border: 1px solid #00cde7;
+        }
+    }
+}
+
+section.flock-submenu {
+    background-color: #2a2134;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    .message {
+        @include make-row();
+        .item {
+            @include make-sm-column(4);
+            .image {
+                top: 0; right: 0; bottom: 0; left: 0;
+                margin: auto;
+                // height: 30%;
+            }
+            .support-your-team {
+                content: url("/assets/images/insight/support-your-team.min.svg");
+            }
+            .multi-platform {
+                content: url("/assets/images/insight/multi-platform.min.svg");
+            }
+            .open-source {
+                content: url("/assets/images/insight/open-source.min.svg");
+            }
+            .insight-download-link-list {
+                margin-top:15px;
+                a {
+                    display: inline-block;
+                    color: white;
+                    font-weight: 500;
+                }
+                a:not(:last-of-type){
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
