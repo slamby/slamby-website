@@ -18,7 +18,7 @@ export class HeaderComponent {
         this.currentRouterUrl = this.router.url;
     }
 
-    @Input() theme: String = 'theme-default';
+    // tslint:disable-next-line:member-ordering
     menuItems = [
         new MenuItem('Slamby', '/home', 'logo', false),
         new MenuItem('API', '/api', '', false),
@@ -27,7 +27,7 @@ export class HeaderComponent {
         new MenuItem('Support', '/support', '', false),
         // new MenuItem('Blog', 'http://blog.slamby.com', '', true),
         new MenuItem('For developers', 'https://developers.slamby.com', '', true)
-    ]
+    ];
 
     isOpen: Boolean = false;
 
