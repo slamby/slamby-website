@@ -1,94 +1,10 @@
 @import "~common.scss";
 
-section.header {
-    background: #2e7bcf cdnUrl('/assets/images/home/header.jpg') 0 0 repeat;
-    margin-top:-50px;
-
-    .message {
-        @include make-row();
-        .head {
-            @include make-md-column(8);
-            @include make-xs-column(12);
-            margin-top:10em;
-            margin-bottom:5em;
-
-            h1,h2,h3 {
-                color: white;
-            }
-
-            h1 {
-                font-size: 50px;
-                span {
-                    font-size: 30px;
-                }
-            }
-
-            p.lead {
-                color: white;
-            }
-
-            a.btn-default {
-                background-color: transparent !important;
-                border-color: white;
-                color: white;
-            }
-
-            a.btn-default:hover {
-                border-color: rgba(255,255,255,.7);
-            }
-
-            .github {
-                margin-top:70px;
-                i {
-                    color: white;
-                    font-size:50px;
-                }
-            }
-        }
-    }
-}
-
-.roll {
-
-    padding-top:10em;
-    padding-bottom: 5em;
-
-    .box {
-        @include make-md-column(6);
-        @include make-xs-column(12);
-    }
-
-    .git, .multi-platform, .work {
-        text-align: center;
-        i.fa {
-            position: relative;
-            font-size: 75px;
-            margin-top: 50px;
-        }
-    }
-
-    .multi-platform {
-        i.fa:not(:last-of-type) {
-            padding-right: 55px;
-        }
-    }
-
-    .list {
-        margin-top:15px;
-        a {
-            display: inline-block;
-        }
-        a:not(:last-of-type){
-            margin-right: 10px;
-        }
-    }
-}
-
 // Flock
 
 section.flock {
     height: 1300px;
-    background-image: url("/assets/images/insight/header-flock.min.svg");
+    background-image: url("assets/images/insight/header-flock.min.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,30 +40,38 @@ section.flock-submenu {
         @include make-row();
         .item {
             @include make-sm-column(4);
+            .box {
+                height: 50px;
+                position: relative;
+            }
             .image {
                 top: 0; right: 0; bottom: 0; left: 0;
                 margin: auto;
-                // height: 30%;
+                position: absolute;
+                display: block;
             }
             .support-your-team {
-                content: url("/assets/images/insight/support-your-team.min.svg");
+                background: url("assets/images/insight/support-your-team.min.svg") center no-repeat;
+                background-size: contain;
             }
             .multi-platform {
-                content: url("/assets/images/insight/multi-platform.min.svg");
+                background: url("assets/images/insight/multi-platform.min.svg") center no-repeat;
+                background-size: contain;
             }
             .open-source {
-                content: url("/assets/images/insight/open-source.min.svg");
+                background: url("assets/images/insight/open-source.min.svg") center no-repeat;
+                background-size: contain;
             }
             .insight-download-link-list {
                 margin-top:15px;
-                a {
-                    display: inline-block;
-                    color: white;
-                    font-weight: 500;
-                }
-                a:not(:last-of-type){
-                    margin-right: 15px;
-                }
+            }
+            a {
+                display: inline-block;
+                color: white;
+                font-weight: 500;
+            }
+            a:not(:last-of-type){
+                margin-right: 15px;
             }
         }
     }

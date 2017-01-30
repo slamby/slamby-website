@@ -1,7 +1,7 @@
 @import '~common.scss';
 
 section.header {
-    @include background-image('/assets/images/home/header.jpg');
+    @include background-image('assets/images/home/header.jpg');
     margin-top:-50px;
 
     .message {
@@ -98,13 +98,17 @@ section.header {
         }
 
         .jofogas {
-            content: cdnUrl('/assets/images/home/jofogas.jpg');
+            // content: url('assets/images/home/jofogas.jpg');
+            background: url('assets/images/home/jofogas.jpg') center no-repeat;
+            background-size: contain;
         }
         .schibsted {
-            content: cdnUrl('/assets/images/home/schibsted.png');
+            background: url('assets/images/home/schibsted.png') center no-repeat;
+            background-size: contain;
         }
         .lazada {
-            content: cdnUrl('/assets/images/home/lazada.png');
+            background: url('assets/images/home/lazada.png') center no-repeat;
+            background-size: contain;
         }
     }
 }
