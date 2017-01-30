@@ -8,5 +8,9 @@
 //$publicPath: "";
 
 @function cdnUrl($path){
-    @return url($publicPath + $path);
+    @if str-slice($path, 0, 1) == '/' {
+        @return url($publicPath + $path);
+    } @else {
+        @return url($publicPath + '/' + $path);
+    }
 }

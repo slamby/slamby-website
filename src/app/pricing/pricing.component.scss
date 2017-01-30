@@ -2,7 +2,7 @@
 
 section.main {
     margin-top:-50px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('assets/images/pricing/bg-pattern-01.svg');
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), cdnUrl('assets/images/pricing/bg-pattern-01.svg');
     background-repeat: repeat;
 
     .body {

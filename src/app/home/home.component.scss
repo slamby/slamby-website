@@ -99,15 +99,15 @@ section.header {
 
         .jofogas {
             // content: url('assets/images/home/jofogas.jpg');
-            background: url('assets/images/home/jofogas.jpg') center no-repeat;
+            background: cdnUrl('assets/images/home/jofogas.jpg') center no-repeat;
             background-size: contain;
         }
         .schibsted {
-            background: url('assets/images/home/schibsted.png') center no-repeat;
+            background: cdnUrl('assets/images/home/schibsted.png') center no-repeat;
             background-size: contain;
         }
         .lazada {
-            background: url('assets/images/home/lazada.png') center no-repeat;
+            background: cdnUrl('assets/images/home/lazada.png') center no-repeat;
             background-size: contain;
         }
     }

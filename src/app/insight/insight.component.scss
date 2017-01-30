@@ -4,7 +4,7 @@
 
 section.flock {
     height: 1300px;
-    background-image: url("assets/images/insight/header-flock.min.svg");
+    background-image: cdnUrl("assets/images/insight/header-flock.min.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,15 +51,15 @@ section.flock-submenu {
                 display: block;
             }
             .support-your-team {
-                background: url("assets/images/insight/support-your-team.min.svg") center no-repeat;
+                background: cdnUrl("assets/images/insight/support-your-team.min.svg") center no-repeat;
                 background-size: contain;
             }
             .multi-platform {
-                background: url("assets/images/insight/multi-platform.min.svg") center no-repeat;
+                background: cdnUrl("assets/images/insight/multi-platform.min.svg") center no-repeat;
                 background-size: contain;
             }
             .open-source {
-                background: url("assets/images/insight/open-source.min.svg") center no-repeat;
+                background: cdnUrl("assets/images/insight/open-source.min.svg") center no-repeat;
                 background-size: contain;
             }
             .insight-download-link-list {
