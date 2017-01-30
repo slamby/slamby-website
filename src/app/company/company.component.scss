@@ -1,7 +1,7 @@
 @import "~common.scss";
 
 .main {
-    background: linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.5)), url('assets/images/company/team.jpg') 0 0 no-repeat;
+    background: linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.5)), cdnUrl('assets/images/company/team.jpg') 0 0 no-repeat;
     background-size: cover;
     margin-top: -50px;
     padding-top:400px;
