@@ -43,7 +43,8 @@ app.post('/api/create-lead', function (req, res) {
         req.body.ORGANIZATION_NAME,
         req.body.MOBILE_PHONE_NUMBER,
         req.body.EMAIL_ADDRESS,
-        req.body.WEBSITE
+        req.body.WEBSITE,
+        req.body.LEAD_DESCRIPTION
     );
     createLead.Create().then(function () {
         res.status(200);

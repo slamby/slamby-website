@@ -28,7 +28,7 @@ app.use(compression());
 app.use('/assets', express.static(path.join(__dirname, '../dist/assets')));
 // Api route for lead service.
 app.post('/api/create-lead', function (req, res) {
-    var createLead = new create_lead_1.CreateLead(req.body.FIRST_NAME, req.body.LAST_NAME, req.body.ORGANIZATION_NAME, req.body.MOBILE_PHONE_NUMBER, req.body.EMAIL_ADDRESS, req.body.WEBSITE);
+    var createLead = new create_lead_1.CreateLead(req.body.FIRST_NAME, req.body.LAST_NAME, req.body.ORGANIZATION_NAME, req.body.MOBILE_PHONE_NUMBER, req.body.EMAIL_ADDRESS, req.body.WEBSITE, req.body.LEAD_DESCRIPTION);
     createLead.Create().then(function () {
         res.status(200);
         res.send('{"msg":"Lead created"}');

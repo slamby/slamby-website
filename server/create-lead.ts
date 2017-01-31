@@ -7,7 +7,8 @@ export class CreateLead {
         public orgName: string,
         public mobileNumber: string,
         public email: string,
-        public website: string
+        public website: string,
+        public description: string
     ) {}
 
     Create() {
@@ -26,7 +27,7 @@ export class CreateLead {
                 'EMAIL_ADDRESS': this.email,
                 'WEBSITE_URL': this.website,
                 'VISIBLE_TO': 'EVERYONE',
-                'LEAD_DESCRIPTION': 'source from website/ new campaign'
+                'LEAD_DESCRIPTION': this.description
             }
         };
         return rp(options);

@@ -29,7 +29,7 @@ export class LeadService {
             'EMAIL_ADDRESS': leadDetails.EMAIL_ADDRESS,
             'MOBILE_PHONE_NUMBER': leadDetails.PHONE_NUMBER,
             'VISIBLE_TO': 'EVERYONE',
-            'LEAD_DESCRIPTION': 'source from website/ new campaign. Message: ' + leadDetails.DESCRIPTION
+            'LEAD_DESCRIPTION': 'source from website/ new campaign. \n Message: ' + leadDetails.DESCRIPTION
         };
         const bodyString = JSON.stringify(body);
         const headers = new Headers({

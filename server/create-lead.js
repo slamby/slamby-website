@@ -1,13 +1,14 @@
 "use strict";
 var rp = require('request-promise');
 var CreateLead = (function () {
-    function CreateLead(firstName, lastName, orgName, mobileNumber, email, website) {
+    function CreateLead(firstName, lastName, orgName, mobileNumber, email, website, description) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.orgName = orgName;
         this.mobileNumber = mobileNumber;
         this.email = email;
         this.website = website;
+        this.description = description;
     }
     CreateLead.prototype.Create = function () {
         var options = {
@@ -25,7 +26,7 @@ var CreateLead = (function () {
                 'EMAIL_ADDRESS': this.email,
                 'WEBSITE_URL': this.website,
                 'VISIBLE_TO': 'EVERYONE',
-                'LEAD_DESCRIPTION': 'source from website/ new campaign'
+                'LEAD_DESCRIPTION': this.description
             }
         };
         return rp(options);
