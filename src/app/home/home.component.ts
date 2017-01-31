@@ -25,8 +25,14 @@ export class HomeComponent {
 
     validateForm() {
         this.isValid = true; // set it back for new checking;
-        for (let i = 0; i < Object.keys(this.leadDetails).length; i++){
-            if (this.leadDetails[Object.keys(this.leadDetails)[i]].length === 0) {
+        const fieldsForCheck = {
+            'FIRST_NAME': '',
+            'LAST_NAME': '',
+            'ORGANIZATION_NAME': '',
+            'EMAIL_ADDRESS': ''
+        };
+        for (let i = 0; i < Object.keys(fieldsForCheck).length; i++){
+            if (this.leadDetails[Object.keys(fieldsForCheck)[i]].length === 0) {
                 this.isValid = false;
             }
         }
