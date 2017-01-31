@@ -1,0 +1,46 @@
+@import '~common.scss';
+
+section.sales {
+    margin: 5em 0 5em 0;
+    .head {
+        @include make-row();
+        .head-message {
+            @include make-md-column(8);
+            h1 {
+                font-weight: 300;
+            }
+        }
+    }
+    .message {
+        @include make-row();
+        .form-holder {
+            @include make-sm-column(9);
+            @include make-md-column(7);
+            margin-top: 15px;
+            .form-group {
+                margin-bottom: 17px;
+            }
+            label {
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .btn {
+                margin-right: 15px;
+                background-color: transparent;
+                color: black;
+                border: 1px solid #00cde7;
+            }
+        }
+        .contact-details {
+            @include make-sm-column(3);
+            @include make-md-column(3);
+            .block {
+                h3 {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

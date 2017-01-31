@@ -1,0 +1,99 @@
+<pm-header></pm-header>
+
+<section class="sales">
+  <div class="container">
+    <div class="head">
+      <div class="head-message">
+        <h1>Contact us for more information</h1>
+        <!--<p class="lead">Are you curious about what Slamby does? Do you have any technical or business related questions? Contact our specialists
+          and get answers quickly.</p>-->
+      </div>
+    </div>
+    <div class="message">
+      <div class="form-holder">
+        <form *ngIf="!isSuccess" (ngSubmit)="createLead()" class="form">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="fname">Your first name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Your first name" required name="FIRST_NAME" [(ngModel)]="leadDetails.FIRST_NAME">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="lname">Your last name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Your last name" required name="LAST_NAME" [(ngModel)]="leadDetails.LAST_NAME">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="org-name">Organization's name</label>
+            <input type="text" class="form-control" id="org-name" placeholder="Organization's name" required name="ORGANIZATION_NAME" [(ngModel)]="leadDetails.ORGANIZATION_NAME">
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="email">Your work email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your work email" required name="EMAIL_ADDRESS" [(ngModel)]="leadDetails.EMAIL_ADDRESS">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="phone">Your phone number</label>
+                <input type="text" class="form-control" id="phone" placeholder="Your phone number" required name="PHONE_NUMBER" [(ngModel)]="leadDetails.PHONE_NUMBER">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="description">What can we help you with?</label>
+            <textarea id="description" cols="30" rows="5" class="form-control" placeholder="What can we help you with?" required name="DESCRIPTION" [(ngModel)]="leadDetails.DESCRIPTION"></textarea>
+          </div>
+          <div class="btnform">
+            <button class="btn btn-info btn-lg" type="submit">Send your message</button> or email <a href="mailto:sales@slamby.com">sales@slamby.com</a>            directly
+          </div>
+        </form>
+        <p class="lead message" *ngIf="isSuccess">Thank You!</p>
+        <p class="lead message" *ngIf="!isSuccess && isError">{{errorMessage}}</p>
+      </div>
+      <div class="contact-details">
+        <div class="block">
+          <h3>Slamby mailing address</h3>
+          <p>Kassai street 129.<br>Debrecen, 4028<br>Hungary</p>
+        </div>
+        <div class="block">
+          <h3>Existing customers</h3>
+          <p>For questions about your existing Slamby account, please <a href="mailto:sales@slamby.com">contact our support.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--<div class="signup-form">
+  <h2>Contact sales</h2>
+  <div class="row">
+    <form *ngIf="!isSuccess" (ngSubmit)="createLead()" class="form">
+      <div class="email item">
+        <input class="form-control" type="email" [(ngModel)]="leadDetails.EMAIL_ADDRESS" required name="EMAIL_ADDRESS" placeholder="E-mail address"
+        />
+      </div>
+      <div class="firstname item">
+        <input class="form-control" type="text" [(ngModel)]="leadDetails.FIRST_NAME" required name="FIRST_NAME" placeholder="First name"
+        />
+      </div>
+      <div class="lastname item">
+        <input class="form-control" type="text" [(ngModel)]="leadDetails.LAST_NAME" required name="LAST_NAME" placeholder="Last name"
+        />
+      </div>
+      <div class="org">
+        <input class="form-control" type="text" [(ngModel)]="leadDetails.ORGANIZATION_NAME" required name="ORGANIZATION_NAME" placeholder="Company"
+        />
+      </div>
+      <div class="btnform">
+        <button class="btn btn-default form-control" type="submit">Contact Sales</button>
+      </div>
+    </form>
+    <p class="lead message" *ngIf="isSuccess">Thank You!</p>
+    <p class="lead message" *ngIf="!isSuccess && isError">{{errorMessage}}</p>
+  </div>
+</div>-->

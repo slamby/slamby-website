@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { LeadService } from './lead.service';
+import { LeadService } from '../home/lead.service';
 import {Observable} from 'rxjs/Rx';
 
 @Component({
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss'],
+    templateUrl: './sales.component.html',
+    styleUrls: ['./sales.component.scss'],
     providers: [LeadService]
 })
 
-export class HomeComponent {
+export class SalesComponent {
     constructor(private leadService: LeadService) {}
 
     // tslint:disable-next-line:member-ordering

@@ -17,7 +17,9 @@ export class LeadService {
             'FIRST_NAME': '',
             'LAST_NAME': '',
             'EMAIL_ADDRESS': '',
-            'ORGANIZATION_NAME': ''
+            'ORGANIZATION_NAME': '',
+            'PHONE_NUMBER': '',
+            'DESCRIPTION': ''
         }
     ): Observable<any> {
         const body = {
@@ -25,8 +27,9 @@ export class LeadService {
             'LAST_NAME': leadDetails.LAST_NAME,
             'ORGANIZATION_NAME': leadDetails.ORGANIZATION_NAME,
             'EMAIL_ADDRESS': leadDetails.EMAIL_ADDRESS,
+            'MOBILE_PHONE_NUMBER': leadDetails.PHONE_NUMBER,
             'VISIBLE_TO': 'EVERYONE',
-            'LEAD_DESCRIPTION': 'source from website/ new campaign'
+            'LEAD_DESCRIPTION': 'source from website/ new campaign\n' + leadDetails.DESCRIPTION
         }
         const bodyString = JSON.stringify(body);
         const headers = new Headers({

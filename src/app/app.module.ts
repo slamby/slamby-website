@@ -33,6 +33,7 @@ import { CloudHostingAgreementComponent } from './legal/cloud-hosting-agreement.
 import { SupportAgreementComponent } from './legal/support-agreement.component';
 import { GnuAgplLicenseComponent } from './legal/gnu-agpl-license.component';
 import { SupportComponent } from './support/support.component';
+import { SalesComponent } from './sales/sales.component';
 
 // const metaConfig: MetaConfig = {
 //   useTitleSuffix: true,
@@ -68,7 +69,8 @@ import { SupportComponent } from './support/support.component';
     LegalComponent,
     LegalMenuComponent,
     SupportComponent,
-    ApiComponent
+    ApiComponent,
+    SalesComponent
   ],
   imports: [
     BrowserModule,
@@ -187,6 +189,12 @@ import { SupportComponent } from './support/support.component';
         component: SupportComponent,
         pathMatch: 'full',
         data: {meta: {title: 'Support'}}
+      },
+      {
+        path: 'sales',
+        component: SalesComponent,
+        pathMatch: 'full',
+        data: {meta: {title: 'Sales'}}
       },
       {
         path: '**',
